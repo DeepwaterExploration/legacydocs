@@ -95,7 +95,7 @@ Depending on the cable penetrator you are using, follow the instructions to wate
 
 ### Step 2
 ...
-```{warning} Ensure there are no solder bridges and DOUBLE CHECK to make sure the connection is correct. The camera will get damaged if the polarity is not correct.
+```{warning} Ensure there are **no solder bridges and DOUBLE CHECK** to make sure the connection is correct. **The camera will get damaged if the polarity is not correct.**
 ```
 
 
