@@ -1,0 +1,40 @@
+.. DeepWater Exploration Docs documentation master file
+
+DeepWater Exploration Documentation
+======================================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: About
+
+   about/about_us
+   about/contact_us
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Products
+
+   products/explorehd
+   products/hdcam
+   products/fiber_board
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Getting Started
+
+   getting_started/getting_started
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Software
+
+   software/qgroundcontrol
+   software/firmware
+   software/ardusub
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

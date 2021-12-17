@@ -1,0 +1,8 @@
+sphinx
+sphinx-autobuild
+livereload
+myst-parser
+sphinx_rtd_theme
+karma-sphinx-theme
+furo
+sphinx-bootstrap-theme
