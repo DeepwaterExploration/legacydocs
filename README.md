@@ -6,7 +6,7 @@
 
 1. Clone the project: `git clone https://github.com/DeepwaterExploration/DeepwaterExplorationDocs.git`
 2. cd to the docs directory: `cd DeepwaterExplorationDocs/docs`
-2. Install the requirments: `pip install -r requirements.txt`
+2. Install the requirments: `pip install -r requirements.txt` (you may need to use an administrator shell)
 4. Run the live server: `sphinx-autobuild . build/html`
 
 ## Structure
