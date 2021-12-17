@@ -15,7 +15,7 @@ manual: [https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_Camera
 
 ### Step 1
 
-...
+Jiajer todo
 
 ### Step 2
 
