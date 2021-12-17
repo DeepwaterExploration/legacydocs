@@ -97,7 +97,7 @@ Depending on the cable penetrator you are using, follow the instructions to wate
 
 ```{warning} Ensure you are knowledgeable on the function of each wire.
 <span style="color: black">Black: Ground</span>
-<span style="color: Light yellow2">Yellow/Green: D+ (DP)</span>
+<span style="color: #FFFF99">Yellow/Green: D+ (DP)</span>
 <span style="color: gray">White: D- (DM)</span>
 <span style="color: red">Red: 5V</span>
 ```
