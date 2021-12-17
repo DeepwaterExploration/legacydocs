@@ -94,7 +94,14 @@ Depending on the cable penetrator you are using, follow the instructions to wate
 * The nut is on the inner portion of the electronic housing end cap.
 
 ### Step 2
-...
+
+```{warning} Ensure you are knowledgeable on the function of each wire.
+<span style="color: black">Black: Ground</span>
+<span style="color: yellow">Yellow/Green: D+ (DP)</span>
+<span style="color: gray">White: D- (DM)</span>
+<span style="color: red">Red: 5V</span>
+```
+
 ```{warning} Ensure there are **no solder bridges and DOUBLE CHECK** to make sure the connection is correct. **The camera will get damaged if the polarity is not correct.**
 ```
 
