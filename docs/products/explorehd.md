@@ -1,11 +1,12 @@
 
+
 # exploreHD
 
 [![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/products/exploreHDUSBCameraMain_590x.jpg?v=1632166193)](https://exploredeepwater.com/products/explorehd-rov-auv-usb-camera)
 
-Product Link: [https://exploredeepwater.com/products/explorehd-rov-auv-usb-camera](https://exploredeepwater.com/products/explorehd-rov-auv-usb-camera)
+[Product Link](https://exploredeepwater.com/products/explorehd-rov-auv-usb-camera)
 
-Full Manual: [https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_Camera_110921.pdf?v=1636481823](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_Camera_110921.pdf?v=1636481823)
+[Full Manual](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_Manual_121621.pdf?v=1639714000)
 
 ## {doc}`Firmware Update <../software/firmware>`
 
@@ -95,15 +96,15 @@ Depending on the cable penetrator you are using, follow the instructions to wate
 
 ### Step 2
 
-```{warning} Ensure you are knowledgeable on the function of each wire.
+```{note} Ensure you are knowledgeable on the function of each wire.
 
 <span style="color: black; font-weight:bold">Black: Ground</span>
 
-<span style="color: #CCCC00">Yellow/Green: D+ (DP)</span>
+<span style="color: #CCCC00"; font-weight:bold">Yellow/Green: D+ (DP)</span>
 
-<span style="color: gray">White: D- (DM)</span>
+<span style="color: gray"; font-weight:bold">White: D- (DM)</span>
 
-<span style="color: red">Red: 5V</span>
+<span style="color: red";font-weight:bold" >Red: 5V</span>
 ```
 
 ```{warning} Ensure there are **no solder bridges and DOUBLE CHECK** to make sure the connection is correct. **The camera will get damaged if the polarity is not correct.**
