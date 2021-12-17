@@ -2,7 +2,7 @@
 
 [![Fiber Board](https://cdn.shopify.com/s/files/1/0575/8785/9626/products/ROVFiberBoardMainPic_590x.jpg?v=1638213044)](https://exploredeepwater.com/products/ethernet-fiber-converter)
 
-link: [https://exploredeepwater.com/products/ethernet-fiber-converter](https://exploredeepwater.com/products/ethernet-fiber-converter)
+[Product Link](https://exploredeepwater.com/products/ethernet-fiber-converter)
 
 ## Introduction
 
