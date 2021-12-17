@@ -16,19 +16,29 @@ Our passion for uncompromised image quality for marine robotics is the simple ph
 ## Technical Specifications
 ### Waterproof Specifications
 Waterproof Depth: 400 meters 
+
 Ingress Protection Rating: IP69K
 ### Camera Specifications
 Image Sensor: SONY IMX323 1/2.9
+
 Resolution: 1920x1080
+
 Framerate: 30fps
+
 Format: H.264/MJPEG 
+
 Connection: USB2.0 High Speed 
+
 Voltage: 5V 
+
 Current: 250mA
 ### Lens Specifications 
 Type: Fisheye 
+
 Lens Aperture: f/1.9
+
 View Angle: 150 Degrees Diagonal (in water)
+
 Minimum Focus Distance: 20-30 cm
 ## Image Samples
 Color remains accurate even in low light situations
@@ -41,6 +51,7 @@ Left Image is from exploreHD and the right is from a GoPro Hero
 This lens has a fish eye effect which is more noticeable in air then in water due to the changes with light as it passes through different optical mediums. We took into account this factor and picked a lens that has a very wide field of view in air so that when the lens is in water, it can compensate for the lowered field of view. You may also notice a bit of vignetting when above water from the lens cap that will disappear in the water.
 ### TrueColor Technology
 The camera offers TrueColor Technology which compensates for the blue/greenish tint in water using advance AI white balance technology that we developed. However, in order to reduce the bluish/greenish tint, the camera has to compensate by adding more red/magenta. This means that in some images, the shadows may appear more red or magenta color. If you do not like this effect, you can turn off auto white balance in the exploreHD camera preferences.
+
 ![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/4_e9a1179c-a100-4de6-a14b-99a793a23089.jpg?v=1639761687?v=1639761687?v=1639761687590x.jpg?v=1632166193)
 ## Mount Installation
 
