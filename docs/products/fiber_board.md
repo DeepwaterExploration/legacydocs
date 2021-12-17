@@ -42,9 +42,7 @@ Unlike many other fiber converters, this is designed to be as space efficient as
 * 120V AC to 12V/5V Power Supplies
 ```
 
-## SPF Transceivers
-
-## SPF Transceivers
+## Recommended SFP Transceivers
 
 ## Fiber Optic Tethers
 
