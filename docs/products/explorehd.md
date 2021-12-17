@@ -15,9 +15,9 @@ Full Manual: [https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_C
 Our passion for uncompromised image quality for marine robotics is the simple philosophy behind the exploreHD Underwater USB Camera. This UVC compliant camera is the first of its kind to feature a high definition USB output while achieving a waterproof rating of IP69K. With the use of a modern Sony sensor, this camera will be able to see in low light conditions like never before. Thanks to advanced automated exposure and white balance adjustments, this camera produces accurate colors and a pleasing natural image. With H.264 compression technology, up to 4 cameras can be connected at once and streamed via ethernet without major quality loss or latency. This makes our camera the perfect choice for advanced multi-cam ROV/AUV setup.
 ## Technical Specifications
 ### Waterproof Specifications
-Waterproof Depth: 400 meters 
+<b> Waterproof Depth: </b> 400 meters 
 
-Ingress Protection Rating: IP69K
+<b> Ingress Protection Rating: </b> IP69K
 ### Camera Specifications
 Image Sensor: SONY IMX323 1/2.9
 
@@ -56,53 +56,48 @@ The camera offers TrueColor Technology which compensates for the blue/greenish t
 ## Mount Installation
 
 ### Step 1
-
-TODO
-
+Drill two holes, 30mm apart into your frame where you want the camera to reside. If using a thread-able material, tap an M3x0.5 thread. If using a non-thread-able material, ensure there is space for a M3x0.5 nut on the other side.
 ### Step 2
-
-...
-
+Using two M3x0.5 screws, attach the camera bracket to the frame through the two holes on the base of the bracket.
 ### Step 3
+Place the standoff portion of the main camera body into the two remaining holes of the bracket. Now, you should have an axis about which the camera may rotate. 
 
-...
-
+Tighten the camera into place using the two M2x0.4 screws and the threaded portion of the standoffs.
 ### Step 4
-
-...
-
+There may be some give on the rotation of the camera body. To ensure the camera is held in place, ziptie the camera usb cable to the ROV in such a manner that the tension of the cable keeps the camera in place. Ensure to make the zip tie as tight as possible without damaging the cable.
 ## Cable Waterproofing
-
+```{note} If the camera is going into an ROV electronic enclosure, you will need to waterproof the wires properly using a cable penetrator. You can either use potted penetrators or WetLink from Blue Robotics.
+```
 ### Step 1
-
-...
-
+Ensure that the camera is mounted securely on the ROV as you like it with the previous steps
 ### Step 2
-
-...
-
+Cut off the USB cable to the desired length. Ensure to leave extra length for when the cable is in the enclosure.
 ### Step 3
-
-...
-
+Strip the cable to the length that will be in the electronic enclosure.
 ### Step 4
-
-..
-
+Twist the section of wires that are stripped from the black rubber insulation
 ### Step 5
-
-...
-
+Depending on the cable penetrator you are using, follow the instructions to waterproof the wires
 ## USB Soldering
 
 ### Step 1
+<b>Before soldering the wires to the provided USB connector, please ensure the following tasks have been completed</b>
 
-...
+* Cable is properly waterproofed, following the steps in the previous page. 
+
+* Cable penetrator has the o'ring in the o'ring groove. 
+
+* Cable penetrator is on the outer portion of the electronic housing end cap.
+
+* The wires have been passed through the nut for the cable penetrator. 
+
+* The nut is on the inner portion of the electronic housing end cap.
 
 ### Step 2
 ...
 ```{warning} Ensure there are no solder bridges and DOUBLE CHECK to make sure the connection is correct. The camera will get damaged if the polarity is not correct.
 ```
+
 
 ### Step 3
 
