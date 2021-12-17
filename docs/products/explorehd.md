@@ -15,31 +15,31 @@ Full Manual: [https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_C
 Our passion for uncompromised image quality for marine robotics is the simple philosophy behind the exploreHD Underwater USB Camera. This UVC compliant camera is the first of its kind to feature a high definition USB output while achieving a waterproof rating of IP69K. With the use of a modern Sony sensor, this camera will be able to see in low light conditions like never before. Thanks to advanced automated exposure and white balance adjustments, this camera produces accurate colors and a pleasing natural image. With H.264 compression technology, up to 4 cameras can be connected at once and streamed via ethernet without major quality loss or latency. This makes our camera the perfect choice for advanced multi-cam ROV/AUV setup.
 ## Technical Specifications
 ### Waterproof Specifications
-<b> Waterproof Depth: </b> 400 meters 
+**Waterproof Depth:** 400 meters 
 
-<b> Ingress Protection Rating: </b> IP69K
+**Ingress Protection Rating:** IP69K
 ### Camera Specifications
-Image Sensor: SONY IMX323 1/2.9
+**Image Sensor:** SONY IMX323 1/2.9
 
-Resolution: 1920x1080
+**Resolution:** 1920x1080
 
-Framerate: 30fps
+**Framerate:** 30fps
 
-Format: H.264/MJPEG 
+**Format:** H.264/MJPEG 
 
-Connection: USB2.0 High Speed 
+**Connection:** USB2.0 High Speed 
 
-Voltage: 5V 
+**Voltage:** 5V 
 
-Current: 250mA
+**Current:** 250mA
 ### Lens Specifications 
-Type: Fisheye 
+**Type:** Fisheye 
 
-Lens Aperture: f/1.9
+**Lens Aperture:** f/1.9
 
-View Angle: 150 Degrees Diagonal (in water)
+**View Angle:** 150 Degrees Diagonal (in water)
 
-Minimum Focus Distance: 20-30 cm
+**Minimum Focus Distance:** 20-30 cm
 ## Image Samples
 Color remains accurate even in low light situations
 ![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_accurate_colors.jpg?v=1639761687590x.jpg?v=1632166193)
