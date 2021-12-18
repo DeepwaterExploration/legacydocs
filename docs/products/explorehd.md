@@ -163,18 +163,26 @@ In order to have full access to H264 controls when streaming via linux, you will
 
 [https://github.com/DeepwaterExploration/exploreHD_Controls/tree/main/explorehd_camera_controls](https://github.com/DeepwaterExploration/exploreHD_Controls/tree/main/explorehd_camera_controls)
 
+To install the driver, you will need to compile it after having the explorehd_camera_controls on your computer.
+
+`cd explorehd_camera_controls`
+
+`cp Makefile.x86 Makefile`
+
+`make`
+
 ### Basic H.264 Controls ###
 
-**Xuset-br sets the bitrate of the H264 compression**
+**`--xuset-br` sets the bitrate of the H264 compression**
 
 Our default settings it set to a generous
 15Mb/s which would provide you with decent video quality while lowering file size.
 
-**Xuset-gop sets the GOP settings of the H264 compression**
+**`--xuset-gop` sets the GOP settings of the H264 compression**
 
 Since the Raspberry Pi is limiting in its processing, the default is 0.
 
-**Xuset-cvm sets the type of bit rate compression for H.264**
+**`--xuset-cvm` sets the type of bit rate compression for H.264**
 
 We found that setting it to VBR (variable bitrate) provides the best quality but you can experiment around.
 
@@ -183,12 +191,18 @@ We found that setting it to VBR (variable bitrate) provides the best quality but
 `./explorehd_UVC_TestAP -h`
 
 ```{note} Any controls that are set onto the camera will be reset when the device restarts either by
-physically unplugging it or restarting the computer. To save the settings, we suggest running a
-for loop with an auto start script. We have a sample of one done for ArduSub Companion linked
-below.
+physically unplugging it or restarting the computer. To save the settings, we suggest running a for loop with an auto start script. We have a sample of one done for ArduSub Companion linked below.
 
 [https://github.com/DeepwaterExploration/exploreHD_Controls/](https://github.com/DeepwaterExploration/exploreHD_Controls/)
+
+```sh
+for DEVICE in $(ls /dev/video*); do
+	.$HOME/companion/scripts/explorehd_camera_controls/explorehd_UVC_TestAP 
+    --xuset-br 1500000 --xuset-gop 0 --xuset-cvm 2 $DEVICE
+done
 ```
+
+
 ## ROV Connection Diagram
 
 ![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_ROV_Camera_Connection_1000x.jpg?v=1632166193)
