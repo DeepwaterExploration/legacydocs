@@ -9,6 +9,20 @@
 This bare PCB converts CAT 5 Ethernet signals from the RJ-45 port to signals compatible with single mode SFP transceivers and vice versa. By using this media converter, copper Ethernet signals can be extended up to 20km depending on the SFP transceiver used (a much larger distance than the 100 meters limit for copper Ethernet signals).
 
 Unlike many other fiber converters, this is designed to be as space efficient as possible specifically for ROV use cases. Additionally, many considerations were in place to design this board as power efficient as possible, reducing generated heat and maximizing the flight time on your ROV!
+## Technical Specifications
+**Input Voltage:** 3.5V - 18V DC (Recommended 5V)
+
+**Input Connector:** 5.5 x 2.5 mm Power Jack or 2.54 mm Pitch Jumper wires
+
+**Wattage:** Less than 1 watt
+
+**Footprint:** 3 x 2 inches
+
+**Complies with IEEE 802.3/802.3u/802.3z/802.3ab**
+
+**Complies with 10/100/1000Base-TX/FX**
+
+**Supports Full/Half Duplex auto-negotiation and MDI/MDIX auto-crossover**
 
 ## Speed Testing
 
