@@ -57,27 +57,44 @@ The camera offers TrueColor Technology which compensates for the blue/greenish t
 ## Mount Installation
 
 ### Step 1
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_ROV_Camera_Mounting_Step_1_390x.jpg?v=1632166193)
+
 Drill two holes, 30mm apart into your frame where you want the camera to reside. If using a thread-able material, tap an M3x0.5 thread. If using a non-thread-able material, ensure there is space for a M3x0.5 nut on the other side.
 ### Step 2
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_ROV_Camera_Mounting_Step_2_390x.jpg?v=1632166193)
+
 Using two M3x0.5 screws, attach the camera bracket to the frame through the two holes on the base of the bracket.
 ### Step 3
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_ROV_Camera_Mounting_Step_3_390x.jpg?v=1632166193)
+
 Place the standoff portion of the main camera body into the two remaining holes of the bracket. Now, you should have an axis about which the camera may rotate. 
 
 Tighten the camera into place using the two M2x0.4 screws and the threaded portion of the standoffs.
 ### Step 4
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_ROV_Camera_Mounting_Step_4_390x.jpg?v=1632166193)
+
 There may be some give on the rotation of the camera body. To ensure the camera is held in place, ziptie the camera usb cable to the ROV in such a manner that the tension of the cable keeps the camera in place. Ensure to make the zip tie as tight as possible without damaging the cable.
 ## Cable Waterproofing
 ```{note} If the camera is going into an ROV electronic enclosure, you will need to waterproof the wires properly using a cable penetrator. You can either use potted penetrators or WetLink from Blue Robotics.
 ```
 ### Step 1
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_ROV_Camera_Cable_Step_1_200x.jpg?v=1632166193)
+
 Ensure that the camera is mounted securely on the ROV as you like it with the previous steps
 ### Step 2
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_ROV_Camera_Cable_Step_2_200x.jpg?v=1632166193)
+
 Cut off the USB cable to the desired length. Ensure to leave extra length for when the cable is in the enclosure.
 ### Step 3
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_ROV_Camera_Cable_Step_3_200x.jpg?v=1632166193)
+
 Strip the cable to the length that will be in the electronic enclosure.
 ### Step 4
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_ROV_Camera_Cable_Step_4_200x.jpg?v=1632166193)
+
 Twist the section of wires that are stripped from the black rubber insulation
 ### Step 5
+
 Depending on the cable penetrator you are using, follow the instructions to waterproof the wires
 ## USB Soldering
 
@@ -96,7 +113,7 @@ Depending on the cable penetrator you are using, follow the instructions to wate
 
 ### Step 2
 
-```{note} Ensure you are knowledgeable on the function of each wire.
+```{Important} Ensure you are knowledgeable on the function of each wire.
 
 <span style="color: black; font-weight:bold">Black: Ground</span>
 
@@ -106,15 +123,18 @@ Depending on the cable penetrator you are using, follow the instructions to wate
 
 <span style="color: red; font-weight:bold" >Red: 5V</span>
 ```
-
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/Soldering_Diagram_500x.jpg?v=1632166193)
 ```{warning} Ensure there are **no solder bridges and DOUBLE CHECK** to make sure the connection is correct. **The camera will get damaged if the polarity is not correct.**
 ```
-
-
 ### Step 3
+Connect the USB cable to a computer to confirm the camera is working and in the correct orientation.
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_ROV_Camera_App_500x.jpg?v=1632166193)
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_ROV_Camera_App_Driver_500x.jpg?v=1632166193)
 
-...
-
+An image should be displayed using the
+built-in camera app on your computer. The
+device name should be exploreHD USB
+Camera
 ## Streaming Via Linux
 
 ```{note} Please install gstreamer following this guide [https://gstreamer.freedesktop.org/documentation/installing/on-linux.html?gi-language=c](https://gstreamer.freedesktop.org/documentation/installing/on-linux.html?gi-language=c)
@@ -142,10 +162,49 @@ Depending on the cable penetrator you are using, follow the instructions to wate
 
 ...
 
-## ArduSub with Blue Companion
+## ArduSub Companion/Custom H.264 Settings
 
-...
+```{important} **As of November 20, 2021, all exploreHD shipped will feature a new firmware that allows the
+cameras to be plug and play with ArduSub Companion without the need for drivers.**
 
+Any cameras shipped beforehand will need the update performed which can be found on our
+website.
+```
+
+
+**The instructions below are for customers who may want more control over H264 compression
+and other settings on the camera**
+
+In order to have full access to H264 controls when streaming via linux, you will need to install our driver.
+
+https://github.com/DeepwaterExploration/exploreHD_Controls/tree/main/explorehd_camera_controls
+
+### Basic H.264 Controls ###
+
+**Xuset-br sets the bitrate of the H264 compression**
+
+Our default settings it set to a generous
+15Mb/s which would provide you with decent video quality while lowering file size.
+
+**Xuset-gop sets the GOP settings of the H264 compression**
+
+Since the Raspberry Pi is limiting in its processing, the default is 0.
+
+**Xuset-cvm sets the type of bit rate compression for H.264**
+
+We found that setting it to VBR (variable bitrate) provides the best quality but you can experiment around.
+
+**For help with more controls:**
+
+./explorehd_UVC_TestAP -h
+
+```{note} Any controls that are set onto the camera will be reset when the device restarts either by
+physically unplugging it or restarting the computer. To save the settings, we suggest running a
+for loop with an auto start script. We have a sample of one done for ArduSub Companion linked
+below.
+
+https://github.com/DeepwaterExploration/exploreHD_Controls/
+```
 ## ROV Connection Diagram
 
-...
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_ROV_Camera_Connection_1000x.jpg?v=1632166193)
