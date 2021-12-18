@@ -196,7 +196,7 @@ We found that setting it to VBR (variable bitrate) provides the best quality but
 
 **For help with more controls:**
 
-./explorehd_UVC_TestAP -h
+`./explorehd_UVC_TestAP -h`
 
 ```{note} Any controls that are set onto the camera will be reset when the device restarts either by
 physically unplugging it or restarting the computer. To save the settings, we suggest running a
