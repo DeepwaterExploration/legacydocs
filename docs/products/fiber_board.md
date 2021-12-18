@@ -18,6 +18,8 @@ Unlike many other fiber converters, this is designed to be as space efficient as
 
 **Footprint:** 3 x 2 inches
 
+**Bandwidth:** 1.25G
+
 **Complies with IEEE 802.3/802.3u/802.3z/802.3ab**
 
 **Complies with 10/100/1000Base-TX/FX**
