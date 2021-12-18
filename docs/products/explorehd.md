@@ -177,7 +177,7 @@ and other settings on the camera**
 
 In order to have full access to H264 controls when streaming via linux, you will need to install our driver.
 
-https://github.com/DeepwaterExploration/exploreHD_Controls/tree/main/explorehd_camera_controls
+[https://github.com/DeepwaterExploration/exploreHD_Controls/tree/main/explorehd_camera_controls](https://github.com/DeepwaterExploration/exploreHD_Controls/tree/main/explorehd_camera_controls)
 
 ### Basic H.264 Controls ###
 
@@ -203,7 +203,7 @@ physically unplugging it or restarting the computer. To save the settings, we su
 for loop with an auto start script. We have a sample of one done for ArduSub Companion linked
 below.
 
-https://github.com/DeepwaterExploration/exploreHD_Controls/
+[https://github.com/DeepwaterExploration/exploreHD_Controls/](https://github.com/DeepwaterExploration/exploreHD_Controls/)
 ```
 ## ROV Connection Diagram
 
