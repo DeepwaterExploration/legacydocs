@@ -113,7 +113,7 @@ Depending on the cable penetrator you are using, follow the instructions to wate
 
 ### Step 2
 
-```{Important} Ensure you are knowledgeable on the function of each wire.
+```{important} Ensure you are knowledgeable on the function of each wire.
 
 <span style="color: black; font-weight:bold">Black: Ground</span>
 
@@ -139,28 +139,12 @@ Camera
 
 ```{note} Please install gstreamer following this guide [https://gstreamer.freedesktop.org/documentation/installing/on-linux.html?gi-language=c](https://gstreamer.freedesktop.org/documentation/installing/on-linux.html?gi-language=c)
 ```
-
-### Step 1
-
-...
-
-### Step 2
-
-...
-
-### Step 3
-
-...
-
-### Testing the Camera Stream
-
-...
+[https://github.com/DeepwaterExploration/ExploreHD](https://github.com/DeepwaterExploration/ExploreHD)
 
 ### Setting up the Controls
 
 [https://github.com/DeepwaterExploration/exploreHD_Controls](https://github.com/DeepwaterExploration/exploreHD_Controls)
 
-...
 
 ## ArduSub Companion/Custom H.264 Settings
 
