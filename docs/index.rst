@@ -20,17 +20,10 @@ DeepWater Exploration Documentation
 
 .. toctree::
    :maxdepth: 2
-   :caption: Getting Started
-
-   getting_started/getting_started
-
-.. toctree::
-   :maxdepth: 2
    :caption: Software
 
    software/qgroundcontrol
    software/firmware
-   software/ardusub
 
 Indices and tables
 ==================
