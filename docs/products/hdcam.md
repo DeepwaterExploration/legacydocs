@@ -6,7 +6,11 @@
 
 [Full Manual](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDcam_Manual_072321.pdf?v=1627097263)
 ## Introduction
-The HD USB Camera is the bare board of the exploreHD Camera but without the waterproof housing. This camera provides the same excellent image quality as the exploreHD but uses a specialized lens designed to be more suited for above water applications. The camera can output H.264, MPEG, and YUY2 at reduced frame-rates. Due to its low distortion and smooth frame-rate, this camera is ideal for computer vision applications. 
+The HDCam is the bare board of the exploreHD Camera but without the waterproof housing. This camera provides the same excellent image quality as the exploreHD but uses a specialized lens designed to be more suited for above water applications. The camera can output H.264, MPEG, and YUY2 at reduced frame-rates. Due to its low distortion and smooth frame-rate, this camera is ideal for computer vision applications.
+
+```{note} This camera runs the exact same firmware as the exploreHD. The only optical difference between this camera and the exploreHD is the different lens used.
+
+```
 
 ## Technical Specifications
 ### Camera Specifications
@@ -35,14 +39,16 @@ The HD USB Camera is the bare board of the exploreHD Camera but without the wate
 **Minimum Focus Distance:** 15 cm
 
 **Focal Length:**  2.7MM (19MM Equivalent on Full Frame)
+
+```{note} We currently don't recommend this lens for underwater use due to its narrower aperture and vignetting qualities when the camera is underwater. For those looking to replace the standard ELP USB camera from BlueROV, we recommend using their lens for now until our team finds a more suitable lens for underwater.
+
+```
 ## Operating Notes
 ### Temperature
 ![HDCam Temperature](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_Temperature_x200.jpg?v=1639879650)
 
 For long term operation, the camera may get hot (MAX Temp 70C). This is normal and not a cause for concern. The processor has an auto thermal shut off if it does exceed normal operating temperatures. If you
-are designing a custom mount, it can not be manufactured with Polylactic acid (PLA) plastic as the heat
-from the camera will cause the plastic to weaken. Acrylonitrile butadiene styrene (ABS) is recommended
-instead.
+are designing a custom mount, it can not be manufactured with Polylactic acid (PLA) plastic as the heat from the camera will cause the plastic to weaken. Acrylonitrile butadiene styrene (ABS) is recommended instead.
 
 ### Sensor Affected by Incident Light
 ![HDCam Sensor Incident Light](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_Incident_Light_x200.jpg?v=1639879650)
@@ -55,12 +61,17 @@ the back of the camera PCB.
 ### Lens Focusing
 ![HDCam Lens Holder](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_Lens_Holder_x200.jpg?v=1639879650)
 
-In order to ensure the sharpest image from your camera, the distance between the sensor and the lens
-must be set correctly. Before the camera leaves our facility, the focus is set manually and a screw is placed
-on the side of the lens holder to lock the distance. Sometimes, this screw can get loose over time and the
-camera looses proper focus. You can adjust this manually by taking the screw off and twisting the lens
-until the image is clear when viewing a far away distance on a computer.
+```{warning} Pay extra attention to not screw the lens past the sensor element. Doing so will crack the sensor and damage it permanently.
 
+```
+In order to ensure the sharpest image from your camera, the distance between the sensor and the lens must be set correctly. Before the camera leaves our facility, the focus is set manually and a screw is placed on the side of the lens holder to lock the distance. Sometimes, this screw can get loose over time and the camera looses proper focus. You can adjust this manually by taking the screw off and twisting the lens until the image is clear when viewing a far away distance on a computer.
+
+**This will also allow users to use different M12 style lenses with the HDCam.**
+```{note} If you are using a different lens than the one supplied, make sure its compatible with the 1/2.9 sensor size. Using a lens designed for a larger sensor (1/2.8 or larger) will usually work but you will expect a lower FOV than advertised. Additionally, the lens will produce a less sharp image and artifacts such as chromatic aberration will be more noticeable. 
+
+Conversely, using a lens designed for a smaller sensor (1/3 or smaller) will increase the FOV but you may notice more vignetting in the image. The lens will produce a sharper image and less chromatic aberration will be observed.
+
+```
 ## Image Samples
 ![HDCam Image 1](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_Image_1.jpg?v=1639880736)
 
@@ -76,7 +87,7 @@ until the image is clear when viewing a far away distance on a computer.
 ### Step 1
 ![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_Step_1_x150.jpg?v=1639879650)
 
-To begin the process of installing the HD USB Camera, ensure you have the
+To begin the process of installing the HDCam, ensure you have the
 parts detailed in the contents section of this manual as well as a 2mm hex
 Allen wrench or screwdriver(not included).
 
@@ -116,7 +127,7 @@ located at the top of the camera holder.
 
 ## ArduSub Companion/Custom H.264 Settings
 
-```{important} **As of November 20, 2021, all exploreHD shipped will feature a new firmware that allows the cameras to be plug and play with ArduSub Companion without the need for drivers.**
+```{important} **As of November 20, 2021, all HDCams shipped will feature a new firmware that allows the cameras to be plug and play with ArduSub Companion without the need for drivers.**
 
 Any cameras shipped beforehand will need the update performed which can be found [here](https://docs.exploredeepwater.com/software/firmware.html).
 ```
