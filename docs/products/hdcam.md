@@ -29,6 +29,8 @@ The HDCam is the bare board of the exploreHD Camera but without the waterproof h
 **Voltage:** 5V 
 
 **Current:** 250mA
+
+**Footprint:** 30 mm diameter (PCB)
 ### Lens Specifications 
 **Type:** Low Distortion Lens
 
@@ -44,8 +46,19 @@ The HDCam is the bare board of the exploreHD Camera but without the waterproof h
 
 ```
 ## Operating Notes
+### PCB Size Comparison
+![HDCam vs BR Camera](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_PCB_size_x320.jpg)
+
+Size comparison of the PCB between the ELP's H.264 USB Camera and the HDCam. HDCam features an advance multilayer PCB which allows our board to be more space efficient than the competition while providing better performance **(see below for comparison)**. 
+
+### Image Comparison of HDCam vs ELP (Generic H.264 USB Camera)
+
+![HDCam Temperature](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_1.jpg?v=1639925100)
+
+![HDCam Temperature](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_2.jpg?v=1639925099)
+
 ### Temperature
-![HDCam Temperature](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_Temperature_x200.jpg?v=1639879650)
+![HDCam Temperature](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_Temperature_x200.jpg?)
 
 For long term operation, the camera may get hot (MAX Temp 70C). This is normal and not a cause for concern. The processor has an auto thermal shut off if it does exceed normal operating temperatures. If you
 are designing a custom mount, it can not be manufactured with Polylactic acid (PLA) plastic as the heat from the camera will cause the plastic to weaken. Acrylonitrile butadiene styrene (ABS) is recommended instead.
