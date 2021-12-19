@@ -49,7 +49,9 @@ The HDCam is the bare board of the exploreHD Camera but without the waterproof h
 ### PCB Size Comparison
 ![HDCam vs BR Camera](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_PCB_size_x320.jpg)
 
-Size comparison of the PCB between the ELP's H.264 USB Camera (found in many current ROV systems) and the HDCam. HDCam features an advance multilayer PCB and a much more modern image processor which allows our board to be more space efficient than the competition while providing better performance **(see below for comparison)**. 
+Size comparison of the PCB between the ELP's H.264 USB Camera (found in many current ROV systems) and the HDCam. 
+
+HDCam features an advance multilayer PCB and a much more modern image processor which allows our board to be more space efficient than the competition while providing better performance **(see below for comparison)**. 
 
 ### Image Comparison of HDCam vs ELP (Generic H.264 USB Camera)
 
