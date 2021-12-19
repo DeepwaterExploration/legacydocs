@@ -53,7 +53,10 @@ This lens has a fish eye effect which is more noticeable in air then in water du
 ### TrueColor Technology
 The camera offers TrueColor Technology which compensates for the blue/greenish tint in water using advance AI white balance technology that we developed. However, in order to reduce the bluish/greenish tint, the camera has to compensate by adding more red/magenta. This means that in some images, the shadows may appear more red or magenta color. If you do not like this effect, you can turn off auto white balance in the exploreHD camera preferences.
 
-![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/4_e9a1179c-a100-4de6-a14b-99a793a23089.jpg?v=1639761687?v=1639761687?v=1639761687590x.jpg?v=1632166193)
+![exploreHD True Color Technology](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/4_e9a1179c-a100-4de6-a14b-99a793a23089.jpg?v=1639761687?v=1639761687?v=1639761687590x.jpg?v=1632166193)
+![exploreHD True Color Technology](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/3_f0d99052-aa08-402a-bd62-5e0bf0c442ea.jpg?v=1636477859)
+![exploreHD True Color Technology](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/2_cc58ff7f-1c87-4681-8f8f-8687241c50eb.jpg?v=1636477812)
+![exploreHD True Color Technology](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/1_c13a6d81-411d-4aeb-abea-f22e27f8e5be.jpg?v=1636477780)
 ## Mount Installation
 
 ### Step 1
