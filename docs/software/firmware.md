@@ -53,7 +53,7 @@ After approximately a minute, the firmware should be updated on the exploreHD!
 
 You may now close the application. You can test the camera using any camera application for Windows. If everything looks good, you are ready to use it on your ROV!
 
-See: [Getting Started](../getting_started/getting_started)
+See: [Getting Started](../products/explorehd)
 
 ## Troubleshooting
 
