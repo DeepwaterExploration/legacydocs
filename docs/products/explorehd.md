@@ -131,10 +131,7 @@ Connect the USB cable to a computer to confirm the camera is working and in the 
 ![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_ROV_Camera_App_500x.jpg?v=1632166193)
 ![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_ROV_Camera_App_Driver_500x.jpg?v=1632166193)
 
-An image should be displayed using the
-built-in camera app on your computer. The
-device name should be exploreHD USB
-Camera
+An image should be displayed using the built-in camera app on your computer. The device name should be exploreHD USB Camera
 ## Streaming Via Linux
 
 ```{note} Please install gstreamer following this guide [https://gstreamer.freedesktop.org/documentation/installing/on-linux.html?gi-language=c](https://gstreamer.freedesktop.org/documentation/installing/on-linux.html?gi-language=c)
@@ -148,11 +145,9 @@ Camera
 
 ## ArduSub Companion/Custom H.264 Settings
 
-```{important} **As of November 20, 2021, all exploreHD shipped will feature a new firmware that allows the
-cameras to be plug and play with ArduSub Companion without the need for drivers.**
+```{important} **As of November 20, 2021, all exploreHD shipped will feature a new firmware that allows the cameras to be plug and play with ArduSub Companion without the need for drivers.**
 
-Any cameras shipped beforehand will need the update performed which can be found on our
-website.
+Any cameras shipped beforehand will need the update performed which can be found [here](https://docs.exploredeepwater.com/software/firmware.html).
 ```
 
 
@@ -190,8 +185,7 @@ We found that setting it to VBR (variable bitrate) provides the best quality but
 
 `./explorehd_UVC_TestAP -h`
 
-```{note} Any controls that are set onto the camera will be reset when the device restarts either by
-physically unplugging it or restarting the computer. To save the settings, we suggest running a for loop with an auto start script. We have a sample of one done for ArduSub Companion linked below.
+```{note} Any controls that are set onto the camera will be reset when the device restarts either by physically unplugging it or restarting the computer. To save the settings, we suggest running a for loop with an auto start script. We have a sample of one done for ArduSub Companion linked below.
 
 [https://github.com/DeepwaterExploration/exploreHD_Controls/](https://github.com/DeepwaterExploration/exploreHD_Controls/)
 
@@ -206,3 +200,6 @@ done
 ## ROV Connection Diagram
 
 ![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_ROV_Camera_Connection_1000x.jpg?v=1632166193)
+## Technical Drawing
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_Drawing_320x.jpg?v=1639879650)
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_Hinge_Drawing_310x.jpg?v=1639879650)

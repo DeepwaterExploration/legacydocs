@@ -35,38 +35,137 @@ The HD USB Camera is the bare board of the exploreHD Camera but without the wate
 **Minimum Focus Distance:** 15 cm
 
 **Focal Length:**  2.7MM (19MM Equivalent on Full Frame)
+## Operating Notes
+### Temperature
+![HDCam Temperature](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_Temperature_x200.jpg?v=1639879650)
+
+For long term operation, the camera may get hot (MAX Temp 70C). This is normal and not a cause for concern. The processor has an auto thermal shut off if it does exceed normal operating temperatures. If you
+are designing a custom mount, it can not be manufactured with Polylactic acid (PLA) plastic as the heat
+from the camera will cause the plastic to weaken. Acrylonitrile butadiene styrene (ABS) is recommended
+instead.
+
+### Sensor Affected by Incident Light
+![HDCam Sensor Incident Light](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_Incident_Light_x200.jpg?v=1639879650)
+
+The Sony IMX323 sensor used in this camera is chosen for its smaller footprint while still providing great
+image quality. Typically, CMOS sensors contain a ceramic plate on the back to prevent incident light from
+entering through the back of the sensor causing an X-ray effect. The IMX323 sensor does not have a
+ceramic plate and is therefore susceptible to indent light from the back of the camera affecting image quality. This can easily be avoided by using our included camera holder or using black electrical tape to cover
+the back of the camera PCB.
+### Lens Focusing
+![HDCam Lens Holder](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_Lens_Holder_x200.jpg?v=1639879650)
+
+In order to ensure the sharpest image from your camera, the distance between the sensor and the lens
+must be set correctly. Before the camera leaves our facility, the focus is set manually and a screw is placed
+on the side of the lens holder to lock the distance. Sometimes, this screw can get loose over time and the
+camera looses proper focus. You can adjust this manually by taking the screw off and twisting the lens
+until the image is clear when viewing a far away distance on a computer.
+
+## Image Samples
+![HDCam Image 1](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_Image_1.jpg?v=1639880736)
+
+![HDCam Image 2](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_Image_2.jpg?v=1639880736)
+
+![HDCam Image 3](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_Image_3.jpg?v=1639880736)
+
 
 ## Mount Installation
 
 ```{note} In order to enable the mounting of this camera, two screw holes are located on the base of the camera holder bracket. These 20mm apart M3 counter-bores should allow for the attaching of the camera to any surface, provided two M3 threads or nuts 20mm apart may be made or placed on the surface.
 ```
 ### Step 1
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_Step_1_x150.jpg?v=1639879650)
 
-...
+To begin the process of installing the HD USB Camera, ensure you have the
+parts detailed in the contents section of this manual as well as a 2mm hex
+Allen wrench or screwdriver(not included).
 
 ### Step 2
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_Step_2_x150.jpg?v=1639879650)
 
-...
-
+Tap or drill a hole for where you want to mount the camera, and attach the
+camera holder bracket to the surface using the longer M3 screws.
 ### Step 3
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_Step_3_x150.jpg?v=1639879650)
 
-..
-
+After the securing of the camera holder bracket, place the square nuts within
+the square indentation located on the bottom of the camera holder, and align
+the holes of the camera holder with the lateral holes of the camera bracket
+holder.
 ### Step 4
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_Step_4_x150.jpg?v=1639879650)
 
-...
-
+Begin screwing in both remaining screws on each side of the camera bracket
+holder, and properly position the camera to the point of view you require for
+your uses, and finish screwing in the screws.
 ### Step 5
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_Step_5_x150.jpg?v=1639879650)
 
-...
-
-## Connecting to Windows OS
-
-...
-
+Connect the provided USB cable to the camera using the USB connector
+located at the top of the camera holder.
 ## Streaming Via Linux
 
-link: https://github.com/DeepwaterExploration/ExploreHD
+```{note} Please install gstreamer following this guide [https://gstreamer.freedesktop.org/documentation/installing/on-linux.html?gi-language=c](https://gstreamer.freedesktop.org/documentation/installing/on-linux.html?gi-language=c)
+```
+[https://github.com/DeepwaterExploration/ExploreHD](https://github.com/DeepwaterExploration/ExploreHD)
 
-...
+### Setting up the Controls
+
+[https://github.com/DeepwaterExploration/exploreHD_Controls](https://github.com/DeepwaterExploration/exploreHD_Controls)
+
+
+## ArduSub Companion/Custom H.264 Settings
+
+```{important} **As of November 20, 2021, all exploreHD shipped will feature a new firmware that allows the cameras to be plug and play with ArduSub Companion without the need for drivers.**
+
+Any cameras shipped beforehand will need the update performed which can be found [here](https://docs.exploredeepwater.com/software/firmware.html).
+```
+
+
+**The instructions below are for customers who may want more control over H264 compression
+and other settings on the camera**
+
+In order to have full access to H264 controls when streaming via linux, you will need to install our driver.
+
+[https://github.com/DeepwaterExploration/exploreHD_Controls/tree/main/explorehd_camera_controls](https://github.com/DeepwaterExploration/exploreHD_Controls/tree/main/explorehd_camera_controls)
+
+To install the driver, you will need to compile it after having the explorehd_camera_controls on your computer.
+
+`cd explorehd_camera_controls`
+
+`cp Makefile.x86 Makefile`
+
+`make`
+
+### Basic H.264 Controls ###
+
+**`--xuset-br` sets the bitrate of the H264 compression**
+
+Our default settings it set to a generous
+15Mb/s which would provide you with decent video quality while lowering file size.
+
+**`--xuset-gop` sets the GOP settings of the H264 compression**
+
+Since the Raspberry Pi is limiting in its processing, the default is 0.
+
+**`--xuset-cvm` sets the type of bit rate compression for H.264**
+
+We found that setting it to VBR (variable bitrate) provides the best quality but you can experiment around.
+
+**For help with more controls:**
+
+`./explorehd_UVC_TestAP -h`
+
+```{note} Any controls that are set onto the camera will be reset when the device restarts either by physically unplugging it or restarting the computer. To save the settings, we suggest running a for loop with an auto start script. We have a sample of one done for ArduSub Companion linked below.
+
+[https://github.com/DeepwaterExploration/exploreHD_Controls/](https://github.com/DeepwaterExploration/exploreHD_Controls/)
+
+```sh
+for DEVICE in $(ls /dev/video*); do
+	.$HOME/companion/scripts/explorehd_camera_controls/explorehd_UVC_TestAP 
+    --xuset-br 1500000 --xuset-gop 0 --xuset-cvm 2 $DEVICE
+done
+```
+
+
 
