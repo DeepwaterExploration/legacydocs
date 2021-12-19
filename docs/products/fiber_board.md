@@ -87,3 +87,5 @@ Common SFP Transceivers are also compatible with our board. They will require 2 
 
 * [LINDEN SPE 7055 High Strength Buoyant 450](http://www.lindenphotonics.com/documents/Linden%20-%20Catalog%202017.pdf)
 * [Delta ROV Fiber Optic Tether](http://www.deltarov.com/new/product/tether-1-sm-fiber-optic-1000m/)
+## Technical Drawing
+<iframe src="https://cdn.shopify.com/s/files/1/0575/8785/9626/files/ROV_Fiber_Board.pdf" width="100%" height="500px">

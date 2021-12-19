@@ -177,6 +177,8 @@ for DEVICE in $(ls /dev/video*); do
     --xuset-br 1500000 --xuset-gop 0 --xuset-cvm 2 $DEVICE
 done
 ```
-
+## Technical Drawing
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_Mount_Drawing_299x.jpg?v=1639879650)
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_camera_Drawing_310x.jpg?v=1639879650)
 
 
