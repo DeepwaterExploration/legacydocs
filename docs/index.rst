@@ -24,6 +24,7 @@ DeepWater Exploration Documentation
 
    software/qgroundcontrol
    software/firmware
+   software/pi_setup
 
 Indices and tables
 ==================
