@@ -19,6 +19,8 @@ Our passion for uncompromised image quality for marine robotics is the simple ph
 **Waterproof Depth:** 400 meters 
 
 **Ingress Protection Rating:** IP69K
+
+**Cable Diameter:** 4mm
 ### Camera Specifications
 **Image Sensor:** SONY IMX323 1/2.9
 
@@ -79,6 +81,13 @@ Tighten the camera into place using the two M2x0.4 screws and the threaded porti
 There may be some give on the rotation of the camera body. To ensure the camera is held in place, ziptie the camera usb cable to the ROV in such a manner that the tension of the cable keeps the camera in place. Ensure to make the zip tie as tight as possible without damaging the cable.
 ## Cable Waterproofing
 ```{note} If the camera is going into an ROV electronic enclosure, you will need to waterproof the wires properly using a cable penetrator. You can either use potted penetrators or WetLink from Blue Robotics.
+
+Recommended Cable Penetrators 
+
+[**Potted Penetrators (M10 thread, for 3-4 mm cable)**](https://bluerobotics.com/store/cables-connectors/penetrators/penetrator-vp/)
+
+[**WetLink Penetrator (WLP-M10-4.5MM-HC (for 4.0 mm cable)**](https://bluerobotics.com/store/cables-connectors/penetrators/wlp-vp/)
+
 ```
 ### Step 1
 ![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_ROV_Camera_Cable_Step_1_200x.jpg?v=1632166193)
