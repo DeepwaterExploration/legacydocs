@@ -99,7 +99,7 @@ Twist the section of wires that are stripped from the black rubber insulation
 ### Step 5
 
 Depending on the cable penetrator you are using, follow the instructions to waterproof the wires
-## USB Soldering
+## USB Connection
 
 ### Step 1
 <b>Before soldering the wires to the provided USB connector, please ensure the following tasks have been completed</b>
@@ -128,6 +128,14 @@ Depending on the cable penetrator you are using, follow the instructions to wate
 ```
 ![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/Soldering_Diagram_500x.jpg?v=1632166193)
 ```{warning} Ensure there are **no solder bridges and DOUBLE CHECK** to make sure the connection is correct. **The camera will get damaged if the polarity is not correct.**
+```
+```{admonition} Other Method of Installation Besides Soldering
+ Although not our favorite method of connecting the exploreHD, if soldering becomes a challenge for you, we suggest using a USB to terminal block instead. This method is not as recommended because it takes up a lot more space in our electronic enclosure but if space isn't an issue, this method will work just fine. 
+
+**Be extra careful to not mix up the polarity of the USB**
+
+[USB Type A to Terminal Block](https://www.amazon.com/dp/B07VV7V7NC/ref=sspa_dk_detail_4?psc=1&pd_rd_i=B07VV7V7NC&pd_rd_w=eTGBR&pf_rd_p=887084a2-5c34-4113-a4f8-b7947847c308&pd_rd_wg=r5Sh6&pf_rd_r=V4YZ0K344EJ0W24PP5P5&pd_rd_r=c00159dd-c2be-46ac-8700-87874fd791f8&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzVU4zMlAwRjkzVlkyJmVuY3J5cHRlZElkPUEwMTc5MjQwM0lYRFNESjlQNFJXWiZlbmNyeXB0ZWRBZElkPUEwOTc1ODgzMzlHV0lQSjRHSVFEVCZ3aWRnZXROYW1lPXNwX2RldGFpbCZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=)
+
 ```
 ### Step 3
 Connect the USB cable to a computer to confirm the camera is working and in the correct orientation.
