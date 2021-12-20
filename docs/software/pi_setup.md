@@ -70,7 +70,37 @@ to the end of the file
 
 ## Step 7: Configure Laptop Ethernet
 
-...
+### Windows
+
+Under Settings/Network & Ethernet, select Ethernet
+
+![Network](../img/network.png)
+
+The following network should be available:
+
+![Ethernet](../img/ethernet.png)
+
+Under Related Settings, select `Change Adapter Options`
+
+![Adapter Options](../img/adapter_options.png)
+
+Find the adapter called `Ethernet` with the subtitle of `Unidentified Network`
+
+![Adapter](../img/adapter.png)
+
+Right click the selected adapter and click `properties`
+
+![Adapter](../img/right-click-adapter.png)
+
+Under properties, locate `Internet Protocol Version 4 (TCP/IPv4)`
+
+![Properties](../img/properties.png)
+
+Now select `Properties` and select the following settings:
+
+![Settings](../img/settings.png)
+
+Click `OK` to apply changes
 
 ## Step 8: SSH into the Pi
 
