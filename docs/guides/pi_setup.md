@@ -254,6 +254,6 @@ To receive the stream on a Windows or Linux laptop or PC run:
 
 `gst-launch-1.0 udpsrc port=5600 ! application/x-rtp ! rtpjitterbuffer ! rtph264depay ! avdec_h264 ! videoconvert ! autovideosink`
 
-Pipeline to use for receiving stream in OBS (Open Broadcaster Software)
+For more streaming options such as viewing multiple streams at once, please see
 
-`udpsrc port=5600 ! application/x-rtp,media=(string)video,clock-rate=(int)90000,encoding-name=(string)H264 ! rtph264depay ! avdec_h264 output-corrupt=false ! videoconvert ! video. `
+[Receiving Multiple Streams Instructions](/guides/ardusub_companion.html#receiving-multiple-streams)
