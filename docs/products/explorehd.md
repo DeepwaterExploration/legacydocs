@@ -152,11 +152,9 @@ Connect the USB cable to a computer to confirm the camera is working and in the 
 ![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_ROV_Camera_App_Driver_500x.jpg?v=1632166193)
 
 An image should be displayed using the built-in camera app on your computer. The device name should be exploreHD USB Camera
-## Streaming Via Linux
+## Streaming From a Raspberry Pi
 
-```{note} Please install gstreamer following this guide [https://gstreamer.freedesktop.org/documentation/installing/on-linux.html?gi-language=c](https://gstreamer.freedesktop.org/documentation/installing/on-linux.html?gi-language=c)
-```
-[https://github.com/DeepwaterExploration/ExploreHD](https://github.com/DeepwaterExploration/ExploreHD)
+Follow the [Raspberry Pi Streaming Guide](../guides/pi_setup)
 
 ### Setting up the Controls
 

@@ -24,7 +24,12 @@ DeepWater Exploration Documentation
 
    software/qgroundcontrol
    software/firmware
-   software/pi_setup
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Guides
+
+   guides/pi_setup
 
 Indices and tables
 ==================

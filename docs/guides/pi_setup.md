@@ -1,6 +1,6 @@
-# Setting up Streaming from a Raspberry Pi
+# Raspberry Pi Streaming Setup
 
-```{note} The following instructions are for if you want to setup streaming from a Raspberry Pi without ArduSub.
+```{note} The following instructions are for if you want to setup streaming from a Raspberry Pi without ArduSub. If you want plug-and-play compatibility we recommend following [this guide](https://www.ardusub.com/quick-start/installing-companion.html) to install ArduSub companion.
 ```
 
 ## Step 1: Flashing the Raspberry Pi
@@ -36,7 +36,7 @@ interface eth0
 static ip_address=192.168.2.2/24
 ```
 to the end of the file
-* Save and close the file with ctrl-o, enter, and then ctrl-x
+* Save and close the file with `ctrl-o`, `enter`, and then `ctrl-x`
 
 ## Step 5: Connect to a Laptop
 
@@ -45,28 +45,28 @@ to the end of the file
 
 ### Enabling SSH
 
-* Run `sudo raspi-config`
+Run `sudo raspi-config`
 
 ![Raspi Config](../img/raspi-config.png)
 
-* Select Interface Options (and press enter)
+Select `Interface Options` and press enter
 
 ![Raspi Config Interface Options](../img/raspi-config2.png)
 
 ```{note} Use the arrow keys to navigate the menu up and down
 ```
 
-* Under Interface Options, Select SSH
+Under `Interface Options`, Select `SSH`
 
 ![Raspi Config SSH](../img/raspi-config3.png)
 
-* Select `yes` and press enter
+Select `yes` and press enter
 
 ![Raspi Enable SSH](../img/raspi-config4.png)
 
 ## Step 6: Reboot the Pi
 
-* Run: `sudo reboot`
+Run: `sudo reboot`
 
 ## Step 7: Configure Laptop Ethernet
 
@@ -76,11 +76,7 @@ Under Settings/Network & Ethernet, select Ethernet
 
 ![Network](../img/network.png)
 
-The following network should be available:
-
-![Ethernet](../img/ethernet.png)
-
-Under Related Settings, select `Change Adapter Options`
+Under Related Settings on the right, select `Change Adapter Options`
 
 ![Adapter Options](../img/adapter_options.png)
 
@@ -88,19 +84,19 @@ Find the adapter called `Ethernet` with the subtitle of `Unidentified Network`
 
 ![Adapter](../img/adapter.png)
 
-Right click the selected adapter and click `properties`
+Right click the adapter and select `Properties`
 
 ![Adapter](../img/right-click-adapter.png)
 
-Under properties, locate `Internet Protocol Version 4 (TCP/IPv4)`
+Locate `Internet Protocol Version 4 (TCP/IPv4)` and select `Properties`
 
 ![Properties](../img/properties.png)
 
-Now select `Properties` and select the following settings:
+Edit the menu to look like the following:
 
 ![Settings](../img/settings.png)
 
-Click `OK` to apply changes
+Click `OK` to apply changes. This should now allow you Pi to identify your Windows device under the correct ip address to stream data to.
 
 ## Step 8: SSH into the Pi
 
