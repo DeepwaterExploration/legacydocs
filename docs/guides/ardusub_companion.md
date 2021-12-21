@@ -8,7 +8,7 @@ If you have multiple exploreHDs and you would like to stream them simultaneously
 
 ![Raspi Enable SSH](../img/CompanionnewexploreHD.jpg)
 
-```{note}When setting up streams, make sure the udp:// is set to 192.168.2.1:560*
+```{note} When setting up the streams, make sure the udp:// is set to 192.168.2.1:560*
 
 Change * to a number for different streams
 ```
