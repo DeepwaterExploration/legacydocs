@@ -31,6 +31,10 @@ DeepWater Exploration Documentation
 
    guides/pi_setup
 
+.. meta::
+   :description: DeepWater Exploration Documentation Site 
+   :keywords: rov, exploreHD, HDCam, Camera
+
 Indices and tables
 ==================
 
