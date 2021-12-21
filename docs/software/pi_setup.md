@@ -205,4 +205,4 @@ to start streaming.
 
 To receive the stream on a Windows or Linux laptop or PC run:
 
-`gst-launch-1.0 -v udpsrc port=5600 ! application/x-rtp, encoding-name=H264,payload=96! rtpjitterbuffer ! rtph264depay ! avdec_h264 ! autovideosink`
+`gst-launch-1.0 udpsrc port=5600 ! application/x-rtp ! rtpjitterbuffer ! rtph264depay ! avdec_h264 ! videoconvert ! autovideosink`
