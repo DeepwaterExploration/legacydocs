@@ -218,6 +218,9 @@ done
 ## ROV Connection Diagram
 
 ![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_ROV_Camera_Connection_1000x.jpg?v=1632166193)
+
+To setup streaming with this setup without ArduSub Companion, please see 
+[Multi-Cam Raspberry Pi Streaming Setup](https://docs.exploredeepwater.com/guides/pi_setup.html)
 ## Technical Drawing
 ![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_Drawing_320x.jpg?v=1639879650)
 ![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_Hinge_Drawing_310x.jpg?v=1639879650)

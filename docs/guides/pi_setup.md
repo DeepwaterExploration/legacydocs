@@ -1,6 +1,10 @@
-# Raspberry Pi Streaming Setup
+# Multi-Cam Raspberry Pi Streaming Setup
+![Multi-Cam Raspberry Pi Setup](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_ROV_Camera_Connection_1000x.jpg?v=1632166193)
 
 ```{note} The following instructions are for if you want to setup streaming from a Raspberry Pi without ArduSub. If you want plug-and-play compatibility we recommend following [this guide](https://www.ardusub.com/quick-start/installing-companion.html) to install ArduSub companion.
+
+
+**These instructions are mostly for MATE ROV teams who wants the ability to stream multiple exploreHDs easily yet retain the ability to use their own flight controller!**
 ```
 
 ## Step 1: Flashing the Raspberry Pi
@@ -187,18 +191,42 @@ Install GStreamer:
 See {doc}`exploreHD <../products/explorehd>` or {doc}`HDCam <../products/hdcam>` getting started guides
 ```
 
-## Step 12: Run GStreamer
+## Step 12: Setting up the stream
 
-### Streaming
+### Finding the device
+`v4l2-ctl --list-devices`
+
+![Device List](../img/PiDeviceLists.jpg)
+
+Look for device: **exploreHD USB Camera: exploreHD**
+```{note}
+In this example, we have 2 exploreHDs connected so it shows up twice. 
+```
+You can ignore `/dev/media*`
+
+The different video numbers in each section represents the different encoding format. Typically the third one on the list is for H264 (in the above example video6 and video2 are H264 formats). Keep those in mind for the next step. The video number won't change as long as the USB device doesn't get unplugged even when you reboot the Pi. 
+```{note}
+If you are unsure the device number you selected is 'H264' format, you can run `v4l2-ctl --list-formats --device *` to find out. (replace * with the device number)
+```
+### Streaming in H264
 
 On the Raspberry Pi, run:
 
-`gst-launch-1.0 -v v4l2src device=/dev/video1 ! video/x-h264, width=1920,height=1080! h264parse ! queue ! rtph264pay config-interval=10 pt=96 ! udpsink host=192.168.2.1 port=5600 sync=false`
+`gst-launch-1.0 -v v4l2src device=/dev/video* ! video/x-h264, width=1920,height=1080! h264parse ! queue ! rtph264pay config-interval=10 pt=96 ! udpsink host=192.168.2.1 port=5600 sync=false`
 
-to start streaming.
+```{note}
+Replace the * in device=/dev/video* with the video device number seen in the previous step.
+```
 
+To stream more than one exploreHD at the same time, you can add an `&` to the code and run another one with the respective video device and port number.
+
+You can make this command auto run to make your ROV camera streaming system!
 ### Receiving
 
 To receive the stream on a Windows or Linux laptop or PC run:
 
 `gst-launch-1.0 udpsrc port=5600 ! application/x-rtp ! rtpjitterbuffer ! rtph264depay ! avdec_h264 ! videoconvert ! autovideosink`
+
+Pipeline to use for receiving stream in OBS (Open Broadcaster Software)
+
+`udpsrc port=5600 ! application/x-rtp,media=(string)video,clock-rate=(int)90000,encoding-name=(string)H264 ! rtph264depay ! avdec_h264 output-corrupt=false ! videoconvert ! video. `
