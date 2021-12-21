@@ -152,20 +152,20 @@ Connect the USB cable to a computer to confirm the camera is working and in the 
 ![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_ROV_Camera_App_Driver_500x.jpg?v=1632166193)
 
 An image should be displayed using the built-in camera app on your computer. The device name should be exploreHD USB Camera
-## Streaming From a Raspberry Pi
+## Streaming From Raspberry Pi
 
-Follow the [Raspberry Pi Streaming Guide](../guides/pi_setup)
+If you want to run your own custom streaming setup on the Raspberry Pi, we have the perfect documentation for you! 
 
-### Setting up the Controls
+This is perfect for MATE ROV teams who want to use the RPi to stream but don't want to be limited to PixHawk Controller from ArduSub Companion. It's also a great way to learn and customize your code for your specific setup!
 
-[https://github.com/DeepwaterExploration/exploreHD_Controls](https://github.com/DeepwaterExploration/exploreHD_Controls)
+[Raspberry Pi Streaming Setup for exploreHD Instructions](https://docs.exploredeepwater.com/guides/pi_setup.html)
 
 
 ## ArduSub Companion/Custom H.264 Settings
 
 ```{important} **As of November 20, 2021, all exploreHD shipped will feature a new firmware that allows the cameras to be plug and play with ArduSub Companion without the need for drivers.**
 
-Any cameras shipped beforehand will need the update performed which can be found [here](https://docs.exploredeepwater.com/software/firmware.html).
+[ArduSub Companion Setup for exploreHD Instructions](https://docs.exploredeepwater.com/guides/ardusub_companion.html)
 ```
 
 

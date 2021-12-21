@@ -129,24 +129,18 @@ your uses, and finish screwing in the screws.
 
 Connect the provided USB cable to the camera using the USB connector
 located at the top of the camera holder.
-## Streaming Via Linux
+## Streaming From Raspberry Pi
 
-```{note} Please install gstreamer following this guide [https://gstreamer.freedesktop.org/documentation/installing/on-linux.html?gi-language=c](https://gstreamer.freedesktop.org/documentation/installing/on-linux.html?gi-language=c)
-```
-[https://github.com/DeepwaterExploration/ExploreHD](https://github.com/DeepwaterExploration/ExploreHD)
+If you want to run your own custom streaming setup on the Raspberry Pi, we have the perfect documentation for you!
 
-### Setting up the Controls
-
-[https://github.com/DeepwaterExploration/exploreHD_Controls](https://github.com/DeepwaterExploration/exploreHD_Controls)
-
+[Click here learn more](https://docs.exploredeepwater.com/guides/pi_setup.html)
 
 ## ArduSub Companion/Custom H.264 Settings
 
-```{important} **As of November 20, 2021, all HDCams shipped will feature a new firmware that allows the cameras to be plug and play with ArduSub Companion without the need for drivers.**
+```{important} **As of November 20, 2021, all exploreHD shipped will feature a new firmware that allows the cameras to be plug and play with ArduSub Companion without the need for drivers.**
 
-Any cameras shipped beforehand will need the update performed which can be found [here](https://docs.exploredeepwater.com/software/firmware.html).
+[ArduSub Companion Setup for exploreHD Instructions](https://docs.exploredeepwater.com/guides/ardusub_companion.html)
 ```
-
 
 **The instructions below are for customers who may want more control over H264 compression
 and other settings on the camera**
