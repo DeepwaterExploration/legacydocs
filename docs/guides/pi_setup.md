@@ -160,8 +160,35 @@ Downloads:
 
 **64-bit:**
 * [gstreamer-1.0-msvc-x86_64-1.18.1.msi](https://gstreamer.freedesktop.org/data/pkg/windows/1.18.1/msvc/gstreamer-1.0-msvc-x86_64-1.18.1.msi)
+```{important} Gstreamer would automatically install in the D drive if you have more than one drive on your PC. You can change it to the C drive when you do custom installation. 
+
+If you install it on the D drive, just keep note of that when you set up your environment variables below.
+```
 
 **If in doubt of which install to use, download the 64-bit version as this is more common.**
+
+```{important}
+**Make sure you update the PATH in Environment Variable after installing it on Windows.**
+
+To do so, first find Environment Variables in the Start Menu by searching for it. Click on `Edit environment variables for your account`.
+
+![Greeting](../img/gstreamer1.jpg)
+
+Highlight the variable `Path` by clicking on it and then click 'Edit...'
+
+A new window should pop up and you want to click on `New` and add a path to your bin folder to the list. In this case, it's `C:\gstreamer\1.0\mingw_x86_64\bin` 
+
+![Greeting](../img/gstreamer2.jpg)
+
+After that, click OK on both windows and you should be ready to go!
+
+**To test the enviroment variables setup, open CMD and run `gst-launch-1.0` and you should get the following message**
+
+![Greeting](../img/gstreamer3.jpg)
+
+
+```
+
 
 ### Linux Install
 
