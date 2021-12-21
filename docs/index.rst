@@ -30,6 +30,7 @@ DeepWater Exploration Documentation
    :caption: Guides
 
    guides/pi_setup
+   guides/ardusub_companion
 
 .. meta::
    :description: DeepWater Exploration Documentation Site 
