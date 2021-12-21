@@ -136,14 +136,19 @@ If you want to run your own custom streaming setup on the Raspberry Pi, we have 
 [Click here learn more](https://docs.exploredeepwater.com/guides/pi_setup.html)
 
 ## ArduSub Companion/Custom H.264 Settings
+### ArduSub Companion
+```{important} **As of November 20, 2021, all HDCams shipped will feature a new firmware that allows the cameras to be plug and play with ArduSub Companion without the need for drivers.**
 
-```{important} **As of November 20, 2021, all exploreHD shipped will feature a new firmware that allows the cameras to be plug and play with ArduSub Companion without the need for drivers.**
+If your camera was shipped beforehand or you notice the video stream being sluggish, you may be running an older version.
 
-For more details go to:
-
-[ArduSub Companion Setup for exploreHD Instructions](https://docs.exploredeepwater.com/guides/ardusub_companion.html)
+[Click Here for Instructions on how to Update](https://docs.exploredeepwater.com/software/firmware.html)
 ```
 
+If you want to stream multiple HDCams at once using ArduSub Companion and see potential methods for viewing the multi-stream, check out the link below
+
+[Streaming Multiple exploreHDs with ArduSub Companion Instructions](https://docs.exploredeepwater.com/guides/ardusub_companion.html#streaming-multiple-explorehds-with-ardusub-companion)
+
+### Custom H.264 Settings
 **The instructions below are for customers who may want more control over H264 compression
 and other settings on the camera**
 
