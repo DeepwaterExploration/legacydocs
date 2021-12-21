@@ -139,6 +139,8 @@ If you want to run your own custom streaming setup on the Raspberry Pi, we have 
 
 ```{important} **As of November 20, 2021, all exploreHD shipped will feature a new firmware that allows the cameras to be plug and play with ArduSub Companion without the need for drivers.**
 
+For more details go to:
+
 [ArduSub Companion Setup for exploreHD Instructions](https://docs.exploredeepwater.com/guides/ardusub_companion.html)
 ```
 
