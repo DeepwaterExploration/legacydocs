@@ -6,4 +6,4 @@ If you notice the video stream is very sluggish, your exploreHD/HDCam may be on 
 ```
 If you have multiple exploreHDs and you would like to stream them simultaneously, you can use the new [ArduSub Companion 1.0 BETA](https://docs.bluerobotics.com/ardusub-zola/software/companion/1.0/). 
 
-![Raspi Enable SSH](../img/Companion_exploreHD.jpg)
+![Raspi Enable SSH](../img/CompanionnewexploreHD.jpg)
