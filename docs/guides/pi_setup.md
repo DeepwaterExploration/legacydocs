@@ -1,4 +1,4 @@
-# Multi-Cam Raspberry Pi Streaming Setup
+# Raspberry Pi Streaming Setup for exploreHD
 ![Multi-Cam Raspberry Pi Setup](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_ROV_Camera_Connection_1000x.jpg?v=1632166193)
 
 ```{note} The following instructions are for if you want to setup streaming from a Raspberry Pi without ArduSub. If you want plug-and-play compatibility we recommend following [this guide](https://www.ardusub.com/quick-start/installing-companion.html) to install ArduSub companion.
