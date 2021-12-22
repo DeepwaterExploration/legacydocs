@@ -26,7 +26,7 @@ You can change the port by going into application settings of QGroundControl.
 
 The UDP ports may not overlap, each stream must be set to a different port. If you only have 2 streams, set one of the streams to an unused port.
 
-```{note}You can still use the normal video stream which would allow you to have 4 camera views maximum. This is ideal for 2 monitor setups where you can have the DWEQGroundControl window on one monitor and the Multi-Video Context window on another. You will need 4 unused USB ports on the RPi to stream 4 cameras from it.
+```{note} You can still use the normal video stream which would allow you to have 4 camera views maximum. This is ideal for 2 monitor setups where you can have the DWEQGroundControl window on one monitor and the Multi-Video Context window on another. You will need 4 unused USB ports on the RPi to stream 4 cameras from it.
 ```
 
 ### Recording Video 
