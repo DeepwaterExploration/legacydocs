@@ -257,3 +257,5 @@ To receive the stream on a Windows or Linux laptop or PC run:
 For more streaming options such as viewing multiple streams at once, please see
 
 [Receiving Multiple Streams Instructions](/guides/ardusub_companion.html#receiving-multiple-streams)
+
+![MultiCam exploreHD ROV Setup](../img/gstreamer8.jpg)
