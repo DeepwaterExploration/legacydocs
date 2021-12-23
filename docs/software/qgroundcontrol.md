@@ -2,7 +2,7 @@
 
 [https://github.com/DeepwaterExploration/qgroundcontrol/releases](https://github.com/DeepwaterExploration/qgroundcontrol/releases)
 
-```{note} DWE QGroundControl is no longer in beta
+```{note} DWE QGroundControl is no longer in beta as of December 22nd
 ```
 
 ## Installation
