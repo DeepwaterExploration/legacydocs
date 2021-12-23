@@ -2,6 +2,8 @@
 
 [https://github.com/DeepwaterExploration/qgroundcontrol/releases](https://github.com/DeepwaterExploration/qgroundcontrol/releases)
 
+Latest Release: <https://github.com/DeepwaterExploration/qgroundcontrol/releases/download/v1.0.0-dwe-release/DWEQGroundControl-installer.exe>
+
 ```{note} DWE QGroundControl is no longer in beta as of December 22nd
 ```
 
