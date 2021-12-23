@@ -17,7 +17,10 @@ To install our fork of QGroundControl, download the exe installer here. Then jus
 ### Enabling Windows Defender Firewall Access
 ![DWE QGround Control Installer](../img/qgroundfirewall.jpg)
 
-In order to receive the streams from the port, QGround Control must have access to both private and public networks. Make sure both are enabled for the stream to work.
+In order to receive the streams from the port, QGroundControl must have access to both private and public networks. Make sure both **public and private** are selected for the stream to work.
+
+```{important} If you did not allow QGroundControl to have access to communicate through the network and you are unable to view streams, it is still possible to allow the application through the firewall.
+```
 
 ### Setting Port for Multiple Streams
 ![DWE QGround Control Installer](../img/DweQGroundStream.jpg)
