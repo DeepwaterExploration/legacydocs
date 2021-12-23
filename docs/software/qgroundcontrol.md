@@ -24,7 +24,7 @@ In order to receive the streams from the port, QGroundControl must have access t
 
 ### Setting Ports for Multiple Streams
 ![DWE QGround Control Installer](../img/DweQGroundStream.jpg)
-The ports for the multi-stream viewer automatically sets to 5600, 5601, and 5602. 
+The ports for the multi-stream viewer automatically sets to 5600, 5601, and 5602. These are the ports we generally recommend to stream from on the Raspberry Pi.
 
 You can change the ports by going into application settings of QGroundControl.
 ![DWE QGround Control Installer](../img/DweQGroundPorts.jpg)
