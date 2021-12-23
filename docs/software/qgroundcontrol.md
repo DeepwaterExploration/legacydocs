@@ -1,6 +1,6 @@
 # QGroundControl with MultiCam Support
 
-[https://github.com/DeepwaterExploration/qgroundcontrol/releases](https://github.com/DeepwaterExploration/qgroundcontrol/releases)
+Releases Page: [https://github.com/DeepwaterExploration/qgroundcontrol/releases](https://github.com/DeepwaterExploration/qgroundcontrol/releases)
 
 Latest Release: <https://github.com/DeepwaterExploration/qgroundcontrol/releases/download/v1.0.0-dwe-release/DWEQGroundControl-installer.exe>
 
