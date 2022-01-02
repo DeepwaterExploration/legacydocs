@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "name": "autobuild",
+            "request": "launch",
+            "type": "python",
+            "preLaunchTask": "Sphinx autobuild",
+        }
+    ]
+}
