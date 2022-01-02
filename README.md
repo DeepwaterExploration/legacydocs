@@ -12,7 +12,7 @@
 ## Structure
 
 - `docs/index.rst` - index file restructured text
-- `docs/*.md` - myRST markdown files (new ones should be added to the index.rst table of contents)
+- `docs/*.md` - myST markdown files (new ones should be added to the index.rst table of contents)
 - `docs/conf.py` - configuration for the site (should not be changed unless absolutely necessary)
 
 ## Contributing
