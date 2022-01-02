@@ -10,6 +10,8 @@
 
 ![DWE Firmware Updater](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/Capture_d0756e7f-60bc-441c-ae49-c59b0300fb07_540x.jpg?v=1637813977)
 
+[**Download DWEFirmwareUpdater**](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/DWEFirmwareUpdater.zip?v=1637819450)
+
 ## Procedure for Updating exploreHD/HDCam Firmware
 
 *There are some precautions to complete updating successfully. Please read the following instructions carefully.*
@@ -51,7 +53,7 @@ After approximately a minute, the firmware should be updated on the exploreHD!
 
 You may now close the application. You can test the camera using any camera application for Windows. If everything looks good, you are ready to use it on your ROV!
 
-See: [Getting Started](../getting_started/getting_started)
+See: [Getting Started](../products/explorehd)
 
 ## Troubleshooting
 

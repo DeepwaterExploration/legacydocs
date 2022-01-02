@@ -20,17 +20,21 @@ DeepWater Exploration Documentation
 
 .. toctree::
    :maxdepth: 2
-   :caption: Getting Started
-
-   getting_started/getting_started
-
-.. toctree::
-   :maxdepth: 2
    :caption: Software
 
    software/qgroundcontrol
    software/firmware
-   software/ardusub
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Guides
+
+   guides/pi_setup
+   guides/ardusub_companion
+
+.. meta::
+   :description: DeepWater Exploration Documentation Site 
+   :keywords: rov, exploreHD, HDCam, Camera
 
 Indices and tables
 ==================
