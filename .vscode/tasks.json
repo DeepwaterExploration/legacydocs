@@ -4,7 +4,12 @@
         {
             "label": "Sphinx autobuild",
             "command": "cd docs && sphinx-autobuild . build/html",
-            "type": "shell"
+            "type": "shell",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }
