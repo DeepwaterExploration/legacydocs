@@ -4,7 +4,7 @@
 
 ## Developing
 
-The MyST-Markdown vscode extension is recommended for development
+The MyST-Markdown vscode extension is recommended for development.
 
 1. Clone the project: `git clone https://github.com/DeepwaterExploration/DeepwaterExplorationDocs.git`
 2. cd to the docs directory: `cd DeepwaterExplorationDocs/docs`
