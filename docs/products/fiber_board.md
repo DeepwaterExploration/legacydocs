@@ -19,7 +19,7 @@ Unlike many other fiber converters, this is designed to be as space efficient as
 ## Technical Specifications
 **Input Voltage:** 3.5V - 18V DC (Recommended 5V)
 
-**Input Connector:** 5.5 x 2.5 mm Power Jack or 2.54 mm Pitch Jumper wires
+**Input Connector:** 5.5 x 2.5mm Power Jack or 2.54mm Pitch Jumper wires
 
 **Wattage:** Less than 1 watt
 
