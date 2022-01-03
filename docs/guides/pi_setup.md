@@ -1,15 +1,15 @@
 # Raspberry Pi Streaming Setup for exploreHD
 ![Multi-Cam Raspberry Pi Setup](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_ROV_Camera_Connection_1000x.jpg?v=1632166193)
 
-```{note} The following instructions are for if you want to setup streaming from a Raspberry Pi without ArduSub. If you want plug-and-play compatibility we recommend following [this guide](https://www.ardusub.com/quick-start/installing-companion.html) to install ArduSub companion.
+```{note} The following instructions are for if you want to set up streaming from a Raspberry Pi without ArduSub. If you want plug-and-play compatibility we recommend following [this guide](https://www.ardusub.com/quick-start/installing-companion.html) to install ArduSub companion.
 
 
-**These instructions are mostly for MATE ROV teams who wants the ability to stream multiple exploreHDs easily yet retain the ability to use their own flight controller!**
+**These instructions are mostly for MATE ROV teams who want the ability to stream multiple exploreHDs easily, yet retain the ability to use their own flight controller!**
 ```
 
 ## Step 1: Flashing the Raspberry Pi
 
-* Download and open the [Raspberry Pi Imager](https://www.raspberrypi.com/software/) from the official Raspberry Pi website
+* Download and run the [Raspberry Pi Imager](https://www.raspberrypi.com/software/) from the official Raspberry Pi website
 * If you haven't already, insert the SD card into your computer
 * Select Raspberry Pi OS (32-bit) for the Operating System and the SD card you inserted as the SD card.
 * Select `Write` to begin flashing the Operating System to the SD card
@@ -20,12 +20,12 @@
 * Connect a USB keyboard and mouse to the Pi
 * Power the Pi using a micro usb or usb c power adapter depending on the version of Raspberry Pi you are using
 
-```{important} Ensure you power the Pi after plugging the monitor in to the Pi **and wall power**, otherwise the Pi will not recognize the display and you will have to power cycle the device.
+```{important} Ensure you power the Pi after plugging the monitor into the Pi **and wall power**, otherwise, the Pi will not recognize the display and you will have to power cycle the device.
 ```
 
 ## Step 3: Perform the Initial Setup
 
-* Setup the Pi with the GUI provided on start
+* Setup the Pi with the GUI provided at start
 * Ensure WiFi is connected as soon as possible
 
 ```{warning} Make sure you select the **US Keyboard layout** or some keys will not be recognized properly.
@@ -88,7 +88,7 @@ Find the adapter called `Ethernet` with the subtitle of `Unidentified Network`
 
 ![Adapter](../img/adapter.png)
 
-Right click the adapter and select `Properties`
+Right-click the adapter and select `Properties`
 
 ![Adapter](../img/right-click-adapter.png)
 
@@ -120,19 +120,19 @@ For Windows, we recommend using Putty which can be downloaded from [here](https:
 
 ![Security Alert](../img/putty3.png)
 
-* To login use the following credentials: username: `pi`, password: `raspberry`
+* To log in, use the following credentials: username: `pi`, password: `raspberry`
 
-![Login](../img/putty4.png)
+![Log in](../img/putty4.png)
 ![Password](../img/putty5.png)
 
 * You should be greeted with the following:
 
 ![Greeting](../img/putty6.png)
 
-With Linux, you can use the builtin ssh client in terminal by running:
+With Linux, you can use the built-in ssh client in the terminal by running:
 `ssh pi@192.168.2.2` with the same password as Windows (`raspberry`)
 
-```{note} At this point you can disconnect the USB keyboard, mouse, and monitor from the Raspberry Pi.
+```{note} At this point, you can disconnect the USB keyboard, mouse, and monitor from the Raspberry Pi.
 ```
 
 ## Step 9: Update the Pi
@@ -151,7 +151,7 @@ sudo apt dist-upgrade
 
 ### Windows Install
 
-Download the gstreamer framework from here: [http://gstreamer.freedesktop.org/data/pkg/windows](http://gstreamer.freedesktop.org/data/pkg/windows). **Recommended version is 1.18.1**.
+Download the gstreamer framework from here: [http://gstreamer.freedesktop.org/data/pkg/windows](http://gstreamer.freedesktop.org/data/pkg/windows). **The recommended version is 1.18.1**.
 
 Downloads:
 
@@ -182,7 +182,7 @@ A new window should pop up and you want to click on `New` and add a path to your
 
 After that, click OK on both windows and you should be ready to go!
 
-**To test the enviroment variables setup, open CMD and run `gst-launch-1.0` and you should get the following message**
+**To test the environment variables setup, open CMD and run `gst-launch-1.0` and you should get the following message**
 
 ![Greeting](../img/gstreamer3.jpg)
 
@@ -231,7 +231,7 @@ In this example, we have 2 exploreHDs connected so it shows up twice.
 ```
 You can ignore `/dev/media*`
 
-The different video numbers in each section represents the different encoding format. Typically the third one on the list is for H264 (in the above example video6 and video2 are H264 formats). Keep those in mind for the next step. The video number won't change as long as the USB device doesn't get unplugged even when you reboot the Pi. 
+The different video numbers in each section represent the different encoding format. Typically the third one on the list is for H264 (in the above example video6 and video2 are H264 formats). Keep those in mind for the next step. The video number won't change as long as the USB device doesn't get unplugged even when you reboot the Pi. 
 ```{note}
 If you are unsure the device number you selected is 'H264' format, you can run `v4l2-ctl --list-formats --device *` to find out. (replace * with the device number)
 ```
@@ -247,7 +247,7 @@ Replace the * in device=/dev/video* with the video device number seen in the pre
 
 To stream more than one exploreHD at the same time, you can add an `&` to the code and run another one with the respective video device and port number.
 
-You can make this command auto run to make your ROV camera streaming system!
+You can make this command autorun to make your ROV camera streaming system!
 ### Receiving
 
 To receive the stream on a Windows or Linux laptop or PC run:
