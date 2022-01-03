@@ -8,7 +8,7 @@
 ## Introduction
 The HDCam is the bare board of the exploreHD Camera but without the waterproof housing. This camera provides the same excellent image quality as the exploreHD but uses a specialized lens designed to be more suited for above water applications. The camera can output H.264, MPEG, and YUY2 at reduced frame-rates. Due to its low distortion and smooth frame-rate, this camera is ideal for computer vision applications.
 
-```{note} This camera runs the exact same firmware as the exploreHD. The only optical difference between this camera and the exploreHD is the different lens used.
+```{note} This camera runs the same firmware as the exploreHD. The only optical difference between this camera and the exploreHD is the different lens used.
 
 ```
 
@@ -51,7 +51,7 @@ The HDCam is the bare board of the exploreHD Camera but without the waterproof h
 
 Size comparison of the PCB between the ELP's H.264 USB Camera (found in many current ROV systems) and the HDCam. 
 
-HDCam features an advance multilayer PCB and a much more modern image processor which allows our board to be more space efficient than the competition while providing better performance **(see below for comparison)**. 
+HDCam features an advanced multilayer PCB and a much more modern image processor which allows our board to be more space efficient than the competition while providing better performance **(see below for comparison)**. 
 
 ### Image Comparison of HDCam vs ELP (Generic H.264 USB Camera)
 
@@ -62,7 +62,7 @@ HDCam features an advance multilayer PCB and a much more modern image processor 
 ### Temperature
 ![HDCam Temperature](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_Temperature_x200.jpg?)
 
-For long term operation, the camera may get hot (MAX Temp 70C). This is normal and not a cause for concern. The processor has an auto thermal shut off if it does exceed normal operating temperatures. If you
+For long-term operation, the camera may get hot (MAX Temp 70C). This is normal and not a cause for concern. The processor has an auto thermal shut off if it does exceed normal operating temperatures. If you
 are designing a custom mount, it can not be manufactured with Polylactic acid (PLA) plastic as the heat from the camera will cause the plastic to weaken. Acrylonitrile butadiene styrene (ABS) is recommended instead.
 
 ### Sensor Affected by Incident Light
@@ -79,10 +79,10 @@ the back of the camera PCB.
 ```{warning} Pay extra attention to not screw the lens past the sensor element. Doing so will crack the sensor and damage it permanently.
 
 ```
-In order to ensure the sharpest image from your camera, the distance between the sensor and the lens must be set correctly. Before the camera leaves our facility, the focus is set manually and a screw is placed on the side of the lens holder to lock the distance. Sometimes, this screw can get loose over time and the camera looses proper focus. You can adjust this manually by taking the screw off and twisting the lens until the image is clear when viewing a far away distance on a computer.
+To ensure the sharpest image from your camera, the distance between the sensor and the lens must be set correctly. Before the camera leaves our facility, the focus is set manually and a screw is placed on the side of the lens holder to lock the distance. Sometimes, this screw can get loose over time and the camera loses proper focus. You can adjust this manually by taking the screw off and twisting the lens until the image is clear when viewing a far away distance on a computer.
 
 **This will also allow users to use different M12 style lenses with the HDCam.**
-```{note} If you are using a different lens than the one supplied, make sure its compatible with the 1/2.9 sensor size. Using a lens designed for a larger sensor (1/2.8 or larger) will usually work but you will expect a lower FOV than advertised. Additionally, the lens will produce a less sharp image and artifacts such as chromatic aberration will be more noticeable. 
+```{note} If you are using a different lens than the one supplied, make sure it's compatible with the 1/2.9 sensor size. Using a lens designed for a larger sensor (1/2.8 or larger) will usually work but you will expect a lower FOV than advertised. Additionally, the lens will produce a less sharp image and artifacts such as chromatic aberration will be more noticeable. 
 
 Conversely, using a lens designed for a smaller sensor (1/3 or smaller) will increase the FOV but you may notice more vignetting in the image. The lens will produce a sharper image and less chromatic aberration will be observed.
 
@@ -97,7 +97,7 @@ Conversely, using a lens designed for a smaller sensor (1/3 or smaller) will inc
 
 ## Mount Installation
 
-```{note} In order to enable the mounting of this camera, two screw holes are located on the base of the camera holder bracket. These 20mm apart M3 counter-bores should allow for the attaching of the camera to any surface, provided two M3 threads or nuts 20mm apart may be made or placed on the surface.
+```{note} To enable the mounting of this camera, two screw holes are located on the base of the camera holder bracket. These 20mm apart M3 counter-bores should allow for the attaching of the camera to any surface, provided two M3 threads or nuts 20mm apart may be made or placed on the surface.
 ```
 ### Step 1
 ![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_Step_1_x150.jpg?v=1639879650)
@@ -109,7 +109,7 @@ Allen wrench or screwdriver(not included).
 ### Step 2
 ![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_Step_2_x150.jpg?v=1639879650)
 
-Tap or drill a hole for where you want to mount the camera, and attach the
+Tap or drill a hole for where you want to mount the camera and attach the
 camera holder bracket to the surface using the longer M3 screws.
 ### Step 3
 ![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_Step_3_x150.jpg?v=1639879650)
@@ -123,7 +123,7 @@ holder.
 
 Begin screwing in both remaining screws on each side of the camera bracket
 holder, and properly position the camera to the point of view you require for
-your uses, and finish screwing in the screws.
+your uses and finish screwing in the screws.
 ### Step 5
 ![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_Step_5_x150.jpg?v=1639879650)
 
@@ -133,7 +133,7 @@ located at the top of the camera holder.
 
 If you want to run your own custom streaming setup on the Raspberry Pi, we have the perfect documentation for you!
 
-[Click here learn more](https://docs.exploredeepwater.com/guides/pi_setup.html)
+[Click here to learn more](https://docs.exploredeepwater.com/guides/pi_setup.html)
 
 ## ArduSub Companion/Custom H.264 Settings
 ### ArduSub Companion
@@ -152,7 +152,7 @@ If you want to stream multiple HDCams at once using ArduSub Companion and see po
 **The instructions below are for customers who may want more control over H264 compression
 and other settings on the camera**
 
-In order to have full access to H264 controls when streaming via linux, you will need to install our driver.
+In order to have full access to H264 controls when streaming via Linux, you will need to install our driver.
 
 [https://github.com/DeepwaterExploration/exploreHD_Controls/tree/main/explorehd_camera_controls](https://github.com/DeepwaterExploration/exploreHD_Controls/tree/main/explorehd_camera_controls)
 

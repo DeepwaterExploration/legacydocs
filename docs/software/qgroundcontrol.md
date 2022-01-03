@@ -35,11 +35,11 @@ The UDP ports may not overlap, each stream must be set to a different port. If y
 ```
 
 ### Recording Video 
-Recording video on our multi stream app will automatically generate a folder with 3 videos inside, representing each of the video streams. The resolution and framerate will be the same as set by the streamer (ArduSub WebUI). The Recording video settings can be changed in QGroundControl application settings. You can change the Video Decoder even when the source is disabled but to change the file format, you will need to enable a source. You can just select any source and leave the port empty if you are using a 3 camera setup. 
+Recording video on our multi-stream app will automatically generate a folder with 3 videos inside, representing each of the video streams. The resolution and framerate will be the same as set by the streamer (ArduSub WebUI). The Recording video settings can be changed in QGroundControl application settings. You can change the Video Decoder even when the source is disabled but to change the file format, you will need to enable a source. You can just select any source and leave the port empty if you are using a 3 camera setup. 
 
 ![DWE QGround Control Installer](../img/DweQGroundRecording.jpg)
 
-The red record button on the top left of the screen will start the recording. A timer will show for the time its been recording for. The videos will be saved to the directory set in Application Settings.
+The red record button on the top left of the screen will start the recording. A timer will show for the time has been recording for. The videos will be saved to the directory set in Application Settings.
 
 ![DWE QGround Control Installer](../img/DweQGroundFolder.jpg)
 
@@ -48,4 +48,4 @@ In that folder, you will see another folder `Video`. Inside, there will be folde
 ![DWE QGround Control Installer](../img/DweQGroundFolderSaved.jpg)
 
 ## Known Limitations
-As of right now, telemetry data is not displayed on the Multi Stream window. If you are using a single monitor, you will need to readjust the positioning of both windows so you get a good view of the cameras and telemetry data. 
+As of right now, telemetry data is not displayed on the Multi-Stream window. If you are using a single monitor, you will need to readjust the positioning of both windows so you get a good view of the cameras and telemetry data. 
