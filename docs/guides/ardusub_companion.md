@@ -2,7 +2,7 @@
 ## Streaming with ArduSub Companion
 ```{note} **As of November 20, 2021, all exploreHD/HDCam shipped will feature a new firmware that allows the cameras to be plug and play with ArduSub Companion without the need for drivers.**
 
-If you notice the video stream is very sluggish, your exploreHD/HDCam may be on an outdated firmware. Click [here](https://docs.exploredeepwater.com/software/firmware.html) to update the firmware.
+If you notice the video stream is very sluggish, your exploreHD/HDCam may be running outdated firmware. Click [here](https://docs.exploredeepwater.com/software/firmware.html) to update the firmware.
 ```
 
 ## Streaming Multiple exploreHDs with ArduSub Companion
@@ -18,21 +18,21 @@ Change * to a number for different streams
 ## Receiving Multiple Streams
 While there are multiple ways of viewing multiple streams, we will go over the simplest and most reliable methods in this documentation.
 
-### QGround Control
-We are currently working on a modified version of QGround Control that can allow up to 3 cameras to be streamed at once. This is perfect if you are using ArduSub Companion.
+### QGroundControl
+We are have developed a modified version of QGroundControl that can allow up to 3 cameras to be streamed at once. This is perfect if you are using ArduSub Companion.
 
-To learn more, see our [modified version of QGround Control](https://docs.exploredeepwater.com/software/qgroundcontrol.html). 
+To learn more, see our [modified version of QGroundControl](https://docs.exploredeepwater.com/software/qgroundcontrol.html). 
 
 ### OBS (Open Broadcaster Software)
-To view the multiple stream in OBS, you will need to install OBS, Gstreamer, and the OBS gstreamer plugin on your PC.
+To view the multiple streams in OBS, you will need to install OBS, GStreamer, and the OBS GStreamer plugin on your PC.
 
 **Installing OBS**
 
 [Click here to download the latest version of OBS](https://obsproject.com/download)
 
-**Installing Gstreamer**
+**Installing GStreamer**
 
-To install Gstreamer on Windows, check out the link below.
+To install GStreamer on Windows, check out the link below.
 
 [Install GStreamer for Windows Instructions](/guides/pi_setup.html#step-10-install-gstreamer)
 
@@ -52,7 +52,7 @@ After opening OBS, you want to add a GStreamer Source.
 
 ![Raspi Enable SSH](../img/gstreamer4.jpg)
 
-You should be promoted with a window like this
+You should be prompted with a window like this
 
 ![Raspi Enable SSH](../img/gstreamer5.jpg)
 
@@ -60,11 +60,11 @@ In the pipeline, use,
 
 `udpsrc port=5600 ! application/x-rtp,media=(string)video,clock-rate=(int)90000,encoding-name=(string)H264 ! rtph264depay ! avdec_h264 output-corrupt=false ! videoconvert ! video. `
 
-You will be promoted with the following window. Please enable OBS for both private and public networks.
+You will be prompted with the following window. Please enable OBS for both private and public networks.
 
 ![Raspi Enable SSH](../img/gstreamer6.jpg)
 
-After that you should see a video stream! If you don't, make sure your port number is correct on both the receiving and streaming end.
+After that, you should see a video stream! If you don't, make sure your port number is correct on both the receiving and streaming ends.
 
 **To View Multiple Streams**
 
