@@ -11,7 +11,7 @@
 ```{important} Please update your firmware if you were shipped an exploreHD before 11/20/2021
 ```
 ## Introduction
-Our passion for uncompromised image quality for marine robotics is the simple philosophy behind the exploreHD Underwater USB Camera. This UVC compliant camera is the first of its kind to feature a high definition USB output while achieving a waterproof rating of IP69K. With the use of a modern Sony sensor, this camera will be able to see in low light conditions like never before. Thanks to advanced automated exposure and white balance adjustments, this camera produces accurate colors and a pleasing natural image. With H.264 compression technology, up to 4 cameras can be connected at once and streamed via ethernet without major quality loss or latency. This makes our camera the perfect choice for advanced multi-cam ROV/AUV setup.
+Our passion for uncompromised image quality for marine robotics is the simple philosophy behind the exploreHD Underwater USB Camera. This UVC compliant camera is the first of its kind to feature a high definition USB output while achieving a waterproof rating of IP69K. With the use of a modern Sony sensor, this camera will be able to see in low light conditions like never before. Thanks to advanced automated exposure and white balance adjustments, this camera produces accurate colors and a pleasing natural image. With H.264 compression technology, up to 4 cameras can be connected at once and streamed via ethernet without major quality loss or latency. This makes our camera the perfect choice for advanced multi-cam ROV/AUV setups.
 
 ## Technical Specifications
 
@@ -56,18 +56,18 @@ Color remains accurate even in low light situations
 
 ### Comparison of Color Accuracy with GoPro
 
-Left Image is from exploreHD and the right is from a GoPro Hero
+The left Image is from exploreHD and the right is from a GoPro Hero
 ![exploreHD](../img/explorehd/GoPro_vs_exploreHD.jpg)
 
 ## Operating Notes
 
 ### Lens Field of View in Air vs Water
 
-This lens has a fish eye effect which is more noticeable in air then in water due to the changes with light as it passes through different optical mediums. We took into account this factor and picked a lens that has a very wide field of view in air so that when the lens is in water, it can compensate for the lowered field of view. You may also notice a bit of vignetting when above water from the lens cap that will disappear in the water.
+This lens has a fisheye effect which is more noticeable in the air than in the water due to the changes with light as it passes through different optical mediums. We took into account this factor and picked a lens that has a very wide field of view in the air so that when the lens is in the water, it can compensate for the lowered field of view. You may also notice a bit of vignetting when above water from the lens cap that will disappear in the water.
 
 ### TrueColor Technology
 
-The camera offers TrueColor Technology which compensates for the blue/greenish tint in water using advance AI white balance technology that we developed. However, in order to reduce the bluish/greenish tint, the camera has to compensate by adding more red/magenta. This means that in some images, the shadows may appear more red or magenta color. If you do not like this effect, you can turn off auto white balance in the exploreHD camera preferences.
+The camera offers TrueColor Technology which compensates for the blue/greenish tint in water using advanced AI white balance technology that we developed. However, to reduce the bluish/greenish tint, the camera has to compensate by adding more red/magenta. This means that in some images, the shadows may appear more red or magenta color. If you do not like this effect, you can turn off *auto white balance* in the exploreHD camera preferences.
 
 ![exploreHD True Color Technology](../img/explorehd/truecolor/1_c13a6d81-411d-4aeb-abea-f22e27f8e5be.jpg)
 
@@ -83,7 +83,7 @@ The camera offers TrueColor Technology which compensates for the blue/greenish t
 
 ![exploreHD](../img/explorehd/camera_mounting/exploreHD_ROV_Camera_Mounting_Step_1_390x.jpg)
 
-Drill two holes, 30mm apart into your frame where you want the camera to reside. If using a thread-able material, tap an M3x0.5 thread. If using a non-thread-able material, ensure there is space for a M3x0.5 nut on the other side.
+Drill two holes, 30mm apart into your frame where you want the camera to reside. If using a thread-able material, tap an M3x0.5 thread. If using a non-thread-able material, ensure there is space for an M3x0.5 nut on the other side.
 
 ### Step 2
 
@@ -103,7 +103,7 @@ Tighten the camera into place using the two M2x0.4 screws and the threaded porti
 
 ![exploreHD](../img/explorehd/camera_mounting/exploreHD_ROV_Camera_Mounting_Step_4_390x.jpg)
 
-There may be some give on the rotation of the camera body. To ensure the camera is held in place, ziptie the camera usb cable to the ROV in such a manner that the tension of the cable keeps the camera in place. Ensure to make the zip tie as tight as possible without damaging the cable.
+There may be some give on the rotation of the camera body. To ensure the camera is held in place, zip tie the camera usb cable to the ROV in such a manner that the tension of the cable keeps the camera in place. Ensure to make the zip tie as tight as possible without damaging the cable.
 
 ## Cable Waterproofing
 
@@ -214,7 +214,7 @@ This is perfect for MATE ROV teams who want to use the RPi to stream but don't w
 
 If your camera was shipped beforehand or you notice the video stream being sluggish, you may be running an older version.
 
-[Click Here for Instructions on how to Update](https://docs.exploredeepwater.com/software/firmware.html)
+[Click Here for instructions on how to update](https://docs.exploredeepwater.com/software/firmware.html)
 ```
 
 If you want to stream multiple exploreHDs at once using ArduSub Companion and see potential methods for viewing the multi-stream, check out the link below
@@ -226,7 +226,7 @@ If you want to stream multiple exploreHDs at once using ArduSub Companion and se
 **The instructions below are for customers who may want more control over H264 compression
 and other settings on the camera**
 
-In order to have full access to H264 controls when streaming via linux, you will need to install our driver.
+In order to have full access to H264 controls when streaming via Linux, you will need to install our driver.
 
 [https://github.com/DeepwaterExploration/exploreHD_Controls/tree/main/explorehd_camera_controls](https://github.com/DeepwaterExploration/exploreHD_Controls/tree/main/explorehd_camera_controls)
 
@@ -257,7 +257,7 @@ We found that setting it to VBR (variable bitrate) provides the best quality but
 
 `./explorehd_UVC_TestAP -h`
 
-```{note} Any controls that are set onto the camera will be reset when the device restarts either by physically unplugging it or restarting the computer. To save the settings, we suggest running a for loop with an auto start script. We have a sample of one done for ArduSub Companion linked below.
+```{note} Any controls that are set onto the camera will be reset when the device restarts either by physically unplugging it or restarting the computer. To save the settings, we suggest running a for loop with an auto-start script. We have a sample of one done for ArduSub Companion linked below.
 
 [https://github.com/DeepwaterExploration/exploreHD_Controls/](https://github.com/DeepwaterExploration/exploreHD_Controls/)
 
