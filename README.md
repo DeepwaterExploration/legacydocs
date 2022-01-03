@@ -1,6 +1,6 @@
 # DeepWater Exploration Documentation Site
 
-[https://docs.exploredeepwater.com](https://docs.exploredeepwater.com)
+[DWE Documentation Site](https://docs.exploredeepwater.com)
 
 ## Developing
 
