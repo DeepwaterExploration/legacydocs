@@ -35,10 +35,3 @@ DeepWater Exploration Documentation
 .. meta::
    :description: DeepWater Exploration Documentation Site 
    :keywords: rov, exploreHD, HDCam, Camera
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
