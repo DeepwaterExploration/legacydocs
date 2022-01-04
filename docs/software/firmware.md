@@ -8,7 +8,7 @@
 ```{warning} This application is still in BETA. Please read all instructions before proceeding.
 ```
 
-![DWE Firmware Updater](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/Capture_d0756e7f-60bc-441c-ae49-c59b0300fb07_540x.jpg?v=1637813977)
+![DWE Firmware Updater](../img/firmware_update/Firmware_Updater.png)
 
 [**Download DWEFirmwareUpdater**](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/DWEFirmwareUpdater.zip?v=1637819450)
 
@@ -26,7 +26,7 @@ Extract the zip file containing the folder with the program.
 
 Plug in **one** exploreHD camera.
 
-![Extract the Zip File](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/Capture_646c0b2d-fc5d-4bfb-a015-f23fdb4a7048_540x.jpg?v=1637819719)
+![Extract the Zip File](../img/firmware_update/Firmware_Update_Step_1-2.png)
 
 ### Step 3
 
@@ -34,7 +34,7 @@ Plug in **one** exploreHD camera.
 
 Run *DWEFirmwareUpdater.exe*
 
-![DWE Firmware Updater](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/Capture_6e0b1b78-a5e4-4d1f-a3aa-6f5f8f856854_540x.jpg?v=1637814270)
+![DWE Firmware Updater](../img/firmware_update/Firmware_Update_Step_3.png)
 
 ### Step 4
 
@@ -45,7 +45,7 @@ It **is normal** for it to show "Not Responding".
 ```{warning} Do not close the application, unplug the camera, or open any applications that may use the camera until the update is complete.
 ```
 
-![Update Firmware](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/Capture_084008f3-4f38-44e0-88f6-18f0cd5335fe_540x.jpg?v=1637814352)
+![Update Firmware](../img/firmware_update/Firmware_Update_Step_4.png)
 
 ### Step 5
 
