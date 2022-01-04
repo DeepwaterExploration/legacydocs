@@ -1,6 +1,6 @@
 # Fiber Board
 
-[![Fiber Board](https://cdn.shopify.com/s/files/1/0575/8785/9626/products/ROVFiberBoardMainPic_590x.jpg?v=1638213044)](https://exploredeepwater.com/products/ethernet-fiber-converter)
+[![Fiber Board](../img/fiberboard/ROVFiberBoardMainPic_590x.jpg)](https://exploredeepwater.com/products/ethernet-fiber-converter)
 
 [Product Link](https://exploredeepwater.com/products/ethernet-fiber-converter)
 
@@ -13,10 +13,13 @@ Unlike many other fiber converters, this is designed to be as space efficient as
 **Fits in 3" acrylic ROV electronic enclosure!**
 
 ## Advantages of Fiber over Traditional Copper for ROV Use
+
 * Gigabit data transfer with kilometers of tether length (Copper: 100 meters max for Gigabit, 300 meters max for 100Mb/s)
 * Lower Latency (Light transfers much faster)
 * Virtually no risk of interference compared to copper 
+
 ## Technical Specifications
+
 **Input Voltage:** 3.5V - 18V DC (Recommended 5V)
 
 **Input Connector:** 5.5 x 2.5mm Power Jack or 2.54mm Pitch Jumper wires
@@ -35,15 +38,24 @@ Unlike many other fiber converters, this is designed to be as space efficient as
 
 ## Speed Testing
 
-<img width="50%" alt="Speed Test" src="https://lh5.googleusercontent.com/9gnJgrl48jOgrcpfGyYCmH2QDH0TxvaL3niB3Qaa_sXbAKGRTUKMfom-XH_HC6I8iVFJvQ5y2PVZ8Tj64Qi3q3YcKVASEtDbjWmjEItsAiru9jO-Kp955UdbVsCLpVZml0KJ7Ldu"></img>
+```{image} ../img/fiberboard/speed_test.png
+:alt: Speed Test
+:width: 50%
+```
 
 ## Current Testing
 
-<img width="50%" alt="Current Test" src="https://lh3.googleusercontent.com/AHBo-pURvVdEoDWIXezHTL2tgsWtQPQ4N4rsk2aNKWCyBiQuSPThywpGrCEWv2br2tzr0kwKl_2G-p0tAKvH9p3tgW1JJSx1iBl-Zxei5A7FCGK2QPROOAYrxMO4elTIjcvMbJDk"></img>
+```{image} ../img/fiberboard/current_test.png
+:alt: Current Test
+:width: 50%
+```
 
 ## LED Indicators
 
-<img width="100%" alt="LED Indicators" src="https://lh6.googleusercontent.com/xNYV85fOr43yrQSKP6b0H13l5y7_Sg2RvvT-Sv4dXOQvlXPzV5-7iSS-V0e94N7U89uehXjezc8svUktcuRsxQY341lPW5cWOpOCPUCqauLIjvrvCkcGhZPKVwciEbt6HhaeuEm8"></img>
+```{image} ../img/fiberboard/LED_indicators.png
+:alt: LED Indicators
+:width: 100%
+```
 
 <span style="color: #55aaff; font-weight: bold">Blue</span>
 * LED4: Power LED, Lights up when +5V is applied
@@ -58,7 +70,8 @@ Unlike many other fiber converters, this is designed to be as space efficient as
 * 1000M: Gigabit Speed is Used
 
 ## Powering
-![Fiber Board](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/ROV_Fiber_Board_Power_Connector_390x.jpg?v=1638213044)
+
+![Fiber Board](../img/fiberboard/ROV_Fiber_Board_Power_Connector_390x.jpg)
 
 Given its wide input voltage range from 3.5V to 18V, there are multitude of ways to power the board. We recommend staying at 5V as that is a voltage commonly found and would retain high efficiency within the board's power converters.
 
@@ -72,20 +85,25 @@ Power connector will only fit **5.5 x 2.5 MM** power jacks. Power header pins ha
 * 120V AC to 12V/5V Power Supplies
 ```
 
-
 ## Supported SFP Transceivers
+
 ```{important} All SFP optical transceiver  used on the board must be **1.25Gb/s data rate** and designed for **10/100/1000Base-TX/FX**
 ```
 ### BiDi (Bidirectional) SFP Optical Transceiver 
+
 BiDi is recommended over common SFP due to its ability to transmit full-duplex on one strand of fiber by using different wavelengths of light. Our kit on our product listing offers a pair of 2km range BiDi Transceivers with (1550/1310nm wavelength).
 
 [Learn More](https://blog.fluxlight.com/2016/07/16/introduction-to-bidi-optical-transceivers/)
+
 ### Common SFP Optical Transceiver
+
 Common SFP Transceivers are also compatible with our board. They will require 2 strands of fiber for full-duplex communication.
 
 ## Fiber Optic Tethers
 
 * [LINDEN SPE 7055 High Strength Buoyant 450](http://www.lindenphotonics.com/documents/Linden%20-%20Catalog%202017.pdf)
 * [Delta ROV Fiber Optic Tether](http://www.deltarov.com/new/product/tether-1-sm-fiber-optic-1000m/)
+
 ## Technical Drawing
-<iframe src="https://cdn.shopify.com/s/files/1/0575/8785/9626/files/ROV_Fiber_Board.pdf" width="100%" height="500px">
+
+<iframe src="../_static/pdf/ROV_Fiber_Board.pdf" width="100%" height="500px">
