@@ -1,5 +1,6 @@
 # Raspberry Pi Streaming Setup for exploreHD
-![Multi-Cam Raspberry Pi Setup](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_ROV_Camera_Connection_1000x.jpg?v=1632166193)
+
+![Multi-Cam Raspberry Pi Setup](../img/explorehd/exploreHD_ROV_Camera_Connection_1000x.jpg)
 
 ```{note} The following instructions are for if you want to set up streaming from a Raspberry Pi without ArduSub. If you want plug-and-play compatibility we recommend following [this guide](https://www.ardusub.com/quick-start/installing-companion.html) to install ArduSub companion.
 
@@ -51,22 +52,22 @@ to the end of the file
 
 Run `sudo raspi-config`
 
-![Raspi Config](../img/raspi-config.png)
+![Raspi Config](../img/pi_setup/enable_ssh/raspi-config.png)
 
 Select `Interface Options` and press enter
 
-![Raspi Config Interface Options](../img/raspi-config2.png)
+![Raspi Config Interface Options](../img/pi_setup/enable_ssh/raspi-config2.png)
 
 ```{note} Use the arrow keys to navigate the menu up and down
 ```
 
 Under `Interface Options`, Select `SSH`
 
-![Raspi Config SSH](../img/raspi-config3.png)
+![Raspi Config SSH](../img/pi_setup/enable_ssh/raspi-config3.png)
 
 Select `yes` and press enter
 
-![Raspi Enable SSH](../img/raspi-config4.png)
+![Raspi Enable SSH](../img/pi_setup/enable_ssh/raspi-config4.png)
 
 ## Step 6: Reboot the Pi
 
@@ -78,27 +79,27 @@ Run: `sudo reboot`
 
 Under Settings/Network & Ethernet, select Ethernet
 
-![Network](../img/network.png)
+![Network](../img/pi_setup/configure_ethernet/network.png)
 
 Under Related Settings on the right, select `Change Adapter Options`
 
-![Adapter Options](../img/adapter_options.png)
+![Adapter Options](../img/pi_setup/configure_ethernet/adapter_options.png)
 
 Find the adapter called `Ethernet` with the subtitle of `Unidentified Network`
 
-![Adapter](../img/adapter.png)
+![Adapter](../img/pi_setup/configure_ethernet/adapter.png)
 
 Right-click the adapter and select `Properties`
 
-![Adapter](../img/right-click-adapter.png)
+![Adapter](../img/pi_setup/configure_ethernet/right-click-adapter.png)
 
 Locate `Internet Protocol Version 4 (TCP/IPv4)` and select `Properties`
 
-![Properties](../img/properties.png)
+![Properties](../img/pi_setup/configure_ethernet/properties.png)
 
 Edit the menu to look like the following:
 
-![Settings](../img/settings.png)
+![Settings](../img/pi_setup/configure_ethernet/settings.png)
 
 Click `OK` to apply changes. This should now allow you Pi to identify your Windows device under the correct ip address to stream data to.
 
@@ -110,24 +111,24 @@ For Windows, we recommend using Putty which can be downloaded from [here](https:
 
 * After installing, open Putty and type the address of the Raspberry Pi (192.168.2.2)
 
-![Putty](../img/putty.png)
+![Putty](../img/pi_setup/putty/putty.png)
 
 * Keep the other settings as default and click the `Open` button
 
-![Putty Connect](../img/putty2.png)
+![Putty Connect](../img/pi_setup/putty/putty2.png)
 
 * After connecting you will be prompted with a *security alert*. Ensure you select **accept**.
 
-![Security Alert](../img/putty3.png)
+![Security Alert](../img/pi_setup/putty/putty3.png)
 
 * To log in, use the following credentials: username: `pi`, password: `raspberry`
 
-![Log in](../img/putty4.png)
-![Password](../img/putty5.png)
+![Log in](../img/pi_setup/putty/putty4.png)
+![Password](../img/pi_setup/putty/putty5.png)
 
 * You should be greeted with the following:
 
-![Greeting](../img/putty6.png)
+![Greeting](../img/pi_setup/putty/putty6.png)
 
 With Linux, you can use the built-in ssh client in the terminal by running:
 `ssh pi@192.168.2.2` with the same password as Windows (`raspberry`)
@@ -172,19 +173,19 @@ If you install it on the D drive, just keep note of that when you set up your en
 
 To do so, first find Environment Variables in the Start Menu by searching for it. Click on `Edit environment variables for your account`.
 
-![Greeting](../img/gstreamer1.jpg)
+![Greeting](../img/gstreamer/gstreamer1.jpg)
 
 Highlight the variable `Path` by clicking on it and then click 'Edit...'
 
 A new window should pop up and you want to click on `New` and add a path to your bin folder to the list. In this case, it's `C:\gstreamer\1.0\mingw_x86_64\bin` 
 
-![Greeting](../img/gstreamer2.jpg)
+![Greeting](../img/gstreamer/gstreamer2.jpg)
 
 After that, click OK on both windows and you should be ready to go!
 
 **To test the environment variables setup, open CMD and run `gst-launch-1.0` and you should get the following message**
 
-![Greeting](../img/gstreamer3.jpg)
+![Greeting](../img/gstreamer/gstreamer3.jpg)
 
 
 ```
@@ -223,7 +224,7 @@ See {doc}`exploreHD <../products/explorehd>` or {doc}`HDCam <../products/hdcam>`
 ### Finding the device
 `v4l2-ctl --list-devices`
 
-![Device List](../img/PiDeviceLists.jpg)
+![Device List](../img/pi_setup/PiDeviceLists.jpg)
 
 Look for device: **exploreHD USB Camera: exploreHD**
 ```{note}
@@ -258,4 +259,4 @@ For more streaming options such as viewing multiple streams at once, please see
 
 [Receiving Multiple Streams Instructions](/guides/ardusub_companion.html#receiving-multiple-streams)
 
-![MultiCam exploreHD ROV Setup](../img/gstreamer8.jpg)
+![MultiCam exploreHD ROV Setup](../img/pi_setup/gstreamer/gstreamer8.jpg)

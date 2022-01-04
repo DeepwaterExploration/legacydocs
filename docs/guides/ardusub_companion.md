@@ -8,7 +8,7 @@ If you notice the video stream is very sluggish, your exploreHD/HDCam may be run
 ## Streaming Multiple exploreHDs with ArduSub Companion
 If you have multiple exploreHDs and you would like to stream them simultaneously, you can use the new [ArduSub Companion 1.0 BETA](https://docs.bluerobotics.com/ardusub-zola/software/companion/1.0/). 
 
-![ArduSub Companion Multiple Streams](../img/CompanionnewexploreHD.jpg)
+![ArduSub Companion Multiple Streams](../img/ardusub_companion/CompanionnewexploreHD.jpg)
 
 ```{note} When setting up the streams, make sure the udp:// is set to 192.168.2.1:560*
 
@@ -50,11 +50,11 @@ After this, you are done with the initial setup!
 
 After opening OBS, you want to add a GStreamer Source.
 
-![Raspi Enable SSH](../img/gstreamer4.jpg)
+![Raspi Enable SSH](../img/gstreamer/gstreamer4.jpg)
 
 You should be prompted with a window like this
 
-![Raspi Enable SSH](../img/gstreamer5.jpg)
+![Raspi Enable SSH](../img/gstreamer/gstreamer5.jpg)
 
 In the pipeline, use,
 
@@ -62,7 +62,7 @@ In the pipeline, use,
 
 You will be prompted with the following window. Please enable OBS for both private and public networks.
 
-![Raspi Enable SSH](../img/gstreamer6.jpg)
+![Raspi Enable SSH](../img/gstreamer/gstreamer6.jpg)
 
 After that, you should see a video stream! If you don't, make sure your port number is correct on both the receiving and streaming ends.
 
@@ -70,7 +70,7 @@ After that, you should see a video stream! If you don't, make sure your port num
 
 Add another GStreamer Source in the Sources Window
 
-![Raspi Enable SSH](../img/gstreamer7.jpg)
+![Raspi Enable SSH](../img/gstreamer/gstreamer7.jpg)
 
 Use the same pipeline but change the port to what you set your streaming port to. In our example it's `5601`
 
@@ -80,11 +80,11 @@ Another stream should show up on the main window of OBS. Click on the video disp
 
 Below is an example of a setup with viewing 3 exploreHDs at the same time using OBS!
 
-![Raspi Enable SSH](../img/gstreamer8.jpg)
+![Raspi Enable SSH](../img/gstreamer/gstreamer8.jpg)
 
 **Recording/Streaming Settings**
 
-![Raspi Enable SSH](../img/gstreamer9.jpg)
+![Raspi Enable SSH](../img/gstreamer/gstreamer9.jpg)
 
 Given each camera is set to 15Mb/s as the default bitrate, the streaming and recording should match that. In the case of 3 cameras, providing at least 45Mb/s of streaming and recording bitrate should provide you with high quality. 
 
