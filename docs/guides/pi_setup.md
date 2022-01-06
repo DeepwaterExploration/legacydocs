@@ -259,4 +259,4 @@ For more streaming options such as viewing multiple streams at once, please see
 
 [Receiving Multiple Streams Instructions](/guides/ardusub_companion.html#receiving-multiple-streams)
 
-![MultiCam exploreHD ROV Setup](../img/pi_setup/gstreamer/gstreamer8.jpg)
+![MultiCam exploreHD ROV Setup](../img/gstreamer/gstreamer8.jpg)
