@@ -40,7 +40,7 @@ Click on the firmware version that you would like to use.
 ```{warning} Do not close the application, unplug the camera, or open any applications that may use the camera until the update is complete.
 ```
 
-![Update Firmware (old)](../img/firmware_update/Firmware_Update_Step_4.png)
+![Update Firmware](../img/firmware_loader/Firmware_Loader_Step_4.png)
 
 ### Step 5
 
