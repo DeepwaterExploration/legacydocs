@@ -1,4 +1,19 @@
-# DWE Firmware Loader
+# DWE Firmware Updater
+
+```{important} This application is outdated. Please see the documentation for the newer version [here](https://docs.exploredeepwater.com/software/firmware.html).
+```
+
+## 11/20/2021 exploreHD Update
+
+```{note} This update is for cameras shipped before 11/20/2021. Any exploreHD shipped after that date does not need to be updated.
+```
+
+```{warning} This application is still in BETA. Please read all instructions before proceeding.
+```
+
+![DWE Firmware Updater](../img/firmware_update/Firmware_Updater.png)
+
+[**Download DWEFirmwareUpdater**](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/DWEFirmwareUpdater.zip?v=1637819450)
 
 ## Procedure for Updating exploreHD/HDCam Firmware
 
@@ -8,43 +23,36 @@
 
 ---
 
-### Step 1
+### Steps 1 & 2
 
 Extract the zip file containing the folder with the program.
 
-![Extract the Zip File](../img/firmware_loader/Firmware_Loader_Step_1-1.png)
-![Folder Contents](../img/firmware_loader/Firmware_Loader_Step_1-2.png)
-
-### Step 2
-
 Plug in **one** exploreHD camera.
+
+![Extract the Zip File](../img/firmware_update/Firmware_Update_Step_1-2.png)
 
 ### Step 3
 
 **Make sure all applications that use the camera are closed before proceeding.**
 
-Run *DWEFirmwareLoader.exe*
+Run *DWEFirmwareUpdater.exe*
 
-![DWE Firmware Loader](../img/firmware_loader/Firmware_Loader_Step_3.png)
+![DWE Firmware Updater](../img/firmware_update/Firmware_Update_Step_3.png)
 
 ### Step 4
 
-Click on the firmware version that you would like to use.
+Click Update Firmware
 
-* **Higher Quality** provides higher quality video, but uses more bandwidth.
-    * Reccomended for use with a single exploreHD.
-
-* **Lower Bandwidth** uses less bandwidth, but provides lower quality video.
-    * Reccomended for use in a setup with multiple exploreHDs.
+It **is normal** for it to show "Not Responding".
 
 ```{warning} Do not close the application, unplug the camera, or open any applications that may use the camera until the update is complete.
 ```
 
-![Update Firmware (old)](../img/firmware_update/Firmware_Update_Step_4.png)
+![Update Firmware](../img/firmware_update/Firmware_Update_Step_4.png)
 
 ### Step 5
 
-After approximately a minute, the exploreHD should have the new firmware loaded and ready to use!
+After approximately a minute, the firmware should be updated on the exploreHD!
 
 You may now close the application. You can test the camera using any camera application for Windows. If everything looks good, you are ready to use it on your ROV!
 
@@ -56,15 +64,11 @@ If you see any errors during the upgrading process, please follow the guides bel
 
 ### Error: exploreHD not recognized!
 
-![Error Message](../img/firmware_loader/Firmware_Loader_Error_Not_Recognized.png)
-
 1. Ensure the exploreHD is the only camera plugged in
 2. If on a laptop, temporarily disable the built-in webcam by going to Device Manager.
 3. Please ensure you have extracted everything in the zip file. The dll files must be in the same folder directory as the main exe.
 
 ### Error: Unable to load firmware dll!
-
-![Error Message](../img/firmware_loader/Firmware_Loader_Error_No_dll.png)
 
 1. Please ensure you have extracted everything in the zip file. The dll files must be in the same folder directory as the main exe.
 
