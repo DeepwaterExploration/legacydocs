@@ -2,12 +2,6 @@
 
 ## Procedure for Updating exploreHD/HDCam Firmware
 
-*There are some precautions to complete updating successfully. Please read the following instructions carefully.*
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/G4h9EAG88HU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
----
-
 ### Step 1
 
 Extract the zip file containing the folder with the program.
@@ -69,3 +63,11 @@ If you see any errors during the upgrading process, please follow the guides bel
 1. Please ensure you have extracted everything in the zip file. The dll files must be in the same folder directory as the main exe.
 
 
+## Procedure Video
+
+```{warning} This video uses an outdated version of the loader and may not be accurate. Documentation for this version can be found [here](https://docs.exploredeepwater.com/legacy/firmware_legacy.html).
+```
+
+*There are some precautions to complete updating successfully. Please read the following instructions carefully.*
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/G4h9EAG88HU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
