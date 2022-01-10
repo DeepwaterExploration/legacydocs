@@ -1,5 +1,7 @@
 # DWE Firmware Loader
 
+[**Download DWEFirmwareLoader**](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/DWEFirmwareLoader.zip?v=1641797241)
+
 ## Procedure for Updating exploreHD/HDCam Firmware
 
 ### Step 1
