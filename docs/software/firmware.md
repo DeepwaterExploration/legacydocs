@@ -1,5 +1,8 @@
 # DWE Firmware Loader
 
+```{important} This application is a fully customized firmware loading application. Although it provides similar functionality, it is not the same as our previous release which can be found [here](https://docs.exploredeepwater.com/legacy/firmware_legacy.html), known as DWE Firmware Updater.
+```
+
 [**Download DWEFirmwareLoader**](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/DWEFirmwareLoader.zip?v=1641797241)
 
 ## Procedure for Updating exploreHD/HDCam Firmware
@@ -26,6 +29,9 @@ Run *DWEFirmwareLoader.exe*
 ### Step 4
 
 Click on the firmware version that you would like to use.
+
+```{important} For most use cases, we recommend the *Higher Quality* firmware, which is what we ship out with all exploreHD and HDCam modules. If you plan on using more than one camera module at once, or just want a lower latency and lower bandwidth video stream, the *Lower Bandwidth* firmware is recommended. If you have any questions, feel free to ask on [our forums](https://discuss.exploredeepwater.com/).
+```
 
 * **Higher Quality** provides higher quality video, but uses more bandwidth.
     * Reccomended for use with a single exploreHD.
