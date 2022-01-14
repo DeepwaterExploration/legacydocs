@@ -7,6 +7,9 @@ Latest Release: <https://github.com/DeepwaterExploration/qgroundcontrol/releases
 ```{note} DWE QGroundControl is no longer in beta as of December 22nd
 ```
 
+```{important} Make sure you install the [Companion BETA](https://docs.bluerobotics.com/ardusub-zola/software/companion/1.0/) software for plug-and-play multi-camera support with the exploreHD. Additionally, it is recommended to burn the *lower bandwidth firmware* when using more than **two cameras** which is documented [here](firmware).
+```
+
 ## Installation
 
 To install our fork of QGroundControl, download the exe installer here. Then just go through the installer!
