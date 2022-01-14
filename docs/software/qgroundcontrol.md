@@ -55,4 +55,4 @@ As of right now, telemetry data is not displayed on the Multi-Stream window. If 
 
 ## Troubleshooting
 
-For any questions or issues regarding the DWEQGroundControl application please feel free to create a new topic in our [forums](https://discuss.exploredeepwater.com/) (be sure to put it under the QGroundControl category so other people can find the solution) or look for other topics in the [QGroundControl software categories](https://discuss.exploredeepwater.com/c/dwe-software/qgroundcontrol/9).
+For any questions or issues regarding the DWEQGroundControl application, please feel free to create a new topic in our [forums](https://discuss.exploredeepwater.com/) (be sure to put it under the QGroundControl category so other people can find the solution) or look for other topics in the [QGroundControl software categories](https://discuss.exploredeepwater.com/c/dwe-software/qgroundcontrol/9).
