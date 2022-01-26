@@ -72,12 +72,9 @@ Unlike many other fiber converters, this is designed to be as space efficient as
 ## Powering
 
 ![Fiber Board](../img/fiberboard/ROV_Fiber_Board_Power_Connector_390x.jpg)
-```{warning} 
-Make sure to use a 5V supply to power the boards!
-'''
 
-```{important} 
-Power connector will only fit **5.5 x 2.5 MM** power jacks. Power header pins have a pitch of 2.54 MM.
+```{warning} 
+Make sure to use a 5V supply to power the boards! Power connector will only fit **5.5 x 2.5 MM** power jacks. Power header pins have a pitch of 2.54 MM.
 ```
 
 ```{admonition} Recommended Methods for Powering
