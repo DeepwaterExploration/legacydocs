@@ -87,6 +87,10 @@ Make sure to use a 5V supply to power the boards! Power connector will only fit 
 
 ```{important} All SFP optical transceiver  used on the board must be **1.25Gb/s data rate** and designed for **10/100/1000Base-TX/FX**
 ```
+```{warning} SFP transceivers use CLASS 1 laser. Do not look directly at the light emitting device.
+
+```
+
 ### BiDi (Bidirectional) SFP Optical Transceiver 
 
 BiDi is recommended over common SFP due to its ability to transmit full-duplex on one strand of fiber by using different wavelengths of light. Our kit on our product listing offers a pair of 2km range BiDi Transceivers with (1550/1310nm wavelength).
