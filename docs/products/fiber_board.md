@@ -20,7 +20,7 @@ Unlike many other fiber converters, this is designed to be as space efficient as
 
 ## Technical Specifications
 
-**Input Voltage:** 3.5V - 18V DC (Recommended 5V)
+**Input Voltage:** 5V DC
 
 **Input Connector:** 5.5 x 2.5mm Power Jack or 2.54mm Pitch Jumper wires
 
@@ -73,22 +73,24 @@ Unlike many other fiber converters, this is designed to be as space efficient as
 
 ![Fiber Board](../img/fiberboard/ROV_Fiber_Board_Power_Connector_390x.jpg)
 
-Given its wide input voltage range from 3.5V to 18V, there are multitude of ways to power the board. We recommend staying at 5V as that is a voltage commonly found and would retain high efficiency within the board's power converters.
-
-```{important} 
-Power connector will only fit **5.5 x 2.5 MM** power jacks. Power header pins have a pitch of 2.54 MM.
+```{warning} 
+Make sure to use a 5V supply to power the boards! Power connector will only fit **5.5 x 2.5 MM** power jacks. Power header pins have a pitch of 2.54 MM.
 ```
 
 ```{admonition} Recommended Methods for Powering
 * 2.54MM Pitch Jumper wires
 * USB to DC 5V Power Cable ()
-* 120V AC to 12V/5V Power Supplies
+* 120V AC to 5V Power Supplies
 ```
 
 ## Supported SFP Transceivers
 
 ```{important} All SFP optical transceiver  used on the board must be **1.25Gb/s data rate** and designed for **10/100/1000Base-TX/FX**
 ```
+```{warning} SFP transceivers use CLASS 1 laser. Do not look directly at the light emitting device.
+
+```
+
 ### BiDi (Bidirectional) SFP Optical Transceiver 
 
 BiDi is recommended over common SFP due to its ability to transmit full-duplex on one strand of fiber by using different wavelengths of light. Our kit on our product listing offers a pair of 2km range BiDi Transceivers with (1550/1310nm wavelength).
