@@ -3,7 +3,13 @@
 ```{important} This application is a fully customized firmware loading application. Although it provides similar functionality, it is not the same as our previous release which can be found [here](https://docs.exploredeepwater.com/legacy/firmware_legacy.html), known as DWE Firmware Updater.
 ```
 
-[**Download DWEFirmwareLoader**](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/DWEFirmwareLoader.zip?v=1641883253)
+[**Download DWEFirmwareLoader**](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/DWEFirmwareLoader_020822.zip)
+
+```{note}
+Updated as of 2/8/2022
+
+See [Release Notes](./firmware/update-feb-8)
+```
 
 ## Procedure for Updating exploreHD/HDCam Firmware
 
