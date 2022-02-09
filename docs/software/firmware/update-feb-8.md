@@ -1,4 +1,4 @@
-# Firmware Relase Notes 2/8/2022
+# Firmware Release Notes 2/8/2022
 
 ## Updater Notes
 - As of Jan. 2022, the firmware loader now has two options of firmware
