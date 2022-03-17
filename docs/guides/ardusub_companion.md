@@ -86,7 +86,7 @@ Below is an example of a setup with viewing 3 exploreHDs at the same time using 
 
 ![Raspi Enable SSH](../img/gstreamer/gstreamer9.jpg)
 
-Given each camera is set to 15Mb/s as the default bitrate, the streaming and recording should match that. In the case of 3 cameras, providing at least 45Mb/s of streaming and recording bitrate should provide you with high quality. 
+Given each camera is set to 10Mb/s as the default bitrate, the streaming and recording should match that. In the case of 3 cameras, providing at least 30Mb/s of streaming and recording bitrate should provide you with high quality. 
 
 **Limitation with this Setup**
 

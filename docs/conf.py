@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'DeepWater Exploration'
-copyright = '2021, DeepWater Exploration'
+copyright = '2022, DeepWater Exploration Inc.'
 author = 'Brandon Stevens'
 
 
