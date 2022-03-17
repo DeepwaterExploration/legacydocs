@@ -1,17 +1,16 @@
 # exploreHD Driver UI
 
-```{important} This application is a fully customized firmware loading application. Although it provides similar functionality, it is not the same as our previous release which can be found [here](https://docs.exploredeepwater.com/legacy/firmware_legacy.html), known as DWE Firmware Updater.
+```{important} This software is still in Alpha. Be aware that it may not be stable and changes will occur during the development. 
+```
+```{note} The DriverUI is only compatiable with the Lower Bandwidth version of the firmware. Please make sure that all exploreHD using the Driver UI is running that firmware.
+
+[**Learn More Here**](https://docs.exploredeepwater.com/software/firmware.html)
 ```
 
-[**Download DWEFirmwareLoader**](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/DWEFirmwareLoader_020822.zip)
+[**Download exploreHD Driver UI**](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/DWEFirmwareLoader_020822.zip)
 
-```{note}
-Updated as of 2/8/2022
 
-See [Release Notes](./firmware/update-feb-8)
-```
-
-## Procedure for Updating exploreHD/HDCam Firmware
+## Installation of exploreHD Driver UI
 
 ### Step 1
 

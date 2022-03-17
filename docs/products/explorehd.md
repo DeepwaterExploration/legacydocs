@@ -274,5 +274,4 @@ To setup streaming with this setup without ArduSub Companion, please see
 
 ## Technical Drawing
 
-![exploreHD](../img/explorehd/technical_drawing/exploreHD_Drawing_320x.jpg)
-![exploreHD](../img/explorehd/technical_drawing/exploreHD_Hinge_Drawing_310x.jpg)
+![exploreHD](../img/explorehd/technical_drawing/explorehd2drawing_320x.jpg)
