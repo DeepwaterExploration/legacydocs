@@ -273,5 +273,6 @@ To setup streaming with this setup without ArduSub Companion, please see
 [Multi-Cam Raspberry Pi Streaming Setup](https://docs.exploredeepwater.com/guides/pi_setup.html)
 
 ## Technical Drawing
+The following drawing is with the 2.0 housing.
 
 ![exploreHD](../img/explorehd/technical_drawing/explorehd2drawing.jpg)
