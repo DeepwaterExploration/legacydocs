@@ -1,6 +1,6 @@
 # exploreHD
 
-[![exploreHD](../img/explorehd/exploreHD_Front_2_590x.jpg)](https://exploredeepwater.com/products/explorehd-rov-auv-usb-camera)
+[![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_Front_2_500x.jpg)](https://exploredeepwater.com/products/explorehd-rov-auv-usb-camera)
 
 [Product Link](https://exploredeepwater.com/products/explorehd-rov-auv-usb-camera)
 
