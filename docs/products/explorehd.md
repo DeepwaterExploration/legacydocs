@@ -1,4 +1,4 @@
-# exploreHD
+# exploreHD 2.0
 
 [![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_Front_2_500x.jpg)](https://exploredeepwater.com/products/explorehd-rov-auv-usb-camera)
 
@@ -267,7 +267,7 @@ done
 
 ## ROV Connection Diagram
 
-![exploreHD](../img/explorehd/exploreHD_ROV_Camera_Connection_1000x.jpg)
+![exploreHD](../img/explorehd/exploreHD_Connection_Diagram.JPG)
 
 To setup streaming with this setup without ArduSub Companion, please see 
 [Multi-Cam Raspberry Pi Streaming Setup](https://docs.exploredeepwater.com/guides/pi_setup.html)
