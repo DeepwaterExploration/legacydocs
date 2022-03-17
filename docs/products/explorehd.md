@@ -1,4 +1,4 @@
-# exploreHD 2.0
+# exploreHD
 
 [![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_Front_2_500x.jpg)](https://exploredeepwater.com/products/explorehd-rov-auv-usb-camera)
 
