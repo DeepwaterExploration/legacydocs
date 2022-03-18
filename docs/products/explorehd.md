@@ -276,3 +276,5 @@ To setup streaming with this setup without ArduSub Companion, please see
 The following drawing is with the 2.0 housing.
 
 ![exploreHD](../img/explorehd/technical_drawing/explorehd2drawing.jpg)
+
+[Download STEP File of exploreHD 2.0 Assembly](https://docs.exploredeepwater.com/files/exploreHD%202.0%20Full%20Assembly_PUBLIC.step)
