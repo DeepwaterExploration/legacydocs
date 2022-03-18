@@ -277,4 +277,4 @@ The following drawing is with the 2.0 housing.
 
 ![exploreHD](../img/explorehd/technical_drawing/explorehd2drawing.jpg)
 
-[Download STEP File of exploreHD 2.0 Assembly](https://docs.exploredeepwater.com/files/exploreHD%202.0%20Full%20Assembly_PUBLIC.step)
+[Download STEP File of exploreHD 2.0 Assembly](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_2.0_Full_Assembly_PUBLIC.step?v=1647568154)
