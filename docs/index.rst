@@ -23,7 +23,7 @@ DeepWater Exploration Documentation
    :caption: Software
 
    software/qgroundcontrol
-   software/driverui
+   software/driverUI
    software/firmware
 
 .. toctree::
