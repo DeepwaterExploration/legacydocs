@@ -33,7 +33,7 @@ Install Driver UI through npm with:
 
 ``sudo npm install -g @deepwaterexploration/dwe-controls``
 
-## Launching Driver UI
+## Launch
 
 Driver UI can be set up to auto-launch or be launched manually.
 
