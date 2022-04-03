@@ -39,7 +39,7 @@ Our passion for uncompromised image quality for marine robotics is the simple ph
 
 **Bitrate:** 10Mb/s with H.264, VBR with MJPEG/YUY2 
 
-**Streaming Latency:** [More Details]()
+**Streaming Latency:** 35ms ± 20 [More Details]()
 
 **Connection:** USB2.0 High Speed 
 
@@ -243,6 +243,17 @@ This software supports unlimited camera streams given you have unlimited USB por
 **VBR:** Variable bitrate, changes bitrate depending on scene
 
 **UDP Stream:** Starts a UDP H.264 Stream via GStreamer with port 5600.
+
+## Streaming Latency
+**Streaming Method:** UDP H.264 via Gstreamer
+
+**Streaming Device:** Raspberry Pi 4 Model B 2GB RAM
+
+**Streamed Devices:** 3 exploreHDs
+
+**Recieving Software:** Open Broadcaster Software
+
+**Latency:** 35ms ± 20
 
 ## Technical Drawing
 The following drawing is with the 2.0 housing.
