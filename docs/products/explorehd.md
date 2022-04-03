@@ -19,7 +19,7 @@ Our passion for uncompromised image quality for marine robotics is the simple ph
 
 **Ingress Protection Rating:** IP69K
 
-**Cable Diameter:** 4mm
+**Cable Diameter:** 4mm OD
 
 ### Camera Specifications
 
