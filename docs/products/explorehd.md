@@ -23,7 +23,7 @@ Our passion for uncompromised image quality for marine robotics is the simple ph
 
 ### Camera Specifications
 
-**Image Sensor:** 1/3" Sony Exmor™ CMOS 12-bit
+**Image Sensor:** 1/2.9" Sony Exmor™ CMOS 12-bit
 
 **Resolution:** 1920x1080
 
