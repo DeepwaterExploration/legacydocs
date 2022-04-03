@@ -39,6 +39,8 @@ Our passion for uncompromised image quality for marine robotics is the simple ph
 
 **Bitrate:** 10Mb/s with H.264, VBR with MJPEG/YUY2 
 
+**Streaming Latency:** [More Details]()
+
 **Connection:** USB2.0 High Speed 
 
 **Voltage:** 5V 
@@ -199,7 +201,12 @@ Connect the USB cable to a computer to confirm the camera is working and in the 
 
 An image should be displayed using the built-in camera app on your computer. The device name should be exploreHD USB Camera
 
-## Streaming From Raspberry Pi
+## Multi-Cam ROV Connection Diagram
+
+![exploreHD](../img/explorehd/exploreHD_Connection_Diagram.JPG)
+
+
+## Streaming via Custom Raspberry Pi
 
 If you want to run your own custom streaming setup on the Raspberry Pi, we have the perfect documentation for you! 
 
@@ -208,7 +215,7 @@ This is perfect for MATE ROV teams who want to use the RPi to stream but don't w
 [Raspberry Pi Streaming Setup for exploreHD Instructions](https://docs.exploredeepwater.com/guides/pi_setup.html)
 
 
-## ArduSub Companion
+## Streaming via ArduSub Companion
 
 
 ```{important} **As of November 20, 2021, all exploreHD shipped will feature a new firmware that allows the cameras to be plug and play with ArduSub Companion without the need for drivers.**
@@ -222,9 +229,12 @@ If you want to stream multiple exploreHDs at once using ArduSub Companion and se
 
 [Streaming Multiple exploreHDs with ArduSub Companion Instructions](https://docs.exploredeepwater.com/guides/ardusub_companion.html#streaming-multiple-explorehds-with-ardusub-companion)
 
-## H.264 and Bitrate Control for Streaming
+## H.264/Bitrate Control for Streaming
 
 To set custom H.264 parameters when streaming from a Raspberry Pi or similar computer, install our [exploreHD Driver UI](https://docs.exploredeepwater.com/software/driverUI.html)!
+
+This software supports unlimited camera streams given you have unlimited USB ports!
+
 ![DWE Firmware Loader](../img/driverui/driverui.png)
 **Bitrate:** Adjust the bitrate of the exploreHD Camera
 
@@ -233,12 +243,6 @@ To set custom H.264 parameters when streaming from a Raspberry Pi or similar com
 **VBR:** Variable bitrate, changes bitrate depending on scene
 
 **UDP Stream:** Starts a UDP H.264 Stream via GStreamer with port 5600.
-## ROV Connection Diagram
-
-![exploreHD](../img/explorehd/exploreHD_Connection_Diagram.JPG)
-
-To setup streaming with this setup without ArduSub Companion, please see 
-[Multi-Cam Raspberry Pi Streaming Setup](https://docs.exploredeepwater.com/guides/pi_setup.html)
 
 ## Technical Drawing
 The following drawing is with the 2.0 housing.
