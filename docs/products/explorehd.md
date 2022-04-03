@@ -29,9 +29,13 @@ Our passion for uncompromised image quality for marine robotics is the simple ph
 
 **Resolution:** 1920x1080
 
-**Framerate:** 30fps
+**Framerate:** 30fps with H.264/MJPEG
 
-**Format:** H.264/MJPEG 
+**Format:** H.264, MJPEG, YUY2
+
+**Chroma Subsampling:** 4:2:2 with YUY2, 4:2:0 with MJPEG/H.264
+
+**Color Depth:** 8 bit
 
 **Connection:** USB2.0 High Speed 
 
