@@ -37,6 +37,8 @@ Our passion for uncompromised image quality for marine robotics is the simple ph
 
 **Color Depth:** 8 bit
 
+**Bitrate:** 10Mb/s with H.264, VBR with MJPEG/YUY2 
+
 **Connection:** USB2.0 High Speed 
 
 **Voltage:** 5V 
@@ -206,9 +208,8 @@ This is perfect for MATE ROV teams who want to use the RPi to stream but don't w
 [Raspberry Pi Streaming Setup for exploreHD Instructions](https://docs.exploredeepwater.com/guides/pi_setup.html)
 
 
-## ArduSub Companion/Custom H.264 Settings
+## ArduSub Companion
 
-### ArduSub Companion
 
 ```{important} **As of November 20, 2021, all exploreHD shipped will feature a new firmware that allows the cameras to be plug and play with ArduSub Companion without the need for drivers.**
 
@@ -221,54 +222,17 @@ If you want to stream multiple exploreHDs at once using ArduSub Companion and se
 
 [Streaming Multiple exploreHDs with ArduSub Companion Instructions](https://docs.exploredeepwater.com/guides/ardusub_companion.html#streaming-multiple-explorehds-with-ardusub-companion)
 
-### Custom H.264 Settings
+## H.264 and Bitrate Control for Streaming
 
-**The instructions below are for customers who may want more control over H264 compression
-and other settings on the camera**
+To set custom H.264 parameters when streaming from a Raspberry Pi or similar computer, install our [exploreHD Driver UI](https://docs.exploredeepwater.com/software/driverUI.html)!
+![DWE Firmware Loader](../img/driverui/driverui.png)
+**Bitrate:** Adjust the bitrate of the exploreHD Camera
 
-In order to have full access to H264 controls when streaming via Linux, you will need to install our driver.
+**H.264:** Toggle H.264 on or off (Off is similar to MJPEG)
 
-[https://github.com/DeepwaterExploration/exploreHD_Controls/tree/main/explorehd_camera_controls](https://github.com/DeepwaterExploration/exploreHD_Controls/tree/main/explorehd_camera_controls)
+**VBR:** Variable bitrate, changes bitrate depending on scene
 
-To install the driver, you will need to compile it after having the explorehd_camera_controls on your computer.
-
-`cd explorehd_camera_controls`
-
-`cp Makefile.x86 Makefile`
-
-`make`
-
-### Basic H.264 Controls ###
-
-**`--xuset-br` sets the bitrate of the H264 compression**
-
-Our default settings it set to a generous
-15Mb/s which would provide you with decent video quality while lowering file size.
-
-**`--xuset-gop` sets the GOP settings of the H264 compression**
-
-Since the Raspberry Pi is limiting in its processing, the default is 0.
-
-**`--xuset-cvm` sets the type of bit rate compression for H.264**
-
-We found that setting it to VBR (variable bitrate) provides the best quality but you can experiment around.
-
-**For help with more controls:**
-
-`./explorehd_UVC_TestAP -h`
-
-```{note} Any controls that are set onto the camera will be reset when the device restarts either by physically unplugging it or restarting the computer. To save the settings, we suggest running a for loop with an auto-start script. We have a sample of one done for ArduSub Companion linked below.
-
-[https://github.com/DeepwaterExploration/exploreHD_Controls/](https://github.com/DeepwaterExploration/exploreHD_Controls/)
-
-```sh
-for DEVICE in $(ls /dev/video*); do
-	.$HOME/companion/scripts/explorehd_camera_controls/explorehd_UVC_TestAP 
-    --xuset-br 1500000 --xuset-gop 0 --xuset-cvm 2 $DEVICE
-done
-```
-
-
+**UDP Stream:** Starts a UDP H.264 Stream via GStreamer with port 5600.
 ## ROV Connection Diagram
 
 ![exploreHD](../img/explorehd/exploreHD_Connection_Diagram.JPG)
