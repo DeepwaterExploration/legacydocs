@@ -4,8 +4,6 @@
 
 [Product Link](https://exploredeepwater.com/products/explorehd-rov-auv-usb-camera)
 
-[Full Manual](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_Manual_121621.pdf?v=1639714000)
-
 ## {doc}`Firmware Update <../software/firmware>`
 
 ```{important} Please update your firmware if you were shipped an exploreHD before 11/20/2021
@@ -25,7 +23,7 @@ Our passion for uncompromised image quality for marine robotics is the simple ph
 
 ### Camera Specifications
 
-**Image Sensor:** SONY IMX323 1/2.9
+**Image Sensor:** 1/3" Exmor RS™ CMOS 12-bit
 
 **Resolution:** 1920x1080
 
