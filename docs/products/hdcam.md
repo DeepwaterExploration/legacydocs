@@ -18,17 +18,23 @@ The HDCam is the bare board of the exploreHD Camera but without the waterproof h
 
 ### Camera Specifications
 
-**Image Sensor:** SONY IMX323 1/2.9
+**Image Sensor:** 1/2.9" Sony Exmor™ CMOS 12-bit
 
 **Resolution:** 1920x1080
 
-**Framerate:** 30fps
+**Framerate:** 30fps with H.264/MJPEG
 
-**Format:** H.264/MJPEG 
+**Format:** H.264, MJPEG, YUY2
+
+**Chroma Subsampling:** 4:2:2 with YUY2, 4:2:0 with MJPEG/H.264
+
+**Color Depth:** 8 bit
+
+**Bitrate:** 10Mb/s with H.264, VBR with MJPEG/YUY2 
+
+**Streaming Latency:** 35ms ± 20 [More Details](../products/explorehd.html#streaming-latency)
 
 **Connection:** USB2.0 High Speed 
-
-**Connector:** USB Type A to JST 2.0 
 
 **Voltage:** 5V 
 
