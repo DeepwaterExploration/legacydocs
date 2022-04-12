@@ -156,11 +156,8 @@ Download the gstreamer framework from here: [http://gstreamer.freedesktop.org/da
 
 Downloads:
 
-**32-bit:**
-* [gstreamer-1.0-msvc-x86-1.18.1.msi](https://gstreamer.freedesktop.org/data/pkg/windows/1.18.1/msvc/gstreamer-1.0-msvc-x86-1.18.1.msi)
 
-**64-bit:**
-* [gstreamer-1.0-msvc-x86_64-1.18.1.msi](https://gstreamer.freedesktop.org/data/pkg/windows/1.18.1/msvc/gstreamer-1.0-msvc-x86_64-1.18.1.msi)
+* [Make sure to download the MinGW version of Gstreamer](https://gstreamer.freedesktop.org/download/)
 ```{important} Gstreamer would automatically install in the D drive if you have more than one drive on your PC. You can change it to the C drive when you do custom installation. 
 
 If you install it on the D drive, just keep note of that when you set up your environment variables below.
