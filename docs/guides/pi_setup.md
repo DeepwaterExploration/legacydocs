@@ -217,7 +217,14 @@ See {doc}`exploreHD <../products/explorehd>` or {doc}`HDCam <../products/hdcam>`
 ```
 
 ## Step 12: Setting up the stream
+### Automatically setting up stream
+For automatic, plug and play of the stream to work on the Raspberry Pi, use our exploreHD Driver UI! This system will automatically run at startup and saves the settings automatically. It will support UDP stream and H264 compression settings.
 
+[Installation Instructions](https://github.com/DeepwaterExploration/exploreHD_Controls)
+
+![DWE Firmware Loader](../img/driverui/driverui.png)
+
+### Manually setting up stream
 ### Finding the device
 `v4l2-ctl --list-devices`
 
