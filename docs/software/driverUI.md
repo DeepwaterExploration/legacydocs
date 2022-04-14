@@ -71,4 +71,6 @@ To run the application temporarily (this is only if you do **not want to install
 ## Interface
 To use the interface, navigate to <http://192.168.2.2:5000> (or <http://companion.local:5000> if running the ArduSub companion software).
 
-![driverui](https://docs.exploredeepwater.com/_images/driverui.png)
+![driverui](../img/driverui/driverui.png)
+
+![driverui](../img/driverui/driverui-dark.png)
