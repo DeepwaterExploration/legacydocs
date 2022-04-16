@@ -21,6 +21,8 @@ This script will install the application globally with autostart enabled by defa
 
 The script can be executed with the following command:
 ```
+
+```
 curl -fsSL https://raw.githubusercontent.com/DeepwaterExploration/exploreHD_Controls/main/scripts/install.sh | sudo -E bash -
 ```
 
@@ -44,6 +46,8 @@ Next, install the required dependencies:
 
 `sudo apt install libudev-dev libgstreamer-plugins-base1.0-dev libgstreamer1.0-dev`
 
+`sudo apt install gstreamer1.0-plugins-good gstreamer1.0-plugins-bad`
+
 Finally, install the dwe-controls application from npmjs with:
 
 `sudo npm install -g @deepwaterexploration/dwe-controls`
@@ -61,7 +65,7 @@ To enable auto-launch (recommended for raspberry pi):
 - Save the process list:
 `pm2 save`
 
-- Enable startup for pm2: `sudo pm2 startup systemd -u $LOGNAME --hp $HOME`
+- Enable startup for pm2: `sudo pm2 startup systemd -u <username> --hp <home directory>`
 
 ##### Running
 To run the application temporarily (this is only if you do **not want to install** with auto-launch):
