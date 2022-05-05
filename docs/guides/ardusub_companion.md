@@ -6,7 +6,7 @@ If you notice the video stream is very sluggish, your exploreHD/HDCam may be run
 ```
 
 ## Streaming Multiple exploreHDs with ArduSub Companion
-If you have multiple exploreHDs and you would like to stream them simultaneously, you can use the new [ArduSub Companion 1.0 BETA](https://docs.bluerobotics.com/ardusub-zola/software/companion/1.0/). 
+If you have multiple exploreHDs and you would like to stream them simultaneously, you can use the new [ArduSub Companion 1.0](https://docs.bluerobotics.com/ardusub-zola/software/onboard/BlueOS-1.0/). 
 
 ![ArduSub Companion Multiple Streams](../img/ardusub_companion/CompanionnewexploreHD.jpg)
 
