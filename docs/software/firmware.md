@@ -6,7 +6,7 @@
 [**Download DWEFirmwareLoader**](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/DWEFirmwareLoader_051722.zip)
 
 ```{note}
-Updated as of 2/8/2022
+Updated as of 5/17/2022
 
 See [Release Notes](./firmware/update-feb-8)
 ```
@@ -36,11 +36,9 @@ Run *DWEFirmwareLoader.exe*
 
 Click on the firmware version that you would like to use.
 
-```{important} For most use cases, we recommend the *Lower Bandwidth* firmware, which is what we ship out with all exploreHD and HDCam modules. If you have any questions, feel free to ask on [our forums](https://discuss.exploredeepwater.com/).
+```{important} Since the introduction of our [exploreHD Controls](https://docs.exploredeepwater.com/software/driverUI.html), we no longer offer High Quality Firmware as the setting can be adjusted via the driver UI. The default camera firmware we ship and reocmmend is the lower bandwidth version when streaming. If you have any questions, feel free to ask on [our forums](https://discuss.exploredeepwater.com/).
 ```
 
-* **Higher Quality** provides higher quality video, but uses more bandwidth.
-    * Reccomended for use with a single exploreHD.
 
 * **Lower Bandwidth** uses less bandwidth, but provides lower quality video.
     * Reccomended for use in a setup with multiple exploreHDs.
