@@ -32,6 +32,7 @@ DeepWater Exploration Documentation
    :caption: Software
 
    software/qgroundcontrol
+   software/open_broadcasting_software
    software/driverUI
    software/firmware
 
