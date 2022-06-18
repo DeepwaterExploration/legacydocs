@@ -2,7 +2,7 @@
 
 ![Multi-Cam exploreHD Setup](../img/explorehd/exploreHD_Connection_Diagram.JPG)
 
-```{note} The following instructions are for if you want to set up streaming from a Raspberry Pi without ArduSub. If you want plug-and-play compatibility we recommend following [this guide](https://www.ardusub.com/quick-start/installing-companion.html) to install ArduSub companion.
+```{note} The following instructions are for if you want to set up streaming from a Raspberry Pi without ArduSub. If you want plug-and-play compatibility we recommend following [this guide](https://www.ardusub.com/quick-start/installing-companion.html) to install ArduSub companion. 
 
 
 **These instructions are mostly for MATE ROV teams who want the ability to stream multiple exploreHDs easily, yet retain the ability to use their own flight controller!**
@@ -73,70 +73,18 @@ Select `yes` and press enter
 
 Run: `sudo reboot`
 
-## Step 7: Configure Laptop Ethernet
+## Step 7: SSH into the Pi
 
-### Windows
-
-Under Settings/Network & Ethernet, select Ethernet
-
-![Network](../img/pi_setup/configure_ethernet/network.png)
-
-Under Related Settings on the right, select `Change Adapter Options`
-
-![Adapter Options](../img/pi_setup/configure_ethernet/adapter_options.png)
-
-Find the adapter called `Ethernet` with the subtitle of `Unidentified Network`
-
-![Adapter](../img/pi_setup/configure_ethernet/adapter.png)
-
-Right-click the adapter and select `Properties`
-
-![Adapter](../img/pi_setup/configure_ethernet/right-click-adapter.png)
-
-Locate `Internet Protocol Version 4 (TCP/IPv4)` and select `Properties`
-
-![Properties](../img/pi_setup/configure_ethernet/properties.png)
-
-Edit the menu to look like the following:
-
-![Settings](../img/pi_setup/configure_ethernet/settings.png)
-
-Click `OK` to apply changes. This should now allow you Pi to identify your Windows device under the correct ip address to stream data to.
-
-## Step 8: SSH into the Pi
-
-* From the connected Windows or Linux device, ssh into the Raspberry Pi
-
-For Windows, we recommend using Putty which can be downloaded from [here](https://www.putty.org/)
-
-* After installing, open Putty and type the address of the Raspberry Pi (192.168.2.2)
-
-![Putty](../img/pi_setup/putty/putty.png)
-
-* Keep the other settings as default and click the `Open` button
-
-![Putty Connect](../img/pi_setup/putty/putty2.png)
-
-* After connecting you will be prompted with a *security alert*. Ensure you select **accept**.
-
-![Security Alert](../img/pi_setup/putty/putty3.png)
-
-* To log in, use the following credentials: username: `pi`, password: `raspberry`
-
-![Log in](../img/pi_setup/putty/putty4.png)
-![Password](../img/pi_setup/putty/putty5.png)
-
-* You should be greeted with the following:
-
-![Greeting](../img/pi_setup/putty/putty6.png)
-
-With Linux, you can use the built-in ssh client in the terminal by running:
-`ssh pi@192.168.2.2` with the same password as Windows (`raspberry`)
+```{include} ./ssh_into_pi.md
+---
+start-line: 2 
+---
+```
 
 ```{note} At this point, you can disconnect the USB keyboard, mouse, and monitor from the Raspberry Pi.
 ```
 
-## Step 9: Update the Pi
+## Step 8: Update the Pi
 
 ```
 sudo apt-get update
@@ -148,56 +96,6 @@ sudo apt dist-upgrade
 ```{note} This process may take a while
 ```
 
-## Step 10: Install GStreamer
-
-### Windows Install
-
-Download the gstreamer framework from here: [http://gstreamer.freedesktop.org/data/pkg/windows](http://gstreamer.freedesktop.org/data/pkg/windows). **The recommended version is 1.18.1**.
-
-Downloads:
-
-
-* [Make sure to download the MinGW version of Gstreamer](https://gstreamer.freedesktop.org/download/)
-```{important} Gstreamer would automatically install in the D drive if you have more than one drive on your PC. You can change it to the C drive when you do custom installation. 
-
-If you install it on the D drive, just keep note of that when you set up your environment variables below.
-```
-
-**If in doubt of which install to use, download the 64-bit version as this is more common.**
-
-```{important}
-**Make sure you update the PATH in Environment Variable after installing it on Windows.**
-
-To do so, first find Environment Variables in the Start Menu by searching for it. Click on `Edit environment variables for your account`.
-
-![Greeting](../img/gstreamer/gstreamer1.jpg)
-
-Highlight the variable `Path` by clicking on it and then click 'Edit...'
-
-A new window should pop up and you want to click on `New` and add a path to your bin folder to the list. In this case, it's `C:\gstreamer\1.0\mingw_x86_64\bin` 
-
-![Greeting](../img/gstreamer/gstreamer2.jpg)
-
-After that, click OK on both windows and you should be ready to go!
-
-**To test the environment variables setup, open CMD and run `gst-launch-1.0` and you should get the following message**
-
-![Greeting](../img/gstreamer/gstreamer3.jpg)
-
-
-```
-
-
-### Linux Install
-
-*a different installation method is recommended for a Raspberry Pi*
-
-Use apt-get to install GStreamer 1.0:
-
-`list=$(apt-cache --names-only search ^gstreamer1.0-* | awk '{ print $1 }' | sed -e /-doc/d | grep -v gstreamer1.0-hybris)`
-
-`sudo apt-get install $list`
-
 ### Raspberry Pi Install
 
 Remove GStreamer:
@@ -208,23 +106,30 @@ Install GStreamer:
 
 `sudo apt-get install gstreamer1.0-tools gstreamer1.0-x gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-libav`
 
-## Step 11: Plug in the Camera
+## Step 9: Plug in the Camera
 
-* Connect an exploreHD or HDCam to an available USB port on the Raspberry Pi
+* If you haven't already, connect an exploreHD or HDCam to an available USB port on the Raspberry Pi
 
 ```{note}
 See {doc}`exploreHD <../products/explorehd>` or {doc}`HDCam <../products/hdcam>` getting started guides
 ```
 
-## Step 12: Setting up the stream
+## Step 10: Setting up the stream
+
 ### Automatically setting up stream
-For automatic, plug and play of the stream to work on the Raspberry Pi, use our exploreHD Driver UI! This system will automatically run at startup and saves the settings automatically. It will support UDP stream and H264 compression settings.
 
-[Installation Instructions](https://github.com/DeepwaterExploration/exploreHD_Controls)
+For automatic, plug and play of the stream to work on the Raspberry Pi, use our exploreHD Driver UI. This system will automatically run at startup and saves the settings automatically. It supports UDP stream and H264 compression settings.
 
-![DWE Firmware Loader](../img/driverui/driverui.png)
+{doc}`exploreHD Controls <../software/driverUI>`
+
+![driverui](../img/driverui/driverui.png)
 
 ### Manually setting up stream
+
+```{important}
+It is not recommended to use the following instructions unless customizability is required. Please use exploreHD Controls when possible to minimze issues or compability concerns.
+```
+
 ### Finding the device
 `v4l2-ctl --list-devices`
 
@@ -247,15 +152,20 @@ On the Raspberry Pi, run:
 `gst-launch-1.0 -v v4l2src device=/dev/video* ! video/x-h264, width=1920,height=1080! h264parse ! queue ! rtph264pay config-interval=10 pt=96 ! udpsink host=192.168.2.1 port=5600 sync=false`
 
 ```{note}
+In this example, `host=192.168.2.1` due to the expected setup in [Receiving](#Receiving) regarding Windows Setup. If that specific setup cannot be followed you may replace this with the local IP of your device.
+```
+
+```{note}
 Replace the * in device=/dev/video* with the video device number seen in the previous step.
 ```
 
 To stream more than one exploreHD at the same time, you can add an `&` to the code and run another one with the respective video device and port number.
 
 You can make this command autorun to make your ROV camera streaming system!
+
 ### Receiving
 
-To receive the stream on a Windows or Linux laptop or PC run:
+To receive the stream on a PC, {doc}`Windows Setup <./windows_setup>`
 
 `gst-launch-1.0 udpsrc port=5600 ! application/x-rtp ! rtpjitterbuffer ! rtph264depay ! avdec_h264 ! videoconvert ! autovideosink`
 

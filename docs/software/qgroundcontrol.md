@@ -17,7 +17,9 @@ To install our fork of QGroundControl, download the exe installer here. Then jus
 ![DWE QGround Control Installer](../img/qgroundcontrol/DweQGroundInstaller.jpg)
 
 ## User Guide
+
 ### Enabling Windows Defender Firewall Access
+
 ![DWE QGround Control Installer](../img/qgroundcontrol/qgroundfirewall.jpg)
 
 In order to receive the streams from the port, QGroundControl must have access to both private and public networks. Make sure both **public and private** are selected for the stream to work.
@@ -26,6 +28,7 @@ In order to receive the streams from the port, QGroundControl must have access t
 ```
 
 ### Setting Ports for Multiple Streams
+
 ![DWE QGround Control Installer](../img/qgroundcontrol/DweQGroundStream.jpg)
 The ports for the multi-stream viewer automatically sets to 5600, 5601, and 5602. These are the ports we generally recommend to stream from on the Raspberry Pi.
 
@@ -37,7 +40,8 @@ The UDP ports may not overlap, each stream must be set to a different port. If y
 ```{note} You can still use the normal video stream which would allow you to have 4 camera views maximum. This is ideal for 2 monitor setups where you can have the DWEQGroundControl window on one monitor and the Multi-Video Context window on another. You will need 4 unused USB ports on the RPi to stream 4 cameras from it.
 ```
 
-### Recording Video 
+### Recording Video
+
 Recording video on our multi-stream app will automatically generate a folder with 3 videos inside, representing each of the video streams. The resolution and framerate will be the same as set by the streamer (ArduSub WebUI). The Recording video settings can be changed in QGroundControl application settings. You can change the Video Decoder even when the source is disabled but to change the file format, you will need to enable a source. You can just select any source and leave the port empty if you are using a 3 camera setup. 
 
 ![DWE QGround Control Installer](../img/qgroundcontrol/DweQGroundRecording.jpg)
