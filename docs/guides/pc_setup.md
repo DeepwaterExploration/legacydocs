@@ -1,13 +1,12 @@
-# Windows Setup Guide
+# PC Setup Guide
 
-This is a guide for setting up a Windows laptop for use with a Raspberry Pi configured with {doc}`./pi_setup`.
+This is a guide for setting up a PC or laptop for use with a Raspberry Pi configured with {doc}`./pi_setup`.
 
-## Configure Laptop Ethernet
+## Configure Device Ethernet
 
-This step is necessary to set the IP of your laptop in the local network provided by the Raspberry Pi over ethernet.
+This step is necessary to set the IP of your device in the local network provided by the Raspberry Pi over ethernet.
 
-### Windows
-
+:::{dropdown} Windows
 Under **Settings/Network & Ethernet**, select **Ethernet**
 
 ![Network](../img/pi_setup/configure_ethernet/network.png)
@@ -33,10 +32,14 @@ Edit the menu to look like the following:
 ![Settings](../img/pi_setup/configure_ethernet/settings.png)
 
 Click `OK` to apply changes. This should now allow you Pi to identify your Windows device under the correct ip address to stream data to.
+:::
 
 ## Install GStreamer
 
-### Windows Install
+```{note} This step is optional if using QGroundControl
+```
+
+::::{dropdown} Windows
 
 Download the gstreamer framework from here: [http://gstreamer.freedesktop.org/data/pkg/windows](http://gstreamer.freedesktop.org/data/pkg/windows). **The recommended version is 1.18.1**.
 
@@ -49,28 +52,41 @@ Downloads:
 If you install it on the D drive, just keep note of that when you set up your environment variables below.
 ```
 
-**If in doubt of which install to use, download the 64-bit version as this is more common.**
+**If in doubt of which install to use, download the 64-bit version, as this is more common.**
 
-```{important}
-**Make sure you update the PATH in Environment Variable after installing it on Windows.**
+```{note} Make sure you update the PATH in Environment Variable after installing it on Windows.
+```
 
-To do so, first find Environment Variables in the Start Menu by searching for it. Click on `Edit environment variables for your account`.
+:::{dropdown} Environment Variable Setup
 
-![Greeting](../img/gstreamer/gstreamer1.jpg)
+1. Right-click the Windows icon in the taskbar and select **System**
+2. Under **Related Settings**, select **Advanced System Settings**
 
-Highlight the variable `Path` by clicking on it and then click 'Edit...'
+![System Properties Environment Variables](../img/gstreamer/system_properties_dialog.png)
 
-A new window should pop up and you want to click on `New` and add a path to your bin folder to the list. In this case, it's `C:\gstreamer\1.0\mingw_x86_64\bin` 
+3. Select **Environment Variables**
 
-![Greeting](../img/gstreamer/gstreamer2.jpg)
+![Environment Variables](../img/gstreamer/gstreamer1.jpg)
+
+4. Highlight the variable **Path** by clicking on it and then click 'Edit...'
+
+5. A new window should pop up and you want to click on `New` and add a path to your bin folder to the list. In this case, it's `C:\gstreamer\1.0\mingw_x86_64\bin` 
+
+![PATH](../img/gstreamer/gstreamer2.jpg)
 
 After that, click OK on both windows and you should be ready to go!
-```
 
 **To test the gstreamer setup, open CMD and run the following:**
-```
-> gst-launch-1.0 --version
-gst-launch-1.0 version 1.16.2
-GStreamer 1.16.2
-https://launchpad.net/distros/ubuntu/+source/gstreamer1.0
-```
+
+    gst-launch-1.0 --version
+
+This should result in an output similar to:
+
+    gst-launch-1.0 version 1.16.2
+    GStreamer 1.16.2
+    https://launchpad.net/distros/ubuntu/+source/gstreamer1.0
+
+
+:::
+
+::::

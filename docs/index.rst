@@ -24,7 +24,7 @@ DeepWater Exploration Documentation
 
    guides/pi_setup
    guides/ssh_into_pi
-   guides/windows_setup
+   guides/pc_setup
    guides/receiving_streams
 
 .. toctree::

@@ -55,6 +55,10 @@ html_context = {
     'default_description': 'Resources on DeepWater Exploration Documentation',
 }
 
+myst_enable_extensions = [
+    'colon_fence'
+]
+
 source_suffix = ['.rst', '.md']
 
 html_css_files = [

@@ -8,154 +8,116 @@
 **These instructions are mostly for MATE ROV teams who want the ability to stream multiple exploreHDs easily, yet retain the ability to use their own flight controller!**
 ```
 
-`````{dropdown} Initial Setup
+## Setup
 
-**Step 1: Flashing the Raspberry Pi**
+::::{dropdown} Initial Setup
 
-* Download and run the [Raspberry Pi Imager](https://www.raspberrypi.com/software/) from the official Raspberry Pi website
-* If you haven't already, insert the SD card into your computer
-* Select Raspberry Pi OS (32-bit) for the Operating System and the SD card you inserted as the SD card.
-* Select `Write` to begin flashing the Operating System to the SD card
+   **Step 1: Flashing the Raspberry Pi**
 
-**Step 2: Powering**
+   * Download and run the [Raspberry Pi Imager](https://www.raspberrypi.com/software/) from the official Raspberry Pi website
+   * If you haven't already, insert the SD card into your computer
+   * Select Raspberry Pi OS (32-bit) for the Operating System and the SD card you inserted as the SD card.
+   * Select `Write` to begin flashing the Operating System to the SD card
 
-* Plug in a compatible HDMI cable and monitor to the Pi
-* Connect a USB keyboard and mouse to the Pi
-* Power the Pi using a micro usb or usb c power adapter depending on the version of Raspberry Pi you are using
+   **Step 2: Powering**
 
-```{important} Ensure you power the Pi after plugging the monitor into the Pi **and wall power**, otherwise, the Pi will not recognize the display and you will have to power cycle the device.
-```
+   * Plug in a compatible HDMI cable and monitor to the Pi
+   * Connect a USB keyboard and mouse to the Pi
+   * Power the Pi using a micro usb or usb c power adapter depending on the version of Raspberry Pi you are using
 
-**Step 3: Perform the Initial Setup**
+   ```{important} Ensure you power the Pi after plugging the monitor into the Pi **and wall power**, otherwise, the Pi will not recognize the display and you will have to power cycle the device.
+   ```
 
-* Setup the Pi with the GUI provided at start
-* Ensure WiFi is connected as soon as possible
+   **Step 3: Perform the Initial Setup**
 
-```{warning} Make sure you select the **US Keyboard layout** or some keys will not be recognized properly.
-```
+   * Setup the Pi with the GUI provided at start
+   * Ensure WiFi is connected as soon as possible
 
-**Step 4: Set Static IP**
+   ```{warning} Make sure you select the **US Keyboard layout** or some keys will not be recognized properly.
+   ```
 
-* Edit dhcpcd.conf -  `sudo nano /etc/dhcpcd.conf`
-* Add:
-```
-interface eth0
-static ip_address=192.168.2.2/24
-```
-to the end of the file
-* Save and close the file with `ctrl-o`, `enter`, and then `ctrl-x`
+   **Step 4: Set Static IP**
 
-**Step 5: Connect to a Laptop**
+   * Edit dhcpcd.conf -  `sudo nano /etc/dhcpcd.conf`
+   * Add:
 
-* Plug in an ethernet cable into the Raspberry Pi with the other end connected to a Windows or Linux laptop or PC
-* Enable ssh on the pi
+    interface eth0
+    static ip_address=192.168.2.2/24
 
-````{dropdown} Enabling SSH on the Raspberry Pi
-Run `sudo raspi-config`
+   to the end of the file
+   * Save and close the file with `ctrl-o`, `enter`, and then `ctrl-x`
 
-![Raspi Config](../img/pi_setup/enable_ssh/raspi-config.png)
+   **Step 5: Connect to a Laptop**
 
-Select `Interface Options` and press enter
+   * Plug in an ethernet cable into the Raspberry Pi with the other end connected to a Windows or Linux laptop or PC
+   * Enable ssh on the pi
 
-![Raspi Config Interface Options](../img/pi_setup/enable_ssh/raspi-config2.png)
+   :::{dropdown} Enabling SSH on the Raspberry Pi
+      Run `sudo raspi-config`
 
-```{note} Use the arrow keys to navigate the menu up and down
-```
+      ![Raspi Config](../img/pi_setup/enable_ssh/raspi-config.png)
 
-Under `Interface Options`, Select `SSH`
+      Select `Interface Options` and press enter
 
-![Raspi Config SSH](../img/pi_setup/enable_ssh/raspi-config3.png)
+      ![Raspi Config Interface Options](../img/pi_setup/enable_ssh/raspi-config2.png)
 
-Select `yes` and press enter
+      ```{note} Use the arrow keys to navigate the menu up and down
+      ```
 
-![Raspi Enable SSH](../img/pi_setup/enable_ssh/raspi-config4.png)
-````
+      Under `Interface Options`, Select `SSH`
+
+      ![Raspi Config SSH](../img/pi_setup/enable_ssh/raspi-config3.png)
+
+      Select `yes` and press enter
+
+      ![Raspi Enable SSH](../img/pi_setup/enable_ssh/raspi-config4.png)
+   :::
 
 - Reboot the pi with: `sudo reboot`
 
-**Step 6: SSH into the Pi**
+::::
 
-````{dropdown} Windows
-For Windows, we recommend using Putty which can be downloaded from [here](https://www.putty.org/)
+::::{dropdown} SSH into the Pi
 
-* After installing, open Putty and type the address of the Raspberry Pi (which should be set to 192.168.2.2 if you are following {doc}`Our Guide <./pi_setup>`)
-
-![Putty](../img/pi_setup/putty/putty.png)
-
-* Keep the other settings as default and click the `Open` button
-
-![Putty Connect](../img/pi_setup/putty/putty2.png)
-
-* After connecting you will be prompted with a *security alert*. Ensure you select **accept**.
-
-![Security Alert](../img/pi_setup/putty/putty3.png)
-
-* To log in, use the following credentials: username: `pi`, password: `raspberry`
-
-![Log in](../img/pi_setup/putty/putty4.png)
-![Password](../img/pi_setup/putty/putty5.png)
-
-* You should be greeted with the following:
-
-![Greeting](../img/pi_setup/putty/putty6.png)
-````
-
-````{dropdown} Linux/Mac
-First, open your terminal app.
-
-```{note}
-If using Linux, this will depend on your distribution. On MacOS, you can open spotlight and type: `Terminal`.
+```{include} ./ssh_into_pi.md
+:parser: myst_parser.sphinx_
+:start-line: 4
 ```
 
-The general format for ssh on unix is:
-`ssh -p port user@IP-Address`
+   ```{note} At this point, you can disconnect the USB keyboard, mouse, and monitor from the Raspberry Pi.
+   ```
 
-Assuming a port of 22, a username of pi, and an ip address of 192.168.2.2:
+::::
 
-```
-ssh -p 22 pi@192.168.2.2
-```
+::::{dropdown} Installation Instructions
 
-The password should be `raspberry` by default.
-````
+   **Step 1: Update the Pi**
 
-```{note} At this point, you can disconnect the USB keyboard, mouse, and monitor from the Raspberry Pi.
-```
+    sudo apt-get update
+    sudo apt-get upgrade
+    sudo apt full-upgrade
 
-`````
+   ```{note} This process may take a while
+   ```
 
-````{dropdown} Installation Instructions
+   **Step 2: Install the Latest Version of GStreamer**
 
-**Step 1: Update the Pi**
+   Remove the included version of GStreamer:
 
-```
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt full-upgrade
-sudo apt dist-upgrade
-```
+   `sudo apt-get remove libgstreamer* gstreamer1.0*`
 
-```{note} This process may take a while
-```
+   Install GStreamer:
 
-**Step 2: Install the Latest Version of GStreamer**
+   `sudo apt-get install gstreamer1.0-tools gstreamer1.0-x gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-libav`
 
-Remove the included version of GStreamer:
+   **Step 3: Plug in the Camera**
 
-`sudo apt-get remove libgstreamer* gstreamer1.0*`
+   If you haven't already, connect an exploreHD or HDCam to an available USB port on the Raspberry Pi
 
-Install GStreamer:
-
-`sudo apt-get install gstreamer1.0-tools gstreamer1.0-x gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-libav`
-
-**Step 3: Plug in the Camera**
-
-If you haven't already, connect an exploreHD or HDCam to an available USB port on the Raspberry Pi
-
-```{note}
-See {doc}`exploreHD <../products/explorehd>` or {doc}`HDCam <../products/hdcam>` getting started guides
-```
-````
+   ```{note}
+   See {doc}`exploreHD <../products/explorehd>` or {doc}`HDCam <../products/hdcam>` getting started guides
+   ```
+::::
 
 ## Streaming
 
@@ -214,7 +176,7 @@ To receive the stream on a PC, first follow our {doc}`Windows Setup Guide <./win
 
 `gst-launch-1.0 udpsrc port=5600 ! application/x-rtp ! rtpjitterbuffer ! rtph264depay ! avdec_h264 ! videoconvert ! autovideosink`
 
-For more streaming options such as viewing multiple streams at once, please see
+For more streaming options such as viewing multiple streams at once, please see:
 
 [Receiving Multiple Streams Instructions](/guides/ardusub_companion.html#receiving-multiple-streams)
 

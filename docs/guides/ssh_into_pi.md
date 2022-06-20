@@ -1,45 +1,39 @@
 # SSH Into a Raspberry Pi
 
-### Windows
+This guide describes how to connect to a Raspberry Pi over a secure ssh connection. It is expected the Raspberry Pi is connected over ethernet and has the IP 192.168.2.2, which is standard for most ROVs.
 
-For Windows, we recommend using Putty which can be downloaded from [here](https://www.putty.org/)
+:::{dropdown} Windows
+   For Windows, we recommend using Putty, which can be downloaded [here](https://www.putty.org/)
 
-* After installing, open Putty and type the address of the Raspberry Pi (which should be set to 192.168.2.2 if you are following {doc}`Our Guide <./pi_setup>`)
+   * After installing, open Putty and type the address of the Raspberry Pi (which should be set to 192.168.2.2 if you are following {doc}`Our Guide <./pi_setup>`)
 
-![Putty](../img/pi_setup/putty/putty.png)
+   * Keep the other settings as default and click the `Open` button
 
-* Keep the other settings as default and click the `Open` button
+   ![Putty Connect](../img/pi_setup/putty/putty2.png)
 
-![Putty Connect](../img/pi_setup/putty/putty2.png)
+   * After connecting you will be prompted with a *security alert*. Ensure you select **accept**.
 
-* After connecting you will be prompted with a *security alert*. Ensure you select **accept**.
+   ![Security Alert](../img/pi_setup/putty/putty3.png)
 
-![Security Alert](../img/pi_setup/putty/putty3.png)
+   * To log in, use the following credentials: username: `pi`, password: `raspberry`
 
-* To log in, use the following credentials: username: `pi`, password: `raspberry`
+   * You will be greeted with a terminal
 
-![Log in](../img/pi_setup/putty/putty4.png)
-![Password](../img/pi_setup/putty/putty5.png)
+:::
 
-* You should be greeted with the following:
+:::{dropdown} Linux/Mac
+   First, open your terminal app.
 
-![Greeting](../img/pi_setup/putty/putty6.png)
+   ```{note}
+   If using Linux, this will depend on your distribution. On MacOS, you can open spotlight and type: `Terminal`.
+   ```
 
-### Linux and MacOS
+   The general format for ssh on unix is:
+   `ssh -p port user@IP-Address`
 
-First, open your terminal app.
+   Enter the following command:
 
-```{note}
-If using Linux, this will depend on your distribution. On MacOS, you can open spotlight and type: `Terminal`.
-```
+    ssh -p 22 pi@192.168.2.2
 
-The general format for ssh on unix is:
-`ssh -p port user@IP-Address`
-
-Assuming a port of 22, a username of pi, and an ip address of 192.168.2.2:
-
-```
-ssh -p 22 pi@192.168.2.2
-```
-
-The password should default to `raspberry`.
+   The password will be `raspberry` by default.
+:::
