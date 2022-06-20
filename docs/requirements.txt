@@ -4,5 +4,6 @@ livereload
 myst-parser
 sphinx_rtd_theme
 karma-sphinx-theme
+sphinx-design
 furo
 sphinx-bootstrap-theme
