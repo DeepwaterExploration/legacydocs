@@ -8,6 +8,7 @@
 
 ```{important} Please update your firmware if you were shipped an exploreHD before 11/20/2021
 ```
+
 ## Introduction
 
 Our passion for uncompromised image quality for marine robotics is the simple philosophy behind the exploreHD Underwater USB Camera (DWE-EHDUSBR2). This UVC compliant camera is the first of its kind to feature a high definition USB output while achieving a waterproof rating of IP69K. With the use of a modern Sony sensor, this camera will be able to see in low light conditions like never before. Thanks to advanced automated exposure and white balance adjustments, this camera produces accurate colors and a pleasing natural image. With H.264 compression technology, up to 4 cameras can be connected at once and streamed via ethernet without major quality loss or latency. This makes our camera the perfect choice for advanced multi-cam ROV/AUV setups.
@@ -37,7 +38,7 @@ Our passion for uncompromised image quality for marine robotics is the simple ph
 
 **Bitrate:** 10Mb/s with H.264, VBR with MJPEG/YUY2 
 
-**Streaming Latency:** 35ms ± 20 [More Details](../products/explorehd.html#streaming-latency)
+**Streaming Latency:** 35ms ± 20 [More Details](#streaming-latency)
 
 **Connection:** USB2.0 High Speed 
 
@@ -249,15 +250,13 @@ This software supports unlimited camera streams given you have unlimited USB por
 
 - **UDP Stream:** Starts a UDP H.264 Stream via GStreamer with port 5600.
 
-```{dropdown} Streaming Latency
+### Streaming Latency
 
 - **Streaming Method:** UDP H.264 via Gstreamer
 - **Streaming Device:** Raspberry Pi 4 Model B 2GB RAM
 - **Streamed Devices:** 3 exploreHDs
 - **Recieving Software:** Open Broadcaster Software
 - **Latency:** 35ms ± 20
-
-```
 
 ## Technical Drawing
 The following drawing is with the 2.0 housing.

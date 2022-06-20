@@ -8,14 +8,16 @@
 **These instructions are mostly for MATE ROV teams who want the ability to stream multiple exploreHDs easily, yet retain the ability to use their own flight controller!**
 ```
 
-## Step 1: Flashing the Raspberry Pi
+`````{dropdown} Initial Setup
+
+**Step 1: Flashing the Raspberry Pi**
 
 * Download and run the [Raspberry Pi Imager](https://www.raspberrypi.com/software/) from the official Raspberry Pi website
 * If you haven't already, insert the SD card into your computer
 * Select Raspberry Pi OS (32-bit) for the Operating System and the SD card you inserted as the SD card.
 * Select `Write` to begin flashing the Operating System to the SD card
 
-## Step 2: Powering
+**Step 2: Powering**
 
 * Plug in a compatible HDMI cable and monitor to the Pi
 * Connect a USB keyboard and mouse to the Pi
@@ -24,7 +26,7 @@
 ```{important} Ensure you power the Pi after plugging the monitor into the Pi **and wall power**, otherwise, the Pi will not recognize the display and you will have to power cycle the device.
 ```
 
-## Step 3: Perform the Initial Setup
+**Step 3: Perform the Initial Setup**
 
 * Setup the Pi with the GUI provided at start
 * Ensure WiFi is connected as soon as possible
@@ -32,7 +34,7 @@
 ```{warning} Make sure you select the **US Keyboard layout** or some keys will not be recognized properly.
 ```
 
-## Step 4: Set Static IP
+**Step 4: Set Static IP**
 
 * Edit dhcpcd.conf -  `sudo nano /etc/dhcpcd.conf`
 * Add:
@@ -43,13 +45,12 @@ static ip_address=192.168.2.2/24
 to the end of the file
 * Save and close the file with `ctrl-o`, `enter`, and then `ctrl-x`
 
-## Step 5: Connect to a Laptop
+**Step 5: Connect to a Laptop**
 
 * Plug in an ethernet cable into the Raspberry Pi with the other end connected to a Windows or Linux laptop or PC
 * Enable ssh on the pi
 
-### Enabling SSH
-
+````{dropdown} Enabling SSH on the Raspberry Pi
 Run `sudo raspi-config`
 
 ![Raspi Config](../img/pi_setup/enable_ssh/raspi-config.png)
@@ -68,23 +69,64 @@ Under `Interface Options`, Select `SSH`
 Select `yes` and press enter
 
 ![Raspi Enable SSH](../img/pi_setup/enable_ssh/raspi-config4.png)
+````
 
-## Step 6: Reboot the Pi
+- Reboot the pi with: `sudo reboot`
 
-Run: `sudo reboot`
+**Step 6: SSH into the Pi**
 
-## Step 7: SSH into the Pi
+````{dropdown} Windows
+For Windows, we recommend using Putty which can be downloaded from [here](https://www.putty.org/)
 
-```{include} ./ssh_into_pi.md
----
-start-line: 2 
----
+* After installing, open Putty and type the address of the Raspberry Pi (which should be set to 192.168.2.2 if you are following {doc}`Our Guide <./pi_setup>`)
+
+![Putty](../img/pi_setup/putty/putty.png)
+
+* Keep the other settings as default and click the `Open` button
+
+![Putty Connect](../img/pi_setup/putty/putty2.png)
+
+* After connecting you will be prompted with a *security alert*. Ensure you select **accept**.
+
+![Security Alert](../img/pi_setup/putty/putty3.png)
+
+* To log in, use the following credentials: username: `pi`, password: `raspberry`
+
+![Log in](../img/pi_setup/putty/putty4.png)
+![Password](../img/pi_setup/putty/putty5.png)
+
+* You should be greeted with the following:
+
+![Greeting](../img/pi_setup/putty/putty6.png)
+````
+
+````{dropdown} Linux/Mac
+First, open your terminal app.
+
+```{note}
+If using Linux, this will depend on your distribution. On MacOS, you can open spotlight and type: `Terminal`.
 ```
+
+The general format for ssh on unix is:
+`ssh -p port user@IP-Address`
+
+Assuming a port of 22, a username of pi, and an ip address of 192.168.2.2:
+
+```
+ssh -p 22 pi@192.168.2.2
+```
+
+The password should be `raspberry` by default.
+````
 
 ```{note} At this point, you can disconnect the USB keyboard, mouse, and monitor from the Raspberry Pi.
 ```
 
-## Step 8: Update the Pi
+`````
+
+````{dropdown} Installation Instructions
+
+**Step 1: Update the Pi**
 
 ```
 sudo apt-get update
@@ -96,9 +138,9 @@ sudo apt dist-upgrade
 ```{note} This process may take a while
 ```
 
-### Raspberry Pi Install
+**Step 2: Install the Latest Version of GStreamer**
 
-Remove GStreamer:
+Remove the included version of GStreamer:
 
 `sudo apt-get remove libgstreamer* gstreamer1.0*`
 
@@ -106,31 +148,32 @@ Install GStreamer:
 
 `sudo apt-get install gstreamer1.0-tools gstreamer1.0-x gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-libav`
 
-## Step 9: Plug in the Camera
+**Step 3: Plug in the Camera**
 
-* If you haven't already, connect an exploreHD or HDCam to an available USB port on the Raspberry Pi
+If you haven't already, connect an exploreHD or HDCam to an available USB port on the Raspberry Pi
 
 ```{note}
 See {doc}`exploreHD <../products/explorehd>` or {doc}`HDCam <../products/hdcam>` getting started guides
 ```
+````
 
-## Step 10: Setting up the stream
+## Streaming
 
-### Automatically setting up stream
-
+```{dropdown} Automatic Stream Setup
 For automatic, plug and play of the stream to work on the Raspberry Pi, use our exploreHD Driver UI. This system will automatically run at startup and saves the settings automatically. It supports UDP stream and H264 compression settings.
 
 {doc}`exploreHD Controls <../software/driverUI>`
 
 ![driverui](../img/driverui/driverui.png)
+```
 
-### Manually setting up stream
+````{dropdown} Manual Stream Setup
 
 ```{important}
 It is not recommended to use the following instructions unless customizability is required. Please use exploreHD Controls when possible to minimze issues or compability concerns.
 ```
 
-### Finding the device
+**Step 1: Finding the device**
 `v4l2-ctl --list-devices`
 
 ![Device List](../img/pi_setup/PiDeviceLists.jpg)
@@ -145,7 +188,8 @@ The different video numbers in each section represent the different encoding for
 ```{note}
 If you are unsure the device number you selected is 'H264' format, you can run `v4l2-ctl --list-formats --device *` to find out. (replace * with the device number)
 ```
-### Streaming in H264
+
+**Step 2: Streaming in H264**
 
 On the Raspberry Pi, run:
 
@@ -162,10 +206,11 @@ Replace the * in device=/dev/video* with the video device number seen in the pre
 To stream more than one exploreHD at the same time, you can add an `&` to the code and run another one with the respective video device and port number.
 
 You can make this command autorun to make your ROV camera streaming system!
+````
 
 ### Receiving
 
-To receive the stream on a PC, {doc}`Windows Setup <./windows_setup>`
+To receive the stream on a PC, first follow our {doc}`Windows Setup Guide <./windows_setup>`. You will then be able to run the following command:
 
 `gst-launch-1.0 udpsrc port=5600 ! application/x-rtp ! rtpjitterbuffer ! rtph264depay ! avdec_h264 ! videoconvert ! autovideosink`
 

@@ -4,8 +4,6 @@
 
 [Product Link](https://exploredeepwater.com/products/hd-usb-camera)
 
-[Full Manual](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDcam_Manual_072321.pdf?v=1627097263)
-
 ## Introduction
 
 The HDCam is the bare board of the exploreHD Camera but without the waterproof housing. This camera provides the same excellent image quality as the exploreHD but uses a specialized lens designed to be more suited for above water applications. The camera can output H.264, MPEG, and YUY2 at reduced frame-rates. Due to its low distortion and smooth frame-rate, this camera is ideal for computer vision applications.
@@ -16,8 +14,7 @@ The HDCam is the bare board of the exploreHD Camera but without the waterproof h
 
 ## Technical Specifications
 
-### Camera Specifications
-
+```{dropdown} Camera Specifications
 **Image Sensor:** 1/2.9" Sony Exmor™ CMOS 12-bit
 
 **Resolution:** 1920x1080
@@ -32,7 +29,7 @@ The HDCam is the bare board of the exploreHD Camera but without the waterproof h
 
 **Bitrate:** 10Mb/s with H.264, VBR with MJPEG/YUY2 
 
-**Streaming Latency:** 35ms ± 20 [More Details](../products/explorehd.html#streaming-latency)
+**Streaming Latency:** 35ms ± 20 [More Details](#streaming-latency)
 
 **Connection:** USB2.0 High Speed 
 
@@ -41,9 +38,9 @@ The HDCam is the bare board of the exploreHD Camera but without the waterproof h
 **Current:** 250mA
 
 **Footprint:** 30 mm diameter (PCB)
+```
 
-### Lens Specifications 
-
+````{dropdown} Lens Specifications 
 **Type:** Low Distortion Lens
 
 **Lens Aperture:** f/2.8
@@ -55,8 +52,8 @@ The HDCam is the bare board of the exploreHD Camera but without the waterproof h
 **Focal Length:**  2.7MM (19MM Equivalent on Full Frame)
 
 ```{note} We currently don't recommend this lens for underwater use due to its narrower aperture and vignetting qualities when the camera is underwater. For those looking to replace the standard ELP USB camera from BlueROV, we recommend using their lens for now until our team finds a more suitable lens for underwater.
-
 ```
+````
 
 ## Operating Notes
 
@@ -163,75 +160,54 @@ located at the top of the camera holder.
 
 ## Streaming From Raspberry Pi
 
-If you want to run your own custom streaming setup on the Raspberry Pi, we have the perfect documentation for you!
+```{dropdown} Streaming via custom Raspberry Pi
+If you want to run your own custom streaming setup on the Raspberry Pi, we have the perfect documentation for you! 
 
-[Click here to learn more](https://docs.exploredeepwater.com/guides/pi_setup.html)
+This is perfect for MATE ROV teams who want to use the RPi to stream but don't want to be limited to PixHawk Controller from ArduSub Companion. It's also a great way to learn and customize your code for your specific setup!
 
-## ArduSub Companion/Custom H.264 Settings
+[Raspberry Pi Streaming Setup for exploreHD Instructions](https://docs.exploredeepwater.com/guides/pi_setup.html)
+```
 
-### ArduSub Companion
-
-```{important} **As of November 20, 2021, all HDCams shipped will feature a new firmware that allows the cameras to be plug and play with ArduSub Companion without the need for drivers.**
+````{dropdown} Streaming via ArduSub Companion
+```{important} **As of November 20, 2021, all exploreHD shipped will feature a new firmware that allows the cameras to be plug and play with ArduSub Companion without the need for drivers.**
 
 If your camera was shipped beforehand or you notice the video stream being sluggish, you may be running an older version.
 
-[Click Here for Instructions on how to Update](https://docs.exploredeepwater.com/software/firmware.html)
+[Click Here for instructions on how to update](https://docs.exploredeepwater.com/software/firmware.html)
 ```
 
-If you want to stream multiple HDCams at once using ArduSub Companion and see potential methods for viewing the multi-stream, check out the link below
+If you want to stream multiple exploreHDs at once using ArduSub Companion and see potential methods for viewing the multi-stream, check out the link below
 
 [Streaming Multiple exploreHDs with ArduSub Companion Instructions](https://docs.exploredeepwater.com/guides/ardusub_companion.html#streaming-multiple-explorehds-with-ardusub-companion)
+````
 
-### Custom H.264 Settings
+### H.264/Bitrate Control for Streaming
 
-**The instructions below are for customers who may want more control over H264 compression
-and other settings on the camera**
+To set custom H.264 parameters when streaming from a Raspberry Pi or similar computer, install our [exploreHD Driver UI](https://docs.exploredeepwater.com/software/driverUI.html)!
 
-In order to have full access to H264 controls when streaming via Linux, you will need to install our driver.
+This software supports unlimited camera streams given you have unlimited USB ports!
 
-[https://github.com/DeepwaterExploration/exploreHD_Controls/tree/main/explorehd_camera_controls](https://github.com/DeepwaterExploration/exploreHD_Controls/tree/main/explorehd_camera_controls)
+![DWE Firmware Loader](../img/driverui/driverui.png)
 
-To install the driver, you will need to compile it after having the explorehd_camera_controls on your computer.
+- **Bitrate:** Adjust the bitrate of the exploreHD Camera
 
-`cd explorehd_camera_controls`
+- **H.264:** Toggle H.264 on or off (Off is similar to MJPEG)
 
-`cp Makefile.x86 Makefile`
+- **VBR:** Variable bitrate, changes bitrate depending on scene
 
-`make`
+- **UDP Stream:** Starts a UDP H.264 Stream via GStreamer with port 5600.
 
-### Basic H.264 Controls ###
+### Streaming Latency
 
-**`--xuset-br` sets the bitrate of the H264 compression**
-
-Our default settings it set to a generous
-15Mb/s which would provide you with decent video quality while lowering file size.
-
-**`--xuset-gop` sets the GOP settings of the H264 compression**
-
-Since the Raspberry Pi is limiting in its processing, the default is 0.
-
-**`--xuset-cvm` sets the type of bit rate compression for H.264**
-
-We found that setting it to VBR (variable bitrate) provides the best quality but you can experiment around.
-
-**For help with more controls:**
-
-`./explorehd_UVC_TestAP -h`
-
-```{note} Any controls that are set onto the camera will be reset when the device restarts either by physically unplugging it or restarting the computer. To save the settings, we suggest running a for loop with an auto start script. We have a sample of one done for ArduSub Companion linked below.
-
-[https://github.com/DeepwaterExploration/exploreHD_Controls/](https://github.com/DeepwaterExploration/exploreHD_Controls/)
-
-```sh
-for DEVICE in $(ls /dev/video*); do
-	.$HOME/companion/scripts/explorehd_camera_controls/explorehd_UVC_TestAP 
-    --xuset-br 1500000 --xuset-gop 0 --xuset-cvm 2 $DEVICE
-done
-```
+- **Streaming Method:** UDP H.264 via Gstreamer
+- **Streaming Device:** Raspberry Pi 4 Model B 2GB RAM
+- **Streamed Devices:** 3 exploreHDs
+- **Recieving Software:** Open Broadcaster Software
+- **Latency:** 35ms ± 20
 
 ## Technical Drawing
 
-![exploreHD](../img/hdcam/technical_drawings/HDCam_Mount_Drawing_299x.jpg)
-![exploreHD](../img/hdcam/technical_drawings/HDCam_camera_Drawing_310x.jpg)
+![HDCam](../img/hdcam/technical_drawings/HDCam_Mount_Drawing_299x.jpg)
+![HDCam](../img/hdcam/technical_drawings/HDCam_camera_Drawing_310x.jpg)
 
 
