@@ -36,22 +36,23 @@ Unlike many other fiber converters, this is designed to be as space efficient as
 
 **Supports Full/Half Duplex auto-negotiation and MDI/MDIX auto-crossover**
 
-## Speed Testing
+## Testing
 
+:::{dropdown} Speed Testing
 ```{image} ../img/fiberboard/speed_test.png
 :alt: Speed Test
 :width: 50%
 ```
+:::
 
-## Current Testing
-
+:::{dropdown} Current Testing
 ```{image} ../img/fiberboard/current_test.png
 :alt: Current Test
 :width: 50%
 ```
+:::
 
 ## LED Indicators
-
 ```{image} ../img/fiberboard/LED_indicators.png
 :alt: LED Indicators
 :width: 100%
@@ -91,15 +92,15 @@ Make sure to use a 5V supply to power the boards! Power connector will only fit 
 
 ```
 
-### BiDi (Bidirectional) SFP Optical Transceiver 
-
+:::{dropdown} BiDi (Bidirectional) SFP Optical Transceiver 
 BiDi is recommended over common SFP due to its ability to transmit full-duplex on one strand of fiber by using different wavelengths of light. Our kit on our product listing offers a pair of 2km range BiDi Transceivers with (1550/1310nm wavelength).
 
 [Learn More](https://blog.fluxlight.com/2016/07/16/introduction-to-bidi-optical-transceivers/)
+:::
 
-### Common SFP Optical Transceiver
-
+:::{dropdown} Common SFP Optical Transceiver
 Common SFP Transceivers are also compatible with our board. They will require 2 strands of fiber for full-duplex communication.
+:::
 
 ## Fiber Optic Tethers
 
