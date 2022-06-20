@@ -1,12 +1,13 @@
 # Raspberry Pi Streaming Setup for exploreHD
 
-![Multi-Cam exploreHD Setup](../img/explorehd/exploreHD_Connection_Diagram.JPG)
-
-```{note} The following instructions are for if you want to set up streaming from a Raspberry Pi without ArduSub. If you want plug-and-play compatibility we recommend following [this guide](https://www.ardusub.com/quick-start/installing-companion.html) to install ArduSub companion. 
+```{note}
+The following instructions are for if you want to set up streaming from a Raspberry Pi without ArduSub. If you want plug-and-play compatibility we recommend following {doc}`this guide <./blueos_companion>` for installing BlueOS alongside our software.
 
 
 **These instructions are mostly for MATE ROV teams who want the ability to stream multiple exploreHDs easily, yet retain the ability to use their own flight controller!**
 ```
+
+![Multi-Cam exploreHD Setup](../img/explorehd/exploreHD_Connection_Diagram.JPG)
 
 ## Setup
 

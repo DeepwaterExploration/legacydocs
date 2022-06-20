@@ -4,10 +4,8 @@ Releases Page: [https://github.com/DeepwaterExploration/qgroundcontrol/releases]
 
 Latest Release: <https://github.com/DeepwaterExploration/qgroundcontrol/releases/download/v1.0.0-dwe-release/DWEQGroundControl-installer.exe>
 
-```{note} DWE QGroundControl is no longer in beta as of December 22nd
-```
-
-```{important} Make sure you install the [Companion BETA](https://docs.bluerobotics.com/ardusub-zola/software/companion/1.0/) software for plug-and-play multi-camera support with the exploreHD. Additionally, it is recommended to burn the *lower bandwidth firmware* when using more than **two cameras** which is documented [here](firmware).
+```{important}
+For plug and play support, you can follow the {doc}`BlueOS Companion Guide <../guides/blueos_companion>` for installing our software alongisde BlueOS.
 ```
 
 ## Installation

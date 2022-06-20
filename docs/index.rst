@@ -26,6 +26,7 @@ DeepWater Exploration Documentation
    guides/ssh_into_pi
    guides/pc_setup
    guides/receiving_streams
+   guides/blueos_companion
 
 .. toctree::
    :maxdepth: 2
