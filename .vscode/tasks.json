@@ -3,7 +3,7 @@
     "tasks": [
         {
             "label": "Sphinx autobuild",
-            "command": "cd docs && sphinx-autobuild . build/html --host 0.0.0.0",
+            "command": "kill $(pidof python3); cd docs && sphinx-autobuild . build/html --host 0.0.0.0",
             "type": "shell",
             "problemMatcher": [],
             "group": {

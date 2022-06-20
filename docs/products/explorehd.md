@@ -9,20 +9,20 @@
 ```{important} Please update your firmware if you were shipped an exploreHD before 11/20/2021
 ```
 ## Introduction
+
 Our passion for uncompromised image quality for marine robotics is the simple philosophy behind the exploreHD Underwater USB Camera (DWE-EHDUSBR2). This UVC compliant camera is the first of its kind to feature a high definition USB output while achieving a waterproof rating of IP69K. With the use of a modern Sony sensor, this camera will be able to see in low light conditions like never before. Thanks to advanced automated exposure and white balance adjustments, this camera produces accurate colors and a pleasing natural image. With H.264 compression technology, up to 4 cameras can be connected at once and streamed via ethernet without major quality loss or latency. This makes our camera the perfect choice for advanced multi-cam ROV/AUV setups.
 
 ## Technical Specifications
 
-### Waterproof Specifications
-
+```{dropdown} Waterproof Specifications
 **Waterproof Depth:** 400 meters 
 
 **Ingress Protection Rating:** IP69K
 
 **Cable Diameter:** 4mm OD
+```
 
-### Camera Specifications
-
+```{dropdown} Camera Specifications
 **Image Sensor:** 1/2.9" Sony Exmor™ CMOS 12-bit
 
 **Resolution:** 1920x1080
@@ -44,9 +44,9 @@ Our passion for uncompromised image quality for marine robotics is the simple ph
 **Voltage:** 5V 
 
 **Current:** 250mA
+```
 
-### Lens Specifications 
-
+```{dropdown} Lens Specifications
 **Type:** Fisheye 
 
 **Lens Aperture:** f/1.9
@@ -54,6 +54,7 @@ Our passion for uncompromised image quality for marine robotics is the simple ph
 **View Angle:** 150 Degrees Diagonal (in water)
 
 **Minimum Focus Distance:** 20-30 cm
+```
 
 ## Image Samples
 
@@ -80,35 +81,7 @@ The camera offers TrueColor Technology which compensates for the blue/greenish t
 ![exploreHD True Color Technology](../img/explorehd/truecolor/3_f0d99052-aa08-402a-bd62-5e0bf0c442ea.jpg)
 ![exploreHD True Color Technology](../img/explorehd/truecolor/4_e9a1179c-a100-4de6-a14b-99a793a23089.jpg)
 
-## Mount Installation
-
-### Step 1
-
-![exploreHD](../img/explorehd/camera_mounting/exploreHD_ROV_Camera_Mounting_Step_1_390x.jpg)
-
-Drill two holes, 30mm apart into your frame where you want the camera to reside. If using a thread-able material, tap an M3x0.5 thread. If using a non-thread-able material, ensure there is space for an M3x0.5 nut on the other side.
-
-### Step 2
-
-![exploreHD](../img/explorehd/camera_mounting/exploreHD_ROV_Camera_Mounting_Step_2_390x.jpg)
-
-Using two M3x0.5 screws, attach the camera bracket to the frame through the two holes on the base of the bracket.
-
-### Step 3
-
-![exploreHD](../img/explorehd/camera_mounting/exploreHD_ROV_Camera_Mounting_Step_3_390x.jpg)
-
-Place the standoff portion of the main camera body into the two remaining holes of the bracket. Now, you should have an axis about which the camera may rotate. 
-
-Tighten the camera into place using the two M2x0.4 screws and the threaded portion of the standoffs.
-
-### Step 4
-
-![exploreHD](../img/explorehd/camera_mounting/exploreHD_ROV_Camera_Mounting_Step_4_390x.jpg)
-
-There may be some give on the rotation of the camera body. To ensure the camera is held in place, zip tie the camera usb cable to the ROV in such a manner that the tension of the cable keeps the camera in place. Ensure to make the zip tie as tight as possible without damaging the cable.
-
-## Cable Waterproofing
+## Camera Installation
 
 ```{note} If the camera is going into an ROV electronic enclosure, you will need to waterproof the wires properly using a cable penetrator. You can either use potted penetrators or WetLink from Blue Robotics.
 
@@ -117,39 +90,72 @@ Recommended Cable Penetrators
 [**Potted Penetrators (M10 thread, for 3-4 mm cable)**](https://bluerobotics.com/store/cables-connectors/penetrators/penetrator-vp/)
 
 [**WetLink Penetrator (WLP-M10-4.5MM-HC (for 4.0 mm cable)**](https://bluerobotics.com/store/cables-connectors/penetrators/wlp-vp/)
-
 ```
-### Step 1
+
+```{dropdown} Mount Installation
+**Step 1**
+
+![exploreHD](../img/explorehd/camera_mounting/exploreHD_ROV_Camera_Mounting_Step_1_390x.jpg)
+
+Drill two holes, 30mm apart into your frame where you want the camera to reside. If using a thread-able material, tap an M3x0.5 thread. If using a non-thread-able material, ensure there is space for an M3x0.5 nut on the other side.
+
+**Step 2**
+
+![exploreHD](../img/explorehd/camera_mounting/exploreHD_ROV_Camera_Mounting_Step_2_390x.jpg)
+
+Using two M3x0.5 screws, attach the camera bracket to the frame through the two holes on the base of the bracket.
+
+**Step 3**
+
+![exploreHD](../img/explorehd/camera_mounting/exploreHD_ROV_Camera_Mounting_Step_3_390x.jpg)
+
+Place the standoff portion of the main camera body into the two remaining holes of the bracket. Now, you should have an axis about which the camera may rotate. 
+
+Tighten the camera into place using the two M2x0.4 screws and the threaded portion of the standoffs.
+
+**Step 4**
+
+![exploreHD](../img/explorehd/camera_mounting/exploreHD_ROV_Camera_Mounting_Step_4_390x.jpg)
+
+There may be some give on the rotation of the camera body. To ensure the camera is held in place, zip tie the camera usb cable to the ROV in such a manner that the tension of the cable keeps the camera in place. Ensure to make the zip tie as tight as possible without damaging the cable.
+```
+
+```{dropdown} Cable Waterproofing
+
+**Step 1**
 
 ![exploreHD](../img/explorehd/cable_waterproofing/exploreHD_ROV_Camera_Cable_Step_1_200x.jpg)
 
 Ensure that the camera is mounted securely on the ROV as you like it with the previous steps
 
-### Step 2
+**Step 2**
 
 ![exploreHD](../img/explorehd/cable_waterproofing/exploreHD_ROV_Camera_Cable_Step_2_200x.jpg)
 
 Cut off the USB cable to the desired length. Ensure to leave extra length for when the cable is in the enclosure.
 
-### Step 3
+**Step 3**
 
 ![exploreHD](../img/explorehd/cable_waterproofing/exploreHD_ROV_Camera_Cable_Step_3_200x.jpg)
 
 Strip the cable to the length that will be in the electronic enclosure.
 
-### Step 4
+**Step 4**
 
 ![exploreHD](../img/explorehd/cable_waterproofing/exploreHD_ROV_Camera_Cable_Step_4_200x.jpg)
 
 Twist the section of wires that are stripped from the black rubber insulation
 
-### Step 5
+**Step 5**
 
 Depending on the cable penetrator you are using, follow the instructions to waterproof the wires
 
-## USB Connection
+```
 
-### Step 1
+
+````{dropdown} USB Connection
+
+**Step 1**
 
 <b>Before soldering the wires to the provided USB connector, please ensure the following tasks have been completed</b>
 
@@ -163,7 +169,7 @@ Depending on the cable penetrator you are using, follow the instructions to wate
 
 * The nut is on the inner portion of the electronic housing end cap.
 
-### Step 2
+**Step 2**
 
 ```{important} Ensure you are knowledgeable on the function of each wire.
 
@@ -187,10 +193,9 @@ Depending on the cable penetrator you are using, follow the instructions to wate
 **Be extra careful to not mix up the polarity of the USB**
 
 [USB Type A to Terminal Block](https://www.amazon.com/dp/B07VV7V7NC/ref=sspa_dk_detail_4?psc=1&pd_rd_i=B07VV7V7NC&pd_rd_w=eTGBR&pf_rd_p=887084a2-5c34-4113-a4f8-b7947847c308&pd_rd_wg=r5Sh6&pf_rd_r=V4YZ0K344EJ0W24PP5P5&pd_rd_r=c00159dd-c2be-46ac-8700-87874fd791f8&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzVU4zMlAwRjkzVlkyJmVuY3J5cHRlZElkPUEwMTc5MjQwM0lYRFNESjlQNFJXWiZlbmNyeXB0ZWRBZElkPUEwOTc1ODgzMzlHV0lQSjRHSVFEVCZ3aWRnZXROYW1lPXNwX2RldGFpbCZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=)
-
 ```
 
-### Step 3
+**Step 3**
 
 Connect the USB cable to a computer to confirm the camera is working and in the correct orientation.
 
@@ -199,23 +204,23 @@ Connect the USB cable to a computer to confirm the camera is working and in the 
 
 An image should be displayed using the built-in camera app on your computer. The device name should be exploreHD USB Camera
 
+````
+
 ## Multi-Cam ROV Connection Diagram
 
 ![exploreHD](../img/explorehd/exploreHD_Connection_Diagram.JPG)
 
+## Streaming
 
-## Streaming via Custom Raspberry Pi
-
+```{dropdown} Streaming via custom Raspberry Pi
 If you want to run your own custom streaming setup on the Raspberry Pi, we have the perfect documentation for you! 
 
 This is perfect for MATE ROV teams who want to use the RPi to stream but don't want to be limited to PixHawk Controller from ArduSub Companion. It's also a great way to learn and customize your code for your specific setup!
 
 [Raspberry Pi Streaming Setup for exploreHD Instructions](https://docs.exploredeepwater.com/guides/pi_setup.html)
+```
 
-
-## Streaming via ArduSub Companion
-
-
+````{dropdown} Streaming via ArduSub Companion
 ```{important} **As of November 20, 2021, all exploreHD shipped will feature a new firmware that allows the cameras to be plug and play with ArduSub Companion without the need for drivers.**
 
 If your camera was shipped beforehand or you notice the video stream being sluggish, you may be running an older version.
@@ -226,32 +231,33 @@ If your camera was shipped beforehand or you notice the video stream being slugg
 If you want to stream multiple exploreHDs at once using ArduSub Companion and see potential methods for viewing the multi-stream, check out the link below
 
 [Streaming Multiple exploreHDs with ArduSub Companion Instructions](https://docs.exploredeepwater.com/guides/ardusub_companion.html#streaming-multiple-explorehds-with-ardusub-companion)
+````
 
-## H.264/Bitrate Control for Streaming
+### H.264/Bitrate Control for Streaming
 
 To set custom H.264 parameters when streaming from a Raspberry Pi or similar computer, install our [exploreHD Driver UI](https://docs.exploredeepwater.com/software/driverUI.html)!
 
 This software supports unlimited camera streams given you have unlimited USB ports!
 
 ![DWE Firmware Loader](../img/driverui/driverui.png)
-**Bitrate:** Adjust the bitrate of the exploreHD Camera
 
-**H.264:** Toggle H.264 on or off (Off is similar to MJPEG)
+- **Bitrate:** Adjust the bitrate of the exploreHD Camera
 
-**VBR:** Variable bitrate, changes bitrate depending on scene
+- **H.264:** Toggle H.264 on or off (Off is similar to MJPEG)
 
-**UDP Stream:** Starts a UDP H.264 Stream via GStreamer with port 5600.
+- **VBR:** Variable bitrate, changes bitrate depending on scene
 
-## Streaming Latency
-**Streaming Method:** UDP H.264 via Gstreamer
+- **UDP Stream:** Starts a UDP H.264 Stream via GStreamer with port 5600.
 
-**Streaming Device:** Raspberry Pi 4 Model B 2GB RAM
+```{dropdown} Streaming Latency
 
-**Streamed Devices:** 3 exploreHDs
+- **Streaming Method:** UDP H.264 via Gstreamer
+- **Streaming Device:** Raspberry Pi 4 Model B 2GB RAM
+- **Streamed Devices:** 3 exploreHDs
+- **Recieving Software:** Open Broadcaster Software
+- **Latency:** 35ms ± 20
 
-**Recieving Software:** Open Broadcaster Software
-
-**Latency:** 35ms ± 20
+```
 
 ## Technical Drawing
 The following drawing is with the 2.0 housing.
