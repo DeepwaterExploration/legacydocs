@@ -208,7 +208,7 @@ To stream more than one exploreHD at the same time, you can add an `&` to the co
 You can make this command autorun to make your ROV camera streaming system!
 ````
 
-### Receiving
+## Receiving
 
 To receive the stream on a PC, first follow our {doc}`Windows Setup Guide <./windows_setup>`. You will then be able to run the following command:
 
