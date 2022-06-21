@@ -6,7 +6,7 @@
 
 ## {doc}`Firmware Update <../software/firmware>`
 
-```{important} Please update your firmware if you were shipped an exploreHD before 11/20/2021
+```{important} Please update your firmware if you were shipped an exploreHD or HDCam before 11/20/2021
 ```
 
 ## Introduction
@@ -218,37 +218,33 @@ If you want to run your own custom streaming setup on the Raspberry Pi, we have 
 
 This is perfect for MATE ROV teams who want to use the RPi to stream but don't want to be limited to PixHawk Controller from ArduSub Companion. It's also a great way to learn and customize your code for your specific setup!
 
-[Raspberry Pi Streaming Setup for exploreHD Instructions](https://docs.exploredeepwater.com/guides/pi_setup.html)
+{doc}`Raspberry Pi Streaming Setup for exploreHD Instructions <../guides/pi_setup>`
 ```
 
-````{dropdown} Streaming via ArduSub Companion
-```{important} **As of November 20, 2021, all exploreHD shipped will feature a new firmware that allows the cameras to be plug and play with ArduSub Companion without the need for drivers.**
+````{dropdown} Streaming alongside BlueOS Companion
+```{important} **As of November 20, 2021, all exploreHD shipped will feature a new firmware that allows the cameras to be plug and play with BlueOS Companion without the need for drivers.**
 
-If your camera was shipped beforehand or you notice the video stream being sluggish, you may be running an older version.
+If your camera was shipped beforehand or you notice the video stream is sluggish, you may be running an older version.
 
-[Click Here for instructions on how to update](https://docs.exploredeepwater.com/software/firmware.html)
+{doc}`Click Here for instructions on how to update <../software/firmware>`
 ```
 
-If you want to stream multiple exploreHDs at once using ArduSub Companion and see potential methods for viewing the multi-stream, check out the link below
-
-[Streaming Multiple exploreHDs with ArduSub Companion Instructions](https://docs.exploredeepwater.com/guides/ardusub_companion.html#streaming-multiple-explorehds-with-ardusub-companion)
+If you want to stream multiple exploreHDs at once using BlueOS Companion, check out our {doc}`BlueOS Companion Guide <../guides/blueos_companion>` for installing our software alongisde BlueOS.
 ````
 
-### H.264/Bitrate Control for Streaming
-
+```{dropdown} H.264/Bitrate Control for Streaming
 To set custom H.264 parameters when streaming from a Raspberry Pi or similar computer, install our {doc}`exploreHD Driver UI <../software/driverUI>`!
 
-This software supports unlimited camera streams given you have unlimited USB ports!
+This software supports unlimited camera streams given you have unlimited USB ports, and installs perfectly alongside BlueOS.
 
 ![DWE Firmware Loader](../img/driverui/driverui.png)
 
 - **Bitrate:** Adjust the bitrate of the exploreHD Camera
-
 - **H.264:** Toggle H.264 on or off (Off is similar to MJPEG)
-
 - **VBR:** Variable bitrate, changes bitrate depending on scene
-
 - **UDP Stream:** Starts a UDP H.264 Stream via GStreamer with port 5600.
+
+```
 
 ### Streaming Latency
 
