@@ -173,7 +173,7 @@ You can make this command autorun to make your ROV camera streaming system!
 
 ## Receiving
 
-To receive the stream on a PC, first follow our {doc}`Windows Setup Guide <./windows_setup>`. You will then be able to run the following command:
+To receive the stream on a PC, first follow our {doc}`Windows Setup Guide <./pc_setup>`. You will then be able to run the following command:
 
 `gst-launch-1.0 udpsrc port=5600 ! application/x-rtp ! rtpjitterbuffer ! rtph264depay ! avdec_h264 ! videoconvert ! autovideosink`
 
