@@ -1,6 +1,6 @@
 # HDcam
 
-[![HDcam](../img/hdcam/1_d8ef6594-eb9b-4eda-8928-93b7c368b479_590x.jpg)](https://exploredeepwater.com/products/hd-usb-camera)
+[![HDcam](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_ROV_AUV_Camera_Tripod_Angled_500x.jpg)](https://exploredeepwater.com/products/hd-usb-camera)
 
 [Product Link](https://exploredeepwater.com/products/hd-usb-camera)
 
@@ -119,49 +119,7 @@ Conversely, using a lens designed for a smaller sensor (1/3 or smaller) will inc
 
 ![HDCam Image 3](../img/hdcam/image_samples/HDCam_Image_3.jpg)
 
-## Mount Installation
 
-```{note} To enable the mounting of this camera, two screw holes are located on the base of the camera holder bracket. These 20mm apart M3 counter-bores should allow for the attaching of the camera to any surface, provided two M3 threads or nuts 20mm apart may be made or placed on the surface.
-```
-
-### Step 1
-
-![exploreHD](../img/hdcam/mount_installation/HDCam_Step_1_x150.jpg)
-
-To begin the process of installing the HDCam, ensure you have the
-parts detailed in the contents section of this manual as well as a 2mm hex
-Allen wrench or screwdriver(not included).
-
-### Step 2
-
-![exploreHD](../img/hdcam/mount_installation/HDCam_Step_2_x150.jpg)
-
-Tap or drill a hole for where you want to mount the camera and attach the
-camera holder bracket to the surface using the longer M3 screws.
-
-### Step 3
-
-![exploreHD](../img/hdcam/mount_installation/HDCam_Step_3_x150.jpg)
-
-After the securing of the camera holder bracket, place the square nuts within
-the square indentation located on the bottom of the camera holder, and align
-the holes of the camera holder with the lateral holes of the camera bracket
-holder.
-
-### Step 4
-
-![exploreHD](../img/hdcam/mount_installation/HDCam_Step_4_x150.jpg)
-
-Begin screwing in both remaining screws on each side of the camera bracket
-holder, and properly position the camera to the point of view you require for
-your uses and finish screwing in the screws.
-
-### Step 5
-
-![exploreHD](../img/hdcam/mount_installation/HDCam_Step_5_x150.jpg)
-
-Connect the provided USB cable to the camera using the USB connector
-located at the top of the camera holder.
 
 ## Streaming
 
