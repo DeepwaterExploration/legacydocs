@@ -47,6 +47,8 @@ Our passion for uncompromised image quality for marine robotics is the simple ph
 **Voltage:** 5V 
 
 **Current:** 250mA
+
+**Wattage:** <1.5W
 ```
 
 ```{dropdown} Lens Specifications

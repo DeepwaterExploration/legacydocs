@@ -44,6 +44,8 @@ The HDCam is the bare board of the exploreHD Camera but without the waterproof h
 
 **Current:** 250mA
 
+**Wattage:** <1.5W
+
 **Footprint:** 30 mm diameter (PCB)
 ```
 
