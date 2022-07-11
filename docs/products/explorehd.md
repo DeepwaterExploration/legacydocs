@@ -38,6 +38,8 @@ Our passion for uncompromised image quality for marine robotics is the simple ph
 
 **Bitrate:** 10Mb/s with H.264, VBR with MJPEG/YUY2 
 
+**H.264 Compression Profiles:** Baseline Profile
+
 **Streaming Latency:** 35ms ± 20 [More Details](#streaming-latency)
 
 **Connection:** USB2.0 High Speed 
