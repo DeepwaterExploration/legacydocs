@@ -168,6 +168,9 @@ This software supports unlimited camera streams given you have unlimited USB por
 - **Recieving Software:** Open Broadcaster Software
 - **Latency:** 35ms ± 20
 
+```{youtube} ZJl32Xt4jQQ
+```
+
 ## Technical Drawing
 
 ![HDCam](../img/hdcam/technical_drawings/HDCam_Mount_Drawing_299x.jpg)

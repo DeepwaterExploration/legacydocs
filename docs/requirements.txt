@@ -7,3 +7,4 @@ karma-sphinx-theme
 sphinx-design
 furo
 sphinx-bootstrap-theme
+sphinxcontrib-youtube

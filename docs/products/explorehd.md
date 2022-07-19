@@ -258,6 +258,9 @@ This software supports unlimited camera streams given you have unlimited USB por
 - **Recieving Software:** Open Broadcaster Software
 - **Latency:** 35ms ± 20
 
+```{youtube} ZJl32Xt4jQQ
+```
+
 ## Technical Drawing
 The following drawing is with the 2.0 housing.
 

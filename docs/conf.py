@@ -28,7 +28,7 @@ author = 'Brandon Stevens'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'myst_parser', 'sphinx_design'
+    'myst_parser', 'sphinx_design', 'sphinxcontrib.youtube'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
