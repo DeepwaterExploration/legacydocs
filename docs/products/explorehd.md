@@ -4,6 +4,11 @@
 
 [Product Link](https://exploredeepwater.com/products/explorehd-rov-auv-usb-camera)
 
+## USS Midway Hull Inspection
+
+```{youtube} chALMJ4gDEU
+```
+
 ## {doc}`Firmware Update <../software/firmware>`
 
 ```{important} Please update your firmware if you were shipped an exploreHD or HDCam before 11/20/2021
