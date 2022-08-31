@@ -173,7 +173,12 @@ This software supports unlimited camera streams given you have unlimited USB por
 
 ## Technical Drawing
 
-![HDCam](../img/hdcam/technical_drawings/HDCam_Mount_Drawing_299x.jpg)
-![HDCam](../img/hdcam/technical_drawings/HDCam_camera_Drawing_310x.jpg)
+![HDCam](../img/hdcam/technical_drawings/HDC.JPG)
+
+[Download STEP File of HDcam 2.0 Assembly](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDC_Assy_v2.step?v=1661972385)
+
+![HDCam](../img/hdcam/technical_drawings/BlueROVConnection.JPG)
+
+[Download STL File of HDcam 2.0 Mount for BlueROV 2](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/BlueROV2_HDC_Bracket_v5_1.stl?v=1659117334)
 
 

@@ -80,4 +80,5 @@ If you see any errors during the upgrading process, please follow the guides bel
 ```{warning} This video uses an outdated version of the loader and may not be accurate. Documentation for this version can be found [here](https://docs.exploredeepwater.com/legacy/firmware_legacy.html).
 ```
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/G4h9EAG88HU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+```{youtube} G4h9EAG88HU
+```
