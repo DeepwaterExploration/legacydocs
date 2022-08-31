@@ -30,7 +30,7 @@ The HDCam is the bare board of the exploreHD Camera but without the waterproof h
 
 **Chroma Subsampling:** 4:2:2 with YUY2, 4:2:0 with MJPEG/H.264
 
-**Color Depth:** 8 bit
+**Color Depth Per Channel:** 8 bit per RGB channel / 24 bit per pixel
 
 **Bitrate:** 10Mb/s with H.264, VBR with MJPEG/YUY2 
 
