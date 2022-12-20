@@ -10,7 +10,7 @@ exploreHD settings can only be adjusted on the lower bandwidth / configurable fi
 
 To connect to the pi, we recommend using SSH. You can read our documentation on that on {doc}`How to SSH into a Raspberry Pi <../guides/ssh_into_pi>`.
 
-:::{dropdown} Installing with Docker Installation Script (Recommended)
+::::{dropdown} Installing with Docker Installation Script (Recommended)
 :open:
 
 Recommended for Raspberry Pi instead of [Installing On Raspberry Pi](#installing-on-raspberry-pi) or [Installing Manually](#installing-manually).
@@ -24,7 +24,18 @@ Once installed, the script should exit with the following message:
 `Installation of dwe-controls with docker was successful. Please navigate to http://192.168.2.2:5000 to access the interface.`
 
 You can now jump to [Interface](#interface) to access the functionality.
+
+:::{dropdown} Uninstalling
+
+You can uninstall dwe-controls with the following commands:
+
+```
+docker rm dwe-controls --force
+rm /usr/lib/systemd/system/dwe-controls.service
+```
 :::
+
+::::
 
 :::{dropdown} Installing with Installation Script
 ```{important} It is no longer recommended to use this script. Instead, **use the docker installation for a more compatible install**.

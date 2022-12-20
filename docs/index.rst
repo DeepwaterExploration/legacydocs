@@ -17,6 +17,7 @@ DeepWater Exploration Documentation
    products/explorehd
    products/hdcam
    products/fiber_board
+   products/7-port-usb-multiplexer
 
 .. toctree::
    :maxdepth: 2
