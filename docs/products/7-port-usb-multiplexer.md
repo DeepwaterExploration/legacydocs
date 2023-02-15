@@ -28,3 +28,94 @@ Designed to be as easy to use as possible: plug and play with our cameras, no so
 **Input Voltage:** 5V
 
 Hi-Speed (480 Mbits/s), Full-Speed (12 Mbits/s), and Low-Speed (1.5 Mbits/s) compatible
+
+## Installation
+
+```{note} If the camera is going into an ROV electronic enclosure, you will need to waterproof the wires properly using a cable penetrator. You can either use potted penetrators or WetLink from Blue Robotics.
+
+Recommended Cable Penetrators 
+
+[**Potted Penetrators (M10 thread, for 3-4 mm cable)**](https://bluerobotics.com/store/cables-connectors/penetrators/penetrator-vp/)
+
+[**WetLink Penetrator (WLP-M10-4.5MM-HC (for 4.0 mm cable)**](https://bluerobotics.com/store/cables-connectors/penetrators/wlp-vp/)
+```
+
+```{dropdown} Cable Waterproofing
+
+**Step 1**
+
+![exploreHD](../img/explorehd/cable_waterproofing/exploreHD_ROV_Camera_Cable_Step_1_200x.jpg)
+
+Ensure that the camera is mounted securely on the ROV as you like it with the previous steps
+
+**Step 2**
+
+![exploreHD](../img/explorehd/cable_waterproofing/exploreHD_ROV_Camera_Cable_Step_2_200x.jpg)
+
+Cut off the USB cable to the desired length. Ensure to leave extra length for when the cable is in the enclosure.
+
+**Step 3**
+
+![exploreHD](../img/explorehd/cable_waterproofing/exploreHD_ROV_Camera_Cable_Step_3_200x.jpg)
+
+Strip the cable to the length that will be in the electronic enclosure.
+
+**Step 4**
+
+![exploreHD](../img/explorehd/cable_waterproofing/exploreHD_ROV_Camera_Cable_Step_4_200x.jpg)
+
+Twist the section of wires that are stripped from the black rubber insulation
+
+**Step 5**
+
+Depending on the cable penetrator you are using, follow the instructions to waterproof the wires
+
+```
+
+
+````{dropdown} Cable Installation
+
+**Step 1**
+
+<b>Before attaching the wires to the provided connector housing, please ensure the following tasks have been completed</b>
+
+* Cable is properly waterproofed, following the steps in the previous page. 
+
+* Cable penetrator has the o'ring in the o'ring groove. 
+
+* Cable penetrator is on the outer portion of the electronic housing end cap.
+
+* The wires have been passed through the nut for the cable penetrator. 
+
+* The nut is on the inner portion of the electronic housing end cap.
+
+**Step 2**
+
+```{important} Ensure you are knowledgeable on the function of each wire.
+
+<span style="color: black; font-weight:bold">Black: Ground</span>
+
+<span style="color: #CCCC00; font-weight:bold">Yellow/Green: D+ (DP)</span>
+
+<span style="color: gray; font-weight:bold">White: D- (DM)</span>
+
+<span style="color: red; font-weight:bold" >Red: 5V</span>
+```
+
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/P1046952.jpg)
+
+Attach each of the connector pins into the housing in the orientation above. Be sure that you are on the right side.
+
+```{warning} Ensure that the connection is correct. **The camera will get damaged if the polarity is not correct.**
+```
+
+**Step 3**
+
+Connect the USB cable to a computer to confirm the camera is working and in the correct orientation.
+
+![exploreHD](../img/explorehd/exploreHD_ROV_Camera_App_500x.jpg)
+![exploreHD](../img/explorehd/exploreHD_ROV_Camera_App_Driver_500x.jpg)
+
+An image should be displayed using the built-in camera app on your computer. The device name should be exploreHD USB Camera
+
+````
