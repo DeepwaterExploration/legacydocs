@@ -102,7 +102,7 @@ Depending on the cable penetrator you are using, follow the instructions to wate
 <span style="color: red; font-weight:bold" >Red: 5V</span>
 ```
 
-![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/P1046952.jpg)
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/P1046952_500x.jpg)
 
 Attach each of the connector pins into the housing in the orientation above. Be sure that you are on the right side.
 
