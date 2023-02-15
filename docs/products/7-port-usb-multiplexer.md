@@ -73,7 +73,7 @@ Depending on the cable penetrator you are using, follow the instructions to wate
 ```
 
 
-````{dropdown} Cable Installation
+````{dropdown} Camera Installation
 
 **Step 1**
 
@@ -104,18 +104,18 @@ Depending on the cable penetrator you are using, follow the instructions to wate
 
 ![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/P1046952_500x.jpg)
 
-Attach each of the connector pins into the housing in the orientation above. Be sure that you are on the right side.
+Carefully insert each indvidual contacts into the connector housing until you hear an audible click. Ensure that the orientation of the connector housing and cable order matches with the image above. 
+
+If a mistake has been made, a small flat head screw driver can be used to release the contact from the connector housing. Gently use the screw driver and go under the plastic tabs to release each contact. 
 
 ```{warning} Ensure that the connection is correct. **The camera will get damaged if the polarity is not correct.**
 ```
 
 **Step 3**
 
-Connect the USB cable to a computer to confirm the camera is working and in the correct orientation.
+Connect the assembleed connector housing to a the USB Hub. 
 
-![exploreHD](../img/explorehd/exploreHD_ROV_Camera_App_500x.jpg)
-![exploreHD](../img/explorehd/exploreHD_ROV_Camera_App_Driver_500x.jpg)
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/P1046956_500x.jpg)
 
-An image should be displayed using the built-in camera app on your computer. The device name should be exploreHD USB Camera
 
 ````
