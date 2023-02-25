@@ -54,6 +54,11 @@ Our passion for uncompromised image quality for marine robotics is the simple ph
 **Current:** 250mA
 
 **Wattage:** <1.5W
+
+**Weight in Water:** 60 grams
+
+**Weight in air** 84 grams
+
 ```
 
 ```{dropdown} Lens Specifications

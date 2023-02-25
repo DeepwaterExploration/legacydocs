@@ -5,5 +5,5 @@
 
 ## Forums
 
-[https://discuss.exploredeepwater.com](https://discuss.exploredeepwater.com)
+[https://forums.dwe.ai](https://forums.dwe.ai)
 
