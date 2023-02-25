@@ -277,9 +277,9 @@ This software supports unlimited camera streams given you have unlimited USB por
 
 ```{dropdown} exploreHD 2.0 Housing
 
-![exploreHD](../img/explorehd/technical_drawing/explorehd2drawing.jpg)
-
 - [Download STEP File of exploreHD 2.0 Assembly](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_2.0_Full_Assembly_PUBLIC.step?v=1647568154)
+
+![exploreHD](../img/explorehd/technical_drawing/explorehd2drawing.jpg)
 
 ```
 
