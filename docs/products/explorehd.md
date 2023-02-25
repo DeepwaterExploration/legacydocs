@@ -28,6 +28,12 @@ Our passion for uncompromised image quality for marine robotics is the simple ph
 **Cable Diameter:** 4mm OD
 ```
 
+```{dropdown} Physical Specifications
+**Weight in Air:** 84 grams
+
+**Weight in Water:** 60 grams
+```
+
 ```{dropdown} Camera Specifications
 **Image Sensor:** 1/2.9" Sony Exmor™ CMOS 12-bit
 
@@ -54,10 +60,6 @@ Our passion for uncompromised image quality for marine robotics is the simple ph
 **Current:** 250mA
 
 **Wattage:** <1.5W
-
-**Weight in Water:** 60 grams
-
-**Weight in air** 84 grams
 
 ```
 
