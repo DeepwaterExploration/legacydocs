@@ -273,9 +273,21 @@ This software supports unlimited camera streams given you have unlimited USB por
 ```{youtube} ZJl32Xt4jQQ
 ```
 
-## Technical Drawing
-The following drawing is with the 2.0 housing.
+## Technical Drawings
+
+```{dropdown} exploreHD 2.0 Housing
 
 ![exploreHD](../img/explorehd/technical_drawing/explorehd2drawing.jpg)
 
-[Download STEP File of exploreHD 2.0 Assembly](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_2.0_Full_Assembly_PUBLIC.step?v=1647568154)
+- [Download STEP File of exploreHD 2.0 Assembly](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_2.0_Full_Assembly_PUBLIC.step?v=1647568154)
+
+```
+
+```{dropdown} exploreHD 3.0 Housing
+
+- [exploreHD 3.0 Assembly (Epoxy) STEP File](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/eHD_3.0_with_Epoxy_STEP_Public.step)
+
+- [exploreHD 3.0 Assembly (WetLink) STEP File](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/eHD_3.0_with_WL_STEP_Public.step)
+
+```
+
