@@ -1,4 +1,4 @@
-# exploreHD Controls
+# DWE OS
 
 ```{note}
 exploreHD settings can only be adjusted on the lower bandwidth / configurable firmware. Learn how to upgrade [here](./firmware)
@@ -17,7 +17,7 @@ Recommended for Raspberry Pi instead of [Installing On Raspberry Pi](#installing
 
 To install with docker, you can use the installation script provided with the following command:
 ```
-curl -fsSL https://raw.githubusercontent.com/DeepwaterExploration/exploreHD_Controls/main/scripts/install-docker.sh | sudo -E bash -
+curl -fsSL https://raw.githubusercontent.com/DeepwaterExploration/DWE_OS/main/scripts/install-docker.sh | sudo -E bash -
 ```
 
 Once installed, the script should exit with the following message:
@@ -43,11 +43,11 @@ rm /usr/lib/systemd/system/dwe-controls.service
 
 To install for the raspberry pi, you can use the installation script by executing the following command:
 ```
-curl -fsSL https://raw.githubusercontent.com/DeepwaterExploration/exploreHD_Controls/main/scripts/install.sh | sudo -E bash -
+curl -fsSL https://raw.githubusercontent.com/DeepwaterExploration/DWE_OS/main/scripts/install.sh | sudo -E bash -
 ```
 
 Once installed, the script should exit with the following message:
-`Installation of exploreHD_Controls was successful. Please navigate to http://192.168.2.2:5000 to access the interface.`
+`Installation of DWE OS was successful. Please navigate to http://192.168.2.2:5000 to access the interface.`
 
 You can now jump to [Interface](#interface) to access the functionality.
 :::

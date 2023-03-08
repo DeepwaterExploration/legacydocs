@@ -15,6 +15,7 @@ DeepWater Exploration Documentation
    :caption: Products
 
    products/explorehd
+   products/explorehd_heavy
    products/hdcam
    products/fiber_board
    products/7-port-usb-multiplexer

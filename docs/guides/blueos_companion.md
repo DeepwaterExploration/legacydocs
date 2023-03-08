@@ -12,12 +12,12 @@ Change * to a number for different streams
 ```
 :::
 
-```{note} If using BlueOS, we recommend additionally downloading our **exploreHD Controls** application alongside for full configuration. The instructions for which can be accessed below.
+```{note} If using BlueOS, we recommend additionally downloading our **DWE OS** application alongside for full configuration. The instructions for which can be accessed below.
 ```
 
 :::{dropdown} H.264/Bitrate Control for Streaming
 
-The exploreHD Controls driver works perfectly alongside BlueOS. To install, you can follow {doc}`our installation guide <../software/driverUI>`.
+DWE OS works perfectly alongside BlueOS. To install, you can follow {doc}`our installation guide <../software/driverUI>`.
 
 ![driverui-light](../img/driverui/driverui.png)
 

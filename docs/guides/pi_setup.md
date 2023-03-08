@@ -125,7 +125,7 @@ The following instructions are for if you want to set up streaming from a Raspbe
 ```{dropdown} Automatic Stream Setup
 For automatic, plug and play of the stream to work on the Raspberry Pi, use our exploreHD Driver UI. This system will automatically run at startup and saves the settings automatically. It supports UDP stream and H264 compression settings.
 
-{doc}`exploreHD Controls <../software/driverUI>`
+{doc}`DWE OS <../software/driverUI>`
 
 ![driverui](../img/driverui/driverui.png)
 ```
@@ -133,7 +133,7 @@ For automatic, plug and play of the stream to work on the Raspberry Pi, use our 
 ````{dropdown} Manual Stream Setup
 
 ```{important}
-It is not recommended to use the following instructions unless customizability is required. Please use exploreHD Controls when possible to minimze issues or compability concerns.
+It is not recommended to use the following instructions unless customizability is required. Please use DWE OS when possible to minimze issues or compability concerns.
 ```
 
 **Step 1: Finding the device**
