@@ -34,9 +34,9 @@ DeepWater Exploration Documentation
    :maxdepth: 2
    :caption: Software
 
+   software/driverUI
    software/qgroundcontrol
    software/open_broadcasting_software
-   software/driverUI
    software/firmware
 
 .. meta::
