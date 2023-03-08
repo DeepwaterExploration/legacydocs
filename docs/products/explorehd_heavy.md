@@ -1,9 +1,8 @@
 # exploreHD Heavy
-<!-- TODO: LINK TO PRODUCT PAGE -->
+
 [![exploreHD Heavy](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/P1047400_540x.jpg?v=1678088724)](https://dwe.ai/collections/all)
 
-<!-- TODO: LINK TO PRODUCT PAGE -->
-[Product Link](https://dwe.ai/collections/all)
+[Product Link](https://dwe.ai/products/explorehd-heavy)
 
 ## Introduction
 
@@ -20,9 +19,9 @@ Introducing the exploreHD Heavy, the next evolution of our flagship product line
 <!-- TODO: WEIGHTS -->
 ```{dropdown} Physical Specifications
 
-**Weight in Air:** 
+**Weight in Air:** 276 grams
 
-**Weight in Water:** 
+**Weight in Water:**
 ```
 
 ```{dropdown} Camera Specifications

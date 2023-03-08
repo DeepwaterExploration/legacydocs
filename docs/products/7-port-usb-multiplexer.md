@@ -1,6 +1,6 @@
-# exploreHD Multiplexer (High-Wattage 7-Port USB Hub for ROV/AUV)
+# 7-Port Multiplexer (ROV/AUV)
 
-[![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/products/exploreHDUSBmultiplexer_500x.jpg)](https://exploredeepwater.com/products/7-port-usb-multiplexer)
+[![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/USBHubConverter.jpg?v=1684294868&width=590)](https://exploredeepwater.com/products/7-port-usb-multiplexer)
 
 [Product Link](https://exploredeepwater.com/products/7-port-usb-multiplexer)
 
@@ -30,6 +30,9 @@ Designed to be as easy to use as possible: plug and play with our cameras, no so
 Hi-Speed (480 Mbits/s), Full-Speed (12 Mbits/s), and Low-Speed (1.5 Mbits/s) compatible
 
 ## Installation
+
+```{youtube} 36yojUnr9V0
+```
 
 ```{note} If the camera is going into an ROV electronic enclosure, you will need to waterproof the wires properly using a cable penetrator. You can either use potted penetrators or WetLink from Blue Robotics.
 

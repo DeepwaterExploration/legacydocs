@@ -1,6 +1,6 @@
 # exploreHD
 
-[![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHDDOCS_500x.jpg)](https://exploredeepwater.com/products/explorehd-rov-auv-usb-camera)
+[![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/products/exploreHDFront.jpg?width=590)](https://exploredeepwater.com/products/explorehd-rov-auv-usb-camera)
 
 [Product Link](https://exploredeepwater.com/products/explorehd-rov-auv-usb-camera)
 
@@ -99,6 +99,8 @@ The camera offers TrueColor Technology which compensates for the blue/greenish t
 ![exploreHD True Color Technology](../img/explorehd/truecolor/4_e9a1179c-a100-4de6-a14b-99a793a23089.jpg)
 
 ## Camera Installation
+```{youtube} 36yojUnr9V0
+```
 
 ```{note} If the camera is going into an ROV electronic enclosure, you will need to waterproof the wires properly using a cable penetrator. You can either use potted penetrators or WetLink from Blue Robotics.
 
@@ -290,6 +292,8 @@ This software supports unlimited camera streams given you have unlimited USB por
 - [exploreHD 3.0 Assembly (WetLink) STEP File](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/eHD_3.0_with_WL_STEP_Public.step)
 
 - [exploreHD 3.0 Stand Assembly STEP File](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/eHD_3.0_Stand_Full_Assembly_v7.step)
+
+![exploreHD](../img/explorehd/technical_drawing/eHD_3.0_drawing.jpg)
 
 ```
 
