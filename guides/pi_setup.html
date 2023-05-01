@@ -1,0 +1,534 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+<meta content="DeepWater Exploration Documentation Site" name="description" />
+<meta content="rov, exploreHD, HDCam, Camera" name="keywords" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="SSH Into a Raspberry Pi" href="ssh_into_pi.html" /><link rel="prev" title="exploreHD Multiplexer (High-Wattage 7-Port USB Hub for ROV/AUV)" href="../products/7-port-usb-multiplexer.html" />
+
+    <link rel="shortcut icon" href="../_static/wave.png"/><!-- Generated with Sphinx 7.0.0 and Furo 2023.03.27 -->
+        <title>Raspberry Pi Streaming Setup for exploreHD - DeepWater Exploration docs</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=fad236701ea90a88636c2a8c73b44ae642ed2a53" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">DeepWater Exploration docs</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/DWELogo_black_WEB.svg" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/DWELogo_white_WEB.svg" alt="Dark Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">DeepWater Exploration docs</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about/about_us.html">About Us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/contact_us.html">Contact Us</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Products</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../products/explorehd.html">exploreHD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../products/explorehd_heavy.html">exploreHD Heavy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../products/hdcam.html">HDcam</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../products/fiber_board.html">Fiber Board</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../products/7-port-usb-multiplexer.html">exploreHD Multiplexer (High-Wattage 7-Port USB Hub for ROV/AUV)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul class="current">
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Raspberry Pi Streaming Setup for exploreHD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ssh_into_pi.html">SSH Into a Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pc_setup.html">PC Setup Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="receiving_streams.html">Receiving Multiple Streams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="blueos_companion.html">BlueOS Companion Setup for exploreHD</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../software/driverUI.html">DWE OS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/qgroundcontrol.html">QGroundControl with MultiCam Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/open_broadcasting_software.html">OBS (Open Broadcasting Software)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/firmware.html">DWE Firmware Loader</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="raspberry-pi-streaming-setup-for-explorehd">
+<h1>Raspberry Pi Streaming Setup for exploreHD<a class="headerlink" href="#raspberry-pi-streaming-setup-for-explorehd" title="Permalink to this heading">#</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The following instructions are for if you want to set up streaming from a Raspberry Pi without ArduSub. If you want plug-and-play compatibility we recommend following <a class="reference internal" href="blueos_companion.html"><span class="doc">this guide</span></a> for installing BlueOS alongside our software.</p>
+<p><strong>These instructions are mostly for MATE ROV teams who want the ability to stream multiple exploreHDs easily, yet retain the ability to use their own flight controller!</strong></p>
+</div>
+<p><img alt="Multi-Cam exploreHD Setup" src="../_images/exploreHD_Connection_Diagram.JPG" /></p>
+<section id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this heading">#</a></h2>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Initial Setup<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Step 1: Flashing the Raspberry Pi</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Download and run the <a class="reference external" href="https://www.raspberrypi.com/software/">Raspberry Pi Imager</a> from the official Raspberry Pi website</p></li>
+<li><p class="sd-card-text">If you haven’t already, insert the SD card into your computer</p></li>
+<li><p class="sd-card-text">Select Raspberry Pi OS (32-bit) for the Operating System and the SD card you inserted as the SD card.</p></li>
+<li><p class="sd-card-text">Select <code class="docutils literal notranslate"><span class="pre">Write</span></code> to begin flashing the Operating System to the SD card</p></li>
+</ul>
+<p class="sd-card-text"><strong>Step 2: Powering</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Plug in a compatible HDMI cable and monitor to the Pi</p></li>
+<li><p class="sd-card-text">Connect a USB keyboard and mouse to the Pi</p></li>
+<li><p class="sd-card-text">Power the Pi using a micro usb or usb c power adapter depending on the version of Raspberry Pi you are using</p></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p class="sd-card-text">Ensure you power the Pi after plugging the monitor into the Pi <strong>and wall power</strong>, otherwise, the Pi will not recognize the display and you will have to power cycle the device.</p>
+</div>
+<p class="sd-card-text"><strong>Step 3: Perform the Initial Setup</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Setup the Pi with the GUI provided at start</p></li>
+<li><p class="sd-card-text">Ensure WiFi is connected as soon as possible</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p class="sd-card-text">Make sure you select the <strong>US Keyboard layout</strong> or some keys will not be recognized properly.</p>
+</div>
+<p class="sd-card-text"><strong>Step 4: Set Static IP</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Edit dhcpcd.conf -  <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">nano</span> <span class="pre">/etc/dhcpcd.conf</span></code></p></li>
+<li><p class="sd-card-text">Add:</p></li>
+</ul>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>interface eth0
+static ip_address=192.168.2.2/24
+</pre></div>
+</div>
+<p class="sd-card-text">to the end of the file</p>
+<ul class="simple">
+<li><p class="sd-card-text">Save and close the file with <code class="docutils literal notranslate"><span class="pre">ctrl-o</span></code>, <code class="docutils literal notranslate"><span class="pre">enter</span></code>, and then <code class="docutils literal notranslate"><span class="pre">ctrl-x</span></code></p></li>
+</ul>
+<p class="sd-card-text"><strong>Step 5: Connect to a Laptop</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Plug in an ethernet cable into the Raspberry Pi with the other end connected to a Windows or Linux laptop or PC</p></li>
+<li><p class="sd-card-text">Enable ssh on the pi</p></li>
+</ul>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Enabling SSH on the Raspberry Pi<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Run <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">raspi-config</span></code></p>
+<p class="sd-card-text"><img alt="Raspi Config" src="../_images/raspi-config.png" /></p>
+<p class="sd-card-text">Select <code class="docutils literal notranslate"><span class="pre">Interface</span> <span class="pre">Options</span></code> and press enter</p>
+<p class="sd-card-text"><img alt="Raspi Config Interface Options" src="../_images/raspi-config2.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">Use the arrow keys to navigate the menu up and down</p>
+</div>
+<p class="sd-card-text">Under <code class="docutils literal notranslate"><span class="pre">Interface</span> <span class="pre">Options</span></code>, Select <code class="docutils literal notranslate"><span class="pre">SSH</span></code></p>
+<p class="sd-card-text"><img alt="Raspi Config SSH" src="../_images/raspi-config3.png" /></p>
+<p class="sd-card-text">Select <code class="docutils literal notranslate"><span class="pre">yes</span></code> and press enter</p>
+<p class="sd-card-text"><img alt="Raspi Enable SSH" src="../_images/raspi-config4.png" /></p>
+</div>
+</details><ul class="simple">
+<li><p class="sd-card-text">Reboot the pi with: <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">reboot</span></code></p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+SSH into the Pi<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Windows<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">For Windows, we recommend using Putty, which can be downloaded <a class="reference external" href="https://www.putty.org/">here</a></p>
+<ul class="simple">
+<li><p class="sd-card-text">After installing, open Putty and type the address of the Raspberry Pi (which should be set to 192.168.2.2 if you are following <a class="reference internal" href="#"><span class="doc">Our Guide</span></a>)</p></li>
+<li><p class="sd-card-text">Keep the other settings as default and click the <code class="docutils literal notranslate"><span class="pre">Open</span></code> button</p></li>
+</ul>
+<p class="sd-card-text"><img alt="Putty Connect" src="../_images/putty2.png" /></p>
+<ul class="simple">
+<li><p class="sd-card-text">After connecting you will be prompted with a <em>security alert</em>. Ensure you select <strong>accept</strong>.</p></li>
+</ul>
+<p class="sd-card-text"><img alt="Security Alert" src="../_images/putty3.png" /></p>
+<ul class="simple">
+<li><p class="sd-card-text">To log in, use the following credentials: username: <code class="docutils literal notranslate"><span class="pre">pi</span></code>, password: <code class="docutils literal notranslate"><span class="pre">raspberry</span></code></p></li>
+<li><p class="sd-card-text">You will be greeted with a terminal</p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Linux/Mac<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First, open your terminal app.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">If using Linux, this will depend on your distribution. On MacOS, you can open spotlight and type: <code class="docutils literal notranslate"><span class="pre">Terminal</span></code>.</p>
+</div>
+<p class="sd-card-text">The general format for ssh on unix is:
+<code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">-p</span> <span class="pre">port</span> <span class="pre">user&#64;IP-Address</span></code></p>
+<p class="sd-card-text">Enter the following command:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>ssh -p 22 pi@192.168.2.2
+</pre></div>
+</div>
+<p class="sd-card-text">The password will be <code class="docutils literal notranslate"><span class="pre">raspberry</span></code> by default.</p>
+</div>
+</details><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">At this point, you can disconnect the USB keyboard, mouse, and monitor from the Raspberry Pi.</p>
+</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Installation Instructions<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Step 1: Update the Pi</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>sudo apt-get update
+sudo apt-get upgrade
+sudo apt full-upgrade
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">This process may take a while</p>
+</div>
+<p class="sd-card-text"><strong>Step 2: Install the Latest Version of GStreamer</strong></p>
+<p class="sd-card-text">Remove the included version of GStreamer:</p>
+<p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">remove</span> <span class="pre">libgstreamer*</span> <span class="pre">gstreamer1.0*</span></code></p>
+<p class="sd-card-text">Install GStreamer:</p>
+<p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">gstreamer1.0-tools</span> <span class="pre">gstreamer1.0-x</span> <span class="pre">gstreamer1.0-plugins-base</span> <span class="pre">gstreamer1.0-plugins-good</span> <span class="pre">gstreamer1.0-plugins-bad</span> <span class="pre">gstreamer1.0-libav</span></code></p>
+<p class="sd-card-text"><strong>Step 3: Plug in the Camera</strong></p>
+<p class="sd-card-text">If you haven’t already, connect an exploreHD or HDCam to an available USB port on the Raspberry Pi</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">See <a class="reference internal" href="../products/explorehd.html"><span class="doc">exploreHD</span></a> or <a class="reference internal" href="../products/hdcam.html"><span class="doc">HDCam</span></a> getting started guides</p>
+</div>
+</div>
+</details></section>
+<section id="streaming">
+<h2>Streaming<a class="headerlink" href="#streaming" title="Permalink to this heading">#</a></h2>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Automatic Stream Setup<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">For automatic, plug and play of the stream to work on the Raspberry Pi, use our exploreHD Driver UI. This system will automatically run at startup and saves the settings automatically. It supports UDP stream and H264 compression settings.</p>
+<p class="sd-card-text"><a class="reference internal" href="../software/driverUI.html"><span class="doc">DWE OS</span></a></p>
+<p class="sd-card-text"><img alt="driverui" src="../_images/driverui.png" /></p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Manual Stream Setup<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p class="sd-card-text">It is not recommended to use the following instructions unless customizability is required. Please use DWE OS when possible to minimze issues or compability concerns.</p>
+</div>
+<p class="sd-card-text"><strong>Step 1: Finding the device</strong>
+<code class="docutils literal notranslate"><span class="pre">v4l2-ctl</span> <span class="pre">--list-devices</span></code></p>
+<p class="sd-card-text"><img alt="Device List" src="../_images/PiDeviceLists.jpg" /></p>
+<p class="sd-card-text">Look for device: <strong>exploreHD USB Camera: exploreHD</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">In this example, we have 2 exploreHDs connected so it shows up twice.</p>
+</div>
+<p class="sd-card-text">You can ignore <code class="docutils literal notranslate"><span class="pre">/dev/media*</span></code></p>
+<p class="sd-card-text">The different video numbers in each section represent the different encoding format. Typically the third one on the list is for H264 (in the above example video6 and video2 are H264 formats). Keep those in mind for the next step. The video number won’t change as long as the USB device doesn’t get unplugged even when you reboot the Pi.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">If you are unsure the device number you selected is ‘H264’ format, you can run <code class="docutils literal notranslate"><span class="pre">v4l2-ctl</span> <span class="pre">--list-formats</span> <span class="pre">--device</span> <span class="pre">*</span></code> to find out. (replace * with the device number)</p>
+</div>
+<p class="sd-card-text"><strong>Step 2: Streaming in H264</strong></p>
+<p class="sd-card-text">On the Raspberry Pi, run:</p>
+<p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">gst-launch-1.0</span> <span class="pre">-v</span> <span class="pre">v4l2src</span> <span class="pre">device=/dev/video*</span> <span class="pre">!</span> <span class="pre">video/x-h264,</span> <span class="pre">width=1920,height=1080!</span> <span class="pre">h264parse</span> <span class="pre">!</span> <span class="pre">queue</span> <span class="pre">!</span> <span class="pre">rtph264pay</span> <span class="pre">config-interval=10</span> <span class="pre">pt=96</span> <span class="pre">!</span> <span class="pre">udpsink</span> <span class="pre">host=192.168.2.1</span> <span class="pre">port=5600</span> <span class="pre">sync=false</span></code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">In this example, <code class="docutils literal notranslate"><span class="pre">host=192.168.2.1</span></code> due to the expected setup in <a class="reference internal" href="#Receiving"><span class="xref myst">Receiving</span></a> regarding Windows Setup. If that specific setup cannot be followed you may replace this with the local IP of your device.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">Replace the * in device=/dev/video* with the video device number seen in the previous step.</p>
+</div>
+<p class="sd-card-text">To stream more than one exploreHD at the same time, you can add an <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> to the code and run another one with the respective video device and port number.</p>
+<p class="sd-card-text">You can make this command autorun to make your ROV camera streaming system!</p>
+</div>
+</details></section>
+<section id="receiving">
+<h2>Receiving<a class="headerlink" href="#receiving" title="Permalink to this heading">#</a></h2>
+<p>To receive the stream on a PC, first follow our <a class="reference internal" href="pc_setup.html"><span class="doc">Windows Setup Guide</span></a>. You will then be able to run the following command:</p>
+<p><code class="docutils literal notranslate"><span class="pre">gst-launch-1.0</span> <span class="pre">udpsrc</span> <span class="pre">port=5600</span> <span class="pre">!</span> <span class="pre">application/x-rtp</span> <span class="pre">!</span> <span class="pre">rtpjitterbuffer</span> <span class="pre">!</span> <span class="pre">rtph264depay</span> <span class="pre">!</span> <span class="pre">avdec_h264</span> <span class="pre">!</span> <span class="pre">videoconvert</span> <span class="pre">!</span> <span class="pre">autovideosink</span></code></p>
+<p>For more streaming options such as viewing multiple streams at once, please see:</p>
+<p><a class="reference internal" href="#/guides/ardusub_companion.html#receiving-multiple-streams"><span class="xref myst">Receiving Multiple Streams Instructions</span></a></p>
+<p><img alt="MultiCam exploreHD ROV Setup" src="../_images/gstreamer8.jpg" /></p>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="ssh_into_pi.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">SSH Into a Raspberry Pi</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="../products/7-port-usb-multiplexer.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">exploreHD Multiplexer (High-Wattage 7-Port USB Hub for ROV/AUV)</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022, DeepWater Exploration Inc.
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Raspberry Pi Streaming Setup for exploreHD</a><ul>
+<li><a class="reference internal" href="#setup">Setup</a></li>
+<li><a class="reference internal" href="#streaming">Streaming</a></li>
+<li><a class="reference internal" href="#receiving">Receiving</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/scripts/furo.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    </body>
+</html>

@@ -1,0 +1,494 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+<meta content="DeepWater Exploration Documentation Site" name="description" />
+<meta content="rov, exploreHD, HDCam, Camera" name="keywords" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Fiber Board" href="fiber_board.html" /><link rel="prev" title="exploreHD Heavy" href="explorehd_heavy.html" />
+
+    <link rel="shortcut icon" href="../_static/wave.png"/><!-- Generated with Sphinx 7.0.0 and Furo 2023.03.27 -->
+        <title>HDcam - DeepWater Exploration docs</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=fad236701ea90a88636c2a8c73b44ae642ed2a53" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">DeepWater Exploration docs</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/DWELogo_black_WEB.svg" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/DWELogo_white_WEB.svg" alt="Dark Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">DeepWater Exploration docs</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about/about_us.html">About Us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/contact_us.html">Contact Us</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Products</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="explorehd.html">exploreHD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="explorehd_heavy.html">exploreHD Heavy</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">HDcam</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fiber_board.html">Fiber Board</a></li>
+<li class="toctree-l1"><a class="reference internal" href="7-port-usb-multiplexer.html">exploreHD Multiplexer (High-Wattage 7-Port USB Hub for ROV/AUV)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guides/pi_setup.html">Raspberry Pi Streaming Setup for exploreHD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/ssh_into_pi.html">SSH Into a Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/pc_setup.html">PC Setup Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/receiving_streams.html">Receiving Multiple Streams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/blueos_companion.html">BlueOS Companion Setup for exploreHD</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../software/driverUI.html">DWE OS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/qgroundcontrol.html">QGroundControl with MultiCam Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/open_broadcasting_software.html">OBS (Open Broadcasting Software)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/firmware.html">DWE Firmware Loader</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="hdcam">
+<h1>HDcam<a class="headerlink" href="#hdcam" title="Permalink to this heading">#</a></h1>
+<p><a class="reference external" href="https://exploredeepwater.com/products/hd-usb-camera"><img alt="HDcam" src="https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_ROV_AUV_Camera_Tripod_Angled_500x.jpg" /></a></p>
+<p><a class="reference external" href="https://exploredeepwater.com/products/hd-usb-camera">Product Link</a></p>
+<section id="firmware-update">
+<h2><a class="reference internal" href="../software/firmware.html"><span class="doc">Firmware Update</span></a><a class="headerlink" href="#firmware-update" title="Permalink to this heading">#</a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Please update your firmware if you were shipped an exploreHD or HDCam before 11/20/2021</p>
+</div>
+</section>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<p>The HDCam is the bare board of the exploreHD Camera but without the waterproof housing. This camera provides the same excellent image quality as the exploreHD but uses a specialized lens designed to be more suited for above water applications. The camera can output H.264, MPEG, and YUY2 at reduced frame-rates. Due to its low distortion and smooth frame-rate, this camera is ideal for computer vision applications.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This camera runs the same firmware as the exploreHD. The only optical difference between this camera and the exploreHD is the different lens used.</p>
+</div>
+</section>
+<section id="technical-specifications">
+<h2>Technical Specifications<a class="headerlink" href="#technical-specifications" title="Permalink to this heading">#</a></h2>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Camera Specifications<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Image Sensor:</strong> 1/2.9” Sony Exmor™ CMOS 12-bit</p>
+<p class="sd-card-text"><strong>Resolution:</strong> 1920x1080</p>
+<p class="sd-card-text"><strong>Framerate:</strong> 30fps with H.264/MJPEG</p>
+<p class="sd-card-text"><strong>Format:</strong> H.264, MJPEG, YUY2</p>
+<p class="sd-card-text"><strong>Chroma Subsampling:</strong> 4:2:2 with YUY2, 4:2:0 with MJPEG/H.264</p>
+<p class="sd-card-text"><strong>Color Depth Per Channel:</strong> 8 bit per RGB channel / 24 bit per pixel</p>
+<p class="sd-card-text"><strong>Bitrate:</strong> 10Mb/s with H.264, VBR with MJPEG/YUY2</p>
+<p class="sd-card-text"><strong>H.264 Compression Profiles:</strong> Baseline Profile</p>
+<p class="sd-card-text"><strong>Streaming Latency:</strong> 35ms ± 20 <a class="reference internal" href="#streaming-latency"><span class="xref myst">More Details</span></a></p>
+<p class="sd-card-text"><strong>Connection:</strong> USB2.0 High Speed</p>
+<p class="sd-card-text"><strong>Voltage:</strong> 5V</p>
+<p class="sd-card-text"><strong>Current:</strong> 250mA</p>
+<p class="sd-card-text"><strong>Wattage:</strong> &lt;1.5W</p>
+<p class="sd-card-text"><strong>Footprint:</strong> 30 mm diameter (PCB)</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Lens Specifications<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Type:</strong> Low Distortion Lens</p>
+<p class="sd-card-text"><strong>Lens Aperture:</strong> f/2.8</p>
+<p class="sd-card-text"><strong>View Angle:</strong> 100 Degrees Diagonal</p>
+<p class="sd-card-text"><strong>Minimum Focus Distance:</strong> 15 cm</p>
+<p class="sd-card-text"><strong>Focal Length:</strong>  2.7MM (19MM Equivalent on Full Frame)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">We currently don’t recommend this lens for underwater use due to its narrower aperture and vignetting qualities when the camera is underwater. For those looking to replace the standard ELP USB camera from BlueROV, we recommend using their lens for now until our team finds a more suitable lens for underwater.</p>
+</div>
+</div>
+</details></section>
+<section id="operating-notes">
+<h2>Operating Notes<a class="headerlink" href="#operating-notes" title="Permalink to this heading">#</a></h2>
+<section id="pcb-size-comparison">
+<h3>PCB Size Comparison<a class="headerlink" href="#pcb-size-comparison" title="Permalink to this heading">#</a></h3>
+<p><img alt="HDCam vs BR Camera" src="../_images/HDCam_PCB_size_x320.jpg" /></p>
+<p>Size comparison of the PCB between the ELP’s H.264 USB Camera (found in many current ROV systems) and the HDCam.</p>
+<p>HDCam features an advanced multilayer PCB and a much more modern image processor which allows our board to be more space efficient than the competition while providing better performance <strong>(see below for comparison)</strong>.</p>
+</section>
+<section id="image-comparison-of-hdcam-vs-elp-generic-h-264-usb-camera">
+<h3>Image Comparison of HDCam vs ELP (Generic H.264 USB Camera)<a class="headerlink" href="#image-comparison-of-hdcam-vs-elp-generic-h-264-usb-camera" title="Permalink to this heading">#</a></h3>
+<p><img alt="HDCam Temperature" src="../_images/HDCam_1.jpg" /></p>
+<p><img alt="HDCam Temperature" src="../_images/HDCam_2.jpg" /></p>
+</section>
+<section id="temperature">
+<h3>Temperature<a class="headerlink" href="#temperature" title="Permalink to this heading">#</a></h3>
+<p><img alt="HDCam Temperature" src="../_images/HDCam_Temperature_x200.jpg" /></p>
+<p>For long-term operation, the camera may get hot (MAX Temp 70C). This is normal and not a cause for concern. The processor has an auto thermal shut off if it does exceed normal operating temperatures. If you
+are designing a custom mount, it can not be manufactured with Polylactic acid (PLA) plastic as the heat from the camera will cause the plastic to weaken. Acrylonitrile butadiene styrene (ABS) is recommended instead.</p>
+</section>
+<section id="sensor-affected-by-incident-light">
+<h3>Sensor Affected by Incident Light<a class="headerlink" href="#sensor-affected-by-incident-light" title="Permalink to this heading">#</a></h3>
+<p><img alt="HDCam Sensor Incident Light" src="../_images/HDCam_Incident_Light_x200.jpg" /></p>
+<p>The Sony IMX323 sensor used in this camera is chosen for its smaller footprint while still providing great
+image quality. Typically, CMOS sensors contain a ceramic plate on the back to prevent incident light from
+entering through the back of the sensor causing an X-ray effect. The IMX323 sensor does not have a
+ceramic plate and is therefore susceptible to indent light from the back of the camera affecting image quality. This can easily be avoided by using our included camera holder or using black electrical tape to cover
+the back of the camera PCB.</p>
+</section>
+<section id="lens-focusing">
+<h3>Lens Focusing<a class="headerlink" href="#lens-focusing" title="Permalink to this heading">#</a></h3>
+<p><img alt="HDCam Lens Holder" src="../_images/HDCam_Lens_Holder_x200.jpg" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Pay extra attention to not screw the lens past the sensor element. Doing so will crack the sensor and damage it permanently.</p>
+</div>
+<p>To ensure the sharpest image from your camera, the distance between the sensor and the lens must be set correctly. Before the camera leaves our facility, the focus is set manually and a screw is placed on the side of the lens holder to lock the distance. Sometimes, this screw can get loose over time and the camera loses proper focus. You can adjust this manually by taking the screw off and twisting the lens until the image is clear when viewing a far away distance on a computer.</p>
+<p><strong>This will also allow users to use different M12 style lenses with the HDCam.</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are using a different lens than the one supplied, make sure it’s compatible with the 1/2.9 sensor size. Using a lens designed for a larger sensor (1/2.8 or larger) will usually work but you will expect a lower FOV than advertised. Additionally, the lens will produce a less sharp image and artifacts such as chromatic aberration will be more noticeable.</p>
+<p>Conversely, using a lens designed for a smaller sensor (1/3 or smaller) will increase the FOV but you may notice more vignetting in the image. The lens will produce a sharper image and less chromatic aberration will be observed.</p>
+</div>
+</section>
+</section>
+<section id="image-samples">
+<h2>Image Samples<a class="headerlink" href="#image-samples" title="Permalink to this heading">#</a></h2>
+<p><img alt="HDCam Image 1" src="../_images/HDCam_Image_1.jpg" /></p>
+<p><img alt="HDCam Image 2" src="../_images/HDCam_Image_2.jpg" /></p>
+<p><img alt="HDCam Image 3" src="../_images/HDCam_Image_3.jpg" /></p>
+</section>
+<section id="streaming">
+<h2>Streaming<a class="headerlink" href="#streaming" title="Permalink to this heading">#</a></h2>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Streaming via custom Raspberry Pi<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">If you want to run your own custom streaming setup on the Raspberry Pi, we have the perfect documentation for you!</p>
+<p class="sd-card-text">This is perfect for MATE ROV teams who want to use the RPi to stream but don’t want to be limited to PixHawk Controller from ArduSub Companion. It’s also a great way to learn and customize your code for your specific setup!</p>
+<p class="sd-card-text"><a class="reference internal" href="../guides/pi_setup.html"><span class="doc">Raspberry Pi Streaming Setup for exploreHD Instructions</span></a></p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Streaming alongside BlueOS Companion<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p class="sd-card-text"><strong>As of November 20, 2021, all exploreHD shipped will feature a new firmware that allows the cameras to be plug and play with BlueOS Companion without the need for drivers.</strong></p>
+<p class="sd-card-text">If your camera was shipped beforehand or you notice the video stream is sluggish, you may be running an older version.</p>
+<p class="sd-card-text"><a class="reference internal" href="../software/firmware.html"><span class="doc">Click Here for instructions on how to update</span></a></p>
+</div>
+<p class="sd-card-text">If you want to stream multiple exploreHDs at once using BlueOS Companion, check out our <a class="reference internal" href="../guides/blueos_companion.html"><span class="doc">BlueOS Companion Guide</span></a> for installing our software alongisde BlueOS.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+H.264/Bitrate Control for Streaming<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">To set custom H.264 parameters when streaming from a Raspberry Pi or similar computer, install our <a class="reference internal" href="../software/driverUI.html"><span class="doc">exploreHD Driver UI</span></a>!</p>
+<p class="sd-card-text">This software supports unlimited camera streams given you have unlimited USB ports, and installs perfectly alongside BlueOS.</p>
+<p class="sd-card-text"><img alt="DWE Firmware Loader" src="../_images/driverui.png" /></p>
+<ul class="simple">
+<li><p class="sd-card-text"><strong>Bitrate:</strong> Adjust the bitrate of the exploreHD Camera</p></li>
+<li><p class="sd-card-text"><strong>H.264:</strong> Toggle H.264 on or off (Off is similar to MJPEG)</p></li>
+<li><p class="sd-card-text"><strong>VBR:</strong> Variable bitrate, changes bitrate depending on scene</p></li>
+<li><p class="sd-card-text"><strong>UDP Stream:</strong> Starts a UDP H.264 Stream via GStreamer with port 5600.</p></li>
+</ul>
+</div>
+</details><section id="streaming-latency">
+<h3>Streaming Latency<a class="headerlink" href="#streaming-latency" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Streaming Method:</strong> UDP H.264 via Gstreamer</p></li>
+<li><p><strong>Streaming Device:</strong> Raspberry Pi 4 Model B 2GB RAM</p></li>
+<li><p><strong>Streamed Devices:</strong> 3 exploreHDs</p></li>
+<li><p><strong>Recieving Software:</strong> Open Broadcaster Software</p></li>
+<li><p><strong>Latency:</strong> 35ms ± 20</p></li>
+</ul>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/ZJl32Xt4jQQ" style="border: 0; height: 345px; width: 560px">
+</iframe></div></section>
+</section>
+<section id="technical-drawing">
+<h2>Technical Drawing<a class="headerlink" href="#technical-drawing" title="Permalink to this heading">#</a></h2>
+<p><img alt="HDCam" src="../_images/HDC.JPG" /></p>
+<p><a class="reference external" href="https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDC_Assy_v2.step?v=1661972385">Download STEP File of HDcam 2.0 Assembly</a></p>
+<p><img alt="HDCam" src="../_images/BlueROVConnection.JPG" /></p>
+<p><a class="reference external" href="https://cdn.shopify.com/s/files/1/0575/8785/9626/files/BlueROV2_HDC_Bracket_v5_1.stl?v=1659117334">Download STL File of HDcam 2.0 Mount for BlueROV 2</a></p>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="fiber_board.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Fiber Board</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="explorehd_heavy.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">exploreHD Heavy</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022, DeepWater Exploration Inc.
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">HDcam</a><ul>
+<li><a class="reference internal" href="#firmware-update"><span class="xref std std-doc">Firmware Update</span></a></li>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#technical-specifications">Technical Specifications</a></li>
+<li><a class="reference internal" href="#operating-notes">Operating Notes</a><ul>
+<li><a class="reference internal" href="#pcb-size-comparison">PCB Size Comparison</a></li>
+<li><a class="reference internal" href="#image-comparison-of-hdcam-vs-elp-generic-h-264-usb-camera">Image Comparison of HDCam vs ELP (Generic H.264 USB Camera)</a></li>
+<li><a class="reference internal" href="#temperature">Temperature</a></li>
+<li><a class="reference internal" href="#sensor-affected-by-incident-light">Sensor Affected by Incident Light</a></li>
+<li><a class="reference internal" href="#lens-focusing">Lens Focusing</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#image-samples">Image Samples</a></li>
+<li><a class="reference internal" href="#streaming">Streaming</a><ul>
+<li><a class="reference internal" href="#streaming-latency">Streaming Latency</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#technical-drawing">Technical Drawing</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/scripts/furo.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    </body>
+</html>
