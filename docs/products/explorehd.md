@@ -291,7 +291,7 @@ This software supports unlimited camera streams given you have unlimited USB por
 
 - [exploreHD 3.0 Stand Assembly STEP File](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/eHD_3.0_Stand_Full_Assembly_v7.step)
 
-<img src="../img/explorehd/technical_drawing/eHD_3.0_drawing.jpg" width="332">
+![exploreHD](../img/explorehd/technical_drawing/eHD_3.0_drawing.jpg)
 
 ```
 
