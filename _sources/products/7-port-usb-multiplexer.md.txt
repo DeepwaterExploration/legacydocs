@@ -1,4 +1,4 @@
-# exploreHD Multiplexer (High-Wattage 7-Port USB Hub for ROV/AUV)
+# 7-Port Multiplexer (ROV/AUV)
 
 [![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/products/exploreHDUSBmultiplexer_500x.jpg)](https://exploredeepwater.com/products/7-port-usb-multiplexer)
 

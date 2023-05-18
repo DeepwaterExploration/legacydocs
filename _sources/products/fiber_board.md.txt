@@ -1,4 +1,4 @@
-# Fiber Board
+# Gigabit Fiber to Ethernet Converter (ROV/AUV)
 
 [![Fiber Board](../img/fiberboard/ROVFiberBoardMainPic_590x.jpg)](https://exploredeepwater.com/products/ethernet-fiber-converter)
 
