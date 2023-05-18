@@ -53,7 +53,7 @@ Unlike many other fiber converters, this is designed to be as space efficient as
 :::
 
 ## LED Indicators
-```{image} ../img/fiberboard/LED_indicators.png
+```{image} ../img/fiberboard/LED_indicators.jpg
 :alt: LED Indicators
 :width: 100%
 ```
