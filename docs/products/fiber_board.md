@@ -72,16 +72,14 @@ Unlike many other fiber converters, this is designed to be as space efficient as
 
 ## Powering
 
-![Fiber Board](../img/fiberboard/ROV_Fiber_Board_Power_Connector_390x.jpg)
 
 ```{warning} 
-Make sure to use a 5V supply to power the boards! Power connector will only fit **5.5 x 2.5 MM** power jacks. Power header pins have a pitch of 2.54 MM.
+Make sure to use a 5V supply to power the boards and the polairty of the JST connectors are correct. 
 ```
 
 ```{admonition} Recommended Methods for Powering
 * 2.54MM Pitch Jumper wires
-* USB to DC 5V Power Cable ()
-* 120V AC to 5V Power Supplies
+* JST XH 2.54mm 2 Pin Power Connectors
 ```
 
 ## Supported SFP Transceivers
@@ -104,7 +102,7 @@ Common SFP Transceivers are also compatible with our board. They will require 2 
 
 ## Fiber Optic Tethers
 
-* [LINDEN SPE 7055 High Strength Buoyant 450](http://www.lindenphotonics.com/documents/Linden%20-%20Catalog%202017.pdf)
+* [LINDEN SPE 7055 High Strength Buoyant 450](http://www.lindenphotonics.com/wp-content/uploads/2023/LPI%20Cables%20Catalog%202023.pdf)
 * [Delta ROV Fiber Optic Tether](http://www.deltarov.com/new/product/tether-1-sm-fiber-optic-1000m/)
 
 ## Technical Drawing
