@@ -19,9 +19,9 @@ Introducing the exploreHD Heavy, the next evolution of our flagship product line
 <!-- TODO: WEIGHTS -->
 ```{dropdown} Physical Specifications
 
-**Weight in Air:** 276 grams
+**Mass in Air:** 276 grams
 
-**Weight in Water:**
+**Mass in Water:** 226 grams
 ```
 
 ```{dropdown} Camera Specifications
