@@ -9,7 +9,7 @@ To view the multiple streams in OBS, you will need to install OBS, GStreamer, an
 
 To install GStreamer on Windows, check out the link below.
 
-[Install GStreamer for Windows Instructions](/guides/pc_setup.html#installing-gstreamer)
+[Install GStreamer for Windows Instructions](/guides/pc_setup.html#install-gstreamer)
 
 ## Installing OBS Gstreamer Plugin
 
