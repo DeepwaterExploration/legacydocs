@@ -29,9 +29,9 @@ Our passion for uncompromised image quality for marine robotics is the simple ph
 ```
 
 ```{dropdown} Physical Specifications
-**Weight in Air:** 84 grams
+**Mass in Air:** 84 grams
 
-**Weight in Water:** 60 grams
+**Mass in Water:** 44 grams
 ```
 
 ```{dropdown} Camera Specifications
