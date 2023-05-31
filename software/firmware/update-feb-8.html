@@ -8,7 +8,7 @@
 <link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
 
     <link rel="shortcut icon" href="../../_static/wave.png"/><!-- Generated with Sphinx 7.0.1 and Furo 2023.05.20 -->
-        <title>Firmware Release Notes 2/8/2022 - DeepWater Exploration docs</title>
+        <title>Firmware Release Notes - DeepWater Exploration docs</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=e6660623a769aa55fea372102b9bf3151b292993" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
@@ -223,20 +223,35 @@
           </label>
         </div>
         <article role="main">
-          <section id="firmware-release-notes-2-8-2022">
-<h1>Firmware Release Notes 2/8/2022<a class="headerlink" href="#firmware-release-notes-2-8-2022" title="Permalink to this heading">#</a></h1>
+          <section id="firmware-release-notes">
+<h1>Firmware Release Notes<a class="headerlink" href="#firmware-release-notes" title="Permalink to this heading">#</a></h1>
 <section id="updater-notes">
 <h2>Updater Notes<a class="headerlink" href="#updater-notes" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>As of Jan. 2022, the firmware loader now has two options of firmware</p></li>
-<li><p>The loader now disables the other firmware button while loading to minimize the chance of failure</p></li>
-</ul>
+<section id="mar-2022">
+<h3>Mar. 2022<a class="headerlink" href="#mar-2022" title="Permalink to this heading">#</a></h3>
+<p>Thanks to DWE OS (formally known has DriverUI), the firmware loader no longer needs 2 seperate firmware to switch between H.264 and MJPEG streaming.</p>
+</section>
+<section id="jan-2022">
+<h3>Jan. 2022<a class="headerlink" href="#jan-2022" title="Permalink to this heading">#</a></h3>
+<p>The firmware loader now has two options of firmware, MJPEG or H.264:</p>
+<p>MJPEG will provide the highest quality but bandwidth can go as high as 60Mb/s per camera.</p>
+<p>H.264 will limit to 10Mb/s and use intelligent compression to maximize quality for the given bandwidth.</p>
+</section>
+<section id="nov-2021">
+<h3>Nov. 2021<a class="headerlink" href="#nov-2021" title="Permalink to this heading">#</a></h3>
+<p>The loader now disables the other firmware button while loading to minimize the chance of failure</p>
+</section>
 </section>
 <section id="firmware">
 <h2>Firmware<a class="headerlink" href="#firmware" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>H.264 firmware bitrate has been decreased from 15 Mbps to 10 Mbps for improved stability</p></li>
-</ul>
+<section id="may-2023">
+<h3>May. 2023<a class="headerlink" href="#may-2023" title="Permalink to this heading">#</a></h3>
+<p>Fixed issue where when H.264 is used in lower resolution, artifacts would show up on video.</p>
+</section>
+<section id="id1">
+<h3>Mar. 2022<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<p>H.264 firmware bitrate has been decreased from 15 Mbps to 10 Mbps for improved stability</p>
+</section>
 </section>
 </section>
 
@@ -277,9 +292,18 @@
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Firmware Release Notes 2/8/2022</a><ul>
-<li><a class="reference internal" href="#updater-notes">Updater Notes</a></li>
-<li><a class="reference internal" href="#firmware">Firmware</a></li>
+<li><a class="reference internal" href="#">Firmware Release Notes</a><ul>
+<li><a class="reference internal" href="#updater-notes">Updater Notes</a><ul>
+<li><a class="reference internal" href="#mar-2022">Mar. 2022</a></li>
+<li><a class="reference internal" href="#jan-2022">Jan. 2022</a></li>
+<li><a class="reference internal" href="#nov-2021">Nov. 2021</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#firmware">Firmware</a><ul>
+<li><a class="reference internal" href="#may-2023">May. 2023</a></li>
+<li><a class="reference internal" href="#id1">Mar. 2022</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

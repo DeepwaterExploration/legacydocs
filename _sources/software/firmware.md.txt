@@ -1,12 +1,10 @@
 # DWE Firmware Loader
 
-```{important} This application is a fully customized firmware loading application. Although it provides similar functionality, it is not the same as our previous release which can be found [here](https://docs.exploredeepwater.com/legacy/firmware_legacy.html), known as DWE Firmware Updater.
-```
 
-[**Download DWEFirmwareLoader**](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/DWEFirmwareLoader_051722.zip)
+[**Download DWEFirmwareLoader**](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/DWEFirmwareLoader_4414.zip)
 
 ```{note}
-Updated as of 5/17/2022
+Updated as of 5/31/2023
 
 See [Release Notes](./firmware/update-feb-8)
 ```
