@@ -107,4 +107,4 @@ Common SFP Transceivers are also compatible with our board. They will require 2 
 
 ## Technical Drawing
 
-<iframe src="../_static/pdf/ROV_Fiber_Board.pdf" width="100%" height="500px">
+<iframe src="../_static/pdf/DWE_Fiber_Board_Drawing.pdf" width="100%" height="500px">
