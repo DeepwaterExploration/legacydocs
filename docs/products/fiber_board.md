@@ -22,7 +22,7 @@ Unlike many other fiber converters, this is designed to be as space efficient as
 
 **Input Voltage:** 5V DC
 
-**Input Connector:** 5.5 x 2.5mm Power Jack or 2.54mm Pitch Jumper wires
+**Input Connector:** JST PH 2.54 or 2.54mm Pitch Jumper wires
 
 **Wattage:** Less than 1 watt
 

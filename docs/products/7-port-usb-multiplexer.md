@@ -15,7 +15,7 @@ Designed to be as easy to use as possible: plug and play with our cameras, no so
 
 **USB Data Output Connection:** USB Type C
 
-**Power Input Connection:** JST-PH 2.0
+**Power Input Connection:** JST-PH 2.54
 
 **USB Input Connector**
 
@@ -74,7 +74,13 @@ Twist the section of wires that are stripped from the black rubber insulation
 Depending on the cable penetrator you are using, follow the instructions to waterproof the wires
 
 ```
+```{dropdown} Powering
+The multiplexer board can be externally powered or internally powered via the USB-C port. 
 
+For internal power, use the included jumper pins to short the USB PWR JUMPER on the board. Internal power can typically support up to 3 cameras, however, with a higher powered USB-C port, you can do more. 
+
+External power is recommended if you are going to have more than 3 cameras. Make sure the jumper pins are removed and use the included power JST connector to supply a steady 5V. 
+```
 
 ````{dropdown} Camera Installation
 
