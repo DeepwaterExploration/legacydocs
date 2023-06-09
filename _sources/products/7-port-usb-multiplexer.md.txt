@@ -1,6 +1,6 @@
 # 7-Port Multiplexer (ROV/AUV)
 
-[![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/USBHubConverter.jpg?v=1684294868&width=590)](https://exploredeepwater.com/products/7-port-usb-multiplexer)
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/DWEMultiplexer.jpg?v=1686168029&width=590)
 
 ## Introduction
 
