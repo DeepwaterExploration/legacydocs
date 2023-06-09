@@ -1,6 +1,6 @@
 # Gigabit Fiber to Ethernet Converter (ROV/AUV)
 
-[![Fiber Board](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/GigabitFibertoEthernetConverter.jpg?v=1686122270&width=590)](https://exploredeepwater.com/products/ethernet-fiber-converter)
+![Fiber Board](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/GigabitFibertoEthernetConverter.jpg?v=1686122270&width=590)
 
 ## Introduction
 
