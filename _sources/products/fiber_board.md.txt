@@ -2,8 +2,6 @@
 
 [![Fiber Board](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/GigabitFibertoEthernetConverter.jpg?v=1686122270&width=590)](https://exploredeepwater.com/products/ethernet-fiber-converter)
 
-[Product Link](https://exploredeepwater.com/products/ethernet-fiber-converter)
-
 ## Introduction
 
 This bare PCB converts CAT 5 Ethernet signals from the RJ-45 port to signals compatible with single mode SFP transceivers and vice versa. By using this media converter, copper Ethernet signals can be extended up to 20km depending on the SFP transceiver used (a much longer distance than the 100 meters limit for copper Ethernet signals).

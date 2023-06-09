@@ -2,8 +2,6 @@
 
 [![HDcam](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/HDCam_ROV_AUV_Camera_Tripod_Angled_500x.jpg)](https://exploredeepwater.com/products/hd-usb-camera)
 
-[Product Link](https://exploredeepwater.com/products/hd-usb-camera)
-
 ## {doc}`Firmware Update <../software/firmware>`
 
 ```{important} Please update your firmware if you were shipped an exploreHD or HDCam before 11/20/2021
