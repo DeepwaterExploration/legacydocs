@@ -2,8 +2,6 @@
 
 [![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/USBHubConverter.jpg?v=1684294868&width=590)](https://exploredeepwater.com/products/7-port-usb-multiplexer)
 
-[Product Link](https://exploredeepwater.com/products/7-port-usb-multiplexer)
-
 ## Introduction
 
 Providing underwater robots the ability to perceive the ocean is an important mission behind our cameras. With the exploreHD Multiplexer, you can now connect 7 cameras in one port with low latency and extreme reliability. Whether you are looking to increase the efficiency in your mission, improve the capabilities in your autonomous systems, or add further tooling options in your vehicle, the exploreHD Multiplexer board will enable you to complete these goals by providing you with the vision needed. 

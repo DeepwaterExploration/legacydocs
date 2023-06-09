@@ -2,8 +2,6 @@
 
 [![exploreHD Heavy](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/P1047400_540x.jpg?v=1678088724)](https://dwe.ai/collections/all)
 
-[Product Link](https://dwe.ai/products/explorehd-heavy)
-
 ## Introduction
 
 Introducing the exploreHD Heavy, the next evolution of our flagship product line. With an uncompromising commitment to image quality, this underwater USB camera features the same high definition USB output and Sony sensor found in our original exploreHD camera, but with a depth rating of 1000m! Advanced automated exposure and white balance adjustments ensure accurate colors and a natural image, even in low light conditions. The exploreHD Heavy also features H.264 compression technology, allowing up to 7 cameras to be connected and streamed simultaneously with minimal loss in quality and latency. This makes it the perfect choice for advanced multi-cam ROV/AUV setups, deep sea exploration, and scientific research. With the exploreHD Heavy, you can capture stunning images of the most remote and inaccessible underwater environments with ease and confidence.
