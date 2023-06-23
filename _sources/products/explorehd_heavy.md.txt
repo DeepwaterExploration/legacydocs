@@ -23,7 +23,7 @@ Introducing the exploreHD Heavy, the next evolution of our flagship product line
 ```
 
 ```{dropdown} Camera Specifications
-**Image Sensor:** 1/2.9" Sony Exmor™ CMOS 12-bit
+**Image Sensor:** 1/2.8" Sony Exmor™ STARVIS CMOS 12-bit
 
 **Resolution:** 1920x1080
 
@@ -54,7 +54,7 @@ Introducing the exploreHD Heavy, the next evolution of our flagship product line
 ```{dropdown} Lens Specifications
 **Type:** Fisheye
 
-**Lens Aperture:** f/1.9
+**Lens Aperture:** f/2.0
 
 **View Angle:** 150 Degrees Diagonal (in water)
 
