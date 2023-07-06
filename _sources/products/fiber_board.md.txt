@@ -89,7 +89,7 @@ Make sure to use a 5V supply to power the boards and the polairty of the JST con
 ```
 
 :::{dropdown} BiDi (Bidirectional) SFP Optical Transceiver 
-BiDi is recommended over common SFP due to its ability to transmit full-duplex on one strand of fiber by using different wavelengths of light. Our kit on our product listing offers a pair of 2km range BiDi Transceivers with (1550/1310nm wavelength).
+BiDi is recommended over common SFP due to its ability to transmit full-duplex on one strand of fiber by using different wavelengths of light.
 
 [Learn More](https://blog.fluxlight.com/2016/07/16/introduction-to-bidi-optical-transceivers/)
 :::
