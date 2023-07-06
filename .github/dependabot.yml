@@ -30,6 +30,6 @@ updates:
       timezone: "America/Los_Angeles"
     # Raise all npm pull requests with custom labels
     labels:
-      - "npm"
+      - "pip"
       - "dependencies"
     versioning-strategy: "increase"
