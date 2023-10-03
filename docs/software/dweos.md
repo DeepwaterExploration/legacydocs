@@ -98,4 +98,4 @@ To run the application **temporarily** (this is only if you do **not want to ins
 ### **Interface**
 To use the interface, navigate to <http://192.168.2.2:5000> (or <http://companion.local:5000> if running the ArduSub companion software).
 
-![driverui-light](../img/driverui/driverui.png)
+![dweos-light](../img/dweos/dweos.png)
