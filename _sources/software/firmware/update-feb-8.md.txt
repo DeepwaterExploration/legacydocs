@@ -3,7 +3,7 @@
 ## Updater Notes
 ### Mar. 2022
 
-Thanks to DWE OS (formally known has DriverUI), the firmware loader no longer needs 2 seperate firmware to switch between H.264 and MJPEG streaming.
+Thanks to DWE OS (formally known has dweos), the firmware loader no longer needs 2 seperate firmware to switch between H.264 and MJPEG streaming.
 
 ### Jan. 2022
 

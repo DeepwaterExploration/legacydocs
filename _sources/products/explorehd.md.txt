@@ -251,11 +251,11 @@ If you want to stream multiple exploreHDs at once using BlueOS Companion, check 
 ````
 
 ```{dropdown} H.264/Bitrate Control for Streaming
-To set custom H.264 parameters when streaming from a Raspberry Pi or similar computer, install our {doc}`exploreHD Driver UI <../software/driverUI>`!
+To set custom H.264 parameters when streaming from a Raspberry Pi or similar computer, install our {doc}`exploreHD Driver UI <../software/dweos>`!
 
 This software supports unlimited camera streams given you have unlimited USB ports, and installs perfectly alongside BlueOS.
 
-![DWE Firmware Loader](../img/driverui/driverui.png)
+![DWE Firmware Loader](../img/dweos/dweos.png)
 
 - **Bitrate:** Adjust the bitrate of the exploreHD Camera
 - **H.264:** Toggle H.264 on or off (Off is similar to MJPEG)

@@ -17,8 +17,8 @@ Change * to a number for different streams
 
 :::{dropdown} H.264/Bitrate Control for Streaming
 
-DWE OS works perfectly alongside BlueOS. To install, you can follow {doc}`our installation guide <../software/driverUI>`.
+DWE OS works perfectly alongside BlueOS. To install, you can follow {doc}`our installation guide <../software/dweos>`.
 
-![driverui-light](../img/driverui/driverui.png)
+![dweos-light](../img/dweos/dweos.png)
 
 :::
