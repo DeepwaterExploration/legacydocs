@@ -133,7 +133,7 @@ For automatic, plug and play of the stream to work on the Raspberry Pi, use our 
 ````{dropdown} Manual Stream Setup
 
 ```{important}
-It is not recommended to use the following instructions unless customizability is required. Please use DWE OS when possible to minimze issues or compability concerns.
+It is not recommended to use the following instructions unless customizability is required. Please use DWE OS when possible to minimize issues or compatibility concerns.
 ```
 
 **Step 1: Finding the device**
