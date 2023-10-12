@@ -116,9 +116,11 @@ Unlike with other exploreHD units, this camera will not require any user waterpr
 
 **For Wet-Mate Connectors**
 
-Periodically inspect your connection point and clear it of debris. 
+Periodically inspect your connection point and clear it of debris. Isopropyl alcohol will be sufficient for cleaning purposes. Once clean, relubricate the connector pins with Molykote 111 silicone grease. 
 
 **For Dry-Mate Connectors**
+
+Periodically inspect and clean the surfaces of the dry-mate connector. Annually replace and re-grease the sealing o-ring for the connector.
 
 ```
 
@@ -188,23 +190,4 @@ This software supports unlimited camera streams given you have unlimited USB por
 ```{youtube} ZJl32Xt4jQQ
 ```
 
-<!-- ## Technical Drawings
-
-```{dropdown} exploreHD 2.0 Housing
-
-- [exploreHD 2.0 Assembly STEP File](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_2.0_Full_Assembly_PUBLIC.step?v=1647568154)
-
-![exploreHD](../img/explorehd/technical_drawing/explorehd2drawing.jpg)
-
-```
-
-```{dropdown} exploreHD 3.0 Housing
-
-- [exploreHD 3.0 Assembly (Epoxy) STEP File](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/eHD_3.0_with_Epoxy_STEP_Public.step)
-
-- [exploreHD 3.0 Assembly (WetLink) STEP File](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/eHD_3.0_with_WL_STEP_Public.step)
-
-- [exploreHD 3.0 Stand Assembly STEP File](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/eHD_3.0_Stand_Full_Assembly_v7.step)
-
-``` -->
 
