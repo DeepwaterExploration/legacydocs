@@ -20,18 +20,24 @@ Our passion for uncompromised image quality for marine robotics is the simple ph
 
 ## Technical Specifications
 
-```{dropdown} Waterproof Specifications
-**Waterproof Depth:** 400 meters 
+```{dropdown} Water-Resistance Specifications
+**Water-Resistance Depth Rating:** 400 meters 
 
-**Ingress Protection Rating:** IP69K
+**Ingress Protection Rating:** IP69K+
 
 **Cable Diameter:** 4mm OD
+
 ```
 
 ```{dropdown} Physical Specifications
 **Mass in Air:** 84 grams
 
 **Mass in Water:** 44 grams
+
+**Main Case:** 
+    - Aerospace-grade 6061-T6 alloy aluminum
+    - Abrasion-resistant hard anodized coating
+
 ```
 
 ```{dropdown} Camera Specifications
@@ -71,6 +77,8 @@ Our passion for uncompromised image quality for marine robotics is the simple ph
 **View Angle:** 150 Degrees Diagonal (in water)
 
 **Minimum Focus Distance:** 20-30 cm
+
+    Note: Alternative Lenses Available Upon Request
 ```
 
 ## Image Samples

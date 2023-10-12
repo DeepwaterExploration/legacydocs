@@ -4,7 +4,9 @@
 
 ## Introduction
 
-Introducing the exploreHD Heavy, a novel camera that builds on the principles exemplified by the original exploreHD. New to this model, this subsea USB camera features high definition USB output and a backlit Sony sensor with an even larger active area than the standard exploreHD, all housed in a novel enclosure rated to 1000m! Advanced automated exposure and white balance adjustments ensure accurate colors and a natural image, even in low light conditions. The exploreHD Heavy also features H.264 compression technology, allowing up to 7 cameras to be connected and streamed simultaneously with minimal loss in quality and latency. This makes it the perfect choice for advanced multi-cam ROV/AUV setups, oceanography , and aquaculture. With the exploreHD Heavy, you can clearly  and easily record in the most brutal underwater environments.
+Introducing the exploreHD Heavy, a novel camera that builds on the principles exemplified by the original exploreHD. New to this model, this subsea USB camera features high definition USB output and a backlit Sony sensor with an even larger active area than the standard exploreHD, all housed in a novel enclosure rated to 1000m! Advanced automated exposure and white balance adjustments ensure accurate colors and a natural image, even in low light conditions. 
+
+The exploreHD Heavy also features H.264 compression technology, allowing up to 7 cameras to be connected and streamed simultaneously with minimal loss in quality and latency. This makes it the perfect choice for advanced multi-cam ROV/AUV setups, oceanography , and aquaculture. With the exploreHD Heavy, you can clearly  and easily record in the most brutal underwater environments.
 
 ## Technical Specifications
 
@@ -12,6 +14,12 @@ Introducing the exploreHD Heavy, a novel camera that builds on the principles ex
 **Water-Resistance Depth:** 1000 meters
 
 **Cable Diameter:** 4.5mm OD
+
+**Cable Penetrator/Connector:** 
+    - BlueRobotics Wetlink
+    - Subconn MCBH8M
+    - Additional options available upon request
+
 ```
 
 <!-- TODO: WEIGHTS -->
@@ -19,7 +27,16 @@ Introducing the exploreHD Heavy, a novel camera that builds on the principles ex
 
 **Mass in Air:** 120 grams
 
-**Mass in Water:** 226 grams
+**Mass in Water:** 50 grams
+
+**Main Case:** 
+    - Naval-grade aluminum, especially corrosion resistant
+    - Dark grey abrasion-resistant hard anodized coating
+    - Four M2 thread mounting locations corresponding to sensor plane cardinal points
+
+**Front Port:** Scratch-resistant sapphire with internal AR coating
+
+
 ```
 
 ```{dropdown} Camera Specifications
@@ -100,6 +117,8 @@ Cable Penetrator:
 ```{dropdown} Mount Installation
 **Step 1**
 
+The exploreHD 
+
 ```
 
 ```{dropdown} Cable Termination Installation
@@ -114,23 +133,23 @@ Ensure that the camera is mounted securely on the ROV as you like it with the pr
 
 ![exploreHD](../img/explorehd/cable_waterproofing/exploreHD_ROV_Camera_Cable_Step_2_200x.jpg)
 
-Cut off the USB cable to the desired length. Ensure to leave extra length for when the cable is in the enclosure.
+Trim the USB cable to the desired length. Ensure ample extra length remains for when the cable is in the enclosure.
 
 **Step 3**
 
 ![exploreHD](../img/explorehd/cable_waterproofing/exploreHD_ROV_Camera_Cable_Step_3_200x.jpg)
 
-Strip the cable to the length that will be in the electronic enclosure.
+Strip the cable's external jacket to the length that will be in the electronic enclosure.
 
 **Step 4**
 
 ![exploreHD](../img/explorehd/cable_waterproofing/exploreHD_ROV_Camera_Cable_Step_4_200x.jpg)
 
-Twist the section of wires that are stripped from the black rubber insulation
+Twist the section of wires that are stripped from the black rubber insulation.
 
 **Step 5**
 
-Depending on the cable penetrator you are using, follow the instructions to waterproof the wires
+Depending on the penetrator/connector option you have selected for your camera, follow the respective instructions to waterproof the wires.
 
 ```
 
@@ -143,7 +162,7 @@ Depending on the cable penetrator you are using, follow the instructions to wate
 
 * Cable is properly waterproofed, following the steps in the previous page. 
 
-* Cable penetrator has the o'ring in the o'ring groove. 
+* Cable penetrator has the o-ring in the o-ring groove. 
 
 * Cable penetrator is on the outer portion of the electronic housing end cap.
 
@@ -194,10 +213,9 @@ An image should be displayed using the built-in camera app on your computer. The
 
 ## Streaming
 
-```{dropdown} Streaming via custom Raspberry Pi
+```{dropdown} Streaming via Raspberry Pi
 If you want to run your own custom streaming setup on the Raspberry Pi, we have the perfect documentation for you! 
 
-This is perfect for MATE ROV teams who want to use the RPi to stream but don't want to be limited to PixHawk Controller from ArduSub Companion. It's also a great way to learn and customize your code for your specific setup!
 
 {doc}`Raspberry Pi Streaming Setup for exploreHD Instructions <../guides/pi_setup>`
 ```
@@ -238,23 +256,4 @@ This software supports unlimited camera streams given you have unlimited USB por
 ```{youtube} ZJl32Xt4jQQ
 ```
 
-<!-- ## Technical Drawings
-
-```{dropdown} exploreHD 2.0 Housing
-
-- [exploreHD 2.0 Assembly STEP File](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_2.0_Full_Assembly_PUBLIC.step?v=1647568154)
-
-![exploreHD](../img/explorehd/technical_drawing/explorehd2drawing.jpg)
-
-```
-
-```{dropdown} exploreHD 3.0 Housing
-
-- [exploreHD 3.0 Assembly (Epoxy) STEP File](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/eHD_3.0_with_Epoxy_STEP_Public.step)
-
-- [exploreHD 3.0 Assembly (WetLink) STEP File](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/eHD_3.0_with_WL_STEP_Public.step)
-
-- [exploreHD 3.0 Stand Assembly STEP File](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/eHD_3.0_Stand_Full_Assembly_v7.step)
-
-``` -->
 
