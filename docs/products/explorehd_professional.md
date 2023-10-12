@@ -1,25 +1,28 @@
-# exploreHD Heavy
+# exploreHD Professional
 
-![exploreHD Heavy](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/P1047400_540x.jpg?v=1678088724)
+![exploreHD Professional](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/P1047400_540x.jpg?v=1678088724)
 
 ## Introduction
 
-Introducing the exploreHD Heavy, a novel camera that builds on the principles exemplified by the original exploreHD. New to this model, this subsea USB camera features high definition USB output and a backlit Sony sensor with an even larger active area than the standard exploreHD, all housed in a novel enclosure rated to 1000m! Advanced automated exposure and white balance adjustments ensure accurate colors and a natural image, even in low light conditions. The exploreHD Heavy also features H.264 compression technology, allowing up to 7 cameras to be connected and streamed simultaneously with minimal loss in quality and latency. This makes it the perfect choice for advanced multi-cam ROV/AUV setups, oceanography , and aquaculture. With the exploreHD Heavy, you can clearly  and easily record in the most brutal underwater environments.
+Introducing the exploreHD Professional, the next evolution of our flagship product line. With an uncompromising commitment to image quality, this underwater USB camera features the same high definition USB output and large, backlit CMOS sensor packed into our next-generation exploreHD Heavy camera. This time, it is carefully enclosed into a unique titanium enclosure but with a depth rating of 6000m! Advanced automated exposure and white balance adjustments ensure accurate colors and a natural image, even in low light conditions. The exploreHD Professional also features H.264 compression technology, allowing up to 7 cameras to be connected and streamed simultaneously with minimal loss in quality and latency. This makes it the perfect choice for advanced multi-cam ROV/AUV setups, deep sea exploration, and scientific research. With the exploreHD Professional, you can capture stunning images of the most remote and inaccessible underwater environments with ease and confidence.
 
 ## Technical Specifications
 
 ```{dropdown} Water-Resistance Specifications
-**Water-Resistance Depth:** 1000 meters
+**Water-Resistance Depth:** 6000 meters
 
-**Cable Diameter:** 4.5mm OD
+**Connector Types:** 
+    - Subconn MCBH8M
+    - Suburban Marine 8-Pin
+    - Other Variants Available Upon Request
 ```
 
 <!-- TODO: WEIGHTS -->
 ```{dropdown} Physical Specifications
 
-**Mass in Air:** 120 grams
+**Mass in Air:**  grams
 
-**Mass in Water:** 226 grams
+**Mass in Water:**  grams
 ```
 
 ```{dropdown} Camera Specifications
@@ -90,92 +93,39 @@ The camera offers TrueColor Technology which compensates for the blue/greenish t
 
 ## Camera Installation
 
-```{note} All exploreHD Heavy units will come with a WetLink Penetrator by default.
+```{note}
+Cables and Connectors:
 
-Cable Penetrator:
 
-[**WetLink Penetrator (WLP-M10-4.5MM-HC (for 4.0 mm cable)**](https://bluerobotics.com/store/cables-connectors/penetrators/wlp-vp/)
+
 ```
 
 ```{dropdown} Mount Installation
 **Step 1**
 
+The exploreHD Professional utilizes a novel mounting system for maximum precision. The four slots cut into the main body act as precise positioning surfaces. The slots will accept a square bracket 5mm wide, or other solutions such as cable clamps. For custom mounting solutions, please enquire if you would like our assistance.
+
+
 ```
 
-```{dropdown} Cable Termination Installation
+```{dropdown} Cable Waterproofing
 
 **Step 1**
 
-![exploreHD](../img/explorehd/cable_waterproofing/exploreHD_ROV_Camera_Cable_Step_1_200x.jpg)
+Unlike with other exploreHD units, this camera will not require any user waterproofing. Simply use a cable with a mating connector that is compatible with your selected connector. 
 
-Ensure that the camera is mounted securely on the ROV as you like it with the previous steps
+**For Wet-Mate Connectors**
 
-**Step 2**
+Periodically inspect your connection point and clear it of debris. 
 
-![exploreHD](../img/explorehd/cable_waterproofing/exploreHD_ROV_Camera_Cable_Step_2_200x.jpg)
-
-Cut off the USB cable to the desired length. Ensure to leave extra length for when the cable is in the enclosure.
-
-**Step 3**
-
-![exploreHD](../img/explorehd/cable_waterproofing/exploreHD_ROV_Camera_Cable_Step_3_200x.jpg)
-
-Strip the cable to the length that will be in the electronic enclosure.
-
-**Step 4**
-
-![exploreHD](../img/explorehd/cable_waterproofing/exploreHD_ROV_Camera_Cable_Step_4_200x.jpg)
-
-Twist the section of wires that are stripped from the black rubber insulation
-
-**Step 5**
-
-Depending on the cable penetrator you are using, follow the instructions to waterproof the wires
+**For Dry-Mate Connectors**
 
 ```
 
 
 ````{dropdown} USB Connection
 
-**Step 1**
 
-<b>Before soldering the wires to the provided USB connector, please ensure the following tasks have been completed</b>
-
-* Cable is properly waterproofed, following the steps in the previous page. 
-
-* Cable penetrator has the o'ring in the o'ring groove. 
-
-* Cable penetrator is on the outer portion of the electronic housing end cap.
-
-* The wires have been passed through the nut for the cable penetrator. 
-
-* The nut is on the inner portion of the electronic housing end cap.
-
-**Step 2**
-
-```{important} Ensure you are knowledgeable on the function of each wire.
-
-<span style="color: black; font-weight:bold">Black: Ground</span>
-
-<span style="color: #CCCC00; font-weight:bold">Yellow/Green: D+ (DP)</span>
-
-<span style="color: gray; font-weight:bold">White: D- (DM)</span>
-
-<span style="color: red; font-weight:bold" >Red: 5V</span>
-```
-
-![exploreHD](../img/explorehd/Soldering_Diagram_500x.jpg)
-
-```{warning} Ensure there are **no solder bridges and DOUBLE CHECK** to make sure the connection is correct. **The camera will get damaged if the polarity is not correct.**
-```
-
-```{admonition} Other Method of Installation Besides Soldering
- Although not our favorite method of connecting the exploreHD, if soldering becomes a challenge for you, we suggest using a USB to terminal block instead. This method is not as recommended because it takes up a lot more space in our electronic enclosure but if space isn't an issue, this method will work just fine. 
-
-**Be extra careful to not mix up the polarity of the USB**
-
-[USB Type A to Terminal Block](https://www.amazon.com/dp/B07VV7V7NC/ref=sspa_dk_detail_4?psc=1&pd_rd_i=B07VV7V7NC&pd_rd_w=eTGBR&pf_rd_p=887084a2-5c34-4113-a4f8-b7947847c308&pd_rd_wg=r5Sh6&pf_rd_r=V4YZ0K344EJ0W24PP5P5&pd_rd_r=c00159dd-c2be-46ac-8700-87874fd791f8&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzVU4zMlAwRjkzVlkyJmVuY3J5cHRlZElkPUEwMTc5MjQwM0lYRFNESjlQNFJXWiZlbmNyeXB0ZWRBZElkPUEwOTc1ODgzMzlHV0lQSjRHSVFEVCZ3aWRnZXROYW1lPXNwX2RldGFpbCZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=)
-```
 
 **Step 3**
 
