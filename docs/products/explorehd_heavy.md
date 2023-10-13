@@ -1,6 +1,6 @@
 # exploreHD Heavy
 
-![exploreHD Heavy](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/P1047400_540x.jpg?v=1678088724)
+![exploreHD Heavy](https://dwe.ai/cdn/shop/files/P1069999-Recovered.jpg?v=1695156462&width=600)
 
 ## Introduction
 

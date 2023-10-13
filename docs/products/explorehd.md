@@ -1,6 +1,6 @@
 # exploreHD
 
-![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/products/exploreHDFront.jpg?width=590)
+![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/products/exploreHDFront.jpg?width=600)
 
 
 
