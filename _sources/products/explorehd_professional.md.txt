@@ -1,6 +1,6 @@
 # exploreHD Professional
 
-![exploreHD Professional](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/P1047400_540x.jpg?v=1678088724)
+![exploreHD Professional](https://dwe.ai/cdn/shop/files/eHDProFront.jpg?v=1689818657&width=600)
 
 ## Introduction
 
