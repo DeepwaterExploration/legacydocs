@@ -36,8 +36,7 @@ DeepWater Exploration Documentation
    :caption: Software
 
    software/dweos
-   software/qgroundcontrol
-   software/open_broadcasting_software
+   software/discovery
    software/firmware
 
 .. meta::

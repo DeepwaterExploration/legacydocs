@@ -5,10 +5,10 @@
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta content="DeepWater Exploration Documentation Site" name="description" />
 <meta content="rov, exploreHD, HDCam, Camera" name="keywords" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Raspberry Pi Streaming Setup for exploreHD" href="../guides/pi_setup.html" /><link rel="prev" title="Gigabit Fiber to Ethernet Converter (ROV/AUV)" href="fiber_board.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="DWE Firmware Loader" href="firmware.html" /><link rel="prev" title="DWE OS" href="dweos.html" />
 
     <link rel="shortcut icon" href="../_static/wave.png"/><!-- Generated with Sphinx 7.1.2 and Furo 2023.09.10 -->
-        <title>7-Port Multiplexer (ROV/AUV) - DeepWater Exploration docs</title>
+        <title>Discovery by DWE.ai - DeepWater Exploration docs</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
@@ -168,13 +168,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../about/contact_us.html">Contact Us</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Products</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="explorehd.html">exploreHD</a></li>
-<li class="toctree-l1"><a class="reference internal" href="explorehd_heavy.html">exploreHD Heavy</a></li>
-<li class="toctree-l1"><a class="reference internal" href="explorehd_professional.html">exploreHD Professional</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hdcam.html">HDcam</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fiber_board.html">Gigabit Fiber to Ethernet Converter (ROV/AUV)</a></li>
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">7-Port Multiplexer (ROV/AUV)</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../products/explorehd.html">exploreHD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../products/explorehd_heavy.html">exploreHD Heavy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../products/explorehd_professional.html">exploreHD Professional</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../products/hdcam.html">HDcam</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../products/fiber_board.html">Gigabit Fiber to Ethernet Converter (ROV/AUV)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../products/7-port-usb-multiplexer.html">7-Port Multiplexer (ROV/AUV)</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Guides</span></p>
 <ul>
@@ -185,10 +185,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../guides/blueos_companion.html">BlueOS Companion Setup for exploreHD</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Software</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../software/dweos.html">DWE OS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../software/discovery.html">Discovery by DWE.ai</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../software/firmware.html">DWE Firmware Loader</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dweos.html">DWE OS</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Discovery by DWE.ai</a></li>
+<li class="toctree-l1"><a class="reference internal" href="firmware.html">DWE Firmware Loader</a></li>
 </ul>
 
 </div>
@@ -223,106 +223,112 @@
           </label>
         </div>
         <article role="main">
-          <section id="port-multiplexer-rov-auv">
-<h1>7-Port Multiplexer (ROV/AUV)<a class="headerlink" href="#port-multiplexer-rov-auv" title="Permalink to this heading">#</a></h1>
-<p><img alt="exploreHD" src="https://cdn.shopify.com/s/files/1/0575/8785/9626/files/DWEMultiplexer.jpg?v=1686168029&amp;width=590" /></p>
-<section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
-<p>Providing underwater robots the ability to perceive the ocean is an important mission behind our cameras. With the exploreHD Multiplexer, you can now connect 7 cameras in one port with low latency and extreme reliability. Whether you are looking to increase the efficiency in your mission, improve the capabilities in your autonomous systems, or add further tooling options in your vehicle, the exploreHD Multiplexer board will enable you to complete these goals by providing you with the vision needed.</p>
-<p>Designed to be as easy to use as possible: plug and play with our cameras, no soldering required, no drivers needed, easy to mount on the most popular underwater systems (BlueROV, Raspberry Pi, etc).</p>
+          <section id="discovery-by-dwe-ai">
+<h1>Discovery by DWE.ai<a class="headerlink" href="#discovery-by-dwe-ai" title="Permalink to this heading">#</a></h1>
+<p>To view the multiple streams in Discovery, all you will need to do is install Discovery! You can see the product page <a class="reference external" href="https://dwe.ai/products/discovery">here</a>.</p>
+<section id="activation">
+<h2>Activation<a class="headerlink" href="#activation" title="Permalink to this heading">#</a></h2>
+<p>When you open Discovery for the first time, you will see a license activation screen. Enter your license key in the field labelled “License Key”.</p>
+<blockquote>
+<div><p>:warning: <strong>Please ensure you have an active internet connection during activation.</strong></p>
+</div></blockquote>
+<blockquote>
+<div><p>:warning: If you ever plan on resetting your operating system or if you will no longer have your device in possession, <strong>please unlink your license from the machine</strong> to avoid any future troubles. <a class="reference internal" href="#license-information-important"><span class="xref myst">Click here for more information</span></a>.</p>
+</div></blockquote>
+<p><img alt="License" src="../_images/discovery_2.png" /></p>
+<p>After a successful activation, you will see a success screen.</p>
+<p><img alt="License Success" src="../_images/discovery_3.png" /></p>
 </section>
-<section id="technical-specifications">
-<h2>Technical Specifications<a class="headerlink" href="#technical-specifications" title="Permalink to this heading">#</a></h2>
-<p><strong>USB Data Output Connection:</strong> USB Type C</p>
-<p><strong>Power Input Connection:</strong> JST-PH 2.54</p>
-<p><strong>USB Input Connector</strong></p>
-<p><strong>Housing:</strong> PAP-04V-S</p>
-<p><strong>JST Crimp:</strong> SPHD-002T-P0.5</p>
-<p><strong>Deliverable Wattage:</strong> 35W</p>
-<p><strong>Input Voltage:</strong> 5V</p>
-<p>Hi-Speed (480 Mbits/s), Full-Speed (12 Mbits/s), and Low-Speed (1.5 Mbits/s) compatible</p>
+<section id="quickstart">
+<h2>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this heading">#</a></h2>
+<p>The main page of Discovery, will have a blank canvas.</p>
+<p><img alt="Blank" src="../_images/discovery_8.png" /></p>
+<p>Click the “Plus” Icon on the bottom-right side of the page. This will add a <strong>“Video Card”</strong>.</p>
+<p><img alt="1 Video Card" src="../_images/discovery_9.png" /></p>
+<p>This page will contain your <strong>“Cards”</strong>. Each <strong>card</strong> will 2 input fields and 2 buttons. We will go over what each of these do.</p>
+<section id="ip-address-and-port">
+<h3>IP Address and Port<a class="headerlink" href="#ip-address-and-port" title="Permalink to this heading">#</a></h3>
+<p>These fields specify the IP address and Port number that your camera is streaming too, usually called a stream endpoint. Usually this is your topside-computer’s IPv4 address.</p>
+<p>When there is no active video stream, the input fields will look like this and you will be able to modify these fields.</p>
+<p><img alt="IP Port Input" src="../_images/discovery_ip_port_1.png" /></p>
+<p>When there <strong>is an</strong> active video stream, the input fields will be greyed out. It will look like this and you will not be able to modify these fields, unless you stop the current video stream.</p>
+<p><img alt="IP Port Deactivate" src="../_images/discovery_ip_port_2.png" /></p>
 </section>
-<section id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">#</a></h2>
-<div class="video_wrapper" style="">
-<iframe allowfullscreen="true" src="https://www.youtube.com/embed/36yojUnr9V0" style="border: 0; height: 345px; width: 560px">
-</iframe></div><div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If the camera is going into an ROV electronic enclosure, you will need to waterproof the wires properly using a cable penetrator. You can either use potted penetrators or WetLink from Blue Robotics.</p>
-<p>Recommended Cable Penetrators</p>
-<p><a class="reference external" href="https://bluerobotics.com/store/cables-connectors/penetrators/penetrator-vp/"><strong>Potted Penetrators (M10 thread, for 3-4 mm cable)</strong></a></p>
-<p><a class="reference external" href="https://bluerobotics.com/store/cables-connectors/penetrators/wlp-vp/"><strong>WetLink Penetrator (WLP-M10-4.5MM-HC (for 4.0 mm cable)</strong></a></p>
-</div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Cable Waterproofing<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><strong>Step 1</strong></p>
-<p class="sd-card-text"><img alt="exploreHD" src="../_images/exploreHD_ROV_Camera_Cable_Step_1_200x.jpg" /></p>
-<p class="sd-card-text">Ensure that the camera is mounted securely on the ROV as you like it with the previous steps</p>
-<p class="sd-card-text"><strong>Step 2</strong></p>
-<p class="sd-card-text"><img alt="exploreHD" src="../_images/exploreHD_ROV_Camera_Cable_Step_2_200x.jpg" /></p>
-<p class="sd-card-text">Cut off the USB cable to the desired length. Ensure to leave extra length for when the cable is in the enclosure.</p>
-<p class="sd-card-text"><strong>Step 3</strong></p>
-<p class="sd-card-text"><img alt="exploreHD" src="../_images/exploreHD_ROV_Camera_Cable_Step_3_200x.jpg" /></p>
-<p class="sd-card-text">Strip the cable to the length that will be in the electronic enclosure.</p>
-<p class="sd-card-text"><strong>Step 4</strong></p>
-<p class="sd-card-text"><img alt="exploreHD" src="../_images/exploreHD_ROV_Camera_Cable_Step_4_200x.jpg" /></p>
-<p class="sd-card-text">Twist the section of wires that are stripped from the black rubber insulation</p>
-<p class="sd-card-text"><strong>Step 5</strong></p>
-<p class="sd-card-text">Depending on the cable penetrator you are using, follow the instructions to waterproof the wires</p>
-</div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Powering<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">The multiplexer board can be externally powered or internally powered via the USB-C port.</p>
-<p class="sd-card-text">For internal power, use the included jumper pins to short the USB PWR JUMPER on the board. Internal power can typically support up to 3 cameras, however, with a higher powered USB-C port, you can do more.</p>
-<p class="sd-card-text">External power is recommended if you are going to have more than 3 cameras. Make sure the jumper pins are removed and use the included power JST connector to supply a steady 5V.</p>
-</div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Camera Installation<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><strong>Step 1</strong></p>
-<p class="sd-card-text"><b>Before attaching the wires to the provided connector housing, please ensure the following tasks have been completed</b></p>
+<section id="streaming-button">
+<h3>Streaming Button<a class="headerlink" href="#streaming-button" title="Permalink to this heading">#</a></h3>
+<p>When there is no active video stream, the button will look like this and you will be able to click it to <strong>start</strong> the stream.</p>
+<p><img alt="Stream Start" src="../_images/discovery_stream_1.png" /></p>
+<p>When there is an active video stream, the button will look like this and you will be able to click it to <strong>end</strong> the stream.</p>
+<p><img alt="Stream Stop" src="../_images/discovery_stream_2.png" /></p>
+</section>
+<section id="recording-button">
+<h3>Recording Button<a class="headerlink" href="#recording-button" title="Permalink to this heading">#</a></h3>
+<p>When there is no active video stream, the button will look like this and you will not be able to click it.</p>
+<p><img alt="Record Disable" src="../_images/discovery_record_1.png" /></p>
+<p>When there is an active video stream <strong>and</strong> the video is <strong>not</strong> recording, the button will look like this and you will be to click it to <strong>start</strong> a recording.</p>
+<p><img alt="Record Start" src="../_images/discovery_record_2.png" /></p>
+<p>When there is an active video stream <strong>and</strong> the video <strong>is actively</strong> recording, the button will look like this and you will be to click it to <strong>end</strong> a recording.</p>
+<p><img alt="Record End" src="../_images/discovery_record_3.png" /></p>
+</section>
+</section>
+<section id="settings">
+<h2>Settings<a class="headerlink" href="#settings" title="Permalink to this heading">#</a></h2>
+<p>Before we start streaming, however, it is recommended to change some settings to reflect your specific system.</p>
+<p>Using the left-side navigation bar, you can head to the settings page.</p>
+<p><img alt="Settings Page" src="../_images/discovery_5.png" /></p>
+<p>Each card contains settings for various options in the software.</p>
+<section id="recording-path">
+<h3>Recording Path<a class="headerlink" href="#recording-path" title="Permalink to this heading">#</a></h3>
+<p>Here, you can change the output folder that all videos will save to. By default, the directory will be set to your system’s “Videos” folder.</p>
+<p><img alt="Recording Settings" src="../_images/discovery_settings_recording.png" /></p>
+</section>
+<section id="filename-scheme">
+<h3>Filename Scheme<a class="headerlink" href="#filename-scheme" title="Permalink to this heading">#</a></h3>
+<p>Here, you can change the naming scheme for each saved recording. We recommend keep the default options. However, you are free to adjust the settings as you want. The following are “Keys” you can use in your filenames:</p>
 <ul class="simple">
-<li><p class="sd-card-text">Cable is properly waterproofed, following the steps in the previous page.</p></li>
-<li><p class="sd-card-text">Cable penetrator has the o’ring in the o’ring groove.</p></li>
-<li><p class="sd-card-text">Cable penetrator is on the outer portion of the electronic housing end cap.</p></li>
-<li><p class="sd-card-text">The wires have been passed through the nut for the cable penetrator.</p></li>
-<li><p class="sd-card-text">The nut is on the inner portion of the electronic housing end cap.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">$IP</span></code> : The IP address of the camera you are going to be recording.</p>
+<ul>
+<li><p>example: <code class="docutils literal notranslate"><span class="pre">192.168.2.1</span></code></p></li>
 </ul>
-<p class="sd-card-text"><strong>Step 2</strong></p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p class="sd-card-text">Ensure you are knowledgeable on the function of each wire.</p>
-<p class="sd-card-text"><span style="color: black; font-weight:bold">Black: Ground</span></p>
-<p class="sd-card-text"><span style="color: #CCCC00; font-weight:bold">Yellow/Green: D+ (DP)</span></p>
-<p class="sd-card-text"><span style="color: gray; font-weight:bold">White: D- (DM)</span></p>
-<p class="sd-card-text"><span style="color: red; font-weight:bold" >Red: 5V</span></p>
-</div>
-<p class="sd-card-text"><img alt="exploreHD" src="https://cdn.shopify.com/s/files/1/0575/8785/9626/files/P1046952_500x.jpg" /></p>
-<p class="sd-card-text">Carefully insert each indvidual contacts into the connector housing until you hear an audible click. Ensure that the orientation of the connector housing and cable order matches with the image above.</p>
-<p class="sd-card-text">If a mistake has been made, a small flat head screw driver can be used to release the contact from the connector housing. Gently use the screw driver and go under the plastic tabs to release each contact.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p class="sd-card-text">Ensure that the connection is correct. <strong>The camera will get damaged if the polarity is not correct.</strong></p>
-</div>
-<p class="sd-card-text"><strong>Step 3</strong></p>
-<p class="sd-card-text">Connect the assembleed connector housing to a the USB Hub.</p>
-<p class="sd-card-text"><img alt="exploreHD" src="https://cdn.shopify.com/s/files/1/0575/8785/9626/files/P1046956_500x.jpg" /></p>
-</div>
-</details></section>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">$PORT</span></code> : The Port number of the camera you are going to be recording.</p>
+<ul>
+<li><p>example: <code class="docutils literal notranslate"><span class="pre">5600</span></code></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">$DATE</span></code> : The current system date in the following format: <code class="docutils literal notranslate"><span class="pre">MM-DD-YYYY</span></code></p>
+<ul>
+<li><p>example: <code class="docutils literal notranslate"><span class="pre">09-07-2023</span></code></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">$TIME</span></code> : The current system time in  24-HR format with the following formatting: <code class="docutils literal notranslate"><span class="pre">HHhMMmSSs</span></code></p>
+<ul>
+<li><p>example: <code class="docutils literal notranslate"><span class="pre">14h13m25s</span></code></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">$EPOCH</span></code> : The UNIX based <a class="reference external" href="https://www.epochconverter.com/">epoch timestamp</a></p></li>
+<li><p>example: <code class="docutils literal notranslate"><span class="pre">1695341103</span></code></p></li>
+</ul>
+<p><img alt="License" src="../_images/discovery_7.png" /></p>
+</section>
+<section id="default-ip-address-and-port-number">
+<h3>Default IP Address and Port Number<a class="headerlink" href="#default-ip-address-and-port-number" title="Permalink to this heading">#</a></h3>
+<p>This setting is used to set the default IP address input for each camera <strong>card</strong> you add.</p>
+<p><img alt="Global Settings" src="../_images/discovery_settings_global.png" /></p>
+</section>
+<section id="license-information-important">
+<h3>License Information (Important)<a class="headerlink" href="#license-information-important" title="Permalink to this heading">#</a></h3>
+<p><img alt="License Settings" src="../_images/discovery_settings_license.png" /></p>
+<p>Each license is bound to a specific machine. To utilize your license following a computer reset or on an alternative machine, you must first unlink it from the current machine.</p>
+<p>If you own a multi-machine license, you don’t need to unlink your license for each machine you add.</p>
+<blockquote>
+<div><p>For example, if you own a 3-Machine License, you can use your license key for up to 3 machines without needed to use the unlinking process.</p>
+</div></blockquote>
+<blockquote>
+<div><p>If you have 3-machines currently linked, you will need to unlink your license from a previous machine, in order to use Discovery on a different 4th machine.</p>
+</div></blockquote>
+</section>
+</section>
 </section>
 
         </article>
@@ -330,23 +336,23 @@ Camera Installation<div class="sd-summary-down docutils">
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="../guides/pi_setup.html">
+          <a class="next-page" href="firmware.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Raspberry Pi Streaming Setup for exploreHD</div>
+                <div class="title">DWE Firmware Loader</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="fiber_board.html">
+          <a class="prev-page" href="dweos.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Gigabit Fiber to Ethernet Converter (ROV/AUV)</div>
+                <div class="title">DWE OS</div>
                 
               </div>
             </a>
@@ -390,10 +396,21 @@ Camera Installation<div class="sd-summary-down docutils">
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">7-Port Multiplexer (ROV/AUV)</a><ul>
-<li><a class="reference internal" href="#introduction">Introduction</a></li>
-<li><a class="reference internal" href="#technical-specifications">Technical Specifications</a></li>
-<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#">Discovery by DWE.ai</a><ul>
+<li><a class="reference internal" href="#activation">Activation</a></li>
+<li><a class="reference internal" href="#quickstart">Quickstart</a><ul>
+<li><a class="reference internal" href="#ip-address-and-port">IP Address and Port</a></li>
+<li><a class="reference internal" href="#streaming-button">Streaming Button</a></li>
+<li><a class="reference internal" href="#recording-button">Recording Button</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#settings">Settings</a><ul>
+<li><a class="reference internal" href="#recording-path">Recording Path</a></li>
+<li><a class="reference internal" href="#filename-scheme">Filename Scheme</a></li>
+<li><a class="reference internal" href="#default-ip-address-and-port-number">Default IP Address and Port Number</a></li>
+<li><a class="reference internal" href="#license-information-important">License Information (Important)</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
