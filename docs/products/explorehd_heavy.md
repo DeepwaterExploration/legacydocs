@@ -115,9 +115,29 @@ Cable Penetrator:
 ```
 
 ```{dropdown} Mount Installation
+
+The exploreHD Heavy 2.0 has 4 flat faces along its outer perimeter. Each pair of faces is spaced 42mm apart and has an M2 threaded hole in the center of each. We recommend that you utilize mentioned holes for mounting. For simplicity, we recommend that you utilize the available exploreHD metal bracket available on our webpage.
+
+
 **Step 1**
 
-The exploreHD 
+<<<Insert Picture of Bagged Parts>>>
+
+If you purchased the exploreHD metal bracket, prepare to assemble it by selecting the orientation of your camera + bracket assembly relative to the object that the system will be mounted to. Choose the correct pair of holes that will yield this desired orientation.
+
+
+**Step 2**
+
+<<<Insert Picture of Bracket Lined Up>>>
+
+
+Line up the bracket's holes with the threaded holes on the camera body. 
+
+<<<Insert Pictures of screwed parts>>>
+
+Check that the camera is rotated to the desired angle. Use a screwdriver (we recommend the iFixit Mako Driver Set) to drive the M2 screws into position. Slight bending of the bracket is normal. Blue Loctite, or some other threadlocker may be used to further secure the screws. 
+
+
 
 ```
 
