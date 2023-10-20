@@ -1,4 +1,4 @@
-# Discovery by DWE.ai
+# Discovery for Desktop
 To view the multiple streams in Discovery, all you will need to do is install Discovery! You can see the product page [here](https://dwe.ai/products/discovery).
 
 ## Activation
