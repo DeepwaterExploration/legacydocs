@@ -7,8 +7,8 @@ DeepWater Exploration Documentation
    :maxdepth: 2
    :caption: Software
 
-   software/dweos
    software/discovery
+   software/dweos
    software/firmware
 
 .. toctree::
