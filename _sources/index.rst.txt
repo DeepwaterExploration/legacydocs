@@ -5,10 +5,11 @@ DeepWater Exploration Documentation
 
 .. toctree::
    :maxdepth: 2
-   :caption: About
+   :caption: Software
 
-   about/about_us
-   about/contact_us
+   software/dweos
+   software/discovery
+   software/firmware
 
 .. toctree::
    :maxdepth: 2
@@ -33,11 +34,10 @@ DeepWater Exploration Documentation
 
 .. toctree::
    :maxdepth: 2
-   :caption: Software
+   :caption: About
 
-   software/dweos
-   software/discovery
-   software/firmware
+   about/about_us
+   about/contact_us
 
 .. meta::
    :description: DeepWater Exploration Documentation Site 
