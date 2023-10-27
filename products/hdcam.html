@@ -181,7 +181,6 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../guides/pi_setup.html">Raspberry Pi Streaming Setup for exploreHD</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guides/ssh_into_pi.html">SSH Into a Raspberry Pi</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../guides/pc_setup.html">PC Setup Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guides/receiving_streams.html">Multiple Camera Feeds/Streams</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guides/blueos_companion.html">BlueOS Companion Setup for exploreHD</a></li>
 </ul>
@@ -355,11 +354,11 @@ Streaming alongside BlueOS Companion<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p class="sd-card-text"><strong>As of November 20, 2021, all exploreHD shipped will feature a new firmware that allows the cameras to be plug and play with BlueOS Companion without the need for drivers.</strong></p>
+<p class="sd-card-text"><strong>As of November 20, 2021, all exploreHD shipped will feature a new firmware that allows the cameras to be plug and play with BlueOS Companion without any extra drivers.</strong></p>
 <p class="sd-card-text">If your camera was shipped beforehand or you notice the video stream is sluggish, you may be running an older version.</p>
 <p class="sd-card-text"><a class="reference internal" href="../software/firmware.html"><span class="doc">Click Here for instructions on how to update</span></a></p>
 </div>
-<p class="sd-card-text">If you want to stream multiple exploreHDs at once using BlueOS Companion, check out our <a class="reference internal" href="../guides/blueos_companion.html"><span class="doc">BlueOS Companion Guide</span></a> for installing our software alongisde BlueOS.</p>
+<p class="sd-card-text">If you want to stream multiple exploreHDs at once using BlueOS Companion, check out our <a class="reference internal" href="../guides/blueos_companion.html"><span class="doc">BlueOS Companion Guide</span></a> for installing our software alongside BlueOS.</p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -368,7 +367,7 @@ H.264/Bitrate Control for Streaming<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">To set custom H.264 parameters when streaming from a Raspberry Pi or similar computer, install our <a class="reference internal" href="../software/dweos.html"><span class="doc">exploreHD Driver UI</span></a>!</p>
+<p class="sd-card-text">To set custom H.264 parameters when streaming from a Raspberry Pi or similar computer, install <a class="reference internal" href="../software/dweos.html"><span class="doc">DWE OS</span></a>!</p>
 <p class="sd-card-text">This software supports unlimited camera streams given you have unlimited USB ports, and installs perfectly alongside BlueOS.</p>
 <p class="sd-card-text"><img alt="DWE Firmware Loader" src="../_images/dweos.png" /></p>
 <ul class="simple">
@@ -381,10 +380,10 @@ H.264/Bitrate Control for Streaming<div class="sd-summary-down docutils">
 </details><section id="streaming-latency">
 <h3>Streaming Latency<a class="headerlink" href="#streaming-latency" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p><strong>Streaming Method:</strong> UDP H.264 via Gstreamer</p></li>
+<li><p><strong>Streaming Method:</strong> UDP H.264 via GStreamer</p></li>
 <li><p><strong>Streaming Device:</strong> Raspberry Pi 4 Model B 2GB RAM</p></li>
 <li><p><strong>Streamed Devices:</strong> 3 exploreHDs</p></li>
-<li><p><strong>Recieving Software:</strong> Open Broadcaster Software</p></li>
+<li><p><strong>Receiving Software:</strong> Open Broadcaster Software</p></li>
 <li><p><strong>Latency:</strong> 35ms ± 20</p></li>
 </ul>
 <div class="video_wrapper" style="">

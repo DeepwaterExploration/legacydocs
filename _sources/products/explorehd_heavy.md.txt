@@ -241,7 +241,7 @@ If you want to run your own custom streaming setup on the Raspberry Pi, we have 
 ```
 
 ````{dropdown} Streaming alongside BlueOS Companion
-```{important} **As of November 20, 2021, all exploreHD shipped will feature a new firmware that allows the cameras to be plug and play with BlueOS Companion without the need for drivers.**
+```{important} **As of November 20, 2021, all exploreHD shipped will feature a new firmware that allows the cameras to be plug and play with BlueOS Companion without any extra drivers.**
 
 If your camera was shipped beforehand or you notice the video stream is sluggish, you may be running an older version.
 
@@ -252,7 +252,7 @@ If you want to stream multiple exploreHDs at once using BlueOS Companion, check 
 ````
 
 ```{dropdown} H.264/Bitrate Control for Streaming
-To set custom H.264 parameters when streaming from a Raspberry Pi or similar computer, install our {doc}`exploreHD Driver UI <../software/dweos>`!
+To set custom H.264 parameters when streaming from a Raspberry Pi or similar computer, install {doc}`DWE OS <../software/dweos>`!
 
 This software supports unlimited camera streams given you have unlimited USB ports, and installs perfectly alongside BlueOS.
 

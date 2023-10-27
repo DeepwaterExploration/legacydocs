@@ -111,16 +111,16 @@ External power is recommended if you are going to have more than 3 cameras. Make
 
 ![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/P1046952_500x.jpg)
 
-Carefully insert each indvidual contacts into the connector housing until you hear an audible click. Ensure that the orientation of the connector housing and cable order matches with the image above. 
+Carefully insert each individual contacts into the connector housing until you hear an audible click. Ensure that the orientation of the connector housing and cable order matches with the image above. 
 
-If a mistake has been made, a small flat head screw driver can be used to release the contact from the connector housing. Gently use the screw driver and go under the plastic tabs to release each contact. 
+If a mistake has been made, a small flat head screwdriver can be used to release the contact from the connector housing. Gently use the screwdriver and go under the plastic tabs to release each contact. 
 
 ```{warning} Ensure that the connection is correct. **The camera will get damaged if the polarity is not correct.**
 ```
 
 **Step 3**
 
-Connect the assembleed connector housing to a the USB Hub. 
+Connect the assembled connector housing to a the USB Hub. 
 
 ![exploreHD](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/P1046956_500x.jpg)
 

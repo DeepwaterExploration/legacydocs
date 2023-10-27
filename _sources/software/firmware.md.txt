@@ -34,7 +34,7 @@ Run *DWEFirmwareLoader.exe*
 
 Click on the firmware version that you would like to use.
 
-```{important} Since the introduction of [DWE OS](https://docs.exploredeepwater.com/software/dweos.html), we no longer offer High Quality Firmware as the setting can be adjusted via the driver UI. The default camera firmware we ship and recommend is the lower bandwidth version when streaming. If you have any questions, feel free to ask on [our forums](https://discuss.exploredeepwater.com/).
+```{important} Since the introduction of [DWE OS](https://docs.exploredeepwater.com/software/dweos.html), we no longer offer High Quality Firmware as the setting can be adjusted via DWE OS. The default camera firmware we ship and recommend is the lower bandwidth version when streaming. If you have any questions, feel free to ask on [our forums](https://discuss.exploredeepwater.com/).
 ```
 
 

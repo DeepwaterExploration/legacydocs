@@ -181,7 +181,6 @@
 <ul class="current">
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Raspberry Pi Streaming Setup for exploreHD</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ssh_into_pi.html">SSH Into a Raspberry Pi</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pc_setup.html">PC Setup Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="receiving_streams.html">Multiple Camera Feeds/Streams</a></li>
 <li class="toctree-l1"><a class="reference internal" href="blueos_companion.html">BlueOS Companion Setup for exploreHD</a></li>
 </ul>
@@ -401,7 +400,7 @@ Automatic Stream Setup<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">For automatic, plug and play of the stream to work on the Raspberry Pi, use our exploreHD Driver UI. This system will automatically run at startup and saves the settings automatically. It supports UDP stream and H264 compression settings.</p>
+<p class="sd-card-text">For automatic, plug and play of the stream to work on the Raspberry Pi, use DWE OS. This system will automatically run at startup and saves the settings automatically. It supports UDP stream and H264 compression settings.</p>
 <p class="sd-card-text"><a class="reference internal" href="../software/dweos.html"><span class="doc">DWE OS</span></a></p>
 <p class="sd-card-text"><img alt="dweos" src="../_images/dweos.png" /></p>
 </div>
@@ -447,11 +446,17 @@ Manual Stream Setup<div class="sd-summary-down docutils">
 </details></section>
 <section id="receiving">
 <h2>Receiving<a class="headerlink" href="#receiving" title="Permalink to this heading">#</a></h2>
-<p>To receive the stream on a PC, first follow our <a class="reference internal" href="pc_setup.html"><span class="doc">Windows Setup Guide</span></a>. You will then be able to run the following command:</p>
-<p><code class="docutils literal notranslate"><span class="pre">gst-launch-1.0</span> <span class="pre">udpsrc</span> <span class="pre">port=5600</span> <span class="pre">!</span> <span class="pre">application/x-rtp</span> <span class="pre">!</span> <span class="pre">rtpjitterbuffer</span> <span class="pre">!</span> <span class="pre">rtph264depay</span> <span class="pre">!</span> <span class="pre">avdec_h264</span> <span class="pre">!</span> <span class="pre">videoconvert</span> <span class="pre">!</span> <span class="pre">autovideosink</span></code></p>
-<p>For more streaming options such as viewing multiple streams at once, please see:</p>
-<p><a class="reference internal" href="#/guides/ardusub_companion.html#receiving-multiple-streams"><span class="xref myst">Receiving Multiple Streams Instructions</span></a></p>
-<p><img alt="MultiCam exploreHD ROV Setup" src="../_images/gstreamer8.jpg" /></p>
+<p>The simplest and most reliable method of viewing multiple high-quality and lowest latency is using our software, <a class="reference external" href="https://dwe.ai/products/discovery">Discovery</a>!.</p>
+<p>To learn more, see our <a class="reference internal" href="../software/discovery.html"><span class="doc">Discovery quickstart guide</span></a> –&gt;</p>
+<!-- To receive the stream on a PC, first follow our {doc}`Windows Setup Guide <./pc_setup>`. You will then be able to run the following command:
+
+`gst-launch-1.0 udpsrc port=5600 ! application/x-rtp ! rtpjitterbuffer ! rtph264depay ! avdec_h264 ! videoconvert ! autovideosink`
+
+For more streaming options such as viewing multiple streams at once, please see:
+
+[Receiving Multiple Streams Instructions](/guides/ardusub_companion.html#receiving-multiple-streams)
+ -->
+<!-- ![MultiCam exploreHD ROV Setup](../img/gstreamer/gstreamer8.jpg) -->
 </section>
 </section>
 
