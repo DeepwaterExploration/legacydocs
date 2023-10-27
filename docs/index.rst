@@ -28,7 +28,6 @@ DeepWater Exploration Documentation
 
    guides/pi_setup
    guides/ssh_into_pi
-   guides/pc_setup
    guides/receiving_streams
    guides/blueos_companion
 

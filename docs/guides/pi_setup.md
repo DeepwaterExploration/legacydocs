@@ -123,7 +123,7 @@ The following instructions are for if you want to set up streaming from a Raspbe
 ## Streaming
 
 ```{dropdown} Automatic Stream Setup
-For automatic, plug and play of the stream to work on the Raspberry Pi, use our exploreHD Driver UI. This system will automatically run at startup and saves the settings automatically. It supports UDP stream and H264 compression settings.
+For automatic, plug and play of the stream to work on the Raspberry Pi, use DWE OS. This system will automatically run at startup and saves the settings automatically. It supports UDP stream and H264 compression settings.
 
 {doc}`DWE OS <../software/dweos>`
 
@@ -173,12 +173,16 @@ You can make this command autorun to make your ROV camera streaming system!
 
 ## Receiving
 
-To receive the stream on a PC, first follow our {doc}`Windows Setup Guide <./pc_setup>`. You will then be able to run the following command:
+The simplest and most reliable method of viewing multiple high-quality and lowest latency is using our software, [Discovery](https://dwe.ai/products/discovery)!.
+
+To learn more, see our {doc}`Discovery quickstart guide <../software/discovery>` -->
+
+<!-- To receive the stream on a PC, first follow our {doc}`Windows Setup Guide <./pc_setup>`. You will then be able to run the following command:
 
 `gst-launch-1.0 udpsrc port=5600 ! application/x-rtp ! rtpjitterbuffer ! rtph264depay ! avdec_h264 ! videoconvert ! autovideosink`
 
 For more streaming options such as viewing multiple streams at once, please see:
 
 [Receiving Multiple Streams Instructions](/guides/ardusub_companion.html#receiving-multiple-streams)
-
-![MultiCam exploreHD ROV Setup](../img/gstreamer/gstreamer8.jpg)
+ -->
+<!-- ![MultiCam exploreHD ROV Setup](../img/gstreamer/gstreamer8.jpg) -->

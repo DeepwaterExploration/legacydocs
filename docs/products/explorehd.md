@@ -248,18 +248,18 @@ This is perfect for MATE ROV teams who want to use the RPi to stream but don't w
 ```
 
 ````{dropdown} Streaming alongside BlueOS Companion
-```{important} **As of November 20, 2021, all exploreHD shipped will feature a new firmware that allows the cameras to be plug and play with BlueOS Companion without the need for drivers.**
+```{important} **As of November 20, 2021, all exploreHD shipped will feature a new firmware that allows the cameras to be plug and play with BlueOS Companion without any extra drivers.**
 
 If your camera was shipped beforehand or you notice the video stream is sluggish, you may be running an older version.
 
 {doc}`Click Here for instructions on how to update <../software/firmware>`
 ```
 
-If you want to stream multiple exploreHDs at once using BlueOS Companion, check out our {doc}`BlueOS Companion Guide <../guides/blueos_companion>` for installing our software alongisde BlueOS.
+If you want to stream multiple exploreHDs at once using BlueOS Companion, check out our {doc}`BlueOS Companion Guide <../guides/blueos_companion>` for installing our software alongside BlueOS.
 ````
 
 ```{dropdown} H.264/Bitrate Control for Streaming
-To set custom H.264 parameters when streaming from a Raspberry Pi or similar computer, install our {doc}`exploreHD Driver UI <../software/dweos>`!
+To set custom H.264 parameters when streaming from a Raspberry Pi or similar computer, install {doc}`DWE OS <../software/dweos>`!
 
 This software supports unlimited camera streams given you have unlimited USB ports, and installs perfectly alongside BlueOS.
 
@@ -274,10 +274,10 @@ This software supports unlimited camera streams given you have unlimited USB por
 
 ### Streaming Latency
 
-- **Streaming Method:** UDP H.264 via Gstreamer
+- **Streaming Method:** UDP H.264 via GStreamer
 - **Streaming Device:** Raspberry Pi 4 Model B 2GB RAM
 - **Streamed Devices:** 3 exploreHDs
-- **Recieving Software:** Open Broadcaster Software
+- **Receiving Software:** Open Broadcaster Software
 - **Latency:** 35ms ± 20
 
 ```{youtube} ZJl32Xt4jQQ

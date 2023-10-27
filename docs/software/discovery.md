@@ -3,7 +3,7 @@ To view the multiple streams in Discovery, all you will need to do is install Di
 
 ## Activation
 
-When you open Discovery for the first time, you will see a license activation screen. Enter your license key in the field labelled "License Key".
+When you open Discovery for the first time, you will see a license activation screen. Enter your license key in the field labeled "License Key".
 
 ```{important} **Please ensure you have an active internet connection during activation.**
 ```
