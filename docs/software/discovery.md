@@ -1,22 +1,6 @@
 # Discovery for Desktop
 To view the multiple streams in Discovery, all you will need to do is install Discovery! You can see the product page [here](https://dwe.ai/products/discovery).
 
-## Activation
-
-When you open Discovery for the first time, you will see a license activation screen. Enter your license key in the field labeled "License Key".
-
-```{important} **Please ensure you have an active internet connection during activation.**
-```
-
-```{warning} If you ever plan on resetting your operating system or if you will no longer have your device in possession, **please unlink your license from the machine** to avoid any future troubles. [Click here for more information](#license-information-important).
-```
-
-![License](../img/discovery/discovery_2.png)
-
-After a successful activation, you will see a success screen.
-
-![License Success](../img/discovery/discovery_3.png)
-
 ## Quickstart
 
 The main page of Discovery, will have a blank canvas.
@@ -69,9 +53,9 @@ When there is an active video stream **and** the video **is actively** recording
 
 Before we start streaming, however, it is recommended to change some settings to reflect your specific system.
 
-Using the left-side navigation bar, you can head to the settings page.
+Using the left-side navigation bar, you can head to the settings page by clicking the "gear"/settings icon.
 
-![Settings Page](../img/discovery/discovery_5.png)
+![Settings Page](../img/discovery/discovery_0.png)
 
 Each card contains settings for various options in the software. 
 
@@ -104,7 +88,27 @@ This setting is used to set the default IP address input for each camera **card*
 
 ![Global Settings](../img/discovery/discovery_settings_global.png)
 
-### License Information (Important)
+### Activation
+
+To activate your license for Discovery, click "Activate New License".
+
+![License](../img/discovery/discovery_0.png)
+
+Enter your license key in the field labeled "License Key".
+
+```{important} **Please ensure you have an active internet connection during activation.**
+```
+
+```{warning} If you ever plan on resetting your operating system or if you will no longer have your device in possession, **please unlink your license from the machine** to avoid any future troubles. [Click here for more information](#license-information-important).
+```
+
+![License](../img/discovery/discovery_2.png)
+
+After a successful activation, you will see a success screen.
+
+![License Success](../img/discovery/discovery_3.png)
+
+### License Deactivation (Important)
 
 ![License Settings](../img/discovery/discovery_settings_license.png)
 
