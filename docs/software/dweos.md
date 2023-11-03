@@ -43,7 +43,7 @@ rm /usr/lib/systemd/system/dwe-controls.service
 
 To install for the raspberry pi, you can use the installation script by executing the following command:
 ```
-curl -fsSL https://raw.githubusercontent.com/DeepwaterExploration/DWE OS/main/scripts/install.sh | sudo -E bash -
+curl -fsSL https://raw.githubusercontent.com/DeepwaterExploration/DWE_OS/main/scripts/install.sh | sudo -E bash -
 ```
 
 Once installed, the script should exit with the following message:
