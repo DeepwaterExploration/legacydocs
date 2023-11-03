@@ -1,9 +1,9 @@
 # Contact Us
 
 ## Technical/General Support
-[support@exploredeepwater.com](mailto:support@exploredeepwater.com)
+[support@dwe.ai](mailto:support@dwe.ai)
 
 ## Forums
 
-[https://forums.dwe.ai](https://forums.dwe.ai)
+[https://discuss.exploredeepwater.com/](https://discuss.exploredeepwater.com/)
 
