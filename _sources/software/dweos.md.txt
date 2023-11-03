@@ -64,9 +64,9 @@ curl -L https://npmjs.org/install.sh | sudo sh
 
 Next, install the required dependencies:
 
-`sudo apt install libudev-dev libgstreamer-plugins-base1.0-dev libgstreamer1.0-dev`
+`sudo apt install libudev-dev libgstreamer-plugins-base1.0-dev libgstreamer1.0-dev gstreamer1.0-plugins-good gstreamer1.0-plugins-bad`
 
-`sudo apt install gstreamer1.0-plugins-good gstreamer1.0-plugins-bad`
+<!-- `sudo apt install gstreamer1.0-plugins-good gstreamer1.0-plugins-bad` -->
 
 Finally, install the dwe-controls application from npmjs with:
 
