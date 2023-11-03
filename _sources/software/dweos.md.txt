@@ -17,7 +17,7 @@ Recommended for Raspberry Pi instead of [Installing On Raspberry Pi](#installing
 
 To install with docker, you can use the installation script provided with the following command:
 ```
-curl -fsSL https://raw.githubusercontent.com/DeepwaterExploration/DWE OS/main/scripts/install-docker.sh | sudo -E bash -
+curl -fsSL https://raw.githubusercontent.com/DeepwaterExploration/DWE_OS/main/scripts/install-docker.sh | sudo -E bash -
 ```
 
 Once installed, the script should exit with the following message:
