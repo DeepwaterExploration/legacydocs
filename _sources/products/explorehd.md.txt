@@ -43,9 +43,9 @@ Our passion for uncompromised image quality for marine robotics is the simple ph
 ```{dropdown} Camera Specifications
 **Image Sensor:** 1/2.9" Sony Exmor™ CMOS 12-bit
 
-**Resolution:** 1920x1080
+**Max Resolution:** 1920x1080
 
-**Framerate:** 30fps with H.264/MJPEG
+**Max Framerate:** 30fps with H.264/MJPEG
 
 **Format:** H.264, MJPEG, YUY2
 
@@ -67,6 +67,26 @@ Our passion for uncompromised image quality for marine robotics is the simple ph
 
 **Wattage:** <1.5W
 
+```
+
+```{dropdown} Resolutions and Framerates
+**MJPEG:**
+ - Resolutions: `1920x1080`, `1280x720`, `800x600`, `640x480`, `640x360`, `352x288`, `320x240`
+    - `@30fps`, `@25fps`, `@20fps`, `@15fps`, `@10fps`, `@5fps`
+
+**H264:**
+ - Resolutions: `1920x1080`, `1280x720`, `800x600`, `640x480`, `640x360`, `352x288`, `320x240`
+    - `@30fps`, `@25fps`, `@20fps`, `@15fps`, `@10fps`, `@5fps`
+
+**YUYV (4:2:2):**
+- Resolutions:`1920x1080`
+    - `@5fps`
+- Resolutions: `1280x720`
+    - `@10fps`, `@5fps`
+- Resolutions: `800x600`
+    - `@15fps`, `@10fps`, `@5fps`
+- Resolutions:`640x480`, `640x360`, `352x288`, `320x240`
+    - `@30fps`, `@25fps`, `@20fps`, `@15fps`, `@10fps`, `@5fps`
 ```
 
 ```{dropdown} Lens Specifications
