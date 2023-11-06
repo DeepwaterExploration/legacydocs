@@ -8,7 +8,7 @@
 
 1. Clone the project: `git clone https://github.com/DeepwaterExploration/DeepwaterExplorationDocs.git`
 2. cd to the docs directory: `cd DeepwaterExplorationDocs/docs`
-2. Install the requirments: `pip install -r requirements.txt` (you may need to use an administrator shell)
+2. Install the requirements: `pip install -r requirements.txt` (you may need to use an administrator shell)
 4. Run the live server: `sphinx-autobuild . build/html`. When a change is detected in `build/html`, the documentation is rebuilt and any open browser windows are reloaded automatically. `KeyboardInterrupt` (<kbd>ctrl</kbd>+<kbd>c</kbd>) will stop the server.
 5. Open the browser to view the local server: `http://localhost:8000`
 
