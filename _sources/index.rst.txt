@@ -26,6 +26,7 @@ DeepWater Exploration Documentation
    :maxdepth: 2
    :caption: Guides
 
+   guides/vision
    guides/pi_setup
    guides/ssh_into_pi
    guides/receiving_streams
