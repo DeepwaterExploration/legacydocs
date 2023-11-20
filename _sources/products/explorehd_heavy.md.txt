@@ -68,6 +68,26 @@ The exploreHD Heavy also features H.264 compression technology, allowing up to 7
 
 ```
 
+```{dropdown} Resolutions and Framerates
+**MJPEG:**
+ - Resolutions: `1920x1080`, `1280x720`, `800x600`, `640x480`, `640x360`, `352x288`, `320x240`
+    - `@30fps`, `@25fps`, `@20fps`, `@15fps`, `@10fps`, `@5fps`
+
+**H264:**
+ - Resolutions: `1920x1080`, `1280x720`, `800x600`, `640x480`, `640x360`, `352x288`, `320x240`
+    - `@30fps`, `@25fps`, `@20fps`, `@15fps`, `@10fps`, `@5fps`
+
+**YUYV (4:2:2):**
+- Resolutions:`1920x1080`
+    - `@5fps`
+- Resolutions: `1280x720`
+    - `@10fps`, `@5fps`
+- Resolutions: `800x600`
+    - `@15fps`, `@10fps`, `@5fps`
+- Resolutions:`640x480`, `640x360`, `352x288`, `320x240`
+    - `@30fps`, `@25fps`, `@20fps`, `@15fps`, `@10fps`, `@5fps`
+```
+
 ```{dropdown} Lens Specifications
 **Type:** Fisheye
 
