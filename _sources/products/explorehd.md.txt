@@ -57,7 +57,9 @@ Our passion for uncompromised image quality for marine robotics is the simple ph
 
 **H.264 Compression Profiles:** Baseline Profile
 
-**Streaming Latency:** 35ms ± 20 [More Details](#streaming-latency)
+**USB Latency (MJPEG/H264):** 33ms ± 3 [USB Testing Tool](https://github.com/DeepwaterExploration/USB-Camera-Latency-Tool)
+
+**Streaming Latency:** 34ms ± 5 [More Details](#streaming-latency)
 
 **Connection:** USB2.0 High Speed 
 
@@ -298,7 +300,7 @@ This software supports unlimited camera streams given you have unlimited USB por
 - **Streaming Device:** Raspberry Pi 4 Model B 2GB RAM
 - **Streamed Devices:** 3 exploreHDs
 - **Receiving Software:** Open Broadcaster Software
-- **Latency:** 35ms ± 20
+- **Latency:** 34ms ± 5
 
 ```{youtube} ZJl32Xt4jQQ
 ```

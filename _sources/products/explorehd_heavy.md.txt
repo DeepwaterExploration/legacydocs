@@ -56,7 +56,9 @@ The exploreHD Heavy also features H.264 compression technology, allowing up to 7
 
 **H.264 Compression Profiles:** Baseline Profile
 
-**Streaming Latency:** 35ms ± 20 [More Details](#streaming-latency)
+**USB Latency (MJPEG/H264):** 33ms ± 3 [USB Testing Tool](https://github.com/DeepwaterExploration/USB-Camera-Latency-Tool)
+
+**Streaming Latency:** 34ms ± 5 [More Details](#streaming-latency)
 
 **Connection:** USB2.0 High Speed 
 
