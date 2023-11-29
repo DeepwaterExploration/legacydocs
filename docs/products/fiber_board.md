@@ -105,4 +105,6 @@ Common SFP Transceivers are also compatible with our board. They will require 2 
 
 ## Technical Drawing
 
+- [STEP File](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/Fiber_to_Ethernet_PCB.step)
+
 <iframe src="../_static/pdf/DWE_Fiber_Board_Drawing.pdf" width="100%" height="500px">
