@@ -88,6 +88,14 @@ Introducing the exploreHD Professional, the next evolution of our flagship produ
     Note: Alternative Lenses Available Upon Request
 ```
 
+## Technical Drawings
+
+```{dropdown} exploreHD Heavy Housing
+
+- [exploreHD Heavy Assembly STEP File](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/eHD_Pro_Public_Release.step?v=1704159141)
+
+```
+
 ## Image Samples
 
 Color remains accurate even in low light situations
