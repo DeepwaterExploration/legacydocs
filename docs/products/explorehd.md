@@ -103,6 +103,30 @@ Our passion for uncompromised image quality for marine robotics is the simple ph
     Note: Alternative Lenses Available Upon Request
 ```
 
+## Technical Drawings
+
+```{dropdown} exploreHD 2.0 Housing
+
+- [exploreHD 2.0 Assembly STEP File](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_2.0_Full_Assembly_PUBLIC.step?v=1647568154)
+
+![exploreHD](../img/explorehd/technical_drawing/explorehd2drawing.jpg)
+
+```
+
+```{dropdown} exploreHD 3.0 Housing
+
+- [exploreHD 3.0 Assembly (Epoxy) STEP File](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/eHD_3.0_with_Epoxy_STEP_Public.step)
+
+- [exploreHD 3.0 Assembly (WetLink) STEP File](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/eHD_3.0_with_WL_STEP_Public.step)
+
+- [exploreHD 3.0 Stand Assembly STEP File](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/eHD_3.0_Stand_Full_Assembly_v7.step)
+
+- [exploreHD 3.0 1/4-20 Tripod Mount Case](https://www.printables.com/model/656422-wwwdweai-explorehd-30-case-with-14-20-threaded-ins)
+
+![exploreHD](../img/explorehd/technical_drawing/eHD_Drawing.jpg)
+
+```
+
 ## Image Samples
 
 Color remains accurate even in low light situations
@@ -303,29 +327,5 @@ This software supports unlimited camera streams given you have unlimited USB por
 - **Latency:** 34ms ± 5
 
 ```{youtube} ZJl32Xt4jQQ
-```
-
-## Technical Drawings
-
-```{dropdown} exploreHD 2.0 Housing
-
-- [exploreHD 2.0 Assembly STEP File](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/exploreHD_2.0_Full_Assembly_PUBLIC.step?v=1647568154)
-
-![exploreHD](../img/explorehd/technical_drawing/explorehd2drawing.jpg)
-
-```
-
-```{dropdown} exploreHD 3.0 Housing
-
-- [exploreHD 3.0 Assembly (Epoxy) STEP File](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/eHD_3.0_with_Epoxy_STEP_Public.step)
-
-- [exploreHD 3.0 Assembly (WetLink) STEP File](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/eHD_3.0_with_WL_STEP_Public.step)
-
-- [exploreHD 3.0 Stand Assembly STEP File](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/eHD_3.0_Stand_Full_Assembly_v7.step)
-
-- [exploreHD 3.0 1/4-20 Tripod Mount Case](https://www.printables.com/model/656422-wwwdweai-explorehd-30-case-with-14-20-threaded-ins)
-
-![exploreHD](../img/explorehd/technical_drawing/eHD_Drawing.jpg)
-
 ```
 

@@ -102,6 +102,14 @@ The exploreHD Heavy also features H.264 compression technology, allowing up to 7
     Note: Alternative Lenses Available Upon Request
 ```
 
+## Technical Drawings
+
+```{dropdown} exploreHD Heavy Housing
+
+- [exploreHD Heavy Assembly STEP File](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/eHD_Heavy_Public_Release_v1.step?v=1704159142)
+
+```
+
 ## Image Samples
 
 Color remains accurate even in low light situations
