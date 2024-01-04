@@ -1,5 +1,10 @@
 # DWE Firmware Loader
 
+```{warning}
+**Please note, this page only applies to the following products:**
+
+- Standard exploreHD (400m) cameras shipped before November 20th, 2021
+```
 
 [**Download DWEFirmwareLoader**](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/DWEFirmwareLoader_4414.zip)
 
@@ -75,7 +80,8 @@ If you see any errors during the upgrading process, please follow the guides bel
 
 ## Procedure Video
 
-```{warning} This video uses an outdated version of the loader and may not be accurate. Documentation for this version can be found [here](https://docs.exploredeepwater.com/legacy/firmware_legacy.html).
+```{warning} This video uses an outdated version of the loader. If you have trouble, please contact support@dwe.ai
+<!-- Documentation for this version can be found [here](https://docs.dwe.ai/legacy/firmware_legacy.html). -->
 ```
 
 ```{youtube} G4h9EAG88HU
