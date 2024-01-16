@@ -1,17 +1,21 @@
 # DWE Firmware Loader
 
+```{important}
+Please see [product changelog](./firmware/product_changelog.md) for more information on updates.
+```
+
 ```{warning}
 **Please note, this page only applies to the following products:**
 
-- Standard exploreHD (400m) cameras shipped before November 20th, 2021
+- Standard exploreHD (400m) cameras shipped before Jan 16th, 2024
+- exploreHD Heavy (1000m) cameras
+- exploreHD Pro (6000m) cameras
 ```
 
-[**Download DWEFirmwareLoader**](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/DWEFirmwareLoader_4414.zip)
+```{caution}
+**This procedure is currently only available on Windows 10 or newer.**
 
-```{note}
-Updated as of 5/31/2023
-
-See [Release Notes](./firmware/update-feb-8)
+[**Download DWEFirmwareLoader**](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/DWE_exploreHD_3.0_FirmwareLoader_01-16-2024.zip)
 ```
 
 ## Procedure for Updating exploreHD/HDCam Firmware
@@ -39,13 +43,6 @@ Run *DWEFirmwareLoader.exe*
 
 Click on the firmware version that you would like to use.
 
-```{important} Since the introduction of [DWE OS](https://docs.exploredeepwater.com/software/dweos.html), we no longer offer High Quality Firmware as the setting can be adjusted via DWE OS. The default camera firmware we ship and recommend is the lower bandwidth version when streaming. If you have any questions, feel free to ask on [our forums](https://discuss.exploredeepwater.com/).
-```
-
-
-* **Lower Bandwidth** uses less bandwidth, but provides lower quality video.
-    * Reccomended for use in a setup with multiple exploreHDs.
-
 ```{warning} Do not close the application, unplug the camera, or open any applications that may use the camera until the update is complete.
 ```
 
@@ -53,11 +50,9 @@ Click on the firmware version that you would like to use.
 
 ### Step 5
 
-After approximately a minute, the exploreHD should have the new firmware loaded and ready to use!
+After approximately a minute, your exploreHD product should be ready to use!
 
-You may now close the application. You can test the camera using any camera application for Windows. If everything looks good, you are ready to use it on your ROV!
-
-See: [Getting Started](../products/explorehd)
+You may now close the application. You can test the camera using any camera application for Windows (ex: [Camera app](https://apps.microsoft.com/detail/9WZDNCRFJBBG?hl=en-US&gl=US)).
 
 ## Troubleshooting
 
@@ -81,7 +76,6 @@ If you see any errors during the upgrading process, please follow the guides bel
 ## Procedure Video
 
 ```{warning} This video uses an outdated version of the loader. If you have trouble, please contact support@dwe.ai
-<!-- Documentation for this version can be found [here](https://docs.dwe.ai/legacy/firmware_legacy.html). -->
 ```
 
 ```{youtube} G4h9EAG88HU
