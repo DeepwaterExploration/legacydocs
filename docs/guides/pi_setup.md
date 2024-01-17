@@ -1,5 +1,9 @@
 # Raspberry Pi Streaming Setup for exploreHD
 
+```{important}
+If you are plugging your Vehicle/Raspberry Pi/Other Device directly into your laptop via an ethernet cable/adapter/dongle, please see the [PC Network Setup Guide](../guides/pc_setup.md) first.
+```
+
 ```{note}
 The following instructions are for if you want to set up streaming from a Raspberry Pi without ArduSub. If you want plug-and-play compatibility we recommend following {doc}`this guide <./blueos_companion>` for installing BlueOS alongside our software.
 
@@ -10,6 +14,10 @@ The following instructions are for if you want to set up streaming from a Raspbe
 ![Multi-Cam exploreHD Setup](../img/explorehd/exploreHD_Connection_Diagram.JPG)
 
 ## Setup
+
+```{important}
+If you are plugging your Vehicle/Raspberry Pi/Other Device directly into your laptop via an ethernet cable/adapter/dongle, please see the [PC Network Setup Guide](../guides/pc_setup.md) first.
+```
 
 ::::{dropdown} Initial Setup
 

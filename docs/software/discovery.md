@@ -1,6 +1,10 @@
 # Discovery for Desktop
 To view the multiple streams in Discovery, all you will need to do is install Discovery! You can see the product page [here](https://dwe.ai/products/discovery).
 
+```{important}
+If you are plugging your Vehicle/Raspberry Pi/Other Device directly into your laptop via an ethernet cable/adapter/dongle, please see the [PC Network Setup Guide](../guides/pc_setup.md) first.
+```
+
 ## Quickstart
 
 The main page of Discovery, will have a blank canvas.
