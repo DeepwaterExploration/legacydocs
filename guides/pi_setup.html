@@ -5,7 +5,7 @@
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta content="DeepWater Exploration Documentation Site" name="description" />
 <meta content="rov, exploreHD, HDCam, Camera" name="keywords" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="SSH Into a Raspberry Pi" href="ssh_into_pi.html" /><link rel="prev" title="Computer Vision Resources" href="vision.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="PC Network Setup Guide" href="pc_setup.html" /><link rel="prev" title="Computer Vision Resources" href="vision.html" />
 
     <link rel="shortcut icon" href="../_static/wave.png"/><!-- Generated with Sphinx 7.1.2 and Furo 2023.09.10 -->
         <title>Raspberry Pi Streaming Setup for exploreHD - DeepWater Exploration docs</title>
@@ -181,6 +181,9 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="vision.html">Computer Vision Resources</a></li>
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Raspberry Pi Streaming Setup for exploreHD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pc_setup.html">PC Network Setup Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gstreamer_guide.html">Install GStreamer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gstreamer_guide.html#gstreamer-stream-input-pipeline">Gstreamer Stream Input Pipeline</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ssh_into_pi.html">SSH Into a Raspberry Pi</a></li>
 <li class="toctree-l1"><a class="reference internal" href="receiving_streams.html">Multiple Camera Feeds/Streams</a></li>
 <li class="toctree-l1"><a class="reference internal" href="blueos_companion.html">BlueOS Companion Setup for exploreHD</a></li>
@@ -225,6 +228,10 @@
         <article role="main">
           <section id="raspberry-pi-streaming-setup-for-explorehd">
 <h1>Raspberry Pi Streaming Setup for exploreHD<a class="headerlink" href="#raspberry-pi-streaming-setup-for-explorehd" title="Permalink to this heading">#</a></h1>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If you are plugging your Vehicle/Raspberry Pi/Other Device directly into your laptop via an ethernet cable/adapter/dongle, please see the <a class="reference internal" href="pc_setup.html"><span class="std std-doc">PC Network Setup Guide</span></a> first.</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The following instructions are for if you want to set up streaming from a Raspberry Pi without ArduSub. If you want plug-and-play compatibility we recommend following <a class="reference internal" href="blueos_companion.html"><span class="doc">this guide</span></a> for installing BlueOS alongside our software.</p>
@@ -233,6 +240,10 @@
 <p><img alt="Multi-Cam exploreHD Setup" src="../_images/exploreHD_Connection_Diagram.JPG" /></p>
 <section id="setup">
 <h2>Setup<a class="headerlink" href="#setup" title="Permalink to this heading">#</a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If you are plugging your Vehicle/Raspberry Pi/Other Device directly into your laptop via an ethernet cable/adapter/dongle, please see the <a class="reference internal" href="pc_setup.html"><span class="std std-doc">PC Network Setup Guide</span></a> first.</p>
+</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Initial Setup<div class="sd-summary-down docutils">
@@ -315,39 +326,34 @@ SSH into the Pi<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Windows<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">For Windows, we recommend using Putty, which can be downloaded <a class="reference external" href="https://www.putty.org/">here</a></p>
-<ul class="simple">
-<li><p class="sd-card-text">After installing, open Putty and type the address of the Raspberry Pi (which should be set to 192.168.2.2 if you are following <a class="reference internal" href="#"><span class="doc">Our Guide</span></a>)</p></li>
-<li><p class="sd-card-text">Keep the other settings as default and click the <code class="docutils literal notranslate"><span class="pre">Open</span></code> button</p></li>
-</ul>
-<p class="sd-card-text"><img alt="Putty Connect" src="../_images/putty2.png" /></p>
-<ul class="simple">
-<li><p class="sd-card-text">After connecting you will be prompted with a <em>security alert</em>. Ensure you select <strong>accept</strong>.</p></li>
-</ul>
-<p class="sd-card-text"><img alt="Security Alert" src="../_images/putty3.png" /></p>
-<ul class="simple">
-<li><p class="sd-card-text">To log in, use the following credentials: username: <code class="docutils literal notranslate"><span class="pre">pi</span></code>, password: <code class="docutils literal notranslate"><span class="pre">raspberry</span></code></p></li>
-<li><p class="sd-card-text">You will be greeted with a terminal</p></li>
-</ul>
-</div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Linux/Mac<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">First, open your terminal app.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p class="sd-card-text">If using Linux, this will depend on your distribution. On MacOS, you can open spotlight and type: <code class="docutils literal notranslate"><span class="pre">Terminal</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+This guide describes how to connect to a Raspberry Pi over a secure ssh connection. It is expected the Raspberry Pi is connected over ethernet and has the IP 192.168.2.2, which is standard for most ROVs.
+
+:::{dropdown} Windows
+   For Windows, we recommend using Putty, which can be downloaded [here](https://www.putty.org/)
+
+   * After installing, open Putty and type the address of the Raspberry Pi (which should be set to 192.168.2.2 if you are following {doc}`Our Guide &lt;./pi_setup&gt;`)
+
+   * Keep the other settings as default and click the `Open` button
+
+   ![Putty Connect](../img/pi_setup/putty/putty2.png)
+
+   * After connecting you will be prompted with a *security alert*. Ensure you select **accept**.
+
+   ![Security Alert](../img/pi_setup/putty/putty3.png)
+
+   * To log in, use the following credentials: username: `pi`, password: `raspberry`
+
+   * You will be greeted with a terminal
+
+:::
+
+:::{dropdown} Linux/Mac
+   First, open your terminal app.
+
+   ```{note}
+   If using Linux, this will depend on your distribution. On MacOS, you can open spotlight and type: `Terminal`.
+</pre></div>
 </div>
 <p class="sd-card-text">The general format for ssh on unix is:
 <code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">-p</span> <span class="pre">port</span> <span class="pre">user&#64;IP-Address</span></code></p>
@@ -356,8 +362,9 @@ Linux/Mac<div class="sd-summary-down docutils">
 </pre></div>
 </div>
 <p class="sd-card-text">The password will be <code class="docutils literal notranslate"><span class="pre">raspberry</span></code> by default.</p>
+<div class="docutils">
 </div>
-</details><div class="admonition note">
+<div class="admonition note">
 <p class="admonition-title">Note</p>
 <p class="sd-card-text">At this point, you can disconnect the USB keyboard, mouse, and monitor from the Raspberry Pi.</p>
 </div>
@@ -466,12 +473,12 @@ For more streaming options such as viewing multiple streams at once, please see:
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="ssh_into_pi.html">
+          <a class="next-page" href="pc_setup.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">SSH Into a Raspberry Pi</div>
+                <div class="title">PC Network Setup Guide</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>

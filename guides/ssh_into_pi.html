@@ -5,7 +5,7 @@
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta content="DeepWater Exploration Documentation Site" name="description" />
 <meta content="rov, exploreHD, HDCam, Camera" name="keywords" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Multiple Camera Feeds/Streams" href="receiving_streams.html" /><link rel="prev" title="Raspberry Pi Streaming Setup for exploreHD" href="pi_setup.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Multiple Camera Feeds/Streams" href="receiving_streams.html" /><link rel="prev" title="Install GStreamer" href="gstreamer_guide.html" />
 
     <link rel="shortcut icon" href="../_static/wave.png"/><!-- Generated with Sphinx 7.1.2 and Furo 2023.09.10 -->
         <title>SSH Into a Raspberry Pi - DeepWater Exploration docs</title>
@@ -181,6 +181,9 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="vision.html">Computer Vision Resources</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pi_setup.html">Raspberry Pi Streaming Setup for exploreHD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pc_setup.html">PC Network Setup Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gstreamer_guide.html">Install GStreamer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gstreamer_guide.html#gstreamer-stream-input-pipeline">Gstreamer Stream Input Pipeline</a></li>
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">SSH Into a Raspberry Pi</a></li>
 <li class="toctree-l1"><a class="reference internal" href="receiving_streams.html">Multiple Camera Feeds/Streams</a></li>
 <li class="toctree-l1"><a class="reference internal" href="blueos_companion.html">BlueOS Companion Setup for exploreHD</a></li>
@@ -225,6 +228,10 @@
         <article role="main">
           <section id="ssh-into-a-raspberry-pi">
 <h1>SSH Into a Raspberry Pi<a class="headerlink" href="#ssh-into-a-raspberry-pi" title="Permalink to this heading">#</a></h1>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If you are plugging your Vehicle/Raspberry Pi/Other Device directly into your laptop via an ethernet cable/adapter/dongle, please see the <a class="reference internal" href="pc_setup.html"><span class="std std-doc">PC Network Setup Guide</span></a> first.</p>
+</div>
 <p>This guide describes how to connect to a Raspberry Pi over a secure ssh connection. It is expected the Raspberry Pi is connected over ethernet and has the IP 192.168.2.2, which is standard for most ROVs.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -284,14 +291,14 @@ Linux/Mac<div class="sd-summary-down docutils">
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="pi_setup.html">
+          <a class="prev-page" href="gstreamer_guide.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Raspberry Pi Streaming Setup for exploreHD</div>
+                <div class="title">Install GStreamer</div>
                 
               </div>
             </a>

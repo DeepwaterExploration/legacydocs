@@ -75,7 +75,7 @@ If you see any errors during the upgrading process, please follow the guides bel
 
 ## Procedure Video
 
-```{warning} This video uses an outdated version of the loader. If you have trouble, please contact support@dwe.ai
+```{warning} This video uses an outdated version of the loader. If you have trouble, please follow the above steps before contacting support@dwe.ai
 ```
 
 ```{youtube} G4h9EAG88HU

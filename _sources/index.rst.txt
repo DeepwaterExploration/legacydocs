@@ -28,6 +28,8 @@ DeepWater Exploration Documentation
 
    guides/vision
    guides/pi_setup
+   guides/pc_setup
+   guides/gstreamer_guide
    guides/ssh_into_pi
    guides/receiving_streams
    guides/blueos_companion

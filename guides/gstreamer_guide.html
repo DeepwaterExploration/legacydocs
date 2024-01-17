@@ -5,10 +5,10 @@
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta content="DeepWater Exploration Documentation Site" name="description" />
 <meta content="rov, exploreHD, HDCam, Camera" name="keywords" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Raspberry Pi Streaming Setup for exploreHD" href="pi_setup.html" /><link rel="prev" title="7-Port Multiplexer (ROV/AUV)" href="../products/7-port-usb-multiplexer.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="SSH Into a Raspberry Pi" href="ssh_into_pi.html" /><link rel="prev" title="PC Network Setup Guide" href="pc_setup.html" />
 
     <link rel="shortcut icon" href="../_static/wave.png"/><!-- Generated with Sphinx 7.1.2 and Furo 2023.09.10 -->
-        <title>Computer Vision Resources - DeepWater Exploration docs</title>
+        <title>Install GStreamer - DeepWater Exploration docs</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
@@ -138,7 +138,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -179,11 +179,11 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Guides</span></p>
 <ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Computer Vision Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vision.html">Computer Vision Resources</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pi_setup.html">Raspberry Pi Streaming Setup for exploreHD</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pc_setup.html">PC Network Setup Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gstreamer_guide.html">Install GStreamer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gstreamer_guide.html#gstreamer-stream-input-pipeline">Gstreamer Stream Input Pipeline</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Install GStreamer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#gstreamer-stream-input-pipeline">Gstreamer Stream Input Pipeline</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ssh_into_pi.html">SSH Into a Raspberry Pi</a></li>
 <li class="toctree-l1"><a class="reference internal" href="receiving_streams.html">Multiple Camera Feeds/Streams</a></li>
 <li class="toctree-l1"><a class="reference internal" href="blueos_companion.html">BlueOS Companion Setup for exploreHD</a></li>
@@ -220,29 +220,81 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main">
-          <section id="computer-vision-resources">
-<h1>Computer Vision Resources<a class="headerlink" href="#computer-vision-resources" title="Permalink to this heading">#</a></h1>
-<section id="opencv">
-<h2>OpenCV<a class="headerlink" href="#opencv" title="Permalink to this heading">#</a></h2>
+          <section id="install-gstreamer">
+<h1>Install GStreamer<a class="headerlink" href="#install-gstreamer" title="Permalink to this heading">#</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This step is optional if using QGroundControl</p>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Windows<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Download the gstreamer framework from here: <a class="reference external" href="http://gstreamer.freedesktop.org/data/pkg/windows">http://gstreamer.freedesktop.org/data/pkg/windows</a>. <strong>The recommended version is 1.18.1</strong>.</p>
+<p class="sd-card-text">Downloads:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/DeepwaterExploration/OpenCV-Quickstart">QuickStart Guide for exploreHDs</a></p>
-<ul>
-<li><p><a class="reference external" href="https://github.com/DeepwaterExploration/OpenCV-Quickstart/tree/main/c%2B%2B">C++ Example Code</a></p></li>
-<li><p><a class="reference external" href="https://github.com/DeepwaterExploration/OpenCV-Quickstart/tree/main/python">Python Example Code</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://gstreamer.freedesktop.org/download/">Make sure to download the MinGW version of Gstreamer</a></p></li>
 </ul>
-</li>
-<li><p><a class="reference external" href="https://github.com/DeepwaterExploration/USB-Camera-Latency-Tool">USB Camera Latency Tester</a></p></li>
-</ul>
-<section id="more-coming-soon">
-<h3>More Coming Soon…<a class="headerlink" href="#more-coming-soon" title="Permalink to this heading">#</a></h3>
-</section>
-</section>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p class="sd-card-text">Gstreamer would automatically install in the D drive if you have more than one drive on your PC. You can change it to the C drive when you do custom installation.</p>
+<p class="sd-card-text">If you install it on the D drive, just keep note of that when you set up your environment variables below.</p>
+</div>
+<p class="sd-card-text"><strong>If in doubt of which install to use, download the 64-bit version, as this is more common.</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">Make sure you update the PATH in Environment Variable after installing it on Windows.</p>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Environment Variable Setup<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ol class="arabic simple">
+<li><p class="sd-card-text">Right-click the Windows icon in the taskbar and select <strong>System</strong></p></li>
+<li><p class="sd-card-text">Under <strong>Related Settings</strong>, select <strong>Advanced System Settings</strong></p></li>
+</ol>
+<p class="sd-card-text"><img alt="System Properties Environment Variables" src="../_images/system_properties_dialog.png" /></p>
+<ol class="arabic simple" start="3">
+<li><p class="sd-card-text">Select <strong>Environment Variables</strong></p></li>
+</ol>
+<p class="sd-card-text"><img alt="Environment Variables" src="../_images/gstreamer1.jpg" /></p>
+<ol class="arabic simple" start="4">
+<li><p class="sd-card-text">Highlight the variable <strong>Path</strong> by clicking on it and then click ‘Edit…’</p></li>
+<li><p class="sd-card-text">A new window should pop up and you want to click on <code class="docutils literal notranslate"><span class="pre">New</span></code> and add a path to your bin folder to the list. In this case, it’s <code class="docutils literal notranslate"><span class="pre">C:\gstreamer\1.0\mingw_x86_64\bin</span></code></p></li>
+</ol>
+<p class="sd-card-text"><img alt="PATH" src="../_images/gstreamer2.jpg" /></p>
+<p class="sd-card-text">After that, click OK on both windows and you should be ready to go!</p>
+<p class="sd-card-text"><strong>To test the gstreamer setup, open CMD and run the following:</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>gst-launch-1.0 --version
+</pre></div>
+</div>
+<p class="sd-card-text">This should result in an output similar to:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>gst-launch-1.0 version 1.16.2
+GStreamer 1.16.2
+https://launchpad.net/distros/ubuntu/+source/gstreamer1.0
+</pre></div>
+</div>
+</div>
+</details></div>
+</details></section>
+<section id="gstreamer-stream-input-pipeline">
+<h1>Gstreamer Stream Input Pipeline<a class="headerlink" href="#gstreamer-stream-input-pipeline" title="Permalink to this heading">#</a></h1>
+<p>For example: your video is streaming on port <code class="docutils literal notranslate"><span class="pre">5600</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>udpsrc port=5600 ! application/x-rtp,media=(string)video,clock-rate=(int)90000,encoding-name=(string)H264 ! rtph264depay ! avdec_h264 output-corrupt=false ! videoconvert ! video.
+</pre></div>
+</div>
 </section>
 
         </article>
@@ -250,23 +302,23 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="pi_setup.html">
+          <a class="next-page" href="ssh_into_pi.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Raspberry Pi Streaming Setup for exploreHD</div>
+                <div class="title">SSH Into a Raspberry Pi</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="../products/7-port-usb-multiplexer.html">
+          <a class="prev-page" href="pc_setup.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">7-Port Multiplexer (ROV/AUV)</div>
+                <div class="title">PC Network Setup Guide</div>
                 
               </div>
             </a>
@@ -298,30 +350,8 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer">
+    <aside class="toc-drawer no-toc">
       
-      
-      <div class="toc-sticky toc-scroll">
-        <div class="toc-title-container">
-          <span class="toc-title">
-            On this page
-          </span>
-        </div>
-        <div class="toc-tree-container">
-          <div class="toc-tree">
-            <ul>
-<li><a class="reference internal" href="#">Computer Vision Resources</a><ul>
-<li><a class="reference internal" href="#opencv">OpenCV</a><ul>
-<li><a class="reference internal" href="#more-coming-soon">More Coming Soon…</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
       
       
     </aside>

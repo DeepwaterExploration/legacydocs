@@ -1,5 +1,9 @@
 # SSH Into a Raspberry Pi
 
+```{important}
+If you are plugging your Vehicle/Raspberry Pi/Other Device directly into your laptop via an ethernet cable/adapter/dongle, please see the [PC Network Setup Guide](../guides/pc_setup.md) first.
+```
+
 This guide describes how to connect to a Raspberry Pi over a secure ssh connection. It is expected the Raspberry Pi is connected over ethernet and has the IP 192.168.2.2, which is standard for most ROVs.
 
 :::{dropdown} Windows
