@@ -1,4 +1,4 @@
-## Install GStreamer
+# Install GStreamer
 
 ```{note} This step is optional if using QGroundControl
 ```
