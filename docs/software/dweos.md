@@ -10,7 +10,15 @@ exploreHD settings can only be adjusted on the lower bandwidth / configurable fi
 
 To connect to the pi, we recommend using SSH. You can read our documentation on that on {doc}`How to SSH into a Raspberry Pi <../guides/ssh_into_pi>`.
 
-::::{dropdown} Installing with Docker Installation Script (Recommended)
+::::{dropdown} Installing Image for Raspberry Pi 4 (Recommended)
+
+Download the latest image here: https://github.com/DeepwaterExploration/DWE_OS/releases/
+
+You can use [BalenaEtcher](https://etcher.balena.io/) for flashing the image to an SD card.
+
+::::
+
+::::{dropdown} Installing with Docker Installation Script
 :open:
 
 Recommended for Raspberry Pi instead of [Installing On Raspberry Pi](#installing-on-raspberry-pi) or [Installing Manually](#installing-manually).
