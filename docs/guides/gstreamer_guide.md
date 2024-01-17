@@ -55,8 +55,14 @@ This should result in an output similar to:
 
 ::::
 
+## Gstreamer Stream Input Pipeline for a terminal:
 
-# Gstreamer Stream Input Pipeline
+For example: your video is streaming on port `5600`:
+```
+gst-launch-1.0 udpsrc port=5600 ! application/x-rtp,media=(string)video,clock-rate=(int)90000,encoding-name=(string)H264 ! rtph264depay ! avdec_h264 output-corrupt=false ! videoconvert ! autovideosink
+```
+
+## Gstreamer Stream Input Pipeline for OBS
 
 For example: your video is streaming on port `5600`:
 ```
