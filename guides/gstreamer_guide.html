@@ -138,7 +138,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -183,8 +183,6 @@
 <li class="toctree-l1"><a class="reference internal" href="pi_setup.html">Raspberry Pi Streaming Setup for exploreHD</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pc_setup.html">PC Network Setup Guide</a></li>
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Install GStreamer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#gstreamer-stream-input-pipeline-for-a-terminal">Gstreamer Stream Input Pipeline for a terminal:</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#gstreamer-stream-input-pipeline-for-obs">Gstreamer Stream Input Pipeline for OBS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ssh_into_pi.html">SSH Into a Raspberry Pi</a></li>
 <li class="toctree-l1"><a class="reference internal" href="receiving_streams.html">Multiple Camera Feeds/Streams</a></li>
 <li class="toctree-l1"><a class="reference internal" href="blueos_companion.html">BlueOS Companion Setup for exploreHD</a></li>
@@ -221,7 +219,7 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
@@ -289,20 +287,20 @@ https://launchpad.net/distros/ubuntu/+source/gstreamer1.0
 </div>
 </div>
 </details></div>
-</details></section>
-<section id="gstreamer-stream-input-pipeline-for-a-terminal">
-<h1>Gstreamer Stream Input Pipeline for a terminal:<a class="headerlink" href="#gstreamer-stream-input-pipeline-for-a-terminal" title="Permalink to this heading">#</a></h1>
+</details><section id="gstreamer-stream-input-pipeline-for-a-terminal">
+<h2>Gstreamer Stream Input Pipeline for a terminal:<a class="headerlink" href="#gstreamer-stream-input-pipeline-for-a-terminal" title="Permalink to this heading">#</a></h2>
 <p>For example: your video is streaming on port <code class="docutils literal notranslate"><span class="pre">5600</span></code>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>gst-launch-1.0 udpsrc port=5600 ! application/x-rtp,media=(string)video,clock-rate=(int)90000,encoding-name=(string)H264 ! rtph264depay ! avdec_h264 output-corrupt=false ! videoconvert ! autovideosink
 </pre></div>
 </div>
 </section>
 <section id="gstreamer-stream-input-pipeline-for-obs">
-<h1>Gstreamer Stream Input Pipeline for OBS<a class="headerlink" href="#gstreamer-stream-input-pipeline-for-obs" title="Permalink to this heading">#</a></h1>
+<h2>Gstreamer Stream Input Pipeline for OBS<a class="headerlink" href="#gstreamer-stream-input-pipeline-for-obs" title="Permalink to this heading">#</a></h2>
 <p>For example: your video is streaming on port <code class="docutils literal notranslate"><span class="pre">5600</span></code>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>udpsrc port=5600 ! application/x-rtp,media=(string)video,clock-rate=(int)90000,encoding-name=(string)H264 ! rtph264depay ! avdec_h264 output-corrupt=false ! videoconvert ! video.
 </pre></div>
 </div>
+</section>
 </section>
 
         </article>
@@ -358,8 +356,28 @@ https://launchpad.net/distros/ubuntu/+source/gstreamer1.0
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Install GStreamer</a><ul>
+<li><a class="reference internal" href="#gstreamer-stream-input-pipeline-for-a-terminal">Gstreamer Stream Input Pipeline for a terminal:</a></li>
+<li><a class="reference internal" href="#gstreamer-stream-input-pipeline-for-obs">Gstreamer Stream Input Pipeline for OBS</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
