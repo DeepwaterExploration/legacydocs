@@ -8,7 +8,6 @@ The simplest and most reliable method of viewing multiple high-quality and lowes
 
 To learn more, see our {doc}`Discovery quickstart guide <../software/discovery>` -->
 
-<!-- ## Alternatives -->
-<!-- We are have developed a modified version of QGroundControl that can allow up to 3 cameras to be streamed at once. This is perfect if you are using ArduSub Companion.
+An unsupported, legacy option is to use Open Broadcasting Software. Feel free to navigate to the following URL:
 
-To learn more, see our {doc}`modified version of qgroundcontrol <../software/qgroundcontrol>` -->
+docs.dwe.ai/software/legacy_unsupported_open_broadcasting_software.html
