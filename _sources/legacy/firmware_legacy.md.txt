@@ -13,7 +13,7 @@
 
 ![DWE Firmware Updater](../img/firmware_update/Firmware_Updater.png)
 
-[**Download DWEFirmwareUpdater**](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/DWEFirmwareUpdater.zip?v=1637819450)
+[**Download DWEFirmwareUpdater**](https://dwe.ai/firmwareloader)
 
 ## Procedure for Updating exploreHD/HDCam Firmware
 

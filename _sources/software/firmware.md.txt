@@ -15,7 +15,7 @@ Please see [product changelog](./firmware/product_changelog.md) for more informa
 ```{caution}
 **This procedure is currently only available on Windows 10 or newer.**
 
-[**Download DWEFirmwareLoader**](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/DWE_exploreHD_3.0_FirmwareLoader_01-16-2024.zip)
+[**Download DWEFirmwareLoader**](https://dwe.ai/firmwareloader)
 ```
 
 ## Procedure for Updating exploreHD/HDCam Firmware
