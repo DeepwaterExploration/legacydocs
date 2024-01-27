@@ -13,7 +13,7 @@ To connect to the pi, we recommend using SSH. You can read our documentation on 
 ::::{dropdown} Installing Image for Raspberry Pi 4 (Recommended)
 :open:
 
-Download the latest image here: https://github.com/DeepwaterExploration/DWE_OS/releases/
+Download the latest image here: [https://github.com/DeepwaterExploration/DWE_OS/releases/](https://github.com/DeepwaterExploration/DWE_OS/releases/)
 
 You can use [BalenaEtcher](https://etcher.balena.io/) for flashing the image to an SD card.
 
