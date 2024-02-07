@@ -142,7 +142,7 @@ The exploreHD Professional utilizes a novel mounting system for maximum precisio
 
 **Step 1**
 
-Unlike with other exploreHD units, this camera will not require any user waterproofing. Simply use a cable with a mating connector that is compatible with your selected connector. 
+This camera will not require any user waterproofing. Simply use a cable with a mating connector that is compatible with your selected connector. 
 
 **For Wet-Mate Connectors**
 
@@ -150,7 +150,7 @@ Periodically inspect your connection point and clear it of debris. Isopropyl alc
 
 **For Dry-Mate Connectors**
 
-Periodically inspect and clean the surfaces of the dry-mate connector. Annually replace and re-grease the sealing o-ring for the connector.
+Periodically inspect and clean the surfaces of the dry-mate connector. Isopropyl alcohol will be sufficient for cleaning. Annually replace and re-grease the sealing o-ring for the connector.
 
 ```
 
