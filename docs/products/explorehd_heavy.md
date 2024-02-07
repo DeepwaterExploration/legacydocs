@@ -127,7 +127,7 @@ The left Image is from exploreHD and the right is from a GoPro Hero
 
 ### Lens Field of View in Air vs Water
 
-This lens has a fisheye effect which is more noticeable in the air than in the water due to the changes with light as it passes through different optical mediums. We took into account this factor and picked a lens that has a very wide field of view in the air so that when the lens is in the water, it can compensate for the lowered field of view. You may also notice a bit of vignetting when above water from the lens cap that will disappear in the water.
+The standard lens utilizes a fisheye design, which creates a distortion effect which is more noticeable in the air than in the water due to the changes with light as it passes through different optical mediums. This has been accounted for with the selection of an optics package that provides a very wide field of view in the air so that when the lens is in the water, it can compensate for the lowered field of view. You may also notice a bit of vignetting when above water from the lens cap that will disappear once submerged.
 
 ### TrueColor Technology
 
@@ -140,7 +140,7 @@ The camera offers TrueColor Technology which compensates for the blue/greenish t
 
 ## Camera Installation
 
-```{note} All exploreHD Heavy units will come with a WetLink Penetrator by default.
+```{note} All exploreHD Heavy units will come with a WetLink Penetrator by default. Wet-mate MCBH and Dry-mate Cobalt connectors can be ordered as custom options.
 
 Cable Penetrator:
 
@@ -149,7 +149,7 @@ Cable Penetrator:
 
 ```{dropdown} Mount Installation
 
-The exploreHD Heavy 2.0 has 4 flat faces along its outer perimeter. Each pair of faces is spaced 42mm apart and has an M2 threaded hole in the center of each. We recommend that you utilize mentioned holes for mounting. For simplicity, we recommend that you utilize the available exploreHD metal bracket available on our webpage.
+The exploreHD Heavy 2.0 has 4 flat faces along its outer perimeter. Each pair of faces is spaced 42mm apart and has an M2 threaded hole in the center of each. We recommend that you utilize mentioned holes for mounting. For simplicity, we recommend that you utilize the available exploreHD metal bracket available on our webpage. This bracket is compatible with both the exloreHD and the exploreHD Heavy.
 
 
 **Step 1**
