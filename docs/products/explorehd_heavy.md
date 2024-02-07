@@ -178,7 +178,7 @@ Check that the camera is rotated to the desired angle. Use a screwdriver (we rec
 
 **Step 1**
 
-![exploreHD](../img/explorehdheavy/BROVheavyA.jpg&width=200)
+![exploreHD Heavy](../img/explorehdheavy/BROVheavyA.jpg)
 
 Ensure that the camera is mounted securely on the ROV as you like it with the previous steps
 
