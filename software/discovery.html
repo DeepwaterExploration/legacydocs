@@ -7,7 +7,7 @@
 <meta content="rov, exploreHD, HDCam, Camera" name="keywords" />
 <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="DWE OS" href="dweos.html" /><link rel="prev" title="DeepWater Exploration Documentation" href="../index.html" />
 
-    <link rel="shortcut icon" href="../_static/wave.png"/><!-- Generated with Sphinx 7.1.2 and Furo 2023.09.10 -->
+    <link rel="shortcut icon" href="../_static/wave.png"/><!-- Generated with Sphinx 7.1.2 and Furo 2024.01.29 -->
         <title>Discovery for Desktop - DeepWater Exploration docs</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=135e06be" />
@@ -234,11 +234,35 @@
 </div>
 <section id="quickstart">
 <h2>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this heading">#</a></h2>
-<p>The main page of Discovery, will have a blank canvas.</p>
-<p><img alt="Blank" src="../_images/discovery_8.png" /></p>
 <p>Click the “Plus” Icon on the bottom-right side of the page. This will add a <strong>“Video Card”</strong>.</p>
-<p><img alt="1 Video Card" src="../_images/discovery_9.png" /></p>
+<p><img alt="1 Video Card" src="../_images/add_video_card.gif" /></p>
 <p>This page will contain your <strong>“Cards”</strong>. Each <strong>card</strong> will 2 input fields and 2 buttons. We will go over what each of these do.</p>
+</section>
+<section id="quick-functions">
+<h2>Quick Functions<a class="headerlink" href="#quick-functions" title="Permalink to this heading">#</a></h2>
+<section id="stream-all">
+<h3>Stream All<a class="headerlink" href="#stream-all" title="Permalink to this heading">#</a></h3>
+<p><img alt="Stream All Button" src="../_images/stream_all.gif" /></p>
+</section>
+<section id="stop-all-active-streams">
+<h3>Stop All Active Streams<a class="headerlink" href="#stop-all-active-streams" title="Permalink to this heading">#</a></h3>
+<p><img alt="Stop All Streams Button" src="../_images/stop_stream_all.gif" /></p>
+</section>
+<section id="record-all-active-streams">
+<h3>Record All Active Streams<a class="headerlink" href="#record-all-active-streams" title="Permalink to this heading">#</a></h3>
+<p><img alt="Record All Button" src="../_images/record_all.gif" /></p>
+</section>
+<section id="stop-recording-all-active-streams">
+<h3>Stop Recording All Active Streams<a class="headerlink" href="#stop-recording-all-active-streams" title="Permalink to this heading">#</a></h3>
+<p><img alt="Stop Recording All Button" src="../_images/stop_record_all.gif" /></p>
+</section>
+<section id="delete-all-cards">
+<h3>Delete All Cards<a class="headerlink" href="#delete-all-cards" title="Permalink to this heading">#</a></h3>
+<p><img alt="Delete Cards Button" src="../_images/delete_all.gif" /></p>
+</section>
+</section>
+<section id="video-card-buttons">
+<h2>Video Card Buttons<a class="headerlink" href="#video-card-buttons" title="Permalink to this heading">#</a></h2>
 <section id="ip-address-and-port">
 <h3>IP Address and Port<a class="headerlink" href="#ip-address-and-port" title="Permalink to this heading">#</a></h3>
 <p>These fields specify the IP address and Port number that your camera is streaming too, usually called a stream endpoint. Usually this is your topside-computer’s IPv4 address.</p>
@@ -308,27 +332,29 @@
 <h3>Default IP Address and Port Number<a class="headerlink" href="#default-ip-address-and-port-number" title="Permalink to this heading">#</a></h3>
 <p>This setting is used to set the default IP address input for each camera <strong>card</strong> you add.</p>
 <p><img alt="Global Settings" src="../_images/discovery_settings_global.png" /></p>
+<p><img alt="Default IP Address" src="../_images/edit_default_ip.gif" />
+Changing Default IP</p>
+<p><img alt="Default Port" src="../_images/edit_default_port.gif" />
+Changing Default Port</p>
 </section>
 <section id="activation">
 <h3>Activation<a class="headerlink" href="#activation" title="Permalink to this heading">#</a></h3>
 <p>To activate your license for Discovery, click “Activate New License”.</p>
-<p><img alt="License" src="../_images/discovery_0.png" /></p>
 <p>Enter your license key in the field labeled “License Key”.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Please ensure you have an active internet connection during activation.</strong></p>
 </div>
+<p><img alt="License" src="../_images/enter_license.gif" /></p>
+<p>After a successful activation, you will see a success screen.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>If you ever plan on resetting your operating system or if you will no longer have your device in possession, <strong>please unlink your license from the machine</strong> to avoid any future troubles. <a class="reference internal" href="#license-information-important"><span class="xref myst">Click here for more information</span></a>.</p>
 </div>
-<p><img alt="License" src="../_images/discovery_2.png" /></p>
-<p>After a successful activation, you will see a success screen.</p>
-<p><img alt="License Success" src="../_images/discovery_3.png" /></p>
 </section>
 <section id="license-deactivation-important">
 <h3>License Deactivation (Important)<a class="headerlink" href="#license-deactivation-important" title="Permalink to this heading">#</a></h3>
-<p><img alt="License Settings" src="../_images/discovery_settings_license.png" /></p>
+<p><img alt="License Settings" src="../_images/unlink_license.gif" /></p>
 <p>Each license is bound to a specific machine. To utilize your license following a computer reset or on an alternative machine, you must first unlink it from the current machine.</p>
 <p>If you own a multi-machine license, you don’t need to unlink your license for each machine you add.</p>
 <blockquote>
@@ -407,7 +433,16 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">Discovery for Desktop</a><ul>
-<li><a class="reference internal" href="#quickstart">Quickstart</a><ul>
+<li><a class="reference internal" href="#quickstart">Quickstart</a></li>
+<li><a class="reference internal" href="#quick-functions">Quick Functions</a><ul>
+<li><a class="reference internal" href="#stream-all">Stream All</a></li>
+<li><a class="reference internal" href="#stop-all-active-streams">Stop All Active Streams</a></li>
+<li><a class="reference internal" href="#record-all-active-streams">Record All Active Streams</a></li>
+<li><a class="reference internal" href="#stop-recording-all-active-streams">Stop Recording All Active Streams</a></li>
+<li><a class="reference internal" href="#delete-all-cards">Delete All Cards</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#video-card-buttons">Video Card Buttons</a><ul>
 <li><a class="reference internal" href="#ip-address-and-port">IP Address and Port</a></li>
 <li><a class="reference internal" href="#streaming-button">Streaming Button</a></li>
 <li><a class="reference internal" href="#recording-button">Recording Button</a></li>

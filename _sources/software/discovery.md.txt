@@ -7,15 +7,35 @@ If you are plugging your Vehicle/Raspberry Pi/Other Device directly into your la
 
 ## Quickstart
 
-The main page of Discovery, will have a blank canvas.
-
-![Blank](../img/discovery/discovery_8.png)
-
 Click the "Plus" Icon on the bottom-right side of the page. This will add a **"Video Card"**.
 
-![1 Video Card](../img/discovery/discovery_9.png)
+![1 Video Card](../img/discovery/animated_gifs/add_video_card.gif)
 
 This page will contain your **"Cards"**. Each **card** will 2 input fields and 2 buttons. We will go over what each of these do.
+
+## Quick Functions
+
+### Stream All
+
+![Stream All Button](../img/discovery/animated_gifs/stream_all.gif)
+
+### Stop All Active Streams
+
+![Stop All Streams Button](../img/discovery/animated_gifs/stop_stream_all.gif)
+
+### Record All Active Streams
+
+![Record All Button](../img/discovery/animated_gifs/record_all.gif)
+
+### Stop Recording All Active Streams
+
+![Stop Recording All Button](../img/discovery/animated_gifs/stop_record_all.gif)
+
+### Delete All Cards
+
+![Delete Cards Button](../img/discovery/animated_gifs/delete_all.gif)
+
+## Video Card Buttons
 
 ### IP Address and Port
 
@@ -92,29 +112,31 @@ This setting is used to set the default IP address input for each camera **card*
 
 ![Global Settings](../img/discovery/discovery_settings_global.png)
 
+![Default IP Address](../img/discovery/animated_gifs/edit_default_ip.gif)
+Changing Default IP
+
+![Default Port](../img/discovery/animated_gifs/edit_default_port.gif)
+Changing Default Port
+
 ### Activation
 
 To activate your license for Discovery, click "Activate New License".
-
-![License](../img/discovery/discovery_0.png)
 
 Enter your license key in the field labeled "License Key".
 
 ```{important} **Please ensure you have an active internet connection during activation.**
 ```
 
-```{warning} If you ever plan on resetting your operating system or if you will no longer have your device in possession, **please unlink your license from the machine** to avoid any future troubles. [Click here for more information](#license-information-important).
-```
-
-![License](../img/discovery/discovery_2.png)
+![License](../img/discovery/animated_gifs/enter_license.gif)
 
 After a successful activation, you will see a success screen.
 
-![License Success](../img/discovery/discovery_3.png)
+```{warning} If you ever plan on resetting your operating system or if you will no longer have your device in possession, **please unlink your license from the machine** to avoid any future troubles. [Click here for more information](#license-information-important).
+```
 
 ### License Deactivation (Important)
 
-![License Settings](../img/discovery/discovery_settings_license.png)
+![License Settings](../img/discovery/animated_gifs/unlink_license.gif)
 
 Each license is bound to a specific machine. To utilize your license following a computer reset or on an alternative machine, you must first unlink it from the current machine.
 
