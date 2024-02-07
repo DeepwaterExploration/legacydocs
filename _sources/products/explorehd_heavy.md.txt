@@ -161,12 +161,12 @@ If you purchased the exploreHD metal bracket, prepare to assemble it by selectin
 
 **Step 2**
 
-<<<Insert Picture of Bracket Lined Up>>>
+![exploreHD Heavy](../img/explorehdheavy/HeavyBracketAlignment.jpg)
 
 
 Line up the bracket's holes with the threaded holes on the camera body. 
 
-<<<Insert Pictures of screwed parts>>>
+![exploreHD Heavy](../img/explorehdheavy/HeavyBracketScrew.jpg)
 
 Check that the camera is rotated to the desired angle. Use a screwdriver (we recommend the iFixit Mako Driver Set) to drive the M2 screws into position. Slight bending of the bracket is normal. Blue Loctite, or some other threadlocker may be used to further secure the screws. 
 
@@ -180,7 +180,11 @@ Check that the camera is rotated to the desired angle. Use a screwdriver (we rec
 
 ![exploreHD Heavy](../img/explorehdheavy/BROVheavyA.jpg)
 
-Ensure that the camera is mounted securely on the ROV as you like it with the previous steps
+Ensure that the camera is mounted securely on the ROV as you like it.
+
+If installing an exploreHD Heavy with Cobalt or MCBH connector, you can simple 
+
+If utilizing an exploreHD Heavy with WetLink penetrator, you will need to follow the remaining steps.
 
 **Step 2**
 
