@@ -178,7 +178,7 @@ Check that the camera is rotated to the desired angle. Use a screwdriver (we rec
 
 **Step 1**
 
-![exploreHD](../img/explorehd/cable_waterproofing/exploreHD_ROV_Camera_Cable_Step_1_200x.jpg)
+![exploreHD](../img/explorehdheavy/BROVheavyA.jpg&width=200)
 
 Ensure that the camera is mounted securely on the ROV as you like it with the previous steps
 
