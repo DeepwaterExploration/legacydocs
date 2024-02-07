@@ -154,8 +154,6 @@ The exploreHD Heavy 2.0 has 4 flat faces along its outer perimeter. Each pair of
 
 **Step 1**
 
-<<<Insert Picture of Bagged Parts>>>
-
 If you purchased the exploreHD metal bracket, prepare to assemble it by selecting the orientation of your camera + bracket assembly relative to the object that the system will be mounted to. Choose the correct pair of holes that will yield this desired orientation.
 
 
