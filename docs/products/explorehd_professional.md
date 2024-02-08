@@ -88,6 +88,22 @@ Introducing the exploreHD Professional, the next evolution of our flagship produ
     Note: Alternative Lenses Available Upon Request
 ```
 
+```{dropdown} Subconn MCBH8 Connector Pinout
+<img src="https://cdn.shopify.com/s/files/1/0575/8785/9626/files/MCBH8Connector.svg?v=1707420077" width="40%">
+
+Cable Pinout:
+
+- 1: Black : Ground
+- 2: White : NC
+- 3: Red : +5V
+- 4: Green : NC
+- 5: Orange : NC
+- 6: Blue : NC
+- 7: White/black : DATA -
+- 8: Red/black : DATA +
+
+```
+
 ## Technical Details
 
 ```{dropdown} exploreHD Professional Housing
