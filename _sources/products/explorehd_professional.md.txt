@@ -89,7 +89,7 @@ Introducing the exploreHD Professional, the next evolution of our flagship produ
 ```
 
 ```{dropdown} Subconn MCBH8 Connector Pinout
-<img src="../img/MCBH8Connector.svg" width="40%">
+<img src="https://cdn.shopify.com/s/files/1/0575/8785/9626/files/MCBH8Connector.svg?v=1707420077" width="40%">
 
 Cable Pinout:
 
