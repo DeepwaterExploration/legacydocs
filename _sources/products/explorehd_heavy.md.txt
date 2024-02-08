@@ -106,7 +106,7 @@ The exploreHD Heavy also features H.264 compression technology, allowing up to 7
 
 ```{dropdown} exploreHD Heavy Housing
 
-- [exploreHD Heavy (WetLink) STEP File](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/eHD_Heavy_Public_Release_v1.step?v=1704159142)
+- [exploreHD Heavy (WetLink) STEP File](../files/eHD%20Heavy%20Public%20Release%20v3.step)
 
 - [exploreHD Heavy (MCBH) STEP File](../files/eHD%20(H)%20SCS%20STEP%20PUBLIC%20v3.step)
 
