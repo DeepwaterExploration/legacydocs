@@ -102,6 +102,22 @@ The exploreHD Heavy also features H.264 compression technology, allowing up to 7
     Note: Alternative Lenses Available Upon Request
 ```
 
+```{dropdown} Subconn MCBH8 Connector Pinout
+<img src="../img/MCBH8Connector.svg" width="40%">
+
+Cable Pinout:
+
+- 1: Black : Ground
+- 2: White : NC
+- 3: Red : +5V
+- 4: Green : NC
+- 5: Orange : NC
+- 6: Blue : NC
+- 7: White/black : DATA -
+- 8: Red/black : DATA +
+
+```
+
 ## Technical Drawings
 
 ```{dropdown} exploreHD Heavy Housing
