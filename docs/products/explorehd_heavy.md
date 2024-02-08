@@ -6,7 +6,7 @@
 
 Introducing the exploreHD Heavy, a novel camera that builds on the principles exemplified by the original exploreHD. New to this model, this subsea USB camera features high definition USB output and a backlit Sony sensor with an even larger active area than the standard exploreHD, all housed in a novel enclosure rated to 1000m! Advanced automated exposure and white balance adjustments ensure accurate colors and a natural image, even in low light conditions. 
 
-The exploreHD Heavy also features H.264 compression technology, allowing up to 7 cameras to be connected and streamed simultaneously with minimal loss in quality and latency. This makes it the perfect choice for advanced multi-cam ROV/AUV setups, oceanography , and aquaculture. With the exploreHD Heavy, you can clearly  and easily record in the most brutal underwater environments.
+The exploreHD Heavy also features H.264 compression technology, allowing up to 7 cameras to be connected and streamed simultaneously with minimal loss in quality and latency. This makes it the perfect choice for advanced multi-cam ROV/AUV setups, oceanography, and aquaculture. With the exploreHD Heavy, you can clearly and easily record in the most brutal underwater environments.
 
 ## Technical Specifications
 
@@ -196,7 +196,7 @@ Check that the camera is rotated to the desired angle. Use a screwdriver (we rec
 
 Ensure that the camera is mounted securely on the ROV as you like it.
 
-If installing an exploreHD Heavy with Cobalt or MCBH connector, you can simple 
+If installing an exploreHD Heavy with Cobalt or MCBH connector, you can skip the following steps, as there is no cable to terminate.
 
 If utilizing an exploreHD Heavy with WetLink penetrator, you will need to follow the remaining steps.
 
