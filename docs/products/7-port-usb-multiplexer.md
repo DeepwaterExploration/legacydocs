@@ -32,6 +32,12 @@ Hi-Speed (480 Mbits/s), Full-Speed (12 Mbits/s), and Low-Speed (1.5 Mbits/s) com
 ```{youtube} 36yojUnr9V0
 ```
 
+```{dropdown} Technical Files
+
+[**DWE Multiplexer v2.5**](https://cdn.shopify.com/s/files/1/0575/8785/9626/files/DWE_7Port_Multiplexer_v2.5_CAD_PUBLIC.step?v=1707949112)
+
+```
+
 ```{note} If the camera is going into an ROV electronic enclosure, you will need to waterproof the wires properly using a cable penetrator. You can either use potted penetrators or WetLink from Blue Robotics.
 
 Recommended Cable Penetrators 
