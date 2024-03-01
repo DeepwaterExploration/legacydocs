@@ -49,6 +49,10 @@ rm /usr/lib/systemd/system/dwe-controls.service
 
 To install for the Raspberry Pi, you can use the installation script by executing the following command:
 ```
+sudo apt update
+
+sudo apt upgrade
+
 curl -fsSL https://raw.githubusercontent.com/DeepwaterExploration/DWE_OS/main/scripts/install.sh | sudo -E bash -
 ```
 
@@ -63,6 +67,8 @@ You can install manually (for raspberry pi or other systems) with the following 
 
 First, install nodejs with:
 ```sh
+sudo apt update
+sudo apt upgrade
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 sudo apt install nodejs
 curl -L https://npmjs.org/install.sh | sudo sh
