@@ -19,7 +19,7 @@ You can use [BalenaEtcher](https://etcher.balena.io/) for flashing the image to 
 
 ::::
 
-::::{dropdown} Installing with Docker Installation Script
+<!-- ::::{dropdown} Installing with Docker Installation Script
 
 Recommended for Raspberry Pi instead of [Installing On Raspberry Pi](#installing-on-raspberry-pi) or [Installing Manually](#installing-manually).
 
@@ -43,19 +43,17 @@ rm /usr/lib/systemd/system/dwe-controls.service
 ```
 :::
 
-::::
+:::: -->
 
 :::{dropdown} Installing with Installation Script
-```{important} It is no longer recommended to use this script. Instead, **use the docker installation for a more compatible install**.
-```
 
-To install for the raspberry pi, you can use the installation script by executing the following command:
+To install for the Raspberry Pi, you can use the installation script by executing the following command:
 ```
 curl -fsSL https://raw.githubusercontent.com/DeepwaterExploration/DWE_OS/main/scripts/install.sh | sudo -E bash -
 ```
 
 Once installed, the script should exit with the following message:
-`Installation of DWE OS was successful. Please navigate to http://192.168.2.2:5000 to access the interface.`
+`Installation of DWE OS was successful.`
 
 You can now jump to [Interface](#interface) to access the functionality.
 :::
@@ -65,20 +63,21 @@ You can install manually (for raspberry pi or other systems) with the following 
 
 First, install nodejs with:
 ```sh
-curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 sudo apt install nodejs
 curl -L https://npmjs.org/install.sh | sudo sh
 ```
 
 Next, install the required dependencies:
 
-`sudo apt install libudev-dev libgstreamer-plugins-base1.0-dev libgstreamer1.0-dev gstreamer1.0-plugins-good gstreamer1.0-plugins-bad`
+```
+sudo apt install libudev-dev libgstreamer-plugins-base1.0-dev libgstreamer1.0-dev gstreamer1.0-plugins-good gstreamer1.0-plugins-bad
+```
 
-<!-- `sudo apt install gstreamer1.0-plugins-good gstreamer1.0-plugins-bad` -->
 
-Finally, install the dwe-controls application from npmjs with:
+Finally, install the dwe-os-1 application from npmjs with:
 
-`sudo npm install -g @deepwaterexploration/dwe-controls`
+`sudo npm install -g @dwe.ai/dwe-os-1`
 
 :::{dropdown} Auto Launch
 
@@ -87,8 +86,8 @@ To enable auto-launch (recommended for raspberry pi):
 - Install [pm2](https://www.npmjs.com/package/pm2):
 `sudo npm install -g pm2`
 
-- Start dwe-controls from pm2:
-`pm2 start dwe-controls`
+- Start dwe-os-1 from pm2:
+`pm2 start dwe-os-1`
 
 - Save the process list:
 `pm2 save`
@@ -99,7 +98,7 @@ To enable auto-launch (recommended for raspberry pi):
 **Running Manually**
 To run the application **temporarily** (this is only if you do **not want to install** with auto-launch):
 
-- Run: `dwe-controls start`
+- Run: `dwe-os-1 start`
 :::
 ::::
 
