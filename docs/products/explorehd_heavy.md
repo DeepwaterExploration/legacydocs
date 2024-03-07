@@ -233,7 +233,7 @@ Depending on the penetrator/connector option you have selected for your camera, 
 
 * Cable is properly waterproofed, following the steps in the previous page. 
 
-* Cable penetrator has the o-ring in the o-ring groove. 
+* Cable penetrator has the o'ring in the o'ring groove. 
 
 * Cable penetrator is on the outer portion of the electronic housing end cap.
 
@@ -245,13 +245,23 @@ Depending on the penetrator/connector option you have selected for your camera, 
 
 ```{important} Ensure you are knowledgeable on the function of each wire.
 
-<span style="color: black; font-weight:bold">Black: Ground</span>
-
-<span style="color: #CCCC00; font-weight:bold">Yellow/Green: D+ (DP)</span>
-
-<span style="color: gray; font-weight:bold">White: D- (DM)</span>
+<span style="background-color: #FFFFFF; color: black; font-weight:bold">Black: Ground</span>
 
 <span style="color: red; font-weight:bold" >Red: 5V</span>
+
+<span style="background-color: #000; color: #FFFF00;">Yellow</span>/<span style="background-color: #000; color: #008800;">Green</span>: D+ (Data Positive)
+
+<span style="background-color: #000 color: white; font-weight:bold">White: D- (Data Negative)</span>
+```
+
+**Step 3**
+
+```{important} Ensure the next two wires are twisted/intertwined.
+
+<span style="background-color: #FF6600; color: black; font-weight:bold">Twisted pairs ensures the data signal is strong.</span>
+
+<img src="https://cdn.shopify.com/s/files/1/0575/8785/9626/files/twisted_pair.png" height="149px" alt="exploreHD twisted pair of wires">
+
 ```
 
 ![exploreHD](../img/explorehd/Soldering_Diagram_500x.jpg)
