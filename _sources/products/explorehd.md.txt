@@ -261,7 +261,7 @@ Depending on the cable penetrator you are using, follow the instructions to wate
 
 <span style="background-color: #FF6600; color: black; font-weight:bold">Twisted pairs ensures the data signal is strong.</span>
 
-<img src="../img/explorehd/twisted_pair.png" height="149px" alt="exploreHD twisted pair of wires">
+<img src="https://cdn.shopify.com/s/files/1/0575/8785/9626/files/twisted_pair.png" height="149px" alt="exploreHD twisted pair of wires">
 
 ```
 
