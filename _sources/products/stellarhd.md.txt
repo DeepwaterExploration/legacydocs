@@ -77,6 +77,17 @@ Introducing the world's first patent-pending UVC camera that boasts a 2MP HD Glo
     Note: Alternative Lenses Available Upon Request
 ```
 
+```{dropdown} Instructions for Wiring USB
+
+![stellar_usb_wiring](../img/stellarhd/stellar_usb_wiring.png)
+
+```
+
+```{dropdown} Instructions for Wiring Frame-Sync Pin (FSIN)
+
+![fsin_wiring_diagram](../img/stellarhd/fsin_wiring_diagram.png)
+
+```
 
 ```{dropdown} Instructions for Frame-Syncing In Code
 
