@@ -315,7 +315,7 @@ sudo apt install -y v4l-utils
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>v4l2-ctl --list-devices
 </pre></div>
 </div>
-<p class="sd-card-text">Find the device ID of the 2 cameras you would like to utilize, and then choose a device ID number that is not listed. We will use this unused device ID for the virtual device we are going to create.</p>
+<p class="sd-card-text">Find the device ID of the two cameras you would like to utilize, and then choose a device ID number that is not listed. We will use this unused device ID for the virtual device we are going to create.</p>
 <p class="sd-card-text">We now want to create a virtual device for two stitched videos. Here we are calling the virtual device “stellarHD_stitched” and the video ID number (video_nr) we chose is <code class="docutils literal notranslate"><span class="pre">9</span></code>, as the number <code class="docutils literal notranslate"><span class="pre">9</span></code> is not being used by any active device.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>sudo modprobe v4l2loopback video_nr=9 card_label=stellarHD_stitched exclusive_caps=1
 </pre></div>
@@ -331,6 +331,19 @@ v4l2src device=/dev/video2 ! image/jpeg,width=1600,framerate=60/1 ! jpegdec ! mi
 </pre></div>
 </div>
 <p class="sd-card-text">Then you can follow our sample code <a class="reference external" href="https://github.com/DeepwaterExploration/OpenCV-Quickstart">here</a> to use <code class="docutils literal notranslate"><span class="pre">/dev/video9</span></code> in OpenCV.</p>
+<p class="sd-card-text">To remove the loopback device, you can either restart your device. Or use the following commands to manually remove the loopback device:</p>
+<p class="sd-card-text">First retrieve any programs still using the loopback device:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>sudo lsof /dev/video*
+</pre></div>
+</div>
+<p class="sd-card-text">Then use the PID (Process ID) number(s) and kill the processes:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>sudo kill INSERT_PID_NUMBER
+</pre></div>
+</div>
+<p class="sd-card-text">Then remove the loopback device:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>sudo modprobe -r v4l2loopback
+</pre></div>
+</div>
 </div>
 </details></section>
 </section>
