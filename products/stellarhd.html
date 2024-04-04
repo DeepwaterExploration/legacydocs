@@ -304,38 +304,30 @@ Instructions for Frame-Syncing In Code<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Install the following packages on linux:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>```
-sudo apt install libx264-dev libjpeg-dev
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>sudo apt install libx264-dev libjpeg-dev
 
 sudo apt install -y libglib2.0-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev gstreamer1.0-tools gstreamer1.0-x gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-libav libgstreamer-plugins-bad1.0-dev gstreamer1.0-plugins-ugly gstreamer1.0-gl
 
 sudo apt install -y v4l-utils
-```
 </pre></div>
 </div>
 <p class="sd-card-text">Run the following command to list your current camera devices:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>```
-v4l2-ctl --list-devices
-```
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>v4l2-ctl --list-devices
 </pre></div>
 </div>
 <p class="sd-card-text">Find the device ID of the 2 cameras you would like to utilize, and then choose a device ID number that is not listed. We will use this unused device ID for the virtual device we are going to create.</p>
 <p class="sd-card-text">We now want to create a virtual device for two stitched videos. Here we are calling the virtual device “stellarHD_stitched” and the video ID number (video_nr) we chose is <code class="docutils literal notranslate"><span class="pre">9</span></code>, as the number <code class="docutils literal notranslate"><span class="pre">9</span></code> is not being used by any active device.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>```
-sudo modprobe v4l2loopback video_nr=9 card_label=stellarHD_stitched exclusive_caps=1
-```
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>sudo modprobe v4l2loopback video_nr=9 card_label=stellarHD_stitched exclusive_caps=1
 </pre></div>
 </div>
 <p class="sd-card-text">Then you can launch the gstreamer pipeline that will create the stitched video, and output the video stream to the virtual device we created.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>```
-gst-launch-1.0 -v \
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>gst-launch-1.0 -v \
 compositor name=mix \
     sink_0::xpos=0    sink_0::ypos=0   sink_0::alpha=1 \
     sink_1::xpos=1600 sink_1::ypos=0   sink_1::alpha=1 \
 ! jpegenc ! jpegdec ! videoconvert ! v4l2sink device=/dev/video9 \
 v4l2src device=/dev/video0 ! image/jpeg,width=1600,framerate=60/1 ! jpegdec ! mix.sink_0 \
 v4l2src device=/dev/video2 ! image/jpeg,width=1600,framerate=60/1 ! jpegdec ! mix.sink_1
-```
 </pre></div>
 </div>
 <p class="sd-card-text">Then you can follow our sample code <a class="reference external" href="https://github.com/DeepwaterExploration/OpenCV-Quickstart">here</a> to use <code class="docutils literal notranslate"><span class="pre">/dev/video9</span></code> in OpenCV.</p>
