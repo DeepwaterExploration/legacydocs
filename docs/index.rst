@@ -13,12 +13,23 @@ DeepWater Exploration Documentation
 
 .. toctree::
    :maxdepth: 2
-   :caption: Products
+   :caption: General Vision Products
 
    products/explorehd
    products/explorehd_heavy
    products/explorehd_professional
    products/hdcam
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Machine Vision Products
+
+   products/stellarhd
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Interface Module Products
+
    products/fiber_board
    products/7-port-usb-multiplexer
 
