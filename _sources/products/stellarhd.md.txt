@@ -80,7 +80,7 @@ Introducing the world's first patent-pending UVC camera that boasts a 2MP HD Glo
 
 ```{dropdown} Instructions for Frame-Syncing In Code
 
-    Install the following packages on linux:
+Install the following packages on linux:
 
     ```
     sudo apt install libx264-dev libjpeg-dev
