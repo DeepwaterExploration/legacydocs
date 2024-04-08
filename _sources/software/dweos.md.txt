@@ -10,7 +10,7 @@ exploreHD settings can only be adjusted on the lower bandwidth / configurable fi
 
 To connect to the pi, we recommend using SSH. You can read our documentation on that on {doc}`How to SSH into a Raspberry Pi <../guides/ssh_into_pi>`.
 
-::::{dropdown} Installing Image for Raspberry Pi 4 (Recommended)
+::::{dropdown} Option 1: Installing Image for Raspberry Pi 4 (Recommended)
 :open:
 
 Download the latest image here: [https://github.com/DeepwaterExploration/DWE_OS/releases/](https://github.com/DeepwaterExploration/DWE_OS/releases/)
@@ -45,7 +45,7 @@ rm /usr/lib/systemd/system/dwe-controls.service
 
 :::: -->
 
-:::{dropdown} Installing with Installation Script
+:::{dropdown} Option 2: Installing with Installation Script
 
 To install for the Raspberry Pi, you can use the installation script by executing the following command:
 ```
@@ -62,7 +62,7 @@ Once installed, the script should exit with the following message:
 You can now jump to [Interface](#interface) to access the functionality.
 :::
 
-::::{dropdown} Installing Manually
+::::{dropdown} Option 3: Installing Manually (Expert Only)
 You can install manually (for raspberry pi or other systems) with the following commands:
 
 First, install nodejs with:
@@ -101,7 +101,7 @@ To enable auto-launch (recommended for raspberry pi):
 - Enable startup for pm2: `sudo pm2 startup systemd -u <your username> --hp /home/<your username>`
     - Raspberry Pi: `sudo pm2 startup systemd -u pi --hp /home/pi`
 
-**Running Manually**
+**Running Manually (Optional)**
 To run the application **temporarily** (this is only if you do **not want to install** with auto-launch):
 
 - Run: `dwe-os-1 start`
